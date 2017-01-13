@@ -1,0 +1,40 @@
+@import '../variables';
+
+@mixin width-offset-generator($type, $t, $size, $suffix, $jump) {
+    $offsets: '', top, left, bottom, right;
+    $off: '', t, l, b, r;
+    $max: $size / $jump;
+    $mediaslength: length($medias);
+
+    @for $i from 0 through $max {
+        @each $offset in $offsets {
+            $o: nth($off, index($offsets, $offset));
+            $value: if($i == 0, 0, $jump * $i);
+            $uni: if($i == 0, #{''}, px);
+            $off-value: if($o == '', #{''}, '-' + $offset);
+
+            #{'.u-' + $t + $o + '-' + $value} {
+                #{$type}#{$off-value}#{$suffix}: $value + $uni;
+            }
+
+            @for $i from 1 through $mediaslength - 1 {
+                $mediavalue: nth($mediavalues, $i);
+                $aftervalue: nth($mediavalues, $i + 1);
+
+                @media screen and (max-width: $mediavalue) {
+                    #{'.u-' + $t + $o + '-' + $value + '\\@' + nth($medias, $i)} {
+                        #{$type}#{$off-value}#{$suffix}: $value + $uni !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-offsets($type, $t, $size) {
+    @include width-offset-generator($type, $t, $size, #{''}, 5);
+}
+
+@mixin generate-widths($type, $t, $size) {
+    @include width-offset-generator($type, $t, $size, '-width', 1);
+}

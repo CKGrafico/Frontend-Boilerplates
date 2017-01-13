@@ -1,0 +1,7 @@
+@import 'mixins/icomoon';
+
+$icons: (
+    ck-play: 'e900'
+);
+
+@include icomoon-generate($icons);

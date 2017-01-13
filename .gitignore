@@ -1,0 +1,11 @@
+# Temporary folders
+.sass-cache/
+.test/
+
+# Distribution folders
+dist/
+
+# Packages folders
+node_modules/
+
+

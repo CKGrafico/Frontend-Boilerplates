@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins/offsets';
+
+@include generate-offsets(margin, m, 100);
+@include generate-offsets(padding, p, 100);
+
+.u {
+    &-align {
+        &-center {
+            text-align: center;
+        }
+
+        &-left {
+            text-align: left;
+        }
+
+        &-right {
+            text-align: right;
+        }
+    }
+
+    &-center {
+        &-vertical {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-horizontal {
+            display: block;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+
+        &-both {
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-display {
+        &-block {
+            display: block;
+        }
+
+        &-inline {
+            display: inline;
+        }
+
+        &-inlineblock {
+            display: inline-block;
+        }
+    }
+}
