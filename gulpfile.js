@@ -6,13 +6,9 @@ const $ = require('gulp-load-plugins')();
 const paths = require('./gulpfile.paths');
 const _ = require('./gulpfile.helpers');
 
-// Configure environments
-_.envs = ['debug', 'release'];
-
 // Import tasks
 require('require-tasks')(['tasks'])(gulp, paths, $, _);
 
-// Configure gulp tasks, add * for environments
-gulp.task('debug', () => _.sequence('scss-lint', 'scss*', 'scripts-lint', 'scripts*', 'copy', 'assets', _.envs.debug));
-gulp.task('release', () => _.sequence('scss*', 'scripts*', 'copy', 'assets', _.envs.release));
-gulp.task('watcher', () => _.sequence('serve', 'watch'));
+// Configure gulp tasks
+gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
+gulp.task('watcher', () => _.series('serve', 'watch'));

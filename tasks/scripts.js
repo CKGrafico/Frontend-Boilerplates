@@ -7,9 +7,9 @@ const r = {
 };
 
 module.exports = (gulp, paths, $, _) => {
-    let scripts = env => {
+    gulp.task('scripts', () => {
         return gulp.src(_.files(paths.app.scripts))
-            .pipe(_.ensure($.sourcemaps.init(), _.envs.debug, env))
+            .pipe($.environment.if.development($.sourcemaps.init()))
             .pipe($.rollup({
                 allowRealFiles: true,
                 context: 'window',
@@ -29,11 +29,8 @@ module.exports = (gulp, paths, $, _) => {
                     })
                 ]
             }))
-            .pipe(_.ensure($.uglify(), _.envs.release, env))
-            .pipe(_.ensure($.sourcemaps.write(), _.envs.debug, env))
+            .pipe($.environment.if.production($.uglify()))
+            .pipe($.environment.if.development($.sourcemaps.write()))
             .pipe(gulp.dest(_.folder(paths.dist.js)));
-    };
-
-    _.task('scripts', scripts, _.envs.debug);
-    _.task('scripts', scripts, _.envs.release);
+    });
 };

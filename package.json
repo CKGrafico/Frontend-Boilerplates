@@ -2,10 +2,10 @@
   "name": "myapp",
   "version": "1.0.0",
   "scripts": {
-    "predebug": "gulp clean",
-    "debug": "gulp debug",
-    "prerelease": "gulp clean",
-    "release": "gulp release",
+    "predev": "gulp clean",
+    "dev": "gulp --env=development",
+    "preprod": "gulp clean",
+    "prod": "gulp --env=production",
     "prewatch": "npm run debug",
     "watch": "gulp watcher"
   },
@@ -18,6 +18,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.3.2",
     "gulp-connect": "^5.0.0",
+    "gulp-environment": "^1.3.0",
     "gulp-eslint": "^3.0.1",
     "gulp-fontmin": "^0.7.4",
     "gulp-imagemin": "^3.1.1",

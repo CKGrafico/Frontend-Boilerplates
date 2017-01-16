@@ -17,37 +17,7 @@ module.exports = {
         return not === NOT ? '!' + path._folder : path._folder;
     },
 
-    sequence: (...tasks) => {
-        let last = tasks.pop();
-
-        if (Object.keys(envs).includes(last)) {
-            tasks = tasks.map(task => task.replace('*', `:${last}`));
-        } else {
-            tasks.push(last);
-        }
-
+    series: (...tasks) => {
         return sequence.apply(this, tasks)
     },
-
-    get envs() {
-        return envs;
-    },
-
-    set envs(_envs) {
-        _envs.forEach(env => {
-            envs[env] = env;
-        });
-    },
-
-    task: (name, task, env) => {
-        if(!env) {
-            return gulp.task(name, () => task());
-        }
-
-        return gulp.task(`${name}:${env}`, () => task(env));
-    },
-
-    ensure: (method, wanted, current) => {
-        return wanted === current ? method : noop();
-    }
 };
