@@ -13,7 +13,7 @@ module.exports = (gulp, paths, $, _) => {
             .pipe($.rollup({
                 allowRealFiles: true,
                 context: 'window',
-                entry: _.files(paths.app.scripts.main),
+                entry: _.files(paths.app.main),
                 format: 'cjs',
                 plugins: [
                     r.nodeResolve(),

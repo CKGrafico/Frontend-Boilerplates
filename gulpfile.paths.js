@@ -32,22 +32,5 @@ let paths = {
     }
 };
 
-let parseLevel = (obj, parent) => {
-    if (parent) {
-        obj._files = obj._files || '**/*.*'
-        obj._folder = obj._folder || parent;
-    }
-
-    Object.keys(obj).forEach(key => {
-        if (typeof obj[key] === 'object') {
-            parseLevel(obj[key], key);
-            obj[key]._parent = parent;
-        }
-    });
-};
-
-let parsePaths = () => {
- parseLevel(paths);
-};
-
-parsePaths();
+require('./gulpfile.helpers').parsePath(paths);
+module.exports = paths;
