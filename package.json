@@ -6,8 +6,8 @@
     "dev": "gulp --env=development",
     "preprod": "gulp clean",
     "prod": "gulp --env=production",
-    "prewatch": "npm run debug",
-    "watch": "gulp watcher"
+    "prewatch": "npm run dev",
+    "watch": "gulp --env=development watcher"
   },
   "license": "MIT",
   "devDependencies": {

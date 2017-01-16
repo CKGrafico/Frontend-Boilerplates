@@ -19,5 +19,5 @@ module.exports = {
 
     series: (...tasks) => {
         return sequence.apply(this, tasks)
-    },
+    }
 };
