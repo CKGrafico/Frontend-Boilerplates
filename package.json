@@ -2,9 +2,7 @@
   "name": "myapp",
   "version": "1.0.0",
   "scripts": {
-    "predev": "gulp clean",
     "dev": "gulp --env=development",
-    "preprod": "gulp clean",
     "prod": "gulp --env=production",
     "prewatch": "npm run dev",
     "watch": "gulp --env=development watcher"
@@ -14,7 +12,7 @@
     "babel-plugin-external-helpers": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "del": "^2.2.2",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.3.2",
     "gulp-connect": "^5.0.0",
@@ -31,12 +29,11 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "opn": "^4.0.2",
-    "require-tasks": "^1.0.0",
+    "require.all": "^2.0.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-inject": "^2.0.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "run-sequence": "^1.2.2"
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
     "jquery": "^3.1.1",

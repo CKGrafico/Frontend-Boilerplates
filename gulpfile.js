@@ -6,9 +6,9 @@ const $ = require('gulp-load-plugins')();
 const paths = require('./gulpfile.paths');
 const _ = require('./gulpfile.helpers');
 
-// Import tasks
-require('require-tasks')(['tasks'])(gulp, paths, $, _);
+let tasks = require('require.all')('./tasks');
+tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displayName = name; return func});
 
 // Configure gulp tasks
-gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
-gulp.task('watcher', () => _.series('serve', 'watch'));
+gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
+gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
