@@ -1,7 +1,7 @@
 // Require all the rollup plugins
 const r = {
     nodeResolve: require('rollup-plugin-node-resolve'),
-    inject: require('rollup-plugin-node-resolve'),
+    inject: require('rollup-plugin-inject'),
     commonjs: require('rollup-plugin-commonjs'),
     babel: require('rollup-plugin-babel')
 };

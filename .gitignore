@@ -1,6 +1,8 @@
-# Temporary folders
+# Temporary folders and files
 .sass-cache/
 .test/
+.vscode/
+npm-debug.log
 
 # Distribution folders
 dist/
