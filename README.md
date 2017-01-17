@@ -41,6 +41,7 @@ On this branch _(Basic)_ we use:
 - **Linting:** Linting for JavaScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Tasks Technologies
@@ -68,6 +69,7 @@ On this branch _(Basic)_ we use:
 - **Require Node Resolve:** Uses node resolution for path names.
 - **Run Secuence:** Using instead of gulp series (migrating to this)
 - **Yarn:** Instead of NPM.
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Running tasks
@@ -83,6 +85,7 @@ To run the tasks we have these three commands:
 
 - Running tasks on watch mode:
 > yarn run watch
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Environments
@@ -147,6 +150,7 @@ On this branch _(Basic)_ the structure is:`
 ├── package.json # Configure npm tasks and dependencies
 └── yarn-lock # Yarn file with the specific version to download of each dependency
 ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile
@@ -164,6 +168,7 @@ And these are the only two tasks:
 gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
 gulp.task('watcher', () => _.series('serve', 'watch'));
 ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile Helpers
@@ -190,6 +195,7 @@ Exclude scripts, example: _'!./app/js/**/*.js'_
 _.series('serve', 'watch'));
 ```
 Use run-sequence to run tasks like gulp-series (we are migrating).
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile paths
@@ -239,6 +245,7 @@ _.folder(paths.assets.fonts);
 _.files(paths.assets.fonts)
 // ./app/assets/custom/**/*.ttf
 ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Contributors
