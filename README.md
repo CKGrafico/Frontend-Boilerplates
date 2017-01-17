@@ -21,6 +21,19 @@ We try not only to use Gulp, also to use best practises and real examples that w
 - **ng2-master:** Stable version of angular2-based example. [To do]
 - **ng2-dev:** Dev version of angular2-based example.
 
+## Table of Contents
+  1. [App Technologies](#app-technologies)
+  1. [Tasks Technologies](#task-technologies)
+  1. [Running tasks](#running-tasks)
+  1. [Environments](#environments)
+  1. [Project structure](#project-structure)
+  1. [Gulpfile](#gulpfile)
+  1. [Gulpfile Helpers](#gulpfile-helpers)
+  1. [Gulpfile Paths](#gulpfile-paths)
+  1. [Contributors](#contributors)
+  1. [License](#license)
+  1. [Comments](#comments)
+
 ## App Technologies
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
@@ -29,6 +42,7 @@ On this branch _(Basic)_ we use:
 - **Linting:** Linting for JavaScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
+**[⬆ back to top](#table-of-contents)**
 
 ## Tasks Technologies
 On this branch _(Basic)_ we use:
@@ -55,6 +69,7 @@ On this branch _(Basic)_ we use:
 - **Require Node Resolve:** Uses node resolution for path names.
 - **Run Secuence:** Using instead of gulp series (migrating to this)
 - **Yarn:** Instead of NPM.
+**[⬆ back to top](#table-of-contents)**
 
 ## Running tasks
 To run the tasks we have these three commands:
@@ -69,6 +84,7 @@ To run the tasks we have these three commands:
 
 - Running tasks on watch mode:
 > yarn run watch
+**[⬆ back to top](#table-of-contents)**
 
 ## Environments
 On this project we have two environments:
@@ -132,6 +148,7 @@ On this branch _(Basic)_ the structure is:`
 ├── package.json # Configure npm tasks and dependencies
 └── yarn-lock # Yarn file with the specific version to download of each dependency
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile
 This is how we configured the main file:
@@ -148,6 +165,7 @@ And these are the only two tasks:
 gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
 gulp.task('watcher', () => _.series('serve', 'watch'));
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile Helpers
 In case that you want to modify some gulp tasks, this helpers can help you.
@@ -173,6 +191,7 @@ Exclude scripts, example: _'!./app/js/**/*.js'_
 _.series('serve', 'watch'));
 ```
 Use run-sequence to run tasks like gulp-series (we are migrating).
+**[⬆ back to top](#table-of-contents)**
 
 ## Gulpfile paths
 We tried to do it as easy as possible and this is the result.
@@ -219,6 +238,37 @@ _.folder(paths.assets.fonts);
 // ./app/assets/custom/
 
 _.files(paths.assets.fonts)
-// ./app/assets/images/**/*.ttf
+// ./app/assets/custom/**/*.ttf
 ```
+**[⬆ back to top](#table-of-contents)**
 
+## Contributors
+
+[View Contributors](https://github.com/CKGrafico/Gulp-Boilerplates/graphs/contributors)
+
+## License
+
+(The MIT License)
+
+Copyright (c) 2014-2017 Airbnb
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+**[⬆ back to top](#table-of-contents)**
