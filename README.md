@@ -4,6 +4,11 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"
          alt="license">
   </a>
+
+  <a href="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates">
+    <img src="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates/badges/gpa.svg" 
+        alt="codeclimate"/>
+  </a>
 </p>
 
 ## Quickstart
