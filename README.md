@@ -14,8 +14,8 @@
 ## Quickstart
 On this repo you can find some boilerplates based on Gulp, each branch has a different example.
 We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
-- **master:** Stable version of a basic and generic example. [Done]
-- **dev:** Dev version of a basic and generic example.
+- **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example. [Done]
+- **[dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/dev):** Dev version of a basic and generic example.
 - **node-master:** Stable version of node-based example. [To do]
 - **node-dev:** Dev version of node-based example.
 - **ng2-master:** Stable version of angular2-based example. [To do]
