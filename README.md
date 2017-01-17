@@ -4,10 +4,6 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"
          alt="license">
   </a>
-  <a href="https://david-dm.org/CKGrafico/Gulp-Boilerplates">
-    <img src="https://david-dm.org/CKGrafico/Gulp-Boilerplates/status.svg"
-         alt="dependency status">
-  </a>
 </p>
 
 ## Quickstart
@@ -57,6 +53,9 @@ On this branch _(Basic)_ we use:
 
 ## Running tasks
 To run the tasks we have these three commands:
+- Install dependencies:
+> yarn install
+
 - Running tasks on development mode:
 > yarn run dev
 
@@ -65,6 +64,11 @@ To run the tasks we have these three commands:
 
 - Running tasks on watch mode:
 > yarn run watch
+
+## Environments
+On this project we have two environments:
+- **Development:** To use with dev and watch tasks
+- **Production:** To minify the code and use on production
 
 ## Project structure
 On this branch _(Basic)_ the structure is:`
@@ -86,21 +90,130 @@ On this branch _(Basic)_ the structure is:`
 │   │   └── app.js
 │   │
 │   └── scss/
-│       ├── base
+│       ├── base/
 │       │   ├──  mixins # Some mixins to use on base folder
-│       │   ├── _fonts.scss # Load the fonts for your project.
-│       │   ├── _globals.scss # Global styles.
+│       │   ├── _fonts.scss # Load the fonts for your project
+│       │   ├── _globals.scss # Global styles
 │       │   ├── _states.scss # States classes, like is-hidden, is-visible...
 │       │   ├── _utilities.scss # Utility classes, like u-mt-10@xs _(margin-top 10px on media screen xs)_
 │       │   └── _variables.scss # Global variables of the project
 │       │
-│       ├── components
+│       ├── components/
 │       │   └── _ck-site.scss # Example of BEM based component
 │       │
-│       ├── vendor
-│       │  └── _ck-site.scss # Example of BEM based component
+│       ├── vendor/
+│       │  └── _normalize.scss # Import and extend Normalize
 │       │
 │       └── index.html
-├── app/
+│
+├── dist/ # Distribution folder
+│
+├── tasks/ # Gulp tasks
+│   ├── assets.js # Minify images and generate fonts
+│   ├── clean.js # Clean distribution folder
+│   ├── copy.js # Copy index.html to dist
+│   ├── scripts.js # Transpile and compress JavaScript depending of the environment
+│   ├── scripts-lint.js # Linting for JavaScript
+│   ├── scss.js # Compile and compress SASS files when is necessary
+│   ├── scss-lint.js # Linting for SASS
+│   ├── serve.js # Open a browser with the preview of the project
+│   └── watch.js # Watcher for files
+│
+├── .sass-lint.yml # SASS linting configuration
+├── .scripts-lint.yml # JavaScript linting configuration
+├── gulpfile.helpers.js # Some methods to use on gulp tasks
+├── gulpfile.js # Main gulp file
+├── gulpfile.paths.js # Where you can configure the paths to use with tasks
+├── package.json # Configure npm tasks and dependencies
+└── yarn-lock # Yarn file with the specific version to download of each dependency
+```
+
+## Gulpfile
+This is how we configured the main file:
+```
+// We load all the tasks and pass some parameters
+require('require-tasks')(['tasks'])(gulp, paths, $, _);
+// paths is for all the project paths
+// $ is for plugins
+// _ is for helpers
+```
+
+And these are the only two tasks:
+```
+gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
+gulp.task('watcher', () => _.series('serve', 'watch'));
+```
+
+## Gulpfile Helpers
+In case that you want to modify some gulp tasks, this helpers can help you.
+
+- Files and folders:
+
+```
+_.folder(paths.app.scripts);
+```
+Returns the path where the scripts are located, example: _'./app/js/'_
+
+```
+_.files(paths.app.scripts)
+```
+Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
+
+```
+_.files(paths.app.scripts, _.NOT)
+```
+Exclude scripts, example: _'!./app/js/**/*.js'_
+
+```
+_.series('serve', 'watch'));
+```
+Use run-sequence to run tasks like gulp-series (we are migrating).
+
+## Gulpfile paths
+We tried to do it as easy as possible and this is the result.
+We have an object with our paths structure that can be generated automatically and can be extended.
+
+If you open gulpfile.paths and you write this:
+
+```
+let paths = {
+    app: {
+        assets: {
+            images: {}
+        }
+    }
+};
+```
+You can acces to files and folders like:
+```
+_.folder(paths.assets.images);
+// ./app/assets/images/
+
+_.files(paths.assets.images)
+// ./app/assets/images/**/*.*
+```
+
+But you can extend this structure:
+
+```
+let paths = {
+    app: {
+        assets: {
+            images: {},
+            fonts: {
+                _files: '**/*.ttf',
+                _folder: 'custom',
+            }
+        }
+    }
+};
+```
+You can acces to files and folders like:
+```
+_.folder(paths.assets.fonts);
+// ./app/assets/custom/
+
+_.files(paths.assets.fonts)
+// ./app/assets/images/**/*.ttf
 ```
 
