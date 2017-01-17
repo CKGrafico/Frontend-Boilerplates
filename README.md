@@ -14,7 +14,7 @@
 ## Quickstart
 On this repo you can find some boilerplates based on Gulp, each branch has a different example.
 We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
-- **master:** Stable version of a basic and generic example. [Finishing]
+- **master:** Stable version of a basic and generic example. [Done]
 - **dev:** Dev version of a basic and generic example.
 - **node-master:** Stable version of node-based example. [To do]
 - **node-dev:** Dev version of node-based example.
@@ -62,12 +62,11 @@ On this branch _(Basic)_ we use:
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
 - **Gulp Uglify:** Minify and obfuscate JavaScript.
 - **Opn:** Open browser to see the preview.
-- **Require tasks:** Load all gulp tasks once.
+- **Require all:** Load all gulp tasks once.
 - **Rollup Babel:** To use Babel with Rollup _(ES2015 -> ES5)_.
 - **Require CommonJS:** Uses CommonJS for modules.
 - **Require Inject:** Include external dependencies to our code.
 - **Require Node Resolve:** Uses node resolution for path names.
-- **Run Secuence:** Using instead of gulp series (migrating to this)
 - **Yarn:** Instead of NPM.
 
 **[⬆ back to top](#table-of-contents)**
@@ -157,7 +156,8 @@ On this branch _(Basic)_ the structure is:`
 This is how we configured the main file:
 ```
 // We load all the tasks and pass some parameters
-require('require-tasks')(['tasks'])(gulp, paths, $, _);
+let tasks = require('require.all')('./tasks');
+tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displayName = name; return func});
 // paths is for all the project paths
 // $ is for plugins
 // _ is for helpers
@@ -165,8 +165,8 @@ require('require-tasks')(['tasks'])(gulp, paths, $, _);
 
 And these are the only two tasks:
 ```
-gulp.task('default', () => _.series('scss-lint', 'scss', 'scripts-lint', 'scripts', 'copy', 'assets'));
-gulp.task('watcher', () => _.series('serve', 'watch'));
+gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
+gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -190,11 +190,6 @@ Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
 _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
-
-```
-_.series('serve', 'watch'));
-```
-Use run-sequence to run tasks like gulp-series (we are migrating).
 
 **[⬆ back to top](#table-of-contents)**
 
