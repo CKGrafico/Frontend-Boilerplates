@@ -32,7 +32,6 @@ We try not only to use Gulp, also to use best practises and real examples that w
   1. [Gulpfile Paths](#gulpfile-paths)
   1. [Contributors](#contributors)
   1. [License](#license)
-  1. [Comments](#comments)
 
 ## App Technologies
 On this branch _(Basic)_ we use:
