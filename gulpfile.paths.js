@@ -7,14 +7,14 @@ let paths = {
             fonts: {}
         },
 
-        scripts: {
-            _files: '**/*.js',
-            _folder: 'js',
+        ts: {
+            _files: '**/*.ts',
+            _folder: 'ts',
         },
 
         main: {
-            _files: 'app.js',
-            _folder: 'js',
+            _files: 'app.ts',
+            _folder: 'ts',
         },
 
         scss: {
