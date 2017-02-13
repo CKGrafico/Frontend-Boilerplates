@@ -36,39 +36,35 @@ We try not only to use Gulp, also to use best practises and real examples that w
   1. [License](#license)
 
 ## App Technologies
-On this branch _(Basic)_ we use:
+On this branch _(TypeScript)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **EcmaScript2015:** All the code uses this version of ES, also gulp files.
+- **TypeScript:** This project uses TypeScript instead of JavaScript.
 - **jQuery:** Only to show how to import an external library.
-- **Linting:** Linting for JavaScript and SASS.
+- **Linting:** Linting for TypeScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Tasks Technologies
-On this branch _(Basic)_ we use:
+On this branch _(TypeScript)_ we use:
 - **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
 - **Gulp Clean CSS:** To minify CSS.
 - **Gulp Connect:** Preview website on local server.
 - **Gulp Environment:** Call to different tasks depending of the environment.
-- **Gulp Eslint:** Linting for JavaScript.
+- **Gulp Tslint:** Linting for TypeScript.
 - **Gulp Fontmin:** Generate fonts from .ttf.
 - **Gulp Imagemin:** Compress images.
 - **Gulp Load plugins:** Load all the plugins once.
 - **Gulp Newer:** On some tasks we want to do something only with the newer files.
 - **Gulp Noop:** Basic Noop but on stream.
-- **Gulp Rollup:** To transpile out code.
 - **Gulp Sass:** Compile Scss to CSS.
 - **Gulp Sasslint:** Linting for SASS.
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
 - **Gulp Uglify:** Minify and obfuscate JavaScript.
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
-- **Rollup Babel:** To use Babel with Rollup _(ES2015 -> ES5)_.
-- **Require CommonJS:** Uses CommonJS for modules.
-- **Require Inject:** Include external dependencies to our code.
-- **Require Node Resolve:** Uses node resolution for path names.
+- **Gulp TypeScript:** To compile TypeScript
 - **Yarn:** Instead of NPM.
 
 **[⬆ back to top](#table-of-contents)**
@@ -95,7 +91,7 @@ On this project we have two environments:
 - **Production:** To minify the code and use on production
 
 ## Project structure
-On this branch _(Basic)_ the structure is:`
+On this branch _(TypeScript)_ the structure is:`
 ```
 ./
 │
@@ -110,8 +106,8 @@ On this branch _(Basic)_ the structure is:`
 │   │   └── images/
 │   │       └── example.jpg
 │   │
-│   ├── js/
-│   │   └── app.js
+│   ├── ts/
+│   │   └── app.ts
 │   │
 │   └── scss/
 │       ├── base/
@@ -136,15 +132,15 @@ On this branch _(Basic)_ the structure is:`
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
-│   ├── scripts.js # Transpile and compress JavaScript depending of the environment
-│   ├── scripts-lint.js # Linting for JavaScript
 │   ├── scss.js # Compile and compress SASS files when is necessary
 │   ├── scss-lint.js # Linting for SASS
 │   ├── serve.js # Open a browser with the preview of the project
+│   ├── ts.js # Transpile and compress TypeScript depending of the environment
+│   ├── ts-lint.js # Linting for TypeScript
 │   └── watch.js # Watcher for files
 │
 ├── .sass-lint.yml # SASS linting configuration
-├── .scripts-lint.yml # JavaScript linting configuration
+├── .ts-lint.json # TypeScript linting configuration
 ├── gulpfile.helpers.js # Some methods to use on gulp tasks
 ├── gulpfile.js # Main gulp file
 ├── gulpfile.paths.js # Where you can configure the paths to use with tasks
@@ -167,7 +163,7 @@ tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displa
 
 And these are the only two tasks:
 ```
-gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
+gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.tsLint, tasks.ts, tasks.copy, tasks.assets));
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
@@ -179,19 +175,19 @@ In case that you want to modify some gulp tasks, this helpers can help you.
 - Files and folders:
 
 ```
-_.folder(paths.app.scripts);
+_.folder(paths.app.ts);
 ```
-Returns the path where the scripts are located, example: _'./app/js/'_
+Returns the path where the scripts are located, example: _'./app/ts/'_
 
 ```
-_.files(paths.app.scripts)
+_.files(paths.app.ts)
 ```
-Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
+Returns the file pattern to get the scripts, example: _'./app/ts/**/*.ts'_
 
 ```
-_.files(paths.app.scripts, _.NOT)
+_.files(paths.app.ts, _.NOT)
 ```
-Exclude scripts, example: _'!./app/js/**/*.js'_
+Exclude ts, example: _'!./app/ts/**/*.ts'_
 
 **[⬆ back to top](#table-of-contents)**
 
