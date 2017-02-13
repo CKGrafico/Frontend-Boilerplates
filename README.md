@@ -16,7 +16,7 @@ On this repo you can find some boilerplates based on Gulp, each branch has a dif
 We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
 - **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example. [Done]
 - **[dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/dev):** Dev version of a TypeScript example.
-- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example. [Doing]
+- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example. [Done]
 - **[ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-dev):** Dev version of a basic and generic example.
 - **node-master:** Stable version of node-based example. [To do]
 - **node-dev:** Dev version of node-based example.
@@ -44,7 +44,7 @@ On this branch _(Basic)_ we use:
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Tasks Technologies
 On this branch _(Basic)_ we use:
@@ -71,7 +71,7 @@ On this branch _(Basic)_ we use:
 - **Require Node Resolve:** Uses node resolution for path names.
 - **Yarn:** Instead of NPM.
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Running tasks
 To run the tasks we have these three commands:
@@ -87,7 +87,7 @@ To run the tasks we have these three commands:
 - Running tasks on watch mode:
 > yarn run watch
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Environments
 On this project we have two environments:
@@ -152,7 +152,7 @@ On this branch _(Basic)_ the structure is:`
 └── yarn-lock # Yarn file with the specific version to download of each dependency
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Gulpfile
 This is how we configured the main file:
@@ -171,7 +171,7 @@ gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Gulpfile Helpers
 In case that you want to modify some gulp tasks, this helpers can help you.
@@ -193,7 +193,7 @@ _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Gulpfile paths
 We tried to do it as easy as possible and this is the result.
@@ -243,7 +243,7 @@ _.files(paths.assets.fonts)
 // ./app/assets/custom/**/*.ttf
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
 
 ## Contributors
 
@@ -274,4 +274,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[ back to top](#table-of-contents)**
