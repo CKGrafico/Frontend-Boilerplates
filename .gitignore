@@ -1,13 +1,3 @@
-# Temporary folders and files
 .sass-cache/
-.test/
-.vscode/
-npm-debug.log
-
-# Distribution folders
 dist/
-
-# Packages folders
 node_modules/
-
-

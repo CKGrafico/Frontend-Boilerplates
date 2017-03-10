@@ -10,5 +10,5 @@ let tasks = require('require.all')('./tasks');
 tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displayName = name; return func});
 
 // Configure gulp tasks
-gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
-gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
+gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.tsLint, tasks.ts, tasks.tsServer, tasks.copy, tasks.assets));
+gulp.task('watcher', gulp.parallel(tasks.watch, tasks.serve));

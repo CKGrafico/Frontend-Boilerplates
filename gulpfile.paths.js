@@ -2,33 +2,48 @@ let paths = {
     port: 4000,
 
     app: {
-        assets: {
-            images: {},
-            fonts: {}
-        },
+        client: {
+            assets: {
+                images: {},
+                fonts: {}
+            },
 
-        scripts: {
-            _files: '**/*.js',
-            _folder: 'js',
-        },
+            ts: {
+                _files: '**/*.ts',
+                _folder: 'ts',
+            },
 
-        main: {
-            _files: 'app.js',
-            _folder: 'js',
-        },
+            main: {
+                _files: 'app.ts',
+                _folder: 'ts',
+            },
 
-        scss: {
-            _files: '**/*.scss',
+            scss: {
+                _files: '**/*.scss',
+            }
+        },
+        
+        server: {
+            ts: {
+                _files: '**/*.ts',
+                _folder: 'ts',
+            }
         }
     },
 
     dist: {
-        assets: {
-            images: {},
-            fonts: {}
+        client: {
+            assets: {
+                images: {},
+                fonts: {}
+            },
+            css: {},
+            js: {}
         },
-        css: {},
-        js: {}
+
+        server: {
+
+        }
     }
 };
 
