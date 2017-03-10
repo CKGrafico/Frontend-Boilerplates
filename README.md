@@ -40,8 +40,7 @@ We try not only to use Gulp, also to use best practises and real examples that w
 ## App Technologies
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **EcmaScript2015:** All the code uses this version of ES, also gulp files.
-- **jQuery:** Only to show how to import an external library.
+- **TypeScript:** This project uses TypeScript instead of JavaScript.
 - **Linting:** Linting for JavaScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
@@ -52,25 +51,21 @@ On this branch _(Basic)_ we use:
 On this branch _(Basic)_ we use:
 - **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
 - **Gulp Clean CSS:** To minify CSS.
-- **Gulp Connect:** Preview website on local server.
 - **Gulp Environment:** Call to different tasks depending of the environment.
-- **Gulp Eslint:** Linting for JavaScript.
 - **Gulp Fontmin:** Generate fonts from .ttf.
 - **Gulp Imagemin:** Compress images.
 - **Gulp Load plugins:** Load all the plugins once.
 - **Gulp Newer:** On some tasks we want to do something only with the newer files.
+- **Gulp Nodemon:** To launch the NodeJS application.
 - **Gulp Noop:** Basic Noop but on stream.
 - **Gulp Rollup:** To transpile out code.
 - **Gulp Sass:** Compile Scss to CSS.
 - **Gulp Sasslint:** Linting for SASS.
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
+- **Gulp TSLint:** Linting for TypeScript.
 - **Gulp Uglify:** Minify and obfuscate JavaScript.
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
-- **Rollup Babel:** To use Babel with Rollup _(ES2015 -> ES5)_.
-- **Require CommonJS:** Uses CommonJS for modules.
-- **Require Inject:** Include external dependencies to our code.
-- **Require Node Resolve:** Uses node resolution for path names.
 - **Yarn:** Instead of NPM.
 
 **[ back to top](#table-of-contents)**
@@ -102,35 +97,43 @@ On this branch _(Basic)_ the structure is:`
 ./
 │
 ├── app/
-│   ├── assets/
-│   │   ├── fonts/
-│   │   │   └── OpenSans
-│   │   │       ├── OpenSans-Regular.ttf
-│   │   │       ├── ...
-│   │   │       └── OpenSans-SemiboldItalic.ttf
+│   ├── client/
+│   │   ├── assets/
+│   │   │   ├── fonts/
+│   │   │   │   └── OpenSans
+│   │   │   │       ├── OpenSans-Regular.ttf
+│   │   │   │       ├── ...
+│   │   │   │       └── OpenSans-SemiboldItalic.ttf
+│   │   │   │
+│   │   │   └── images/
+│   │   │       └── example.jpg
+│   │
+│   │   ├── js/
+│   │   │   └── app.js
 │   │   │
-│   │   └── images/
-│   │       └── example.jpg
+│   │   └── scss/
+│   │       ├── base/
+│   │       │   ├──  mixins # Some mixins to use on base folder
+│   │       │   ├── _fonts.scss # Load the fonts for your project
+│   │       │   ├── _globals.scss # Global styles
+│   │       │   ├── _states.scss # States classes, like is-hidden, is-visible...
+│   │       │   ├── _utilities.scss # Utility classes, like u-mt-10@xs _(margin-top 10px on media screen xs)_
+│   │       │   └── _variables.scss # Global variables of the project
+│   │       │
+│   │       ├── components/
+│   │       │   └── _ck-site.scss # Example of BEM based component
+│   │       │
+│   │       ├── vendor/
+│   │       │  └── _normalize.scss # Import and extend Normalize
+│   │       │
+│   │       └── index.html
 │   │
-│   ├── js/
-│   │   └── app.js
-│   │
-│   └── scss/
-│       ├── base/
-│       │   ├──  mixins # Some mixins to use on base folder
-│       │   ├── _fonts.scss # Load the fonts for your project
-│       │   ├── _globals.scss # Global styles
-│       │   ├── _states.scss # States classes, like is-hidden, is-visible...
-│       │   ├── _utilities.scss # Utility classes, like u-mt-10@xs _(margin-top 10px on media screen xs)_
-│       │   └── _variables.scss # Global variables of the project
-│       │
-│       ├── components/
-│       │   └── _ck-site.scss # Example of BEM based component
-│       │
-│       ├── vendor/
-│       │  └── _normalize.scss # Import and extend Normalize
-│       │
-│       └── index.html
+│   ├── server/
+│   │   ├── compiler/
+│   │   │   ├── fonts/
+│   │   │   │   └── compiler.controller.ts
+│   │   │   │   └── compiler.service.ts
+│   │   └── server.ts
 │
 ├── dist/ # Distribution folder
 │
@@ -138,11 +141,12 @@ On this branch _(Basic)_ the structure is:`
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
-│   ├── scripts.js # Transpile and compress JavaScript depending of the environment
 │   ├── scripts-lint.js # Linting for JavaScript
 │   ├── scss.js # Compile and compress SASS files when is necessary
 │   ├── scss-lint.js # Linting for SASS
 │   ├── serve.js # Open a browser with the preview of the project
+│   ├── ts.js # Transpile and compress TypeScript depending of the environment
+│   ├── ts-lint.js # Linting for TypeScript
 │   └── watch.js # Watcher for files
 │
 ├── .sass-lint.yml # SASS linting configuration
