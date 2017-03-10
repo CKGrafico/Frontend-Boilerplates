@@ -28,6 +28,7 @@
     "gulp-uglify": "^2.0.0",
     "opn": "^4.0.2",
     "require.all": "^2.0.3",
+    "tslint": "^4.5.1",
     "typescript": "^2.1.5"
   },
   "dependencies": {

@@ -5,7 +5,7 @@ interface IExample {
 }
 
 class Example implements IExample {
-    public readonly name: string = 'test';
+    public readonly name = 'test';
 }
 
 let example = new Example();
