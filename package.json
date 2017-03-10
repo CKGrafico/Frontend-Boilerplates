@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "gulp --env=development",
     "prod": "gulp --env=production",
@@ -35,7 +35,7 @@
     "jquery": "^3.1.1",
     "normalize-scss": "^6.0.0"
   },
-  "description": "Boilerplate with Gulp + SASS and ES6",
+  "description": "Boilerplate with Gulp + SASS and TypeScript",
   "repository": "https://github.com/CKGrafico/Gulp-Boilerplates",
   "author": "Quique Fdez Guerra @CKGrafico"
 }
