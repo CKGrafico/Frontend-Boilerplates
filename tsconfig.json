@@ -1,8 +1,15 @@
 {
     "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
         "module": "commonjs",
         "target": "es5",
         "noImplicitAny": false,
-        "sourceMap": false
+        "sourceMap": false,
+        "lib": [
+            "dom",
+            "es5",
+            "es2015"
+        ]
     }
 }

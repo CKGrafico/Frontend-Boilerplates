@@ -1,13 +1,9 @@
-import $ from 'jquery';
+import Vue from 'vue'
+import App from './app.component'
 
-interface IExample {
-    readonly name: string;
-}
-
-class Example implements IExample {
-    public readonly name = 'test';
-}
-
-let example = new Example();
-
-console.log(example.name);
+export default new Vue({
+  el: '.js-app',
+  render: h => h(App, {
+    props: { propMessage: 'World' }
+  })
+})
