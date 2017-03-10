@@ -14,12 +14,14 @@
 ## Quickstart
 On this repo you can find some boilerplates based on Gulp, each branch has a different example.
 We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
-- **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example. [Done]
+- **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example.
 - **[dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/dev):** Dev version of a TypeScript example.
-- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example. [Done]
+- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example.
 - **[ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-dev):** Dev version of a basic and generic example.
-- **node-master:** Stable version of node-based example. [To do]
-- **node-dev:** Dev version of node-based example.
+- **[node-ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master):** Stable version of node-based with TypeScript example.
+- **[node-ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-dev):** Dev version of node-based with TypeScript example.
+- **[vue-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master):** Stable version of vue-based example. [Todo]
+- **[vue-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-dev):** Dev version of vue-based example.
 - **ng2-master:** Stable version of angular2-based example. [To do]
 - **ng2-dev:** Dev version of angular2-based example.
 
