@@ -24,12 +24,15 @@
     "gulp-sass-lint": "^1.3.2",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-tslint": "^7.1.0",
-    "gulp-typescript": "^3.1.4",
+    "gulp-typescript": "^3.1.5",
     "gulp-uglify": "^2.0.0",
     "opn": "^4.0.2",
     "require.all": "^2.0.3",
+    "rollup": "^0.41.5",
+    "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
     "tslint": "^4.5.1",
-    "typescript": "2.1.6"
+    "typescript": "^2.2.1"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",

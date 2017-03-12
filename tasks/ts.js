@@ -1,12 +1,26 @@
+const rollup = require('rollup');
+const typescript = require('rollup-plugin-typescript');
+const inject = require('rollup-plugin-inject');
+
 module.exports = (gulp, paths, $, _) => {
-    let tsProject = $.typescript.createProject('./tsconfig.json');
-
-    let tsResult = gulp.src(_.files(paths.app.ts))
-        .pipe($.environment.if.development($.sourcemaps.init()))
-        .pipe(tsProject());
-
-    return tsResult.js
-        .pipe($.environment.if.production($.uglify()))
-        .pipe($.environment.if.development($.sourcemaps.write()))
-        .pipe(gulp.dest(_.folder(paths.dist.js)));
+    return rollup.rollup({
+        entry: './app/ts/app.ts',
+        plugins: [
+            typescript({
+                typescript: require("typescript")
+            }),
+            inject({
+                include: '**/*.js',
+                Vue: 'vue',
+            }),
+        ],
+    })
+        .then(function (bundle) {
+            bundle.write({
+                format: 'iife',
+                moduleName: "app",
+                // sourceMap: 'inline',
+                dest: "./dist/js/app.js"
+            });
+        })
 };

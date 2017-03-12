@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import App from './app.component'
+import App from './App.vue'
 
-export default new Vue({
-  el: '.js-app',
+new Vue({
+  el: '#app',
   render: h => h(App, {
     props: { propMessage: 'World' }
   })
