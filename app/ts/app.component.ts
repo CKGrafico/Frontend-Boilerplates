@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
+import tpl from './app.component.html';
 
 @Component({
+  render: h => h('div', '{{ msg }}'),
   props: {
     propMessage: String
   }
