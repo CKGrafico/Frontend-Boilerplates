@@ -11,4 +11,4 @@ tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displa
 
 // Configure gulp tasks
 gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, /*tasks.tsLint,*/ tasks.ts, tasks.copy, tasks.assets));
-gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
+gulp.task('watcher', gulp.parallel(tasks.copy, tasks.serve));

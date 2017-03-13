@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-        "experimentalDecorators": true,
-        "allowSyntheticDefaultImports": true,
-        "module": "commonjs",
-        "target": "es5",
-        "noImplicitAny": false,
-        "sourceMap": false,
-        "lib": [
-            "dom",
-            "es5",
-            "es2015"
-        ]
-    }
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noUnusedLocals": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"pretty": true,
+		"lib": ["es5", "dom", "es2015.promise"],
+		"types": ["vue-typescript-import-dts"]
+	}
 }

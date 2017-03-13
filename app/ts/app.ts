@@ -1,10 +1,13 @@
-import Vue from 'vue'
-import App from './app.component'
+import Vue = require('vue')
+import * as vts from 'vue-typescript-component'
 
-// mount
-new Vue({
-  el: '#app',
-  render: h => h(App, {
-    props: { propMessage: 'World' }
-  })
-})
+import * as Counter from './counter.vue'
+import * as Parent from './parent.vue'
+
+@vts.component({components: {Counter, Parent}})
+export default class App extends Vue {
+	signChangeCount = 0
+	childSignChanged() {
+		this.signChangeCount++
+	}
+}
