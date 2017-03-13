@@ -10,6 +10,7 @@
         "inlineSourceMap": true,
         "inlineSources": true,
         "pretty": true,
-        "lib": ["es5", "dom", "es2015.promise"]
+        "lib": ["es5", "dom", "es2015.promise"],
+        "types": ["vue-typescript-import-dts"]
     }
 }
