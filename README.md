@@ -244,6 +244,7 @@ _.files(paths.assets.fonts)
 ## Contributors
 
 [View Contributors](https://github.com/CKGrafico/Gulp-Boilerplates/graphs/contributors)
+[Specially thanks vue-typescript-component](https://github.com/locoslab/vue-typescript-component)
 
 ## License
 
