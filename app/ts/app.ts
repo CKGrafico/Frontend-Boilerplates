@@ -1,4 +1,4 @@
-import Vue = require('vue')
+import Vue from 'vue'
 import * as vts from 'vue-typescript-component'
 
 import * as Counter from './counter.vue'

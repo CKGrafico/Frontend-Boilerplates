@@ -1,4 +1,4 @@
-import Vue = require('vue')
+import Vue from 'vue'
 import * as vts from 'vue-typescript-component'
 
 // it is also possible to use a complex interface that allows compile-time type checking
