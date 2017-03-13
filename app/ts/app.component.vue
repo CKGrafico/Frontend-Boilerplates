@@ -11,12 +11,4 @@
     </div>
 </template>
 
-<script>
-module.exports = require('./app.ts').default.vueComponentOptions
-</script>
-
-<style>
-body {
-    font-family: Verdana, Helvetica, sans-serif;
-}
-</style>
+<script> module.exports = require('./app.component.ts').default.vueComponentOptions </script>

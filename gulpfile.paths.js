@@ -7,6 +7,11 @@ let paths = {
             fonts: {}
         },
 
+        main: {
+            _files: 'app.ts',
+            _folder: 'ts',
+        },
+
         ts: {
             _files: '**/*.ts',
             _folder: 'ts',
@@ -23,12 +28,7 @@ let paths = {
             fonts: {}
         },
         css: {},
-        js: {},
-        temp: {},
-        main: {
-            _files: 'app.js',
-            _folder: 'temp',
-        },
+        js: {}
     }
 };
 

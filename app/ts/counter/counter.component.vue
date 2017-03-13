@@ -10,6 +10,4 @@
     </div>
 </template>
 
-<script>
-module.exports = require('./counter.ts').default.vueComponentOptions
-</script>
+<script> module.exports = require('./counter.component.ts').default.vueComponentOptions </script>

@@ -5,10 +5,10 @@ var tsify = require('tsify');
 
 module.exports = (gulp, paths, $, _) => {
     return browserify()
-    .add('./app/ts/index.ts')
+    .add(_.files(paths.app.main))
     .plugin(tsify, { noImplicitAny: true })
     .transform(vueify)
     .bundle()
     .on('error', function (error) { console.error(error.toString()); })
-    .pipe(fs.createWriteStream('./dist/js/app.js'));
+    .pipe(fs.createWriteStream(_.folder(paths.dist.js) + '/app.js'));
 };
