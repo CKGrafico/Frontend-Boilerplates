@@ -20,7 +20,7 @@ We try not only to use Gulp, also to use best practises and real examples that w
 - **[ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-dev):** Dev version of a basic and generic example.
 - **[node-ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master):** Stable version of node-based with TypeScript example.
 - **[node-ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-dev):** Dev version of node-based with TypeScript example.
-- **[vue-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master):** Stable version of vue-based example. [Todo]
+- **[vue-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master):** Stable version of vue-based example. 
 - **[vue-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-dev):** Dev version of vue-based example.
 - **ng2-master:** Stable version of angular2-based example. [To do]
 - **ng2-dev:** Dev version of angular2-based example.
