@@ -29,14 +29,19 @@
     "opn": "^4.0.2",
     "require.all": "^2.0.3",
     "rollup": "^0.41.5",
+    "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-vue": "^2.2.21",
     "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.2.1",
+    "vue-template-compiler": "^2.2.3"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",
-    "vue": "^2.2.2",
+    "vue": "^2.2.3",
     "vue-class-component": "^5.0.0",
     "vue-router": "^2.3.0"
   },
