@@ -36,15 +36,15 @@
     "tsify": "^3.0.0",
     "uglify-js": "^2.5.0",
     "vue": "^2.1.8",
-    "vue-typescript-component": "^0.6.1",
-    "vue-typescript-import-dts": "^2.0.0",
     "vueify": "^9.4.1"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",
     "vue": "^2.2.3",
     "vue-class-component": "^5.0.0",
-    "vue-router": "^2.3.0"
+    "vue-router": "^2.3.0",
+    "vue-typescript-component": "^0.6.1",
+    "vue-typescript-import-dts": "^2.0.0"
   },
   "description": "Boilerplate with Gulp + SASS and TypeScript with Vue",
   "repository": "https://github.com/CKGrafico/Gulp-Boilerplates",

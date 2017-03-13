@@ -1,7 +1,5 @@
 <template>
-    <div style="margin: 1em 1em">
-<h3>Hola parent</h3>
-    
+    <div class="ck-parent">
         <span style="display:inline-block; width:6em">{{ name }}</span>
         <span style="display:inline-block; width:3em; text-align: center">{{ count }}</span>
 

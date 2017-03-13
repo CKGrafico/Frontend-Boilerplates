@@ -9,16 +9,26 @@ let paths = {
 
         main: {
             _files: 'app.ts',
-            _folder: 'ts',
+            _folder: 'ts'
         },
 
         ts: {
             _files: '**/*.ts',
-            _folder: 'ts',
+            _folder: 'ts'
         },
 
         scss: {
+            _files: '**/*.scss'
+        },
+
+        scss_main: {
+            _files: 'app.scss',
+            _folder: 'scss'
+        },
+
+        scss_components: {
             _files: '**/*.scss',
+            _folder: 'ts'
         }
     },
 
