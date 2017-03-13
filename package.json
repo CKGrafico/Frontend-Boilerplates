@@ -2,11 +2,9 @@
   "name": "myapp",
   "version": "1.1.0",
   "scripts": {
-   "watchify": "watchify -vd -p tsify -p browserify-hmr -e app/ts/index.ts -o dist/app.js",
-    "serve": "http-server -c 1 -a localhost -o",
-    "start": "npm-run-all --parallel watchify watch",
     "dev": "gulp --env=development",
     "prod": "gulp --env=production",
+    "prewatch": "npm run dev",
     "watch": "gulp --env=development watcher"
   },
   "license": "MIT",
@@ -33,27 +31,14 @@
     "tslint": "^4.5.1",
     "typescript": "^2.2.1",
     "browserify": "^13.1.0",
-    "browserify-hmr": "^0.3.1",
     "cross-env": "^3.1.2",
     "npm-run-all": "^4.0.0",
-    "rplcr": "^0.2.2",
     "tsify": "^3.0.0",
     "uglify-js": "^2.5.0",
     "vue": "^2.1.8",
     "vue-typescript-component": "^0.6.1",
     "vue-typescript-import-dts": "^2.0.0",
-    "vueify": "^9.4.1",
-    "watchify": "^3.4.0"
-  },
-  "browserify": {
-    "transform": [
-      "vueify"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "vueify": "^9.4.1"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",

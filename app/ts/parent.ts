@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue = require('vue')
 import * as vts from 'vue-typescript-component'
 
 // the type-safe Listener interface of the child
