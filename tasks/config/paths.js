@@ -17,7 +17,7 @@ let paths = {
             _folder: 'js',
         },
 
-        scss: {
+        styles: {
             _files: '**/*.scss',
         }
     },
