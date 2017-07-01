@@ -1,4 +1,4 @@
-const paths = require('./gulpfile.paths');
+const paths = require('./paths');
 const gulp = require('gulp');
 const noop = require('gulp-noop');
 const NOT = true;
@@ -18,8 +18,10 @@ module.exports = {
 
     parsePath: (paths) => {
         let parser = (obj, parent) => {
+            let folder;
+
             if (parent) {
-                let folder = obj._folder;
+                folder = obj._folder;
                 if (folder) {
                     let i = parent.lastIndexOf('/');
                     folder = parent.substring(0, i) + `/${folder}`;
@@ -33,7 +35,7 @@ module.exports = {
 
             Object.keys(obj).forEach(key => {
                 if (typeof obj[key] === 'object') {
-                    parser(obj[key], `${parent || '.'}/${key}`);
+                    parser(obj[key], `${folder || parent || '.'}/${key}`);
                 }
             });
         };

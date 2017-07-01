@@ -32,5 +32,5 @@ let paths = {
     }
 };
 
-require('./gulpfile.helpers').parsePath(paths);
+require('./helpers').parsePath(paths);
 module.exports = paths;
