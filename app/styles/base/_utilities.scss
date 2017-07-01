@@ -1,8 +1,9 @@
 @import 'variables';
 @import 'mixins/offsets';
-
-@include generate-offsets(margin, m, 100);
-@include generate-offsets(padding, p, 100);
+$negative-offsets: true;
+$responsive-offsets: true;
+@include generate-offsets(margin, m, 10);
+@include generate-offsets(padding, p, 10);
 
 .u {
     &-align {
