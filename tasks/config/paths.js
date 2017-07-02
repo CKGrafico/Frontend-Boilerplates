@@ -9,12 +9,16 @@ let paths = {
 
         scripts: {
             _files: '**/*.js',
-            _folder: 'js',
-        },
 
-        main: {
-            _files: 'app.js',
-            _folder: 'js',
+            app: {
+                _folder: '.',
+                _files: 'app.js'
+            },
+
+            vendor: {
+                _folder: '.',
+                _files: 'vendor.js'
+            }
         },
 
         styles: {
@@ -28,7 +32,7 @@ let paths = {
             fonts: {}
         },
         css: {},
-        js: {}
+        scripts: {}
     }
 };
 

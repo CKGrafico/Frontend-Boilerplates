@@ -16,13 +16,21 @@ module.exports = {
         return not === NOT ? '!' + path._folder : path._folder;
     },
 
+    abs: (path, abs = __dirname) => {
+        return abs + path.slice(1);
+    },
+
     parsePath: (paths) => {
         let parser = (obj, parent) => {
             let folder;
 
             if (parent) {
                 folder = obj._folder;
-                if (folder) {
+
+                if (folder === '.') {
+                    let i = parent.lastIndexOf('/');
+                    folder = parent.substring(0, i);
+                } else if (folder) {
                     let i = parent.lastIndexOf('/');
                     folder = parent.substring(0, i) + `/${folder}`;
                 } else {
