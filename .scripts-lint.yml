@@ -145,7 +145,7 @@ rules:
   consistent-this:
     - 0
     - that
-  eol-last: 2
+  eol-last: 0
   func-names: 0
   func-style:
     - 0

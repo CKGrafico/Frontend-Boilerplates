@@ -50,6 +50,7 @@ On this branch _(Basic)_ we use:
 
 ## Tasks Technologies
 On this branch _(Basic)_ we use:
+- **Concurrently:** Execute two tasks in parallel.
 - **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
 - **Gulp Clean CSS:** To minify CSS.
 - **Gulp Connect:** Preview website on local server.
@@ -60,34 +61,29 @@ On this branch _(Basic)_ we use:
 - **Gulp Load plugins:** Load all the plugins once.
 - **Gulp Newer:** On some tasks we want to do something only with the newer files.
 - **Gulp Noop:** Basic Noop but on stream.
-- **Gulp Rollup:** To transpile out code.
 - **Gulp Sass:** Compile Scss to CSS.
 - **Gulp Sasslint:** Linting for SASS.
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
 - **Gulp Uglify:** Minify and obfuscate JavaScript.
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
-- **Rollup Babel:** To use Babel with Rollup _(ES2015 -> ES5)_.
-- **Require CommonJS:** Uses CommonJS for modules.
-- **Require Inject:** Include external dependencies to our code.
-- **Require Node Resolve:** Uses node resolution for path names.
-- **Yarn:** Instead of NPM.
+- **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
 
 **[ back to top](#table-of-contents)**
 
 ## Running tasks
 To run the tasks we have these three commands:
 - Install dependencies:
-> yarn install
+> npm install
 
 - Running tasks on development mode:
-> yarn run dev
+> npm run dev
 
 - Running tasks on production mode:
-> yarn run prod
+> npm run prod
 
-- Running tasks on watch mode:
-> yarn run watch
+- Running tasks on watch mode and serve the app:
+> npm start
 
 **[ back to top](#table-of-contents)**
 
@@ -112,10 +108,11 @@ On this branch _(Basic)_ the structure is:`
 │   │   └── images/
 │   │       └── example.jpg
 │   │
-│   ├── js/
+│   ├── scripts/
 │   │   └── app.js
+│   │   └── vendor.js
 │   │
-│   └── scss/
+│   └── styles/
 │       ├── base/
 │       │   ├──  mixins # Some mixins to use on base folder
 │       │   ├── _fonts.scss # Load the fonts for your project
@@ -135,23 +132,22 @@ On this branch _(Basic)_ the structure is:`
 ├── dist/ # Distribution folder
 │
 ├── tasks/ # Gulp tasks
+│   ├── config/
+│   │   ├── helpers.js # Helpers that useful for tasks
+│   │   └── paths.js # You can define the paths of the project inside this file
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
-│   ├── scripts.js # Transpile and compress JavaScript depending of the environment
-│   ├── scripts-lint.js # Linting for JavaScript
-│   ├── scss.js # Compile and compress SASS files when is necessary
-│   ├── scss-lint.js # Linting for SASS
 │   ├── serve.js # Open a browser with the preview of the project
+│   ├── styles.js # Compile and compress SASS files when is necessary
+│   ├── styles-lint.js # Linting for SASS
 │   └── watch.js # Watcher for files
 │
 ├── .sass-lint.yml # SASS linting configuration
 ├── .scripts-lint.yml # JavaScript linting configuration
-├── gulpfile.helpers.js # Some methods to use on gulp tasks
 ├── gulpfile.js # Main gulp file
-├── gulpfile.paths.js # Where you can configure the paths to use with tasks
 ├── package.json # Configure npm tasks and dependencies
-└── yarn-lock # Yarn file with the specific version to download of each dependency
+└── webpack.config.js # The Webpack configuration for scripts
 ```
 
 **[ back to top](#table-of-contents)**
@@ -169,7 +165,7 @@ tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displa
 
 And these are the only two tasks:
 ```
-gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
+gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, tasks.copy, tasks.assets));
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
@@ -194,6 +190,11 @@ Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
 _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
+
+```
+_.abs(_.folder(paths.app.scripts), __dirname)
+```
+Change path to absolute path: _'C:/project/app/js'_
 
 **[ back to top](#table-of-contents)**
 

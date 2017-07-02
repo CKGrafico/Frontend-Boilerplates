@@ -9,15 +9,19 @@ let paths = {
 
         scripts: {
             _files: '**/*.js',
-            _folder: 'js',
+
+            app: {
+                _folder: '.',
+                _files: 'app.js'
+            },
+
+            vendor: {
+                _folder: '.',
+                _files: 'vendor.js'
+            }
         },
 
-        main: {
-            _files: 'app.js',
-            _folder: 'js',
-        },
-
-        scss: {
+        styles: {
             _files: '**/*.scss',
         }
     },
@@ -28,9 +32,9 @@ let paths = {
             fonts: {}
         },
         css: {},
-        js: {}
+        scripts: {}
     }
 };
 
-require('./gulpfile.helpers').parsePath(paths);
+require('./helpers').parsePath(paths);
 module.exports = paths;

@@ -1,0 +1,69 @@
+@import '../variables';
+
+// str replace https://css-tricks.com/snippets/sass/str-replace-function/
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@mixin width-offset-generator($type, $t, $size, $suffix, $jump, $units, $want-neg, $want-medias) {
+    $offsets: '', top, left, bottom, right;
+    $off: '', t, l, b, r;
+    $max: $size / $jump;
+    $mediaslength: length($medias);
+
+    @for $i from 0 through $max {
+        @each $offset in $offsets {
+            $o: nth($off, index($offsets, $offset));
+            $value: if($i == 0, 0, $jump * $i);
+            $uni: if($i == 0, #{''}, #{$units});
+            $off-value: if($o == '', #{''}, '-' + $offset);
+            $class: '.u-' + $t + $o + '-' + str-replace('' + $value, '.', '\\.');
+
+            #{$class} {
+                #{$type}#{$off-value}#{$suffix}: $value + $uni;
+            }
+
+            @if ($want-neg) {
+                #{$class+'.u-' + $t + $o + '--neg'} {
+                    #{$type}#{$off-value}#{$suffix}: -1 * $value + $uni;
+                }
+            }
+
+            @if($want-medias) {
+                @for $i from 1 through $mediaslength - 1 {
+                    $mediavalue: nth($mediavalues, $i);
+                    $aftervalue: nth($mediavalues, $i + 1);
+
+                    @media screen and (max-width: $mediavalue) {
+                        #{$class + '\\@' + nth($medias, $i)} {
+                            #{$type}#{$off-value}#{$suffix}: $value + $uni !important;
+                        }
+
+                        @if ($want-neg) {
+                            #{$class + '\\@' + nth($medias, $i)+'.u-' + $t + $o + '--neg'} {
+                                #{$type}#{$off-value}#{$suffix}: -1 * $value + $uni;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+$negative-offsets: true !default;
+$responsive-offsets: true !default;
+
+@mixin generate-offsets($type, $t, $size) {
+    @include width-offset-generator($type, $t, $size, #{''}, .5, rem, $negative-offsets, $responsive-offsets);
+}
+
+@mixin generate-widths($type, $t, $size) {
+    @include width-offset-generator($type, $t, $size, '-width', 1, px, false, false);
+}

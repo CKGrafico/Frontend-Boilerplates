@@ -4,18 +4,15 @@ $color-brand-dark: darken($color-brand, 10%);
 $color-brand-darker: darken($color-brand, 20%);
 $color-brand-bright: lighten($color-brand, 10%);
 $color-brand-brighter: lighten($color-brand, 20%);
-
 $color-secondary: #FFDD2E;
 $color-secondary-dark: darken($color-secondary, 10%);
 $color-secondary-darker: darken($color-secondary, 20%);
 $color-secondary-bright: lighten($color-secondary, 10%);
 $color-secondary-brighter: lighten($color-secondary, 20%);
-
 $color-background-dark: #333333;
 $color-background-darker: #000000;
 $color-background-bright: #EEEEEE;
 $color-background-brighter: #FFFFFF;
-
 $color-foreground-dark: #333333;
 $color-foreground-darker: #000000;
 $color-foreground-bright: #EEEEEE;
@@ -33,7 +30,6 @@ $font-weight-normal: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 800;
-
 $font-size-xs: .5rem;    // 8px
 $font-size-s: .85rem;    // 13.6px
 $font-size-m: 1rem;      // 16px
@@ -49,9 +45,6 @@ $media-screen-l: 1280px;
 $media-screen-xl: 1440px;
 $media-screen-xxl: 1680px;
 $media-screen-xxxl: 1920px;
-
-// Margins
-$margin-center: 10vw;
 
 // Variables for mixins
 $medias: xxs, xs, s, m, l, xl, xxl, xxxl;
