@@ -15,6 +15,7 @@
     "babel-loader": "^7.1.1",
     "concurrently": "^3.5.0",
     "del": "^2.2.2",
+    "eslint-loader": "^1.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.3.2",

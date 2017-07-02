@@ -16,12 +16,11 @@ module.exports = env => ({
     module: {
         rules: [
             {
-                test: /\.ts$/,
+                test: /\.js$/,
                 enforce: 'pre',
-                loader: 'tslint-loader',
+                loader: 'eslint-loader',
                 options: {
-                    configFile: 'tslint.json',
-                    fix: false  // this will fix simple errors 
+                    configFile: '.scripts-lint.yml'
                 }
             },
             {
