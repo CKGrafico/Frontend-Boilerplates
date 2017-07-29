@@ -2,12 +2,14 @@
   "name": "myapp",
   "version": "2.0.0",
   "scripts": {
-    "dev": "gulp --env=development",
-    "postdev": "webpack",
     "prod": "gulp --env=production",
     "postprod": "webpack -p --env.NODE_ENV='\"production\"'",
-    "start": "npm run dev",
-    "poststart": "concurrently \"gulp watcher --env=development\" \"webpack --watch\" --names \"GULP,PACK\" --prefix name"
+    "dev": "gulp --env=development",
+    "postdev": "webpack --env.NODE_ENV='\"development\"'",
+    "local": "gulp --env=local",
+    "postlocal": "webpack --env.NODE_ENV='\"local\"'",
+    "start": "npm run local",
+    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV='\"local\"' --watch\" --names \"GULP,PACK\" --prefix name"
   },
   "license": "MIT",
   "devDependencies": {

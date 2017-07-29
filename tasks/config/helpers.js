@@ -7,6 +7,28 @@ let envs = {};
 const keyFolder = 'folder';
 const keyFiles = 'files';
 
+let clone = (finalObj, initalObj) => {
+    var obj = finalObj || {};
+    for (var i in initalObj) {
+        var prop = initalObj[i];
+
+        if (prop === obj) {
+            continue;
+        }
+
+        if (typeof prop === 'object') {
+            if (prop.constructor === Array) {
+                obj[i] = clone([], prop);
+            } else {
+                obj[i] = Object.create(prop);
+            }
+        } else {
+            obj[i] = prop;
+        }
+    }
+    return obj;
+}
+
 module.exports = {
     NOT: NOT,
 
@@ -21,6 +43,8 @@ module.exports = {
     abs: (path, abs = __dirname) => {
         return abs + path.slice(1);
     },
+
+    clone: (finalObj, initalObj) => clone(finalObj, initalObj),
 
     parsePath: (paths) => {
         let parser = (obj, parent) => {
