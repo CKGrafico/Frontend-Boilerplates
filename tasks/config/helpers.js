@@ -27,7 +27,7 @@ module.exports = {
             if (parent) {
                 folder = obj._folder;
 
-                if (folder === '.') {
+                if (folder === '..') {
                     let i = parent.lastIndexOf('/');
                     folder = parent.substring(0, i);
                 } else if (folder) {

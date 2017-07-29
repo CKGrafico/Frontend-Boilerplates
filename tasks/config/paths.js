@@ -11,12 +11,12 @@ let paths = {
             _files: '**/*.js',
 
             app: {
-                _folder: '.',
+                _folder: '..',
                 _files: 'app.js'
             },
 
             vendor: {
-                _folder: '.',
+                _folder: '..',
                 _files: 'vendor.js'
             }
         },
