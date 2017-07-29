@@ -3,13 +3,13 @@
   "version": "2.0.0",
   "scripts": {
     "prod": "gulp --env=production",
-    "postprod": "webpack -p --env.NODE_ENV='\"production\"'",
+    "postprod": "webpack --env.NODE_ENV=production",
     "dev": "gulp --env=development",
-    "postdev": "webpack --env.NODE_ENV='\"development\"'",
+    "postdev": "webpack --env.NODE_ENV=development",
     "local": "gulp --env=local",
-    "postlocal": "webpack --env.NODE_ENV='\"local\"'",
+    "postlocal": "webpack --env.NODE_ENV=local",
     "start": "npm run local",
-    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV='\"local\"' --watch\" --names \"GULP,PACK\" --prefix name"
+    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV=local --watch\" --names \"GULP,PACK\" --prefix name"
   },
   "license": "MIT",
   "devDependencies": {
