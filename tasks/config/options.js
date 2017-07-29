@@ -6,19 +6,13 @@ const _ = require('./helpers');
 _.parsePath(options.paths);
 
 // Configure environments
-$.environment;
-let template = {};
-_.clone(template, $.environment.development);
+const notAllowed = ['current', 'if', 'is'];
+options.environments = {};
+Object.keys($.environment).forEach(env => {
+    if (notAllowed.includes(env)) {
+        return;
+    }
 
-Object.keys(options.environments).forEach(env => {
-    let envConfig = {};
-    _.clone(envConfig, template);
-    envConfig.aliases = [];
-    envConfig.name = env;
-
-    $.environment[env] = envConfig;
+    options.environments[env] = env;
 });
-
-$.environment;
-
 module.exports = options;

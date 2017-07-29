@@ -1,10 +1,5 @@
 {
     "port": 4000,
-    "environments": {
-        "production": "production",
-        "development": "development",
-        "local": "local"
-    },
     "paths": {
         "app": {
             "assets": {
