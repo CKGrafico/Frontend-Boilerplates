@@ -40,9 +40,9 @@ We try not only to use Gulp, also to use best practises and real examples that w
 ## App Technologies
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **EcmaScript2015:** All the code uses this version of ES, also gulp files.
+- **TypeScript:** All the code uses TypeScript.
 - **jQuery:** Only to show how to import an external library.
-- **Linting:** Linting for JavaScript and SASS.
+- **Linting:** Linting for TypeScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
@@ -55,7 +55,6 @@ On this branch _(Basic)_ we use:
 - **Gulp Clean CSS:** To minify CSS.
 - **Gulp Connect:** Preview website on local server.
 - **Gulp Environment:** Call to different tasks depending of the environment.
-- **Gulp Eslint:** Linting for JavaScript.
 - **Gulp Fontmin:** Generate fonts from .ttf.
 - **Gulp Imagemin:** Compress images.
 - **Gulp Load plugins:** Load all the plugins once.
@@ -64,10 +63,10 @@ On this branch _(Basic)_ we use:
 - **Gulp Sass:** Compile Scss to CSS.
 - **Gulp Sasslint:** Linting for SASS.
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
-- **Gulp Uglify:** Minify and obfuscate JavaScript.
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
-- **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
+- **Webpack and Babel:** To use Babel with Webpack _(TypeScript -> ES5)_ and create a bundle.
+- **Webpack and Linting:** To check TypeScript files.
 
 **[ back to top](#table-of-contents)**
 
@@ -113,8 +112,8 @@ On this branch _(Basic)_ the structure is:`
 │   │       └── example.jpg
 │   │
 │   ├── scripts/
-│   │   └── app.js
-│   │   └── vendor.js
+│   │   └── app.ts
+│   │   └── vendor.ts
 │   │
 │   └── styles/
 │       ├── base/
@@ -140,8 +139,8 @@ On this branch _(Basic)_ the structure is:`
 │   │   ├── helpers.js # Helpers that useful for tasks
 │   │   └── options.js # Internal operation to use with tasks
 │   ├── rules/
-│   │   ├── scripts.js # Create a bundle for JavaScript files
-│   │   └── scripts-lint.js # Check linting of JavaScript files
+│   │   ├── scripts.js # Create a bundle for TypeScript files
+│   │   └── scripts-lint.js # Check linting of TypeScript files
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
@@ -152,7 +151,7 @@ On this branch _(Basic)_ the structure is:`
 │
 ├── .gulpenvrc.yml # Environments configuration
 ├── .sass-lint.yml # SASS linting configuration
-├── .scripts-lint.yml # JavaScript linting configuration
+├── .scripts-lint.json # TypeScript linting configuration
 ├── gulpfile.js # Main gulp file
 ├── package.json # Configure npm tasks and dependencies
 ├── tasks.config.json # Configure paths and options for tasks
