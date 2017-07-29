@@ -1,48 +1,40 @@
 const webpack = require('webpack')
-const paths = require('./tasks/config/paths');
+const { paths, environments } = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
-const PRODUCTION = 'production';
+let rules = require('require.all')('./tasks/rules');
 
-module.exports = env => ({
-    entry: {
-        app: _.files(paths.app.scripts.app),
-        vendor: _.files(paths.app.scripts.vendor)
-    },
-    output: {
-        path: _.abs(_.folder(paths.dist.scripts), __dirname),
-        filename: '[name].js'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                loader: 'eslint-loader',
-                options: {
-                    configFile: '.scripts-lint.yml'
-                }
-            },
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'babel-loader'
-                    }
-                ]
-            }
-        ]
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            'window.$': 'jquery'
-        }),
-        // extract vendor as a separate bundle
-        new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
-    ],
-    devtool: (() => env && env.NODE_ENV.includes(PRODUCTION) ? false : 'inline-source-map')()
-});
+module.exports = env => {
+    let environment = env.NODE_ENV;
+    env.NODE_ENV = JSON.stringify(environment);
+
+    rules((name, rule) => rule(environment, environments));
+
+    return ({
+        entry: {
+            app: _.files(paths.app.scripts.app),
+            vendor: _.files(paths.app.scripts.vendor)
+        },
+        output: {
+            path: _.abs(_.folder(paths.dist.scripts), __dirname),
+            filename: '[name].js'
+        },
+        module: {
+            rules: [
+                rules.scriptsLint,
+                rules.scripts
+            ]
+        },
+        plugins: [
+            new webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery',
+                'window.jQuery': 'jquery',
+                'window.$': 'jquery'
+            }),
+            // extract vendor as a separate bundle
+            new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
+        ],
+        devtool: (() => environment === environments.production ? false : 'inline-source-map')()
+    })
+};

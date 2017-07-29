@@ -76,11 +76,14 @@ To run the tasks we have these three commands:
 - Install dependencies:
 > npm install
 
+- Running tasks on production mode:
+> npm run prod
+
 - Running tasks on development mode:
 > npm run dev
 
-- Running tasks on production mode:
-> npm run prod
+- Running tasks on local mode:
+> npm run local
 
 - Running tasks on watch mode and serve the app:
 > npm start
@@ -89,8 +92,9 @@ To run the tasks we have these three commands:
 
 ## Environments
 On this project we have two environments:
-- **Development:** To use with dev and watch tasks
-- **Production:** To minify the code and use on production
+- **Local:** Use this on your computer
+- **Development:** Use this on your dev server
+- **Production:** Use this on your production server
 
 ## Project structure
 On this branch _(Basic)_ the structure is:`
@@ -134,7 +138,10 @@ On this branch _(Basic)_ the structure is:`
 ├── tasks/ # Gulp tasks
 │   ├── config/
 │   │   ├── helpers.js # Helpers that useful for tasks
-│   │   └── paths.js # You can define the paths of the project inside this file
+│   │   └── options.js # Internal operation to use with tasks
+│   ├── rules/
+│   │   ├── scripts.js # Create a bundle for JavaScript files
+│   │   └── scripts-lint.js # Check linting of JavaScript files
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
@@ -143,10 +150,12 @@ On this branch _(Basic)_ the structure is:`
 │   ├── styles-lint.js # Linting for SASS
 │   └── watch.js # Watcher for files
 │
+├── .gulpenvrc.yml # Environments configuration
 ├── .sass-lint.yml # SASS linting configuration
 ├── .scripts-lint.yml # JavaScript linting configuration
 ├── gulpfile.js # Main gulp file
 ├── package.json # Configure npm tasks and dependencies
+├── tasks.config.json # Configure paths and options for tasks
 └── webpack.config.js # The Webpack configuration for scripts
 ```
 
@@ -198,17 +207,13 @@ Change path to absolute path: _'C:/project/app/js'_
 
 **[ back to top](#table-of-contents)**
 
-## Gulpfile paths
-We tried to do it as easy as possible and this is the result.
-We have an object with our paths structure that can be generated automatically and can be extended.
-
-If you open gulpfile.paths and you write this:
-
+## Tasks configuration
+You can configure different things related with the tasks.
 ```
-let paths = {
-    app: {
-        assets: {
-            images: {}
+{
+    "app": {
+        "assets": {
+            "images": {}
         }
     }
 };
@@ -225,13 +230,13 @@ _.files(paths.assets.images)
 But you can extend this structure:
 
 ```
-let paths = {
-    app: {
-        assets: {
-            images: {},
-            fonts: {
-                _files: '**/*.ttf',
-                _folder: 'custom',
+{
+    "app": {
+        "assets": {
+            "images": {},
+            "fonts": {
+                "files": "**/*.ttf",
+                "folder": "custom"
             }
         }
     }
@@ -244,6 +249,34 @@ _.folder(paths.assets.fonts);
 
 _.files(paths.assets.fonts)
 // ./app/assets/custom/**/*.ttf
+```
+
+Also you can use the parent folder
+
+```
+{
+    "app": {
+        "assets": {
+            "images": {},
+            "fonts": {
+                "files": "**/*.ttf",
+                "folder": "custom"
+                "roboto": {
+                    "files": "Roboto.ttf",
+                    "folder": "..",
+                }
+            }
+        }
+    }
+};
+```
+And the result will look like that:
+```
+_.folder(paths.assets.fonts.roboto);
+// ./app/assets/fonts/
+
+_.files(paths.assets.fonts.roboto)
+// ./app/assets/fonts/roboto.ttf
 ```
 
 **[ back to top](#table-of-contents)**
