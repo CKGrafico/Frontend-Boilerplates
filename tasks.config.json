@@ -7,14 +7,14 @@
                 "fonts": {}
             },
             "scripts": {
-                "files": "**/*.js",
+                "files": "**/*.ts",
                 "app": {
                     "folder": "..",
-                    "files": "app.js"
+                    "files": "app.ts"
                 },
                 "vendor": {
                     "folder": "..",
-                    "files": "vendor.js"
+                    "files": "vendor.ts"
                 }
             },
             "styles": {

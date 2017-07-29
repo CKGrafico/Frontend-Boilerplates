@@ -17,7 +17,6 @@
     "babel-loader": "7.1.1",
     "concurrently": "3.5.0",
     "del": "2.2.2",
-    "eslint-loader": "1.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-clean-css": "2.3.2",
@@ -35,6 +34,10 @@
     "gulp-uglify": "2.0.0",
     "opn": "4.0.2",
     "require.all": "2.0.3",
+    "ts-loader": "^2.3.2",
+    "tslint": "^5.5.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.2",
     "webpack": "3.0.0"
   },
   "dependencies": {
