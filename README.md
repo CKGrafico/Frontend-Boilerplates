@@ -55,7 +55,6 @@ On this branch _(Basic)_ we use:
 - **Gulp Clean CSS:** To minify CSS.
 - **Gulp Connect:** Preview website on local server.
 - **Gulp Environment:** Call to different tasks depending of the environment.
-- **Gulp Eslint:** Linting for JavaScript.
 - **Gulp Fontmin:** Generate fonts from .ttf.
 - **Gulp Imagemin:** Compress images.
 - **Gulp Load plugins:** Load all the plugins once.
@@ -68,6 +67,7 @@ On this branch _(Basic)_ we use:
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
 - **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
+- **Webpack and Linting:** To check TypeScript files
 
 **[ back to top](#table-of-contents)**
 
