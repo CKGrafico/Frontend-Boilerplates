@@ -4,13 +4,11 @@ const _ = require('./tasks/config/helpers');
 
 let rules = require('require.all')('./tasks/rules');
 
-const PRODUCTION = JSON.stringify(environments.production);
-const DEVELOPMENT = JSON.stringify(environments.development);
-const LOCAL = JSON.stringify(environments.local);
-
 module.exports = env => {
-    rules((name, rule) => rule(env.NODE_ENV, environments));
-    env.NODE_ENV = JSON.stringify(env.NODE_ENV);
+    let environment = env.NODE_ENV;
+    env.NODE_ENV = JSON.stringify(environment);
+
+    rules((name, rule) => rule(environment, environments));
 
     return ({
         entry: {
@@ -24,15 +22,7 @@ module.exports = env => {
         module: {
             rules: [
                 rules.scriptsLint,
-                {
-                    test: /\.js$/,
-                    exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'babel-loader'
-                        }
-                    ]
-                }
+                rules.scripts
             ]
         },
         plugins: [
@@ -45,6 +35,6 @@ module.exports = env => {
             // extract vendor as a separate bundle
             new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
         ],
-        devtool: (() => env.NODE_ENV === PRODUCTION ? false : 'inline-source-map')()
+        devtool: (() => environment === environments.production ? false : 'inline-source-map')()
     })
 };
