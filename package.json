@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "2.0.1",
+  "version": "2.1",
   "scripts": {
     "prod": "gulp --env=production",
     "postprod": "webpack --env.NODE_ENV=production",

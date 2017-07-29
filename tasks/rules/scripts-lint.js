@@ -2,13 +2,13 @@ module.exports = (env, envs) => {
     let options = {
         [envs.production]: {
             configFile: '.scripts-lint.yml',
-            emitErrors: true,
-            failOnHint: true
+            emitError: true,
+            failOnError: true
         },
         [envs.development]: {
             configFile: '.scripts-lint.yml',
-            emitErrors: true,
-            failOnHint: true
+            emitError: true,
+            failOnError: true
         },
         [envs.local]: {
             configFile: '.scripts-lint.yml'
