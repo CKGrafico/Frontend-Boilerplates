@@ -5,6 +5,6 @@ module.exports = (gulp, paths, $, _, options) => {
 
     $.connect.server({
         root: _.folder(paths.dist),
-        port: paths.port
+        port: options.port
     });
 };
