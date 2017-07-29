@@ -3,11 +3,11 @@ const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 
 // Import configurations
-const paths = require('./tasks/config/paths');
+const options = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
 let tasks = require('require.all')('./tasks');
-tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displayName = name; return func});
+tasks((name, task) => { func = () => task(gulp, options.paths, $, _, options, tasks); func.displayName = name; return func});
 
 // Configure gulp tasks
 gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, tasks.copy, tasks.assets));

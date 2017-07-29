@@ -1,0 +1,38 @@
+{
+    "port": 4000,
+    "environments": {
+        "production": "production",
+        "development": "development",
+        "local": "local"
+    },
+    "paths": {
+        "app": {
+            "assets": {
+                "images": {},
+                "fonts": {}
+            },
+            "scripts": {
+                "files": "**/*.js",
+                "app": {
+                    "folder": "..",
+                    "files": "app.js"
+                },
+                "vendor": {
+                    "folder": "..",
+                    "files": "vendor.js"
+                }
+            },
+            "styles": {
+                "files": "**/*.scss"
+            }
+        },
+        "dist": {
+            "assets": {
+                "images": {},
+                "fonts": {}
+            },
+            "css": {},
+            "scripts": {}
+        }
+    }
+}

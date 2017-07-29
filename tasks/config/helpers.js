@@ -1,19 +1,21 @@
-const paths = require('./paths');
 const gulp = require('gulp');
 const noop = require('gulp-noop');
 const NOT = true;
 
 let envs = {};
 
+const keyFolder = 'folder';
+const keyFiles = 'files';
+
 module.exports = {
     NOT: NOT,
 
     files: (path, not) => {
-        return not === NOT ? '!' + path._files : path._files;
+        return not === NOT ? '!' + path[keyFiles] : path[keyFiles];
     },
 
     folder: (path, not) => {
-        return not === NOT ? '!' + path._folder : path._folder;
+        return not === NOT ? '!' + path[keyFolder] : path[keyFolder];
     },
 
     abs: (path, abs = __dirname) => {
@@ -25,7 +27,7 @@ module.exports = {
             let folder;
 
             if (parent) {
-                folder = obj._folder;
+                folder = obj[keyFolder];
 
                 if (folder === '..') {
                     let i = parent.lastIndexOf('/');
@@ -37,8 +39,8 @@ module.exports = {
                     folder = parent;
                 }
 
-                obj._folder = folder;
-                obj._files = obj._files ? `${folder}/${obj._files}` : `${folder}/**/*.*`;
+                obj[keyFolder] = folder;
+                obj[keyFiles] = obj[keyFiles] ? `${folder}/${obj[keyFiles]}` : `${folder}/**/*.*`;
             }
 
             Object.keys(obj).forEach(key => {

@@ -1,5 +1,5 @@
 const webpack = require('webpack')
-const paths = require('./tasks/config/paths');
+const {paths, environments} = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
 const PRODUCTION = 'production';
