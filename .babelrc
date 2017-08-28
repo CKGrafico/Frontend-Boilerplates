@@ -3,6 +3,7 @@
         "es2015"
     ],
     "plugins": [
-        "babel-polyfill"
+        "babel-polyfill",
+        "syntax-dynamic-import"
     ]
 }

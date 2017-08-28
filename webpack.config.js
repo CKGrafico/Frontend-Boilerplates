@@ -18,7 +18,8 @@ module.exports = env => {
         },
         output: {
             path: _.abs(_.folder(paths.dist.scripts), __dirname),
-            filename: '[name].js'
+            filename: '[name].js',
+            publicPath: 'scripts/'
         },
         module: {
             rules: [

@@ -4,5 +4,5 @@ import Template from './city-list.component.html?style=cities/city-list/city-lis
 
 @Template
 @Component
-export class CityListComponent extends Vue {
+export default class CityListComponent extends Vue {
 }

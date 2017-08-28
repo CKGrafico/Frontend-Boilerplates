@@ -1,15 +1,14 @@
 import { RouteConfig } from 'vue-router';
-import { CitiesComponent, CityListComponent } from '.';
 
 export let citiesRoutes: RouteConfig = {
     path: '/cities',
     name: 'cities',
-    component: CitiesComponent,
+    component: () => import('./cities.component'),
     children: [
         {
             path: '',
             name: 'city-list',
-            component: CityListComponent
+            component: () => import('./city-list/city-list.component')
         },
         // {
         //     path: '/:id',
