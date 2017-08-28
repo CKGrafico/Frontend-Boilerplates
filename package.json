@@ -34,14 +34,18 @@
     "gulp-uglify": "2.0.0",
     "opn": "4.0.2",
     "require.all": "2.0.3",
-    "ts-loader": "^2.3.2",
-    "tslint": "^5.5.0",
-    "tslint-loader": "^3.5.3",
-    "typescript": "^2.4.2",
+    "ts-loader": "2.3.2",
+    "tslint": "5.5.0",
+    "tslint-loader": "3.5.3",
+    "typescript": "2.4.2",
+    "vue-property-decorator": "5.2.1",
+    "vue-template-compiler": "2.4.2",
+    "vue-template-loader": "0.3.1",
     "webpack": "3.0.0"
   },
   "dependencies": {
-    "normalize-scss": "6.0.0"
+    "normalize-scss": "6.0.0",
+    "vue": "2.4.2"
   },
   "description": "Boilerplate with Gulp + SASS and Vue + TypeScript",
   "repository": "https://github.com/CKGrafico/Frontend-Boilerplates",

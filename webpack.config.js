@@ -22,10 +22,20 @@ module.exports = env => {
         module: {
             rules: [
                 rules.scriptsLint,
-                rules.scripts
+                rules.scripts,
+                rules.html
             ]
         },
+        resolve: {
+            extensions: ['.ts', '.js'],
+            alias: {
+                'vue$': 'vue/dist/vue.runtime.common.js'
+            }
+        },
         plugins: [
+            new webpack.DefinePlugin({
+                'global': {}
+            }),
             // extract vendor as a separate bundle
             new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
         ],
