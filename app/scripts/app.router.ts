@@ -14,7 +14,7 @@ export function Router() {
                 path: '/',
                 redirect: '/cities',
             },
-            citiesRoutes
+            ...citiesRoutes
         ]
     });
 
