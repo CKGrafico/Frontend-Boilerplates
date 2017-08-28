@@ -9,7 +9,7 @@ export class App {
 
     public bootstrap(): any {
         let options = {
-            el: '.app',
+            el: '.main',
             render: create => create(AppComponent)
         };
 
