@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const path = require('path');
 const { paths, environments } = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
@@ -29,6 +30,10 @@ module.exports = env => {
         },
         resolve: {
             extensions: ['.ts', '.js'],
+            modules: [
+                path.resolve(__dirname, 'dist/css/scripts'),
+                'node_modules'
+            ],
             alias: {
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
