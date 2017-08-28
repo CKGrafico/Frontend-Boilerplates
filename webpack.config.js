@@ -23,6 +23,7 @@ module.exports = env => {
             rules: [
                 rules.scriptsLint,
                 rules.scripts,
+                rules.css,
                 rules.html
             ]
         },

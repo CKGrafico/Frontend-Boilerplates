@@ -1,4 +1,4 @@
-declare module '*.html' {
+declare module '*.css' {
     import Vue = require('vue')
     interface Template {
       <V extends Vue>(options: Vue.ComponentOptions<V>): Vue.ComponentOptions<V>

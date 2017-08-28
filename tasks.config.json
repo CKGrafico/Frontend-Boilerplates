@@ -18,6 +18,7 @@
                 }
             },
             "styles": {
+                "folder": "..",
                 "files": "**/*.scss"
             }
         },
