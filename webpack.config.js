@@ -26,12 +26,6 @@ module.exports = env => {
             ]
         },
         plugins: [
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery',
-                'window.$': 'jquery'
-            }),
             // extract vendor as a separate bundle
             new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
         ],

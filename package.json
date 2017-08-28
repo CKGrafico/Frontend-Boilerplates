@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "myapp-vue",
   "version": "2.1.1",
   "scripts": {
     "prod": "gulp --env=production",
@@ -41,10 +41,9 @@
     "webpack": "3.0.0"
   },
   "dependencies": {
-    "jquery": "3.1.1",
     "normalize-scss": "6.0.0"
   },
-  "description": "Boilerplate with Gulp + SASS and ES6",
-  "repository": "https://github.com/CKGrafico/Gulp-Boilerplates",
+  "description": "Boilerplate with Gulp + SASS and Vue + TypeScript",
+  "repository": "https://github.com/CKGrafico/Frontend-Boilerplates",
   "author": "Quique Fdez Guerra @CKGrafico"
 }
