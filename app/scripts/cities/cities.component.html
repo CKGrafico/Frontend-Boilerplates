@@ -1,4 +1,10 @@
 <div class="cities">
     <header class="cities-header">Cities</header>
+    <!-- in city-list not here!!! -->
+    <ul>
+        <li v-for="city in cities">
+            {{city.title}}
+        </li>
+    </ul>
     <router-view></router-view>
 </div>
