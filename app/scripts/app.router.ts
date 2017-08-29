@@ -4,7 +4,7 @@ import { citiesRoutes } from './cities';
 
 Vue.use(VueRouter);
 
-export function Router() {
+export function router() {
     let router: VueRouter;
 
     router = new VueRouter({

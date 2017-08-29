@@ -1,11 +1,12 @@
 import { Vue } from 'vue-property-decorator';
-import { Router } from './app.router';
+import { router } from './app.router';
+import { containerBuilder } from './app.container';
 import { AppComponent } from './app.component';
 import { CitiesSeed } from './core/seeds';
 
-// APP bootstraping
 export class App {
     constructor() {
+        containerBuilder();
         this.bootstrap();
     }
 
@@ -18,7 +19,7 @@ export class App {
 
         let options = {
             el: '.main',
-            router: Router(),
+            router: router(),
             render: create => create(AppComponent)
         };
 

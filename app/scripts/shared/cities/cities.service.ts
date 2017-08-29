@@ -1,10 +1,10 @@
 import localforage from 'localforage';
-import { City } from '.';
+import { injectable } from 'inversify';
+import { City, ICitiesService } from '.';
 
-class CitiesService {
+@injectable()
+export class CitiesService implements ICitiesService {
     async get(): Promise<City[]> {
         return localforage.getItem('seed-cities') as Promise<City[]>;
     }
 }
-
-export let citiesService = new CitiesService();
