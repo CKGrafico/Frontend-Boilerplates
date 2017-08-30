@@ -2,4 +2,4 @@ export interface ITextService {
     get(): Promise<any[]>;
 }
 
-export const ITextServiceIdentifier = Symbol('ITextServiceIdentifier');
+export const ITextServiceId = Symbol('ITextService');

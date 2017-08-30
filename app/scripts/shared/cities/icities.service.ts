@@ -4,4 +4,4 @@ export interface ICitiesService {
     get(): Promise<City[]>;
 }
 
-export const ICitiesServiceIdentifier = Symbol('ICitiesService');
+export const ICitiesServiceId = Symbol('ICitiesService');

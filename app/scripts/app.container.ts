@@ -1,5 +1,5 @@
 import { Container } from 'inversify';
-import { CitiesService, ICitiesService, ICitiesServiceIdentifier } from './shared';
+import { CitiesService, ICitiesService, ICitiesServiceId } from './shared';
 import { citiesContainerBuilder } from './cities';
 
 // Injecting a service into a service
@@ -14,7 +14,7 @@ export function containerBuilder(): Container {
     container = new Container();
 
     // Bind shared services
-    container.bind<ICitiesService>(ICitiesServiceIdentifier).to(CitiesService).inSingletonScope();
+    container.bind<ICitiesService>(ICitiesServiceId).to(CitiesService).inSingletonScope();
 
     // Bind services for each module
     citiesContainerBuilder(container);
