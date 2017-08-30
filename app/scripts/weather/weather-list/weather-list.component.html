@@ -1,0 +1,9 @@
+<div class="weather_list">
+    <ul>
+        <li v-for="weather in weathers">
+            {{weather.title}}
+            <router-link :to="{ name: 'weather-detail', params: { id: weather.woeid }}">👁</router-link>
+            <span @click="remove(weather.woeid)">X</span>
+        </li>
+    </ul>
+</div>

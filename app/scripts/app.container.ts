@@ -1,6 +1,7 @@
 import { Container } from 'inversify';
-import { CitiesService, ICitiesService, ICitiesServiceId } from './shared';
-import { citiesContainerBuilder } from './cities';
+import { CitiesService, ICitiesService, ICitiesServiceId } from '~/shared';
+import { citiesContainerBuilder } from '~/cities';
+import { weatherContainerBuilder } from '~/weather';
 
 // Injecting a service into a service
 // @inject(IExampleServiceIdentifier) private exampleService: IExampleService
@@ -18,6 +19,7 @@ export function containerBuilder(): Container {
 
     // Bind services for each module
     citiesContainerBuilder(container);
+    weatherContainerBuilder(container);
 
     return container;
 }
