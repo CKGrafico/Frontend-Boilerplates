@@ -57,7 +57,8 @@
     "normalize-scss": "6.0.0",
     "reflect-metadata": "0.1.10",
     "vue": "2.4.2",
-    "vue-router": "2.7.0"
+    "vue-router": "2.7.0",
+    "weather-icons": "1.3.2"
   },
   "description": "Boilerplate with Gulp + SASS and Vue + TypeScript",
   "repository": "https://github.com/CKGrafico/Frontend-Boilerplates",
