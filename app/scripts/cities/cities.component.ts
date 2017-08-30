@@ -18,7 +18,6 @@ export default class CitiesComponent extends Vue {
         this.citiesService = container.get<ICitiesService>(ICitiesServiceIdentifier);
         this.textService = container.get<ITextService>(ITextServiceIdentifier);
         
-        this.cities = await this.citiesService.get();
-        this.texts = await this.textService.get();
+        [this.cities, this.texts] = [await this.citiesService.get(), await this.textService.get()];
     }
 }
