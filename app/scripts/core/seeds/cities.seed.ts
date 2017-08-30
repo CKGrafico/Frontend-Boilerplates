@@ -1,5 +1,5 @@
 import { BaseSeed } from '.';
-import { City } from '../../shared';
+import { City } from '~/shared';
 
 export class CitiesSeed extends BaseSeed {
     constructor() {

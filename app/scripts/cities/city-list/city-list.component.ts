@@ -1,14 +1,17 @@
-import { Component, Vue } from 'vue-property-decorator';
-
+import { Component, BaseComponent, Tag } from '~/core';
 import { container } from '~/app.container';
-import { ICitiesService, ICitiesServiceId } from '~/shared';
-import { City } from '~/shared';
+import { City, ICitiesService, ICitiesServiceId } from '~/shared';
+import CityAddComponent from '../shared/city-add/city-add.component';
 
 import Template from './city-list.component.html?style=cities/city-list/city-list.component.css';
 
 @Template
-@Component
-export default class CityListComponent extends Vue {
+@Component({
+    components: {
+        [CityAddComponent.tag]: CityAddComponent
+    }
+})
+export default class CityListComponent extends BaseComponent {
     private citiesService: ICitiesService;
     public cities: City[] = null;
 
