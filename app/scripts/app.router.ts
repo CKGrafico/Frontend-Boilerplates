@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router';
-import { Vue } from 'vue-property-decorator/lib/vue-property-decorator';
+import { Vue } from 'vue-property-decorator';
 import { citiesRoutes } from './cities';
 
 Vue.use(VueRouter);
