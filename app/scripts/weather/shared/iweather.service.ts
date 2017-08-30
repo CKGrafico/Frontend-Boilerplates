@@ -1,10 +1,7 @@
-import { Weather } from '.';
+import { City, Weather } from '~/shared';
 
 export interface IWeatherService {
-    get(): Promise<Weather[]>;
-    getById(id: number): Promise<Weather>;
-    search(name: string): Promise<Weather>;
-    remove(id: number): Promise<Weather[]>;
+    getToday(city: City): Promise<Weather>;
 }
 
 export const IWeatherServiceId = Symbol('IWeatherService');

@@ -21,7 +21,7 @@ export class CitiesService implements ICitiesService {
     }
 
     public async search(name: string): Promise<City> {
-        let response = await fetch(`https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places(1)%20where%20text%3D%22${name}%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`);
+        let response = await fetch(`https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places(1)%20where%20text%3D%22${encodeURIComponent(name)}%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`);
         let result = await response.json();
         let place = result.query.results.place;
         let locality = place.locality1;
