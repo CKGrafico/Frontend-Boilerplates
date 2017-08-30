@@ -6,6 +6,12 @@
       "es2015",
       "es2016"
     ],
+    "baseUrl": "./app",
+    "paths": {
+      "~/*": [
+        "scripts/*"
+      ]
+    },
     "module": "esnext",
     "moduleResolution": "node",
     "isolatedModules": false,

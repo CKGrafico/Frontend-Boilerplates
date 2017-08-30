@@ -1,8 +1,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-import { container } from '../../app.container';
-import { ICitiesService, ICitiesServiceId } from '../../shared';
-import { City } from '../../shared';
+import { container } from '~/app.container';
+import { ICitiesService, ICitiesServiceId } from '~/shared';
+import { City } from '~/shared';
 
 import Template from './city-list.component.html?style=cities/city-list/city-list.component.css';
 

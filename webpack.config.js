@@ -36,6 +36,7 @@ module.exports = env => {
                 'node_modules'
             ],
             alias: {
+                '~': path.resolve(__dirname, 'app/scripts/'),
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },
