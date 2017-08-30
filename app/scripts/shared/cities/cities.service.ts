@@ -21,15 +21,22 @@ export class CitiesService implements ICitiesService {
     }
 
     public async search(name: string): Promise<City> {
-        let results = await fetch('http://api.openweathermap.org/data/2.5/weather?q=London&appid=304b2a9742b144800ab911d8a1574411');
-        let city = {
-            title: name,
-            location_type: 'City',
-            woeid: Date.now(),
-            latt_long: '0,0'
+        let response = await fetch(`https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20geo.places(1)%20where%20text%3D%22${name}%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`);
+        let result = await response.json();
+        let place = result.query.results.place;
+        let locality = place.locality1;
+
+        if (!locality) {
+            return;
+        }
+
+        let city: City = {
+            title: locality.content,
+            location_type: locality.type,
+            woeid: parseInt(locality.woeid, 10),
+            centroid: [parseFloat(place.centroid.latitude), parseFloat(place.centroid.longitude)]
         };
 
-        // Refactor (:
         if (!this.cities.find(x => x.title.toLowerCase() === city.title.toLowerCase())) {
             this.cities.push(city);
             await localforage.setItem('seed-cities', this.cities);
