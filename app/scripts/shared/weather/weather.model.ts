@@ -7,6 +7,7 @@ export interface WeatherForecast {
     date: Date;
     high: number;
     low: number;
+    code: number;
     text: string;
 }
 

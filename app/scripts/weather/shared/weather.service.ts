@@ -16,6 +16,7 @@ export class WeatherService implements IWeatherService {
         let result = await response.json();
         let channel = result.query.results.channel;
         
+        // Map model
         let weather: Weather = {
             astronomy: channel.astronomy,
             item: {
@@ -24,6 +25,7 @@ export class WeatherService implements IWeatherService {
                         date: new Date(x.date),
                         high: this.toCelsius(parseFloat(x.high)),
                         low: this.toCelsius(parseFloat(x.low)),
+                        code: parseInt(x.code, 10),
                         text: x.text
                     };
                 })
