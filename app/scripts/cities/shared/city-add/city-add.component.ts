@@ -9,9 +9,18 @@ import Template from './city-add.component.html?style=cities/shared/city-add/cit
 @Component
 export default class CityAddComponent extends BaseComponent {
     private citiesService: ICitiesService;
-    public cities: City[] = null;
-    
-    public async created() {
+    public city: City = null;
+    public name = '';
+
+    public created() {
         this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
+    }
+
+    public async search() {
+        if (!this.name) {
+            return;
+        }
+        
+        this.city = await this.citiesService.search(this.name);
     }
 }

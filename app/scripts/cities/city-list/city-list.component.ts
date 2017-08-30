@@ -18,6 +18,10 @@ export default class CityListComponent extends BaseComponent {
     public async created() {
         this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
         
-        [this.cities] = [await this.citiesService.get()];
+        this.cities = await this.citiesService.get();
+    }
+
+    public remove(id: number) {
+        this.citiesService.remove(id);
     }
 }
