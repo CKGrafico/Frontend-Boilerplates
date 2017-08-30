@@ -16,6 +16,10 @@ export class CitiesService implements ICitiesService {
         return Promise.resolve(this.cities);
     }
 
+    public async getById(id: number): Promise<City> {
+        return this.cities.find(city => city.woeid === id);
+    }
+
     public async search(name: string): Promise<City> {
         let results = await fetch('http://api.openweathermap.org/data/2.5/weather?q=London&appid=304b2a9742b144800ab911d8a1574411');
         let city = {

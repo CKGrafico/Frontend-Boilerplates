@@ -3,7 +3,9 @@
 
     <ul>
         <li v-for="city in cities">
-            {{city.title}} <span @click="remove(city.woeid)">X</span>
+            {{city.title}}
+            <router-link :to="{ name: 'city-detail', params: { id: city.woeid }}">👁</router-link>
+            <span @click="remove(city.woeid)">X</span>
         </li>
     </ul>
 </div>

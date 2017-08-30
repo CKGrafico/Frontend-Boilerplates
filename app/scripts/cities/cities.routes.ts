@@ -11,18 +11,12 @@ export let citiesRoutes: RouteConfig[] = [
                 name: 'city-list',
                 component: () => import('./city-list/city-list.component')
             },
-            // {
-            //     path: '/:id',
-            //     name: 'city-detail',
-            //     component: CityDetailComponent,
-            //     props: true
-            // },
-            // {
-            //     path: '/:id/edit',
-            //     name: 'city-edit',
-            //     component: CityEditComponent,
-            //     props: true
-            // }
+            {
+                path: ':id',
+                name: 'city-detail',
+                component: () => import('./city-detail/city-detail.component'),
+                props: true
+            }
         ]
     }
 ];
