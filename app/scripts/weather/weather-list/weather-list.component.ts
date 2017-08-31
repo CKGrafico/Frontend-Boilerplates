@@ -24,7 +24,6 @@ export default class WeatherListComponent extends BaseComponent {
 
     // Refactor
     public getWeatherIconClass(code: number): string {
-        console.log(WeatherIcons[code]);
-        return WeatherIcons[code];
+        return WeatherIcons[code] || WeatherIcons[WeatherCodes.NotAvailable];
     }
 }

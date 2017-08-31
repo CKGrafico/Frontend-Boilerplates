@@ -13,7 +13,7 @@ export let WeatherIcons = {
     [WeatherCodes.FreezingDrizzle]: 'wi-rain-mix',
     [WeatherCodes.Drizzle]: 'wi-sprinkle',
     [WeatherCodes.FreezingRain]: 'wi-rain-mix',
-    [WeatherCodes.ShowersNight]: 'wi-night-showersx',
+    [WeatherCodes.ShowersNight]: 'wi-night-showers',
     [WeatherCodes.ShowersDay]: 'wi-day-showers',
     [WeatherCodes.SnowFlurries]: 'wi-day-snow',
     [WeatherCodes.LightSnowShowers]: 'wi-day-snow',
@@ -50,5 +50,5 @@ export let WeatherIcons = {
     [WeatherCodes.Thundershowers]: 'wi-thunderstorm',
     [WeatherCodes.SnowShowers]: 'wi-rain-mix',
     [WeatherCodes.IsolatedThundershowers]: 'wi-thunderstorm',
-    [WeatherCodes.NotAvailable]: 'wi-na',
+    [WeatherCodes.NotAvailable]: 'wi-alien',
 };
