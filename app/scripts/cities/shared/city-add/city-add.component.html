@@ -1,8 +1,8 @@
 <div class="city_add">
-    <input class="city_add-input" type="text" v-model="name">
-    <button class="city_add-button" @click="search">Search city</button>
-
-    <div v-if="city">
-        {{city.title}}
+    <div class="form-collapse">
+        <div class="input item">
+            <input class="city_add-input" type="text" v-model="name">
+        </div>
+        <button class="city_add-button item button button-primary" @click="search">Search city</button>
     </div>
 </div>

@@ -1,5 +1,7 @@
 <div class="app">
-    <router-link :to="{ name: 'city-list'}">Cities</router-link>
-    <router-link :to="{ name: 'weather-list'}">Weather</router-link>
-    <router-view></router-view>
+    <div class="tabs">
+        <router-link class="tab" :to="{ name: 'weather-list'}" active-class="active">Weather</router-link>
+        <router-link class="tab" :to="{ name: 'city-list'}" active-class="active">Cities</router-link>
+    </div>
+    <router-view class="section"></router-view>
 </div>
