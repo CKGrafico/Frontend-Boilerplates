@@ -3,6 +3,9 @@ import { router } from './app.router';
 import { containerBuilder } from './app.container';
 import { AppComponent } from './app.component';
 import { CitiesSeed } from './core/seeds';
+import { Filters } from './app.filters';
+
+Vue.use(Filters);
 
 export class App {
     constructor() {

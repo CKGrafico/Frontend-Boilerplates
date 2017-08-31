@@ -9,4 +9,3 @@ import 'vue-property-decorator';
 // 3rd party
 import 'localforage';
 import 'inversify';
-import 'weather-icons';

@@ -1,3 +1,6 @@
+files:
+  ignore:
+    - 'app/styles/vendor/_weather-icons.scss'
 rules:
   # https://github.com/sasstools/sass-lint/tree/master/docs/rules
   # 0 = disabled - 1 = warning - 2 = error

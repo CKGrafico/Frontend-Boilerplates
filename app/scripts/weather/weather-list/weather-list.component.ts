@@ -1,6 +1,6 @@
 import { Component, BaseComponent, Tag } from '~/core';
 import { container } from '~/app.container';
-import { ICitiesServiceId, ICitiesService, City, Weather } from '~/shared';
+import { ICitiesServiceId, ICitiesService, City, Weather, WeatherAstronomy, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
 
 import Template from './weather-list.component.html?style=weather/weather-list/weather-list.component.css';
@@ -20,5 +20,11 @@ export default class WeatherListComponent extends BaseComponent {
         this.cities.forEach(async city => {
             city.weather = await this.weatherService.getToday(city);
         });
+    }
+
+    // Refactor
+    public getWeatherIconClass(code: number): string {
+        console.log(WeatherIcons[code]);
+        return WeatherIcons[code];
     }
 }

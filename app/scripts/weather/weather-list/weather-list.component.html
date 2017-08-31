@@ -2,7 +2,19 @@
     <ul>
         <li v-for="city in cities">
             <h3>{{city.title}}</h3>
-            <p>{{city.weather}}</p>
+
+            <div v-if="city.weather">
+                <div v-if="city.weather.astronomy">
+                    <p>Sunrise: {{city.weather.astronomy.sunrise}}</p>
+                    <p>Sunset: {{city.weather.astronomy.sunset}}</p>
+                </div>
+                <div v-if="city.weather.item">
+                    <p>{{city.weather.item.forecast[0].date | date}} (Today):</p>
+                    <p>{{city.weather.item.forecast[0].low}} /  {{city.weather.item.forecast[0].high}}</p>
+                    <p><i v-bind:class="['wi', getWeatherIconClass(city.weather.item.forecast[0].code)]"></i></p>
+                    <p>{{city.weather.item.forecast[0].text}}</p>
+                </div>
+            </div>
         </li>
     </ul>
 </div>

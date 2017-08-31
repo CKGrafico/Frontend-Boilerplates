@@ -34,7 +34,8 @@ export class CitiesService implements ICitiesService {
             title: locality.content,
             location_type: locality.type,
             woeid: parseInt(locality.woeid, 10),
-            centroid: [parseFloat(place.centroid.latitude), parseFloat(place.centroid.longitude)]
+            centroid: [parseFloat(place.centroid.latitude), parseFloat(place.centroid.longitude)],
+            weather: null
         };
 
         if (!this.cities.find(x => x.title.toLowerCase() === city.title.toLowerCase())) {

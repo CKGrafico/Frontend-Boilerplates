@@ -5,5 +5,5 @@ export interface City {
     location_type: string;
     woeid: number;
     centroid: [number, number];
-    weather?: Weather;
+    weather: Weather;
 }

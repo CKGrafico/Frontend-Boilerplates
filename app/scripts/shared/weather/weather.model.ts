@@ -1,5 +1,5 @@
-interface WeatherAstronomy { 
-    sunrise: string; 
+export interface WeatherAstronomy {
+    sunrise: string;
     sunset: string;
 }
 
