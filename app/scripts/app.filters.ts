@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import { Vue } from 'vue-property-decorator';
 import { IFilter, DateFilter } from './core/filters';
 
 export class Filters {

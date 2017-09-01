@@ -1,4 +1,4 @@
-import { Component, BaseComponent, Prop, Tag } from '~/core';
+import { Component, BaseComponent, Prop } from '~/core';
 import { container } from '~/app.container';
 import { ICitiesServiceId, ICitiesService, City, Weather, WeatherAstronomy, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
@@ -6,9 +6,8 @@ import { IWeatherService, IWeatherServiceId } from '../shared';
 import Template from './weather-detail.component.html?style=weather/weather-detail/weather-detail.component.css';
 
 @Template
-@Tag('weather-detail')
 @Component
-export class WeatherDetailComponent extends BaseComponent {
+export default class WeatherDetailComponent extends BaseComponent {
     private citiesService: any;
     private weatherService: IWeatherService;
     public city: City = null;

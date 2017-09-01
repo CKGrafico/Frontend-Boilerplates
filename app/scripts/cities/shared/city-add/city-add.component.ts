@@ -7,7 +7,7 @@ import Template from './city-add.component.html?style=cities/shared/city-add/cit
 @Template
 @Tag('city-add')
 @Component
-export default class CityAddComponent extends BaseComponent {
+export class CityAddComponent extends BaseComponent {
     private citiesService: ICitiesService;
     public city: City = null;
     public name = '';

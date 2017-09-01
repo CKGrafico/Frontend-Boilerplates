@@ -1,6 +1,4 @@
 import { RouteConfig } from 'vue-router';
-import { CityListComponent } from './city-list';
-import { CityDetailComponent } from './city-detail';
 
 export let citiesRoutes: RouteConfig[] = [
     {
@@ -10,13 +8,13 @@ export let citiesRoutes: RouteConfig[] = [
         children: [
             {
                 path: '',
-                name: CityListComponent.tag,
-                component: CityListComponent
+                name: 'city-list',
+                component: () => import('./city-list/city-list.component')
             },
             {
                 path: ':id',
-                name: CityDetailComponent.tag,
-                component: CityDetailComponent,
+                name: 'city-detail',
+                component:  () => import('./city-detail/city-detail.component'),
                 props: true
             }
         ]
