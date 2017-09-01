@@ -1,18 +1,23 @@
 <div class="weather_list">
-    <ul>
-        <li v-for="city in cities">
-            <h3>{{city.title}}</h3>
+
+    <ul class="weather_list-cities">
+        <li class="weather_list-city" v-for="city in cities">
+            <span class="weather_list-title">{{city.title}}</span>
 
             <div v-if="city.weather">
                 <div v-if="city.weather.astronomy">
-                    <p>Sunrise: {{city.weather.astronomy.sunrise}}</p>
-                    <p>Sunset: {{city.weather.astronomy.sunset}}</p>
+                    <span class="weather_list-item">Sunrise: {{city.weather.astronomy.sunrise}}</span>
+                    <span class="weather_list-item">Sunset: {{city.weather.astronomy.sunset}}</span>
                 </div>
                 <div v-if="city.weather.item">
-                    <p>{{city.weather.item.forecast[0].date | date}} (Today):</p>
-                    <p>{{city.weather.item.forecast[0].low}} /  {{city.weather.item.forecast[0].high}}</p>
-                    <p><i v-bind:class="['wi', getWeatherIconClass(city.weather.item.forecast[0].code)]"></i></p>
-                    <p>{{city.weather.item.forecast[0].text}}</p>
+                    <span>{{city.weather.item.forecast[0].date | date}} (Today):</span>
+                    <span class="weather_list-item">{{city.weather.item.forecast[0].low}}ºC / {{city.weather.item.forecast[0].high}}ºC</span>
+                    <div>
+                        <span class="weather_list-item">
+                            <i :class="['weather_list-icon wi', getWeatherIconClass(city.weather.item.forecast[0].code)]"></i>
+                        </span>
+                        <span class="weather_list-item">{{city.weather.item.forecast[0].text}}</span>
+                    </div>
                 </div>
             </div>
         </li>
