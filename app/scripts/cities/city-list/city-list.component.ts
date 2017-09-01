@@ -6,6 +6,7 @@ import CityAddComponent from '../shared/city-add/city-add.component';
 import Template from './city-list.component.html?style=cities/city-list/city-list.component.css';
 
 @Template
+@Tag('city-list')
 @Component({
     components: {
         [CityAddComponent.tag]: CityAddComponent

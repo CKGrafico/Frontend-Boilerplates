@@ -1,10 +1,11 @@
-import { Component, BaseComponent, Tag, Prop } from '~/core';
+import { Component, BaseComponent, Prop, Tag } from '~/core';
 import { container } from '~/app.container';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 import Template from './city-detail.component.html?style=cities/city-detail/city-detail.component.css';
 
 @Template
+@Tag('city-detail')
 @Component
 export class CityDetailComponent extends BaseComponent {
     private citiesService: ICitiesService;

@@ -2,10 +2,12 @@ import { Component, BaseComponent, Tag } from '~/core';
 import { container } from '~/app.container';
 import { ICitiesServiceId, ICitiesService, City, Weather, WeatherAstronomy, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
+import { WeatherDetailComponent } from '~/weather/weather-detail';
 
 import Template from './weather-list.component.html?style=weather/weather-list/weather-list.component.css';
 
 @Template
+@Tag('weather-list')
 @Component
 export class WeatherListComponent extends BaseComponent {
     private citiesService: any;
@@ -18,7 +20,16 @@ export class WeatherListComponent extends BaseComponent {
         
         this.cities = await this.citiesService.get();
         this.cities.forEach(async city => {
-            city.weather = await this.weatherService.getToday(city);
+            city.weather = await this.weatherService.get(city);
+        });
+    }
+
+    public goToCity(id: string) {
+        this.$router.push({
+            name: WeatherDetailComponent.tag,
+            params: {
+                id: id
+            }
         });
     }
 

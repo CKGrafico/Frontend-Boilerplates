@@ -10,12 +10,12 @@ export let citiesRoutes: RouteConfig[] = [
         children: [
             {
                 path: '',
-                name: 'city-list',
+                name: CityListComponent.tag,
                 component: CityListComponent
             },
             {
                 path: ':id',
-                name: 'city-detail',
+                name: CityDetailComponent.tag,
                 component: CityDetailComponent,
                 props: true
             }

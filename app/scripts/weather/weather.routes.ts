@@ -10,12 +10,12 @@ export let weatherRoutes: RouteConfig[] = [
         children: [
             {
                 path: '',
-                name: 'weather-list',
+                name: WeatherListComponent.tag,
                 component: WeatherListComponent
             },
             {
                 path: ':id',
-                name: 'weather-detail',
+                name: WeatherDetailComponent.tag,
                 component: WeatherDetailComponent,
                 props: true
             }
