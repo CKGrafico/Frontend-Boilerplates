@@ -5,7 +5,7 @@ import Template from './weather-detail.component.html?style=weather/weather-deta
 
 @Template
 @Component
-export default class WeatherDetailComponent extends BaseComponent {
+export class WeatherDetailComponent extends BaseComponent {
     @Prop()
     public id: number; 
 

@@ -11,7 +11,7 @@ import Template from './city-list.component.html?style=cities/city-list/city-lis
         [CityAddComponent.tag]: CityAddComponent
     }
 })
-export default class CityListComponent extends BaseComponent {
+export class CityListComponent extends BaseComponent {
     private citiesService: ICitiesService;
     public cities: City[] = null;
 

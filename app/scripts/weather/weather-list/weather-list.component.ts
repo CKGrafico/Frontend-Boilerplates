@@ -7,7 +7,7 @@ import Template from './weather-list.component.html?style=weather/weather-list/w
 
 @Template
 @Component
-export default class WeatherListComponent extends BaseComponent {
+export class WeatherListComponent extends BaseComponent {
     private citiesService: any;
     private weatherService: IWeatherService;
     public cities: City[] = null;

@@ -6,7 +6,7 @@ import Template from './city-detail.component.html?style=cities/city-detail/city
 
 @Template
 @Component
-export default class CityDetailComponent extends BaseComponent {
+export class CityDetailComponent extends BaseComponent {
     private citiesService: ICitiesService;
     public city: City = null;
 
