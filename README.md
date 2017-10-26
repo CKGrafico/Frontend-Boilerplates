@@ -1,5 +1,5 @@
-# Gulp-Boilerplates
-<p align="center">
+# Frontend Boilerplates
+<p align="left">
   <a href="https://raw.githubusercontent.com/CKGrafico/Gulp-Boilerplates/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"
          alt="license">
@@ -10,6 +10,10 @@
         alt="codeclimate"/>
   </a>
 </p>
+
+## Choose your technology
+[[Generic SPA]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master) - [[TypeScript]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master) - [[Vue]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master) - [[Nodejs + TypeScript]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master)
+
 
 ## Quickstart
 On this repo you can find some boilerplates based on Gulp, each branch has a different example.
@@ -27,13 +31,13 @@ We try not only to use Gulp, also to use best practises and real examples that w
 
 ## Table of Contents
   1. [App Technologies](#app-technologies)
-  1. [Tasks Technologies](#task-technologies)
+  1. [Tasks Technologies](#tasks-technologies)
   1. [Running tasks](#running-tasks)
   1. [Environments](#environments)
   1. [Project structure](#project-structure)
   1. [Gulpfile](#gulpfile)
   1. [Gulpfile Helpers](#gulpfile-helpers)
-  1. [Gulpfile Paths](#gulpfile-paths)
+  1. [Tasks Configuration](#tasks-configuration)
   1. [Contributors](#contributors)
   1. [License](#license)
 
