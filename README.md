@@ -1,5 +1,5 @@
 # Frontend Boilerplates
-Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies on different branches. 
+Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies on the branches and we will add more examples in the future. 
 
 Feel free to give feedback and improvements to the repo.
 
