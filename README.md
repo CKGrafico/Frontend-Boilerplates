@@ -12,7 +12,10 @@
 </p>
 
 ## Choose your technology
-[[Generic SPA]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master) - [[TypeScript]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master) - [[Vue]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master) - [[Nodejs + TypeScript]](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs and TypeScript">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master)
 
 
 ## Quickstart
