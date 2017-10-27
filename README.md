@@ -35,9 +35,7 @@ Feel free to give feedback and improvements to the repo.
   1. [Running tasks](#running-tasks)
   1. [Environments](#environments)
   1. [Project structure](#project-structure)
-  1. [Gulpfile](#gulpfile)
-  1. [Gulpfile Helpers](#gulpfile-helpers)
-  1. [Webpack and tasks Configuration](#tasks-configuration)
+  1. [Gulp and Webpack](#gulp-and-webpack)
   1. [Contributors](#contributors)
   1. [License](#license)
 
@@ -50,7 +48,7 @@ On this branch _(Basic)_ we use:
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
-**[⬆️ back to top](#frontend-boilerplates)**
+**[⬆️ back to top](#quickstart)**
 
 ## ⚙️ Automated Tasks
 On this branch _(Basic)_ we use:
@@ -73,9 +71,9 @@ On this branch _(Basic)_ we use:
 - **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
 - **Webpack and Linting:** To check TypeScript files
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Running tasks
+## ⏰ Running tasks
 To run the tasks we have these three commands:
 - Install dependencies:
 > npm install
@@ -92,15 +90,15 @@ To run the tasks we have these three commands:
 - Running tasks on watch mode and serve the app:
 > npm start
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Environments
+## 🔮 Environments
 On this project we have two environments:
 - **Local:** Use this on your computer
 - **Development:** Use this on your dev server
 - **Production:** Use this on your production server
 
-## Project structure
+## ⛩️ Project structure
 On this branch _(Basic)_ the structure is:`
 ```
 ./
@@ -163,9 +161,11 @@ On this branch _(Basic)_ the structure is:`
 └── webpack.config.js # The Webpack configuration for scripts
 ```
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Gulpfile
+## ⚡ Gulp and Webpack
+
+### Gulpfile
 This is how we configured the main file:
 ```
 // We load all the tasks and pass some parameters
@@ -182,9 +182,7 @@ gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, ta
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
-**[ back to top](#table-of-contents)**
-
-## Gulpfile Helpers
+### Gulpfile helpers
 In case that you want to modify some gulp tasks, this helpers can help you.
 
 - Files and folders:
@@ -209,9 +207,9 @@ _.abs(_.folder(paths.app.scripts), __dirname)
 ```
 Change path to absolute path: _'C:/project/app/js'_
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Tasks configuration
+### Tasks configuration
 You can configure different things related with the tasks.
 ```
 {
@@ -283,13 +281,13 @@ _.files(paths.assets.fonts.roboto)
 // ./app/assets/fonts/roboto.ttf
 ```
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Contributors
+## 🎩 Contributors
 
 [View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
 
-## License
+## 📜 License
 
 (The MIT License)
 
@@ -314,4 +312,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
