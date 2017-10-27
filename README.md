@@ -1,36 +1,45 @@
 # Frontend Boilerplates
 <p align="left">
-  <a href="https://raw.githubusercontent.com/CKGrafico/Gulp-Boilerplates/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"
          alt="license">
   </a>
 
-  <a href="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates">
-    <img src="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates/badges/gpa.svg" 
+  <a href="https://codeclimate.com/github/CKGrafico/Frontend-Boilerplates">
+    <img src="https://codeclimate.com/github/CKGrafico/Frontend-Boilerplates/badges/gpa.svg" 
         alt="codeclimate"/>
   </a>
 </p>
 
 ## Choose your technology
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs and TypeScript">](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
 
 
 ## Quickstart
-On this repo you can find some boilerplates based on Gulp, each branch has a different example.
-We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
-- **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example.
-- **[dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/dev):** Dev version of a TypeScript example.
-- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example.
-- **[ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-dev):** Dev version of a basic and generic example.
-- **[node-ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master):** Stable version of node-based with TypeScript example.
-- **[node-ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-dev):** Dev version of node-based with TypeScript example.
-- **[vue-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master):** Stable version of vue-based example. 
-- **[vue-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-dev):** Dev version of vue-based example.
-- **ng2-master:** Stable version of angular2-based example. [To do]
-- **ng2-dev:** Dev version of angular2-based example.
+On this repo you can find some boilerplates for fronted projects, each branch has a different example.
+
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="50" title="SPA">
+
+ **[master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** Stable version of a **basic SPA** example.
+ <br>**[dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/dev)** Dev version of a **basic SPA** example.
+ 
+ <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" align="left" width="50" title="TypeScript">
+
+ **[ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)** Stable version of a **TypeScript** example.
+ <br>**[ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-dev)** Dev version of a **TypeScript** example.
+
+  <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" align="left" width="50" title="TypeScript">
+
+ **[vue-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)** Stable version of a **Vuejs** example.
+ <br>**[vue-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-dev)** Dev version of a **Vuejs** example.
+ 
+ <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" align="left" width="50" title="Node with TypeScript">
+
+ **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example.
+ <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example.
 
 ## Table of Contents
   1. [App Technologies](#app-technologies)
@@ -290,7 +299,7 @@ _.files(paths.assets.fonts.roboto)
 
 ## Contributors
 
-[View Contributors](https://github.com/CKGrafico/Gulp-Boilerplates/graphs/contributors)
+[View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
 
 ## License
 
