@@ -49,7 +49,7 @@ On this repo you can find some boilerplates for fronted projects, each branch ha
   1. [Project structure](#project-structure)
   1. [Gulpfile](#gulpfile)
   1. [Gulpfile Helpers](#gulpfile-helpers)
-  1. [Tasks Configuration](#tasks-configuration)
+  1. [Webpack and tasks Configuration](#tasks-configuration)
   1. [Contributors](#contributors)
   1. [License](#license)
 
