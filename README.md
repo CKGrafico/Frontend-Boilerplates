@@ -1,26 +1,14 @@
 # Frontend Boilerplates
-<p align="left">
-  <a href="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg"
-         alt="license">
-  </a>
+Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies on different branches. 
 
-  <a href="https://codeclimate.com/github/CKGrafico/Frontend-Boilerplates">
-    <img src="https://codeclimate.com/github/CKGrafico/Frontend-Boilerplates/badges/gpa.svg" 
-        alt="codeclimate"/>
-  </a>
-</p>
+Feel free to give feedback and improvements to the repo.
 
-## Choose your technology
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
 
-
-## Quickstart
-On this repo you can find some boilerplates for fronted projects, each branch has a different example.
-
+## ▶️ Quickstart
 <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="50" title="SPA">
 
  **[master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** Stable version of a **basic SPA** example.
@@ -41,9 +29,9 @@ On this repo you can find some boilerplates for fronted projects, each branch ha
  **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example.
 
-## Table of Contents
-  1. [App Technologies](#app-technologies)
-  1. [Tasks Technologies](#tasks-technologies)
+## 📑 Table of Contents
+  1. [App Features](#app-features)
+  1. [Automated Tasks](#automated-tasks)
   1. [Running tasks](#running-tasks)
   1. [Environments](#environments)
   1. [Project structure](#project-structure)
@@ -53,7 +41,7 @@ On this repo you can find some boilerplates for fronted projects, each branch ha
   1. [Contributors](#contributors)
   1. [License](#license)
 
-## App Technologies
+## 🍩 App Features
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
 - **EcmaScript2015:** All the code uses this version of ES, also gulp files.
@@ -62,9 +50,9 @@ On this branch _(Basic)_ we use:
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#frontend-boilerplates)**
 
-## Tasks Technologies
+## ⚙️ Automated Tasks
 On this branch _(Basic)_ we use:
 - **Concurrently:** Execute two tasks in parallel.
 - **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
