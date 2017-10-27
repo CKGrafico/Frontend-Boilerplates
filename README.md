@@ -28,17 +28,7 @@ Feel free to give feedback and improvements to the repo.
 
  **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example.
-
-## 📑 Table of Contents
-  1. [🍩 App Features](#app-features)
-  1. [⚙️ Automated Tasks](#automated-tasks)
-  1. [⏰ Running tasks](#running-tasks)
-  1. [🔮 Environments](#environments)
-  1. [⛩️ Project structure](#project-structure)
-  1. [⚡ Gulp and Webpack](#gulp-and-webpack)
-  1. [🎩Contributors](#contributors)
-  1. [📜License](#license)
-
+ 
 ## 🍩 App Features
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
