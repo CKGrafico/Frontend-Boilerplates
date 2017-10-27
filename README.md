@@ -8,7 +8,7 @@ Feel free to give feedback and improvements to the repo.
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
 
-## ▶️ Quickstart
+## Quickstart
 <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="50" title="SPA">
 
  **[master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** Stable version of a **basic SPA** example.
@@ -30,14 +30,14 @@ Feel free to give feedback and improvements to the repo.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example.
 
 ## 📑 Table of Contents
-  1. [App Features](#app-features)
-  1. [Automated Tasks](#automated-tasks)
-  1. [Running tasks](#running-tasks)
-  1. [Environments](#environments)
-  1. [Project structure](#project-structure)
-  1. [Gulp and Webpack](#gulp-and-webpack)
-  1. [Contributors](#contributors)
-  1. [License](#license)
+  1. [🍩 App Features](#app-features)
+  1. [⚙️ Automated Tasks](#automated-tasks)
+  1. [⏰ Running tasks](#running-tasks)
+  1. [🔮 Environments](#environments)
+  1. [⛩️ Project structure](#project-structure)
+  1. [⚡ Gulp and Webpack](#gulp-and-webpack)
+  1. [🎩Contributors](#contributors)
+  1. [📜License](#license)
 
 ## 🍩 App Features
 On this branch _(Basic)_ we use:
