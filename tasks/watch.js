@@ -1,5 +1,7 @@
 module.exports = (gulp, paths, $, _, options, tasks) => {
-    gulp.watch(_.files(paths.app.styles), gulp.series(tasks.stylesLint, tasks.styles));
-    gulp.watch(_.folder(paths.app) + '/index.html', tasks.copy);
-    gulp.watch(_.files(paths.app.assets.images), tasks.assets);
+    const interval = { interval: 500 };
+
+    gulp.watch(_.files(paths.app.styles), interval, gulp.series(tasks.stylesLint, tasks.styles));
+    gulp.watch(_.folder(paths.app) + '/index.html', interval, tasks.copy);
+    gulp.watch(_.files(paths.app.assets.images), interval, tasks.assets);
 };

@@ -3,15 +3,21 @@ module.exports = (env, envs) => {
         [envs.production]: {
             configFile: '.scripts-lint.json',
             emitErrors: true,
-            failOnHint: true
+            failOnHint: true,
+            project: 'tsconfig.json',
+            typeCheck: true
         },
         [envs.development]: {
             configFile: '.scripts-lint.json',
             emitErrors: true,
-            failOnHint: true
+            failOnHint: true,
+            project: 'tsconfig.json',
+            typeCheck: true
         },
         [envs.local]: {
-            configFile: '.scripts-lint.json'
+            configFile: '.scripts-lint.json',
+            project: 'tsconfig.json',
+            typeCheck: true
         }
     };
 
