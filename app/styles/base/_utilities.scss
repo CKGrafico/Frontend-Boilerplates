@@ -2,8 +2,10 @@
 @import 'mixins/offsets';
 $negative-offsets: true;
 $responsive-offsets: true;
-@include generate-offsets(margin, m, 10);
-@include generate-offsets(padding, p, 10);
+
+// Generate offsets if needed
+// @include generate-offsets(margin, m, 10);
+// @include generate-offsets(padding, p, 10);
 
 .u {
     &-align {
@@ -41,20 +43,6 @@ $responsive-offsets: true;
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
-        }
-    }
-
-    &-display {
-        &-block {
-            display: block;
-        }
-
-        &-inline {
-            display: inline;
-        }
-
-        &-inlineblock {
-            display: inline-block;
         }
     }
 }
