@@ -1,43 +1,35 @@
-# Gulp-Boilerplates
-<p align="center">
-  <a href="https://raw.githubusercontent.com/CKGrafico/Gulp-Boilerplates/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg"
-         alt="license">
-  </a>
+# Frontend Boilerplates
+Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies on the branches and we will add more examples in the future. 
 
-  <a href="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates">
-    <img src="https://codeclimate.com/github/CKGrafico/Gulp-Boilerplates/badges/gpa.svg" 
-        alt="codeclimate"/>
-  </a>
-</p>
+Feel free to give feedback and improvements to the repo.
+
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
 
 ## Quickstart
-On this repo you can find some boilerplates based on Gulp, each branch has a different example.
-We try not only to use Gulp, also to use best practises and real examples that we can use on real projects.
-- **[master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/master):** Stable version of a basic and generic example.
-- **[dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/dev):** Dev version of a TypeScript example.
-- **[ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-master):** Stable version of a TypeScript example.
-- **[ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/ts-dev):** Dev version of a basic and generic example.
-- **[node-ts-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-master):** Stable version of node-based with TypeScript example.
-- **[node-ts-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/node-ts-dev):** Dev version of node-based with TypeScript example.
-- **[vue-master](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-master):** Stable version of vue-based example. 
-- **[vue-dev](https://github.com/CKGrafico/Gulp-Boilerplates/tree/vue-dev):** Dev version of vue-based example.
-- **ng2-master:** Stable version of angular2-based example. [To do]
-- **ng2-dev:** Dev version of angular2-based example.
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="50" title="SPA">
 
-## Table of Contents
-  1. [App Technologies](#app-technologies)
-  1. [Tasks Technologies](#task-technologies)
-  1. [Running tasks](#running-tasks)
-  1. [Environments](#environments)
-  1. [Project structure](#project-structure)
-  1. [Gulpfile](#gulpfile)
-  1. [Gulpfile Helpers](#gulpfile-helpers)
-  1. [Gulpfile Paths](#gulpfile-paths)
-  1. [Contributors](#contributors)
-  1. [License](#license)
+ **[master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** Stable version of a **basic SPA** example with SCSS and ES6.
+ <br>**[dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/dev)** Dev version of a **basic SPA** example with SCSS and ES6.
+ 
+ <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" align="left" width="50" title="TypeScript">
 
-## App Technologies
+ **[ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)** Stable version of a **TypeScript** example with SCSS.
+ <br>**[ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-dev)** Dev version of a **TypeScript** example with SCSS.
+
+  <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" align="left" width="50" title="TypeScript">
+
+ **[vue-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)** Stable version of a **Vuejs** example with SCSS and TypeScript.
+ <br>**[vue-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-dev)** Dev version of a **Vuejs** example with SCSS and TypeScript.
+ 
+ <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" align="left" width="50" title="Node with TypeScript">
+
+ **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
+ <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
+ 
+## 🍩 App Features
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
 - **TypeScript:** This project uses TypeScript instead of JavaScript.
@@ -45,10 +37,11 @@ On this branch _(Basic)_ we use:
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Tasks Technologies
+## ⚙️ Automated Tasks
 On this branch _(Basic)_ we use:
+- **Concurrently:** Execute two tasks in parallel.
 - **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
 - **Gulp Clean CSS:** To minify CSS.
 - **Gulp Environment:** Call to different tasks depending of the environment.
@@ -58,7 +51,6 @@ On this branch _(Basic)_ we use:
 - **Gulp Newer:** On some tasks we want to do something only with the newer files.
 - **Gulp Nodemon:** To launch the NodeJS application.
 - **Gulp Noop:** Basic Noop but on stream.
-- **Gulp Rollup:** To transpile out code.
 - **Gulp Sass:** Compile Scss to CSS.
 - **Gulp Sasslint:** Linting for SASS.
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
@@ -68,30 +60,34 @@ On this branch _(Basic)_ we use:
 - **Require all:** Load all gulp tasks once.
 - **Yarn:** Instead of NPM.
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Running tasks
+## ⏰ Running tasks
 To run the tasks we have these three commands:
 - Install dependencies:
-> yarn install
-
-- Running tasks on development mode:
-> yarn run dev
+> npm install
 
 - Running tasks on production mode:
-> yarn run prod
+> npm run prod
 
-- Running tasks on watch mode:
-> yarn run watch
+- Running tasks on development mode:
+> npm run dev
 
-**[ back to top](#table-of-contents)**
+- Running tasks on local mode:
+> npm run local
 
-## Environments
+- Running tasks on watch mode and serve the app:
+> npm start
+
+**[⬆️ back to top](#quickstart)**
+
+## 🔮 Environments
 On this project we have two environments:
-- **Development:** To use with dev and watch tasks
-- **Production:** To minify the code and use on production
+- **Local:** Use this on your computer
+- **Development:** Use this on your dev server
+- **Production:** Use this on your production server
 
-## Project structure
+## ⛩️ Project structure
 On this branch _(Basic)_ the structure is:`
 ```
 ./
@@ -138,6 +134,12 @@ On this branch _(Basic)_ the structure is:`
 ├── dist/ # Distribution folder
 │
 ├── tasks/ # Gulp tasks
+│   ├── config/
+│   │   ├── helpers.js # Helpers that useful for tasks
+│   │   └── options.js # Internal operation to use with tasks
+│   ├── rules/
+│   │   ├── scripts.js # Create a bundle for JavaScript files
+│   │   └── scripts-lint.js # Check linting of JavaScript files
 │   ├── assets.js # Minify images and generate fonts
 │   ├── clean.js # Clean distribution folder
 │   ├── copy.js # Copy index.html to dist
@@ -149,18 +151,20 @@ On this branch _(Basic)_ the structure is:`
 │   ├── ts-lint.js # Linting for TypeScript
 │   └── watch.js # Watcher for files
 │
+├── .gulpenvrc.yml # Environments configuration
 ├── .sass-lint.yml # SASS linting configuration
 ├── .scripts-lint.yml # JavaScript linting configuration
-├── gulpfile.helpers.js # Some methods to use on gulp tasks
 ├── gulpfile.js # Main gulp file
-├── gulpfile.paths.js # Where you can configure the paths to use with tasks
 ├── package.json # Configure npm tasks and dependencies
-└── yarn-lock # Yarn file with the specific version to download of each dependency
+├── tasks.config.json # Configure paths and options for tasks
+└── webpack.config.js # The Webpack configuration for scripts
 ```
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
 
-## Gulpfile
+## ⚡ Gulp and Webpack
+
+### Gulpfile
 This is how we configured the main file:
 ```
 // We load all the tasks and pass some parameters
@@ -173,13 +177,11 @@ tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displa
 
 And these are the only two tasks:
 ```
-gulp.task('default', gulp.series(tasks.clean, tasks.scssLint, tasks.scss, tasks.scriptsLint, tasks.scripts, tasks.copy, tasks.assets));
+gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, tasks.copy, tasks.assets));
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
 
-**[ back to top](#table-of-contents)**
-
-## Gulpfile Helpers
+### Gulpfile helpers
 In case that you want to modify some gulp tasks, this helpers can help you.
 
 - Files and folders:
@@ -199,19 +201,20 @@ _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
 
-**[ back to top](#table-of-contents)**
-
-## Gulpfile paths
-We tried to do it as easy as possible and this is the result.
-We have an object with our paths structure that can be generated automatically and can be extended.
-
-If you open gulpfile.paths and you write this:
-
 ```
-let paths = {
-    app: {
-        assets: {
-            images: {}
+_.abs(_.folder(paths.app.scripts), __dirname)
+```
+Change path to absolute path: _'C:/project/app/js'_
+
+**[⬆️ back to top](#quickstart)**
+
+### Tasks configuration
+You can configure different things related with the tasks.
+```
+{
+    "app": {
+        "assets": {
+            "images": {}
         }
     }
 };
@@ -228,13 +231,13 @@ _.files(paths.assets.images)
 But you can extend this structure:
 
 ```
-let paths = {
-    app: {
-        assets: {
-            images: {},
-            fonts: {
-                _files: '**/*.ttf',
-                _folder: 'custom',
+{
+    "app": {
+        "assets": {
+            "images": {},
+            "fonts": {
+                "files": "**/*.ttf",
+                "folder": "custom"
             }
         }
     }
@@ -249,13 +252,45 @@ _.files(paths.assets.fonts)
 // ./app/assets/custom/**/*.ttf
 ```
 
-**[ back to top](#table-of-contents)**
+Also you can use the parent folder
 
-## Contributors
+```
+{
+    "app": {
+        "assets": {
+            "images": {},
+            "fonts": {
+                "files": "**/*.ttf",
+                "folder": "custom"
+                "roboto": {
+                    "files": "Roboto.ttf",
+                    "folder": "..",
+                }
+            }
+        }
+    }
+};
+```
+And the result will look like that:
+```
+_.folder(paths.assets.fonts.roboto);
+// ./app/assets/fonts/
 
-[View Contributors](https://github.com/CKGrafico/Gulp-Boilerplates/graphs/contributors)
+_.files(paths.assets.fonts.roboto)
+// ./app/assets/fonts/roboto.ttf
+```
 
-## License
+**[⬆️ back to top](#quickstart)**
+
+## 🎩 Contributors
+
+
+| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) |
+| :---: | :---: | :---: |
+
+[View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
+
+## 📜 License
 
 (The MIT License)
 
@@ -280,4 +315,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[ back to top](#table-of-contents)**
+**[⬆️ back to top](#quickstart)**
