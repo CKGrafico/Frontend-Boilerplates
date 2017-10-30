@@ -57,13 +57,8 @@ On this branch _(Basic)_ we use:
 - **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
 - **Opn:** Open browser to see the preview.
 - **Require all:** Load all gulp tasks once.
-<<<<<<< HEAD
 - **Webpack and Babel:** To use Babel with Webpack _(TypeScript -> ES5)_ and create a bundle.
 - **Webpack and Linting:** To check TypeScript files.
-=======
-- **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
-- **Webpack and Linting:** To check TypeScript files
->>>>>>> dev
 
 **[⬆️ back to top](#quickstart)**
 
