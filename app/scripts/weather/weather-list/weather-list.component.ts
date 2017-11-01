@@ -1,6 +1,6 @@
 import { Component, BaseComponent } from '~/core';
 import { container } from '~/app.container';
-import { ICitiesServiceId, ICitiesService, City, Weather, WeatherAstronomy, WeatherCodes, WeatherIcons } from '~/shared';
+import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
 
 import Template from './weather-list.component.html?style=weather/weather-list/weather-list.component.css';

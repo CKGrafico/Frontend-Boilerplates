@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { CitiesSeed } from './core/seeds';
 import { Filters } from './app.filters';
 
-Vue.use(Filters);
 
 export class App {
     constructor() {
         containerBuilder();
+
+        Vue.use(Filters);
+
         this.bootstrap();
     }
 

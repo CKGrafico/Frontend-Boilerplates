@@ -1,19 +1,20 @@
 import { injectable } from 'inversify';
 import { IDateService } from '.';
+import { IFilter } from '~/core';
 
 @injectable()
-export class DateService implements IDateService {
-    public formatDate(date: Date): string {
-        if (date == null) {
+export class DateService implements IDateService, IFilter {
+    public filterName = 'date';
+
+    public filterAction(day: string, month: string, year: string) {
+        return this.formatDate(day, month, year);
+    }
+
+    public formatDate(day: string, month: string, year: string): string {
+        if (!day || !month || !year) {
             return '';
         }
 
-        return this.formatDigit(date.getMonth() + 1) + '/' +
-                this.formatDigit(date.getDate()) + '/' +
-                date.getFullYear();
-    }
-
-    private formatDigit(digit: number) {
-        return digit < 10 ? '0' + digit : digit;
+        return `${day}/${month}/${year}`;
     }
 }

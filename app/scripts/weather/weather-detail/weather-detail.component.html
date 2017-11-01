@@ -3,12 +3,12 @@
 
     <ul class="weather_detail-cities">
         <li class="weather_detail-city" v-for="forecast in city.weather.item.forecast">
-            <span class="weather_detail-title">{{forecast.date | date}}</span>
+            <span class="weather_detail-title">{{forecast.date}}</span>
 
             <div v-if="city.weather">
                 <div v-if="city.weather.astronomy">
-                    <span class="weather_detail-item">Sunrise: {{city.weather.astronomy.sunrise}}</span>
-                    <span class="weather_detail-item">Sunset: {{city.weather.astronomy.sunset}}</span>
+                    <span class="weather_detail-item">{{'weather.sunrise' | t }}: {{city.weather.astronomy.sunrise}}</span>
+                    <span class="weather_detail-item">{{'weather.sunset' | t }}: {{city.weather.astronomy.sunset}}</span>
                 </div>
                 <div v-if="city.weather.item">
                     <span class="weather_detail-item">{{forecast.low}}ºC / {{forecast.high}}ºC</span>

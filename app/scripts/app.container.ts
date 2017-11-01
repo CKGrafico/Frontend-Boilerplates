@@ -1,5 +1,5 @@
 import { Container } from 'inversify';
-import { CitiesService, ICitiesService, ICitiesServiceId } from '~/shared';
+import * as s from '~/shared';
 import { citiesContainerBuilder } from '~/cities';
 import { weatherContainerBuilder } from '~/weather';
 
@@ -15,7 +15,9 @@ export function containerBuilder(): Container {
     container = new Container();
 
     // Bind shared services
-    container.bind<ICitiesService>(ICitiesServiceId).to(CitiesService).inSingletonScope();
+    container.bind<s.IDateService>(s.IDateServiceId).to(s.DateService).inSingletonScope();
+    container.bind<s.ITranslateService>(s.ITranslateServiceId).to(s.TranslateService).inSingletonScope();
+    container.bind<s.ICitiesService>(s.ICitiesServiceId).to(s.CitiesService).inSingletonScope();
 
     // Bind services for each module
     citiesContainerBuilder(container);

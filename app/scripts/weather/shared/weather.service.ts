@@ -1,11 +1,10 @@
-import localforage from 'localforage';
 import { injectable } from 'inversify';
 import { City, Weather, WeatherForecast } from '~/shared';
 import { IWeatherService } from '.';
 
 @injectable()
 export class WeatherService implements IWeatherService {
-    private weathers: Weather[];
+    public weathers: Weather[];
 
     private toCelsius(faren: number) {
         return parseFloat(((faren - 32) * 5 / 9).toFixed(2));
