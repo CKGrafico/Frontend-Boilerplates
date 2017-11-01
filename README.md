@@ -192,11 +192,6 @@ _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
 
-```
-_.abs(_.folder(paths.app.scripts), __dirname)
-```
-Change path to absolute path: _'C:/project/app/js'_
-
 **[⬆️ back to top](#quickstart)**
 
 ### Tasks configuration
