@@ -111,4 +111,4 @@ rules:
 
   # Final Items
   trailing-semicolon: 2
-  final-newline: 2
+  final-newline: 0

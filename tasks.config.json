@@ -27,7 +27,9 @@
                 "images": {},
                 "fonts": {}
             },
-            "css": {},
+            "css": {
+                "scripts": {}
+            },
             "scripts": {}
         }
     }

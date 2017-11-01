@@ -17,7 +17,7 @@ module.exports = env => {
             vendor: _.files(paths.app.scripts.vendor)
         },
         output: {
-            path: _.abs(_.folder(paths.dist.scripts), __dirname),
+            path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
             filename: '[name].js',
             publicPath: '/scripts/'
         },
@@ -32,11 +32,11 @@ module.exports = env => {
         resolve: {
             extensions: ['.ts', '.js'],
             modules: [
-                path.resolve(__dirname, 'dist/css/scripts'),
+                path.resolve(__dirname, _.folder(paths.dist.css.scripts)),
                 'node_modules'
             ],
             alias: {
-                '~': path.resolve(__dirname, 'app/scripts/'),
+                '~': path.resolve(__dirname, _.folder(paths.app.scripts)),
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },
