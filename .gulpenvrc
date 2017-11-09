@@ -11,6 +11,10 @@
     {
       "name": "local",
       "aliases": []
+    },
+    {
+      "name": "test",
+      "aliases": []
     }
   ],
 
