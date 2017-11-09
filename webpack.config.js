@@ -11,6 +11,24 @@ module.exports = env => {
 
     rules((name, rule) => rule(environment, environments));
 
+    // Define global plugins
+    let plugins = [
+
+    ];
+
+    // Add non-test environment plugins
+    const testPlugins = [
+        new webpack.DefinePlugin({
+            'global': {}
+        }),
+        // extract vendor as a separate bundle
+        new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
+    ];
+
+    if (environment !== environments.test) {
+        plugins = [...plugins, ...testPlugins];
+    }
+
     return ({
         entry: {
             app: _.files(paths.app.scripts.app),
@@ -40,13 +58,7 @@ module.exports = env => {
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },
-        plugins: [
-            new webpack.DefinePlugin({
-                'global': {}
-            }),
-            // extract vendor as a separate bundle
-            new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
-        ],
+        plugins: plugins,
         devtool: (() => environment === environments.production ? false : 'inline-source-map')()
     })
 };
