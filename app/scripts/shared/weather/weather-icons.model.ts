@@ -1,7 +1,7 @@
 import { WeatherCodes } from '.';
 
 // icons from http://erikflowers.github.io/weather-icons/
-export let WeatherIcons = {
+export const WeatherIcons = {
     [WeatherCodes.Tornado]: 'wi-tornado',
     [WeatherCodes.TropicalStorm]: 'wi-storm-showers',
     [WeatherCodes.Hurricane]: 'wi-hurricane',

@@ -1,6 +1,5 @@
 import { Container } from 'inversify';
 
-export let citiesContainerBuilder = (container: Container) => {
-
+export const citiesContainerBuilder = (container: Container) => {
     // Bind services
 };

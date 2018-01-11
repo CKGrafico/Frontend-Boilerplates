@@ -15,8 +15,8 @@ export function router() {
                 path: '/',
                 redirect: '/weather',
             },
-            ...citiesRoutes,
-            ...weatherRoutes
+            ...citiesRoutes(),
+            ...weatherRoutes()
         ]
     });
 

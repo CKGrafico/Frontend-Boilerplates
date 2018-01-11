@@ -1,8 +1,9 @@
 import { RouteConfig } from 'vue-router';
 
-export let weatherRoutes: RouteConfig[] = [
-    {
-        path: '/weather',
+export const weatherRoutes = (): RouteConfig[] => {
+    return [
+        {
+            path: '/weather',
         name: 'weather',
         component: () => import('./weather.component'),
         children: [
@@ -18,5 +19,6 @@ export let weatherRoutes: RouteConfig[] = [
                 props: true
             }
         ]
-    }
-];
+        }
+    ];
+};
