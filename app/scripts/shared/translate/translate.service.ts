@@ -1,6 +1,6 @@
 import { injectable } from 'inversify';
 import Vue from 'vue';
-import VueI18n, { TranslateResult } from 'vue-i18n';
+import VueI18n from 'vue-i18n';
 import { IFilter } from '~/core';
 import { ITranslateService } from '.';
 
@@ -23,11 +23,11 @@ export class TranslateService implements ITranslateService, IFilter {
         });
     }
 
-    public filterAction(text: string, ...keys: string[]): TranslateResult {
+    public filterAction(text: string, ...keys: string[]): VueI18n.TranslateResult {
         return this.get(text, ...keys);
     }
 
-    public get(text: string, ...keys: string[]): TranslateResult {
+    public get(text: string, ...keys: string[]): VueI18n.TranslateResult {
         return this.i18n.t(text, keys);
     }
 }
