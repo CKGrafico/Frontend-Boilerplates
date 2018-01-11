@@ -1,4 +1,4 @@
-import { Component, BaseComponent, Prop } from '~/core';
+import { Component, Vue, Prop } from 'vue-property-decorator';
 import { container } from '~/app.container';
 import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
@@ -7,7 +7,7 @@ import Template from './weather-detail.component.html?style=weather/weather-deta
 
 @Template
 @Component
-export default class WeatherDetailComponent extends BaseComponent {
+export default class WeatherDetailComponent extends Vue {
     private citiesService: any;
     private weatherService: IWeatherService;
     public city: City = null;

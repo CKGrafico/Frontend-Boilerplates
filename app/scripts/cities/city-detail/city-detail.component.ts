@@ -1,4 +1,5 @@
-import { Component, BaseComponent, Prop } from '~/core';
+import { Component, Vue, Prop } from 'vue-property-decorator';
+
 import { container } from '~/app.container';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
@@ -6,7 +7,7 @@ import Template from './city-detail.component.html?style=cities/city-detail/city
 
 @Template
 @Component
-export default class CityDetailComponent extends BaseComponent {
+export default class CityDetailComponent extends Vue {
     private citiesService: ICitiesService;
     public city: City = null;
 

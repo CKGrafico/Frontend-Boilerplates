@@ -1,4 +1,5 @@
-import { Component, BaseComponent, Tag } from '~/core';
+import { Component, Vue } from 'vue-property-decorator';
+import { Tag } from '~/core';
 import { container } from '~/app.container';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
@@ -7,7 +8,7 @@ import Template from './city-add.component.html?style=cities/shared/city-add/cit
 @Template
 @Tag('city-add')
 @Component
-export class CityAddComponent extends BaseComponent {
+export class CityAddComponent extends Vue {
     private citiesService: ICitiesService;
     public city: City = null;
     public name = '';
