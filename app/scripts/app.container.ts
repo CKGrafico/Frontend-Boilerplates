@@ -4,10 +4,11 @@ import { citiesContainerBuilder } from '~/cities';
 import { weatherContainerBuilder } from '~/weather';
 
 // Injecting a service into a service
-// @inject(IExampleServiceIdentifier) private exampleService: IExampleService
+// constructor(@inject(IExampleServiceIdentifier) private exampleService: IExampleService) {}
 
-// Injecting a service into a component (on created)
-// this.exampleService = container.get<IExampleService>(IExampleServiceIdentifier);
+// Injecting a service into a component as property
+// @Container<ICitiesService>(ICitiesServiceId)
+// private citiesService: ICitiesService;
 
 export let container: Container = null;
 

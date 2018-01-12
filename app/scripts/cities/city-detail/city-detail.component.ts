@@ -1,6 +1,6 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-import { container } from '~/app.container';
+import { Tag, Container } from '~/core';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 import Template from './city-detail.component.html?style=cities/city-detail/city-detail.component.css';
@@ -8,8 +8,10 @@ import Template from './city-detail.component.html?style=cities/city-detail/city
 @Template
 @Component
 export default class CityDetailComponent extends Vue {
-    private citiesService: ICitiesService;
     public city: City = null;
+
+    @Container<ICitiesService>(ICitiesServiceId)
+    private citiesService: ICitiesService;
 
     @Prop()
     public id: number;
@@ -19,8 +21,6 @@ export default class CityDetailComponent extends Vue {
     }
 
     public async created() {
-        this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
-
         this.city = await this.citiesService.getById(this.id);
     }
 }

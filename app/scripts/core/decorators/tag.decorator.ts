@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 const key = 'tag';
 
 export function Tag(component: string | any) {

@@ -1,7 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-import { Tag } from '~/core';
-import { container } from '~/app.container';
+import { Tag, Container } from '~/core';
 import { City, ICitiesService, ICitiesServiceId, } from '~/shared';
 import { CityAddComponent } from '~/cities/shared';
 
@@ -14,12 +13,13 @@ import Template from './city-list.component.html?style=cities/city-list/city-lis
     }
 })
 export default class CityListComponent extends Vue {
-    private citiesService: ICitiesService;
     public cities: City[] = null;
+    public a = 1;
+
+    @Container<ICitiesService>(ICitiesServiceId)
+    private citiesService: ICitiesService;
 
     public async created() {
-        this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
-        
         this.cities = await this.citiesService.get();
     }
 
