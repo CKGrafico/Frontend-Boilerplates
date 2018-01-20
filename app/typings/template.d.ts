@@ -1,9 +1,9 @@
 declare module '*.css' {
-    import Vue = require('vue')
+    import Vue, { ComponentOptions } from 'vue';
     interface Template {
-        <V extends Vue>(options: Vue.ComponentOptions<V>): Vue.ComponentOptions<V>
-        <V extends typeof Vue>(component: V): V
+        <V extends Vue>(options: ComponentOptions<V>): ComponentOptions<V>;
+        <V extends typeof Vue>(component: V): V;
     }
     const template: Template
-    export = template
+    export default template
 }

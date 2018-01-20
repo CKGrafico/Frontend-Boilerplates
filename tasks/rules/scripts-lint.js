@@ -17,6 +17,7 @@ module.exports = (env, envs) => {
         [envs.local]: {
             configFile: '.scripts-lint.json',
             project: 'tsconfig.json',
+            formatter: 'stylish',
             typeCheck: true
         }
     };
