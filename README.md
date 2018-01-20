@@ -33,7 +33,6 @@ Feel free to give feedback and improvements to the repo.
 On this branch _(Basic)_ we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
 - **TypeScript:** All the code uses TypeScript.
-- **jQuery:** Only to show how to import an external library.
 - **Linting:** Linting for TypeScript and SASS.
 - **Normalize:** Normalize our css, you can extend it easily.
 - **SASS:** Scss structure with good practises.

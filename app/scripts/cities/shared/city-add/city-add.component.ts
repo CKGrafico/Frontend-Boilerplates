@@ -1,5 +1,5 @@
-import { Component, BaseComponent, Tag } from '~/core';
-import { container } from '~/app.container';
+import { Component, Vue } from 'vue-property-decorator';
+import { Tag, Container } from '~/core';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 import Template from './city-add.component.html?style=cities/shared/city-add/city-add.component.css';
@@ -7,14 +7,12 @@ import Template from './city-add.component.html?style=cities/shared/city-add/cit
 @Template
 @Tag('city-add')
 @Component
-export class CityAddComponent extends BaseComponent {
-    private citiesService: ICitiesService;
+export class CityAddComponent extends Vue {
     public city: City = null;
     public name = '';
 
-    public created() {
-        this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
-    }
+    @Container<ICitiesService>(ICitiesServiceId)
+    private citiesService: ICitiesService;
 
     public async search() {
         if (!this.name) {

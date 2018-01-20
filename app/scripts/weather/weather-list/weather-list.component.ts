@@ -1,21 +1,22 @@
-import { Component, BaseComponent } from '~/core';
-import { container } from '~/app.container';
+import { Component, Vue } from 'vue-property-decorator';
+import { Container } from '~/core';
 import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
-import { IWeatherService, IWeatherServiceId } from '../shared';
+import { IWeatherService, IWeatherServiceId } from '~/weather/shared';
 
 import Template from './weather-list.component.html?style=weather/weather-list/weather-list.component.css';
 
 @Template
 @Component
-export default class WeatherListComponent extends BaseComponent {
-    private citiesService: any;
+export default class WeatherListComponent extends Vue {
+    public cities: City[] = [];
+
+    @Container<ICitiesService>(ICitiesServiceId)
+    private citiesService: ICitiesService;
+
+    @Container<IWeatherService>(IWeatherServiceId)
     private weatherService: IWeatherService;
-    public cities: City[] = null;
 
     public async created() {
-        this.weatherService = container.get<IWeatherService>(IWeatherServiceId);
-        this.citiesService = container.get<ICitiesService>(ICitiesServiceId);
-        
         this.cities = await this.citiesService.get();
         this.cities.forEach(async city => {
             city.weather = await this.weatherService.get(city);

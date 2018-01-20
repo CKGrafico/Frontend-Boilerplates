@@ -1,5 +1,12 @@
-export function Tag(name: string) {
-    return (constructor: any) => {
-        constructor.tag = name;
-    };
+const key = 'tag';
+
+export function Tag(component: string | any) {
+
+    if (typeof component === 'string') {
+        return (constructor: any) => {
+            constructor[key] = component;
+        };
+    }
+
+    return component[key];
 }

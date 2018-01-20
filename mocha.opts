@@ -1,3 +1,0 @@
---require tsconfig.mocha.js
---require reflect-metadata/Reflect
-app/scripts/**/*.spec.ts
