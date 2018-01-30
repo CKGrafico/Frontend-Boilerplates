@@ -40,10 +40,6 @@ module.exports = {
         return not === NOT ? '!' + path[keyFolder] : path[keyFolder];
     },
 
-    abs: (path, abs = __dirname) => {
-        return abs + path.slice(1);
-    },
-
     clone: (finalObj, initalObj) => clone(finalObj, initalObj),
 
     parsePath: (paths) => {

@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const path = require('path');
 const { paths, environments } = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
@@ -16,7 +17,7 @@ module.exports = env => {
             vendor: _.files(paths.app.scripts.vendor)
         },
         output: {
-            path: _.abs(_.folder(paths.dist.scripts), __dirname),
+            path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
             filename: '[name].js'
         },
         module: {
