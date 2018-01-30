@@ -6,6 +6,7 @@ Feel free to give feedback and improvements to the repo.
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-master)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
 
 ## Quickstart
@@ -191,6 +192,11 @@ Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
 _.files(paths.app.scripts, _.NOT)
 ```
 Exclude scripts, example: _'!./app/js/**/*.js'_
+
+```
+_.abs(_.folder(paths.app.scripts), __dirname)
+```
+Change path to absolute path: _'C:/project/app/js'_
 
 **[⬆️ back to top](#quickstart)**
 
