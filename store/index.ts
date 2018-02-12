@@ -1,6 +1,6 @@
 import * as root from './root';
 import * as i18n from './modules/i18n';
-import * as simple from './modules/simple';
+import * as color from './modules/color';
 import * as complex from './modules/complex';
 
 // More info about store: https://vuex.vuejs.org/en/core-concepts.html
@@ -14,13 +14,13 @@ import * as complex from './modules/complex';
 
 export const modules = {
     [i18n.name]: i18n,
-    [simple.name]: simple,
+    [color.name]: color,
     [complex.name]: complex
 };
 
 interface ModulesStates {
     i18n: i18n.State;
-    simple: simple.State;
+    color: color.State;
     complex: complex.State;
 }
 

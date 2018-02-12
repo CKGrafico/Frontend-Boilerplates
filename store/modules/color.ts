@@ -1,7 +1,9 @@
 import { ActionTree, MutationTree, GetterTree, ActionContext } from 'vuex';
 import { RootState } from 'store';
 
-export const name = 'simple';
+// Note: If your file starts to increase, separate it into multiple files, one per export.
+
+export const name = 'color';
 
 export const types = {
     SET_RED: 'SET_RED',
