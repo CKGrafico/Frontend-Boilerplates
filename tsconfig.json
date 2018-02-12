@@ -1,25 +1,32 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "lib": [
       "dom",
-      "es2015",
-      "es2016"
+      "es2015"
     ],
-    "baseUrl": "./app",
-    "paths": {
-      "~/*": [
-        "scripts/*"
-      ]
-    },
-    "module": "esnext",
+    "module": "es2015",
     "moduleResolution": "node",
-    "isolatedModules": false,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "removeComments": true,
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true
-  },
-  "compileOnSave": false
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "~/*": ["./"],
+      "~/assets/*": ["./assets/*"],
+      "~/components/*": ["./components/*"],
+      "~/middleware/*": ["./middleware/*"],
+      "~/pages/*": ["./pages/*"],
+      "~/plugins/*": ["./plugins/*"],
+      "~/static/*": ["./static/*"],
+      "~/store/*": ["./store/*"],
+      "~/utils/*": ["./utils/*"],
+      "~/test/*": ["./test/*"]
+    }
+  }
 }
