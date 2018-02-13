@@ -57,13 +57,13 @@ export const actions: Actions<State, RootState> = {
 
 export const mutations: MutationTree<State> = {
     [types.SET_RED](state, red: number): void {
-        state.red = red;
+        state.r = red;
     },
     [types.SET_GREEN](state, green: number): void {
-        state.green = green;
+        state.g = green;
     },
     [types.SET_BLUE](state, blue: number): void {
-        state.blue = blue;
+        state.b = blue;
     }
 };
 

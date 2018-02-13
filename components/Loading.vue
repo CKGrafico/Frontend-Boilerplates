@@ -1,6 +1,6 @@
 <template>
 <section>
-  <div class="loading" v-if="active"></div>
+<div class="loading" v-if="active"></div>
 </section>
 </template>
 
@@ -17,14 +17,14 @@ export default class extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/base/variables";
+@import '~assets/scss/base/variables';
 
 // From: https://projects.lukehaas.me/css-loaders/
 .loading {
   $size: 1.1em;
 
   animation: spin 1.3s linear infinite;
-  border-color: $color-foreground-brighter transparent;
+  border-color: $color-brand transparent;
   border-radius: 50%;
   border-style: solid;
   border-width: .12em;
@@ -43,4 +43,5 @@ export default class extends Vue {
     }
   }
 }
+
 </style>
