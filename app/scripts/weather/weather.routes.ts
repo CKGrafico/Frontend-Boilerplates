@@ -1,6 +1,6 @@
 import { RouteConfig } from 'vue-router';
 
-export const weatherRoutes = (): RouteConfig[] => {
+export default (): RouteConfig[] => {
     return [
         {
             path: '/weather',
