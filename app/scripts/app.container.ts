@@ -1,7 +1,7 @@
 import { Container } from 'inversify';
 import * as s from '~/shared';
-import { citiesContainerBuilder } from '~/cities';
-import { weatherContainerBuilder } from '~/weather';
+import { citiesModule } from '~/cities';
+import { weatherModule } from '~/weather';
 
 // Injecting a service into a service
 // constructor(@inject(IExampleServiceIdentifier) private exampleService: IExampleService) {}
@@ -21,8 +21,8 @@ export function containerBuilder(): Container {
     container.bind<s.ICitiesService>(s.ICitiesServiceId).to(s.CitiesService).inSingletonScope();
 
     // Bind services for each module
-    citiesContainerBuilder(container);
-    weatherContainerBuilder(container);
+    citiesModule.container(container);
+    weatherModule.container(container);
 
     return container;
 }
