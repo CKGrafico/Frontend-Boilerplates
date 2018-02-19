@@ -1,4 +1,5 @@
 @import '../variables';
+/* stylelint-disable */
 
 // str replace https://css-tricks.com/snippets/sass/str-replace-function/
 @function str-replace($string, $search, $replace: '') {
