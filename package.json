@@ -73,6 +73,7 @@
     "tslint": "^5.5.0",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.7.2",
+    "vue-loader": "^14.2.1",
     "vue-property-decorator": "^6.0.0",
     "vue-template-compiler": "^2.5.13",
     "vue-template-loader": "^0.4.1",

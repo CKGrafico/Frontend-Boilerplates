@@ -48,7 +48,7 @@ module.exports = env => {
             ]
         },
         resolve: {
-            extensions: ['.ts', '.js'],
+            extensions: ['.ts', '.js', '.vue'],
             modules: [
                 path.resolve(__dirname, _.folder(paths.dist.css.scripts)),
                 'node_modules'

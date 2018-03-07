@@ -5,8 +5,14 @@ import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 import Template from './city-detail.component.html?style=cities/city-detail/city-detail.component.css';
 
+import Loading from '~/shared/loading.component.vue';
+
 @Template
-@Component
+@Component({
+    components: {
+        Loading
+    }
+  })
 export default class CityDetailComponent extends Vue {
     public city: City = null;
 
