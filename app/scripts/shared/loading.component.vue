@@ -1,16 +1,14 @@
 <template>
-<section>
-  <div class="loading"></div>
-</section>
+<div class="loading"></div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { Tag } from '~/core';
 
+@Tag('loading')
 @Component
-export default class extends Vue {
-
-}
+export default class LoadingComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -18,7 +16,7 @@ export default class extends Vue {
 
 .loading {
   animation: spin 1.3s linear infinite;
-  border-color: $color-foreground-brighter;
+  border-color: $color-foreground-brighter transparent;
   border-radius: 50%;
   border-style: solid;
   border-width: .12em;

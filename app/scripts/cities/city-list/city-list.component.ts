@@ -1,7 +1,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 import { Tag, Container } from '~/core';
-import { City, ICitiesService, ICitiesServiceId, } from '~/shared';
+import { City, ICitiesService, ICitiesServiceId, LoadingComponent } from '~/shared';
 import { CityAddComponent } from '~/cities/shared';
 
 import Template from './city-list.component.html?style=cities/city-list/city-list.component.css';
@@ -9,7 +9,8 @@ import Template from './city-list.component.html?style=cities/city-list/city-lis
 @Template
 @Component({
     components: {
-        [Tag(CityAddComponent)]: CityAddComponent
+        [Tag(CityAddComponent)]: CityAddComponent,
+        [Tag(LoadingComponent)]: LoadingComponent,
     }
 })
 export default class CityListComponent extends Vue {
@@ -20,7 +21,10 @@ export default class CityListComponent extends Vue {
     private citiesService: ICitiesService;
 
     public async created() {
-        this.cities = await this.citiesService.get();
+        // Fake example with loading
+        setTimeout(async () => {
+            this.cities = await this.citiesService.get();
+        }, 2000);
     }
 
     public remove(id: number) {
