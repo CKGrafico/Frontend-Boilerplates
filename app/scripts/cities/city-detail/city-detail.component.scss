@@ -1,20 +1,20 @@
 @import '~/base/variables';
 
 .city_detail {
-    color: $color-foreground-bright;
-    font-size: $font-size-l;
+  color: $color-foreground-bright;
+  font-size: $font-size-l;
 
-    &-header {
-        color: $color-secondary;
-        margin-bottom: 1rem;
-    }
+  &-header {
+    color: $color-secondary;
+    margin-bottom: 1rem;
+  }
 
-    &-icon {
-        font-size: 3rem;
-        margin-right: 1rem;
-    }
+  &-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
 
-    &-map {
-        border-radius: 50%;
-    }
+  &-map {
+    border-radius: 50%;
+  }
 }

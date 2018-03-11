@@ -6,6 +6,7 @@ module.exports = (gulp, paths, $, _) => {
         }))
         .pipe($.sass().on('error', $.sass.logError))
         .pipe($.autoprefixer({ browsers: ['last 2 versions'] }))
+        .pipe($.replace('> > >', '>>>')) // deep combinator fix
         .pipe($.environment.if.production($.cleanCss()))
         .pipe($.environment.if.development($.sourcemaps.write()))
         .pipe(gulp.dest(_.folder(paths.dist.css)));

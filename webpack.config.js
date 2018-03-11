@@ -43,12 +43,13 @@ module.exports = env => {
             rules: [
                 rules.scriptsLint,
                 rules.scripts,
+                rules.scriptsVue,
                 rules.css,
                 rules.html
             ]
         },
         resolve: {
-            extensions: ['.ts', '.js'],
+            extensions: ['.ts', '.js', '.vue'],
             modules: [
                 path.resolve(__dirname, _.folder(paths.dist.css.scripts)),
                 'node_modules'

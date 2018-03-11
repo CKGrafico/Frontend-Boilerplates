@@ -1,5 +1,5 @@
+/* stylelint-disable */
 @import '../base/mixins/fonts';
-
 @include font-include(WeatherIcons, Regular, $font-weight-normal, normal);
 
 .wi {

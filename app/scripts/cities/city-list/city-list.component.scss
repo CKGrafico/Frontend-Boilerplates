@@ -1,18 +1,18 @@
 @import '~/base/variables';
 
 .city_list {
-    &-title {
-        margin-right: auto;
-    }
+  &-title {
+    margin-right: auto;
+  }
 
-    &-close {
-        cursor: pointer;
-        margin-left: 1rem;
-        transition: color $animation-speed-default;
+  &-close {
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: color $animation-speed-default;
 
-        &:hover {
-            color: $color-secondary;
-            transition: color $animation-speed-default;
-        }
+    &:hover {
+      color: $color-secondary;
+      transition: color $animation-speed-default;
     }
+  }
 }

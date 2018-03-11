@@ -1,20 +1,18 @@
 // Base Helpers
 @import
-'base/fonts',
-'base/icons',
-'base/states',
-'base/utilities';
-
-// Base Files
-@import 'base/globals';
+  'base/fonts',
+  'base/icons',
+  'base/states',
+  'base/utilities';
 
 // Vendor
 @import
-'vendor/normalize',
-'vendor/sierra',
-'vendor/weather-icons';
+  'vendor/normalize',
+  'vendor/sierra',
+  'vendor/weather-icons';
 
-//@import '../../node_modules/folder...
+// Base Files
+@import 'base/globals';
 
 // Components
 // Components structure (BEM no strict)
