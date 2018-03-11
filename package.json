@@ -2,7 +2,7 @@
   "name": "app-vue",
   "description": "Stable version of a basic SPA example with SCSS and TypeScript.",
   "license": "MIT",
-  "version": "2.2.0",
+  "version": "2.2.5",
   "scripts": {
     "test": "mocha-webpack",
     "preprod": "gulp --env=production",
