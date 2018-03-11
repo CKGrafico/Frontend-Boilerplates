@@ -1,6 +1,12 @@
 module.exports = (gulp, paths, $, _) => {
-    return gulp.src(_.files(paths.app.client.scss))
-        .pipe($.sassLint())
-        .pipe($.sassLint.format())
-        .pipe($.sassLint.failOnError())
+    const options = {
+        failAfterError: false,
+        reporters: [
+            { formatter: 'string', console: true }
+        ]
+    };
+
+    return gulp.src(_.files(paths.app.client.styles))
+        .pipe($.environment.if.development($.stylelint(options)))
+        .pipe($.environment.if.production($.stylelint({ ...options, failAfterError: true })))
 };

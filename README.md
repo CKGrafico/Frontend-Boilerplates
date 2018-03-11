@@ -79,9 +79,6 @@ To run the tasks we have these three commands:
 - Running tasks on development mode:
 > npm run dev
 
-- Running tasks on local mode:
-> npm run local
-
 - Running tasks on watch mode and serve the app:
 > npm start
 
