@@ -6,8 +6,3 @@ declare module 'vue/types/vue' {
         $router: VueRouter;
     }
 }
-
-declare module "*.vue" {
-    import Vue from "vue";
-    export default Vue;
-}

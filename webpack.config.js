@@ -43,6 +43,7 @@ module.exports = env => {
             rules: [
                 rules.scriptsLint,
                 rules.scripts,
+                rules.scriptsVue,
                 rules.css,
                 rules.html
             ]

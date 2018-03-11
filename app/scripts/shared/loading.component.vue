@@ -1,6 +1,6 @@
 <template>
 <section>
-  <div class="loading" v-if="active"></div>
+  <div class="loading"></div>
 </section>
 </template>
 
@@ -9,15 +9,16 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class extends Vue {
-  @Prop({ type: Boolean, default: false })
-  public active: boolean;
+
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../../styles/base/variables';
+
 .loading {
   animation: spin 1.3s linear infinite;
-  border-color: red transparent;
+  border-color: $color-foreground-brighter;
   border-radius: 50%;
   border-style: solid;
   border-width: .12em;
