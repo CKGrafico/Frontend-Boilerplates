@@ -4,15 +4,11 @@
 // Fonts
 @include font-include(OpenSans, Bold, $font-weight-bold, normal);
 @include font-include(OpenSans, BoldItalic, $font-weight-bold, italic);
-
 @include font-include(OpenSans, ExtraBold, $font-weight-black, normal);
 @include font-include(OpenSans, ExtraBoldItalic, $font-weight-black, italic);
-
 @include font-include(OpenSans, Regular, $font-weight-normal, normal);
 @include font-include(OpenSans, Italic, $font-weight-normal, italic);
-
 @include font-include(OpenSans, Light, $font-weight-light, normal);
 @include font-include(OpenSans, LightItalic, $font-weight-light, italic);
-
 @include font-include(OpenSans, SemiBold, $font-weight-semibold, normal);
 @include font-include(OpenSans, SemiBoldItalic, $font-weight-semibold, italic);

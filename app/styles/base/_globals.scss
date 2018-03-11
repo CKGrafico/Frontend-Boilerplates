@@ -2,18 +2,18 @@
 
 html,
 body {
-    $font-size: 16px;
+  $font-size: 16px;
 
-    background: $color-background-bright;
-    font-size: $font-size;
-    height: 100%;
-    width: 100%;
+  background: $color-background-bright;
+  font-size: $font-size;
+  height: 100%;
+  width: 100%;
 
-    @media screen and (max-width: $media-screen-m) {
-        font-size: $font-size * .8;
-    }
+  @media screen and (max-width: $media-screen-m) {
+    font-size: $font-size * .8;
+  }
 
-    @media screen and (max-width: $media-screen-s) {
-        font-size: $font-size * .65;
-    }
+  @media screen and (max-width: $media-screen-s) {
+    font-size: $font-size * .65;
+  }
 }
