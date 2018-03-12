@@ -1,0 +1,23 @@
+// Base Helpers
+@import
+  'base/fonts',
+  'base/icons',
+  'base/states',
+  'base/utilities';
+
+// Vendor
+@import
+  'vendor/normalize';
+
+// Base Files
+@import 'base/globals';
+
+// Components
+// Components structure (BEM no strict)
+// .ck- (the module)
+// .ck-component (the block)
+// .ck-component-child (the element)
+// DON'T DO THAT .ck-component-child-child2 - div.ck-component-child > div.ck-component-child-child2
+// BETTER THAT .ck-component-child .ck-component-child2 - div.ck-component-child > div.ck-component-child2
+// .ck-component--modifier (the modifier)
+// Note: Each component imports its own sass file

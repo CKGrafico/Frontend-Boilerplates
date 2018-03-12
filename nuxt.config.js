@@ -1,14 +1,36 @@
 // Info about configuration https://nuxtjs.org/guide/configuration/
-const StyleLintPlugin = require('stylelint-webpack-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-//const env = require(`./environments/${process.env.NODE_ENV}`);
+const webpack = require('webpack');
+const path = require('path');
+const { paths, environments } = require('./tasks/config/options');
+const _ = require('./tasks/config/helpers');
 
-console.log(`Environment: ${process.env.NODE_ENV}`);
+let rules = require('require.all')('./tasks/rules');
+
+let environment = process.env.NODE_ENV;
+process.env.NODE_ENV = JSON.stringify(environment);
+
+rules((name, rule) => rule(environment, environments));
+
+// Define global plugins
+let plugins = [
+
+];
+
+// Add non-test environment plugins
+const testPlugins = [
+    new webpack.DefinePlugin({
+        'global': {}
+    }),
+];
+
+if (environment !== environments.test) {
+    plugins = [...plugins, ...testPlugins];
+}
 
 module.exports = {
-    //env: env,
+    env: environment,
     head: {
-        title: 'PWABuilder',
+        title: 'My app',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,21 +40,20 @@ module.exports = {
         ]
     },
     loading: { color: '#1FC2C8' },
-    css: ['~/assets/scss/app.scss'],
+    srcDir: './app',
     build: {
         extractCSS: true,
         vendor: ['babel-polyfill', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
-        plugins: [
-            new StyleLintPlugin({
-                files: ['**/*.scss', '**/*.vue'],
-                failOnError: false,
-                syntax: 'scss'
-            }),
-            new ForkTsCheckerWebpackPlugin({
-              tslint: true,
-              vue: true
-            })
-        ]
+        module: {
+            rules: [
+                rules.scriptsLint,
+                rules.scripts,
+                rules.scriptsVue,
+                rules.css,
+                rules.html
+            ]
+        },
+        plugins: []
     },
     router: {
         middleware: 'i18n'
