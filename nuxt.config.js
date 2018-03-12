@@ -48,11 +48,11 @@ module.exports = {
     build: {
         extractCSS: true,
         vendor: ['babel-polyfill', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
-        // rules: [
-        //     rules.scriptsLint,
-        //     rules.scripts,
-        //     rules.html
-        // ],
+        rules: [
+            rules.scriptsLint,
+            rules.scripts,
+            rules.html
+        ],
         plugins: []
     },
     router: {

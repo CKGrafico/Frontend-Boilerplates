@@ -2,14 +2,14 @@
   "name": "app-vue",
   "description": "Development version of a website with Nuxt, SCSS and TypeScript.",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "scripts": {
     "test": "mocha-webpack",
     "preprod": "gulp --env=production",
     "prod": "cross-env NODE_ENV=production nuxt build",
     "postprod": "rimraf ./dist/css/scripts",
     "predev": "gulp --env=development",
-    "dev1": "cross-env NODE_ENV=development nuxt",
+    "dev": "cross-env NODE_ENV=development nuxt build",
     "start": "concurrently \"gulp watcher --env=development\" \"cross-env NODE_ENV=development nuxt\" --names \"🥛,📦\" --prefix name --kill-others"
   },
   "dependencies": {
