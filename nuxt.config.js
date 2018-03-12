@@ -41,18 +41,18 @@ module.exports = {
     },
     loading: { color: '#1FC2C8' },
     srcDir: './app',
+    buildDir: './dist/.nuxt',
+    css: [
+        './dist/css/styles/app.css'
+    ],
     build: {
         extractCSS: true,
         vendor: ['babel-polyfill', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
-        module: {
-            rules: [
-                rules.scriptsLint,
-                rules.scripts,
-                rules.scriptsVue,
-                rules.css,
-                rules.html
-            ]
-        },
+        // rules: [
+        //     rules.scriptsLint,
+        //     rules.scripts,
+        //     rules.html
+        // ],
         plugins: []
     },
     router: {

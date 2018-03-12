@@ -9,6 +9,3 @@ dist/
 
 # Packages folders
 node_modules/
-
-
-.nuxt/
