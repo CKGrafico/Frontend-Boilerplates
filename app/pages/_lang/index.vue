@@ -1,6 +1,6 @@
 <template>
 <section>
-  Index
+  {{ $t('app.title') }}
   <Loading :active="true"/>
 </section>
 </template>
