@@ -1,5 +1,6 @@
 <template>
 <section>
+  quique
   {{ $t('app.title') }}
   <Loading :active="true"/>
 </section>

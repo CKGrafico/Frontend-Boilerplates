@@ -56,7 +56,22 @@ module.exports = {
         plugins: []
     },
     router: {
-        middleware: 'i18n'
+        middleware: 'i18n',
+        extendRoutes(routes) {
+            //  Configure translations
+            let langRoutes = [];
+            routes.forEach(route => {
+                let langRoute = {...route};
+                langRoute.path ='/:lang' + langRoute.path;
+                langRoute.redirect = { name: langRoute.name };
+                // langRoute.chunkName = langRoute.chunkName.replace('pages/', 'pages/_lang/');
+
+                langRoutes.push(langRoute);
+            });
+
+            routes = [...routes, ...langRoutes];
+            routes.forEach(r => console.log(r));
+        }
     },
     plugins: ['~/plugins/i18n.js'],
     modules: [
