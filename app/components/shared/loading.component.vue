@@ -1,5 +1,5 @@
 <template>
-  <div class="loading" :style="{'font-size': `${size}px`}" :class="{'loading--fat': fat}">
+  <div class="loading" :style="{'font-size': `${size}px`}" :class="{'loading--fat': fat, 'loading--bright': bright}">
     <div class="loading-spinner"></div>
   </div>
 </template>
@@ -10,10 +10,14 @@ import Component from 'nuxt-class-component';
 
 @Component
 export default class LoadingComponent extends Vue {
-  public size = 16;
+  @Prop({type: Number, default: 16})
+  public size: number;
 
   @Prop({type: Boolean, default: false})
   fat: boolean;
+
+  @Prop({type: Boolean, default: false})
+  bright: boolean;
 }
 </script>
 
@@ -23,11 +27,7 @@ export default class LoadingComponent extends Vue {
 
 .loading {
   display: flex;
-  height: 100%;
-  left: 0;
   position: relative;
-  top: 0;
-  width: 100%;
   z-index: 100;
 
   &-spinner {
@@ -79,6 +79,14 @@ export default class LoadingComponent extends Vue {
     &:before,
     &:after {
       border-width: 3px;
+    }
+  }
+
+  &--bright &-spinner {
+    &,
+    &:before,
+    &:after {
+      border-top-color: $color-foreground-brighter;
     }
   }
 }

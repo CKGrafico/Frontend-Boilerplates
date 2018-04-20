@@ -1,6 +1,17 @@
 @import '~/variables';
 
 .p-wizard {
-  height: 200px;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+
+  &-avatar {
+    text-align: center;
+  }
+
+  &-controls {
+    padding-top: 2rem;
+  }
 }
