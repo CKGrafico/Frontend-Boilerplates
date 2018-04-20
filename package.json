@@ -1,7 +1,7 @@
 {
   "name": "app-vue",
   "description": "Development version of a website with Nuxt, SCSS and TypeScript.",
-  "private": true,
+  "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "test": "mocha --opts mocha.opts",
