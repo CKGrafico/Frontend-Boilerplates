@@ -6,31 +6,32 @@ const _ = require('./tasks/config/helpers');
 
 let rules = require('require.all')('./tasks/rules');
 
-let environment = process.env.NODE_ENV;
-process.env.NODE_ENV = JSON.stringify(environment);
-
+const environment = process.env.NODE_ENV;
 rules((name, rule) => rule(environment, environments));
 
-// Define global plugins
-let plugins = [
+const vendor = [
+    'babel-polyfill',
+    'bootstrap-vue',
+    'vue-perfect-scrollbar'];
 
+const plugins = [
+    '~/plugins/axios',
+    '~/plugins/filters',
+    { src: '~/plugins/components', ssr: false }
 ];
 
-// Add non-test environment plugins
-const testPlugins = [
-    new webpack.DefinePlugin({
-        'global': {}
-    }),
+const modules = [
+    '@nuxtjs/axios',
+    '~/modules/typescript',
+    '~/modules/separated-files',
+    '~/modules/components-name',
+    '~/modules/languages'
 ];
-
-if (environment !== environments.test) {
-    plugins = [...plugins, ...testPlugins];
-}
 
 module.exports = {
     env: environment,
     head: {
-        title: 'My app',
+        title: 'My App',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,43 +40,36 @@ module.exports = {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ]
     },
-    loading: { color: '#1FC2C8' },
-    srcDir: './app',
-    buildDir: './dist/.nuxt',
-    css: [
-        './dist/css/styles/app.css'
-    ],
+    loading: { color: '#1ABC9C' },
+    plugins,
+    modules,
+    router: {
+        middleware: ['settings'],
+        linkActiveClass: 'is-active'
+    },
+    languages: {
+        locales: ['es', 'en'],
+        defaultLocale: 'en'
+    },
     build: {
         extractCSS: true,
-        vendor: ['babel-polyfill', 'vuex-class', 'nuxt-class-component', 'vue-i18n'],
-        rules: [
-            rules.scriptsLint,
-            rules.scripts,
-            rules.html
-        ],
+        vendor,
+        extend(config) {
+            const customRules = [
+                rules.scriptsLint
+            ];
+
+            config.module.rules = [...config.module.rules, ...customRules];
+        },
         plugins: []
     },
-    router: {
-        middleware: 'i18n',
-        extendRoutes(routes) {
-            //  Configure translations
-            let langRoutes = [];
-            routes.forEach(route => {
-                let langRoute = {...route};
-                langRoute.path ='/:lang' + langRoute.path;
-                langRoute.redirect = { name: langRoute.name };
-                // langRoute.chunkName = langRoute.chunkName.replace('pages/', 'pages/_lang/');
-
-                langRoutes.push(langRoute);
-            });
-
-            routes = [...routes, ...langRoutes];
-            routes.forEach(r => console.log(r));
-        }
+    axios: {
+        baseURL: process.env.BASE_URL || '/'
     },
-    plugins: ['~/plugins/i18n.js'],
-    modules: [
-        '~/modules/typescript',
-        '@nuxtjs/axios'
-    ]
+    srcDir: './app',
+    buildDir: './.temp/.nuxt',
+    css: ['./.temp/css/styles/app.css'],
+    generate: {
+        dir: 'dist'
+    }
 }

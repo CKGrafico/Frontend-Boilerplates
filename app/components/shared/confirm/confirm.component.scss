@@ -1,0 +1,61 @@
+@import '~/variables';
+
+.confirm {
+  &-modal {
+    color: $color-darkest;
+
+    >>> .modal {
+      .modal-content {
+        border-radius: 0;
+        box-shadow: 0 2px 4px 0 rgba($color-darkest, .3);
+
+        .modal-header {
+          display: none;
+        }
+
+        .modal-footer {
+          background-color: $color-attention;
+          border-top: none;
+          flex-direction: row-reverse;
+          justify-content: center;
+          text-align: center;
+
+          .btn {
+            background-color: transparent;
+            font-family: $font-condensed;
+            font-size: $font-size-xxs;
+            font-weight: $font-weight-normal;
+            line-height: 2.3rem;
+            margin: 0 .5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            text-transform: uppercase;
+
+            &-primary {
+              border: 2px solid $color-brightest;
+              border-radius: $radius-strongest;
+            }
+
+            &-secondary {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-body {
+    color: $color-dark-6;
+    font-size: $font-size-m;
+    font-weight: $font-weight-semibold;
+    text-align: center;
+    text-transform: none;
+    white-space: normal;
+
+    .icon-warning {
+      color: darken($color-attention, 10%);
+      font-size: 2.6rem;
+    }
+  }
+}

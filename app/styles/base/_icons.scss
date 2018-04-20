@@ -1,6 +1,9 @@
 @import 'mixins/icomoon';
 $icons: (
-  ck-play: 'e900'
+  facebook: 'e900',
+  instagram: 'e901',
+  twitter: 'e902',
+  youtube: 'e903'
 );
 
-//@include icomoon-generate($icons);
+@include icomoon-generate($icons);

@@ -1,4 +1,0 @@
---webpack-config webpack.config.js
---webpack-env.NODE_ENV=test
---require jsdom-global/register
-app/scripts/**/*.spec.ts

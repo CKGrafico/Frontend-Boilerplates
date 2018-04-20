@@ -14,5 +14,5 @@
     }
   ],
 
-  "default": "local"
+  "default": "development"
 }

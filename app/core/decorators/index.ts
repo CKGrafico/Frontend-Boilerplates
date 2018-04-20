@@ -1,0 +1,2 @@
+// Decorators here
+export default {};

@@ -8,7 +8,8 @@
         ],
         "indent": [
             true,
-            "spaces"
+            "spaces",
+            4
         ],
         "linebreak-style": false,
         "one-line": [
@@ -24,7 +25,7 @@
         ],
         "semicolon": [
             true,
-            "ignore-bound-class-methods"
+            "always"
         ],
         "whitespace": [
             true,
@@ -49,7 +50,6 @@
         "no-trailing-whitespace": false,
         "no-inferrable-types": true,
         "no-null-keyword": false,
-        "no-unused-variable": true,
         "prefer-const": false
     }
 }

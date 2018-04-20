@@ -10,6 +10,7 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
+    "noUnusedLocals": true,
     "strictNullChecks": false,
     "removeComments": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -17,15 +18,15 @@
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
-      "~/*": ["./"],
-      "~/assets/*": ["./assets/*"],
-      "~/components/*": ["./components/*"],
-      "~/middleware/*": ["./middleware/*"],
-      "~/pages/*": ["./pages/*"],
-      "~/plugins/*": ["./plugins/*"],
-      "~/static/*": ["./static/*"],
-      "~/store/*": ["./store/*"],
-      "~/utils/*": ["./utils/*"],
+      "~/*": ["./app/*"],
+      "~/assets/*": ["./app/assets/*"],
+      "~/components/*": ["./app/components/*"],
+      "~/middleware/*": ["./app/middleware/*"],
+      "~/pages/*": ["./app/pages/*"],
+      "~/plugins/*": ["./app/plugins/*"],
+      "~/static/*": ["./app/static/*"],
+      "~/store/*": ["./app/store/*"],
+      "~/utils/*": ["./app/utils/*"],
       "~/test/*": ["./test/*"]
     }
   }

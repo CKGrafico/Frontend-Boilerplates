@@ -1,0 +1,11 @@
+@import 'variables';
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity $animation-speed-fast cubic-bezier(1, .5, .8, 1);
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,7 +1,12 @@
 import * as root from './root';
-import * as i18n from './modules/i18n';
-import * as color from './modules/color';
-import * as complex from './modules/complex';
+import * as settings from './modules/settings';
+import * as user from './modules/user';
+import * as pageSettings from './modules/page-settings';
+import * as competences from './modules/competences';
+import * as schoolTerms from './modules/school-terms';
+import * as classGroups from './modules/class-groups';
+import * as students from './modules/students';
+import * as teachers from './modules/teachers';
 
 // More info about store: https://vuex.vuejs.org/en/core-concepts.html
 // Structure of the store:
@@ -13,15 +18,25 @@ import * as complex from './modules/complex';
     // Mutations: Modify the state
 
 export const modules = {
-    [i18n.name]: i18n,
-    [color.name]: color,
-    [complex.name]: complex
+    [settings.name]: settings,
+    [user.name]: user,
+    [pageSettings.name]: pageSettings,
+    [competences.name]: competences,
+    [schoolTerms.name]: schoolTerms,
+    [classGroups.name]: classGroups,
+    [students.name]: students,
+    [teachers.name]: teachers
 };
 
 interface ModulesStates {
-    i18n: i18n.State;
-    color: color.State;
-    complex: complex.State;
+    settings: settings.State;
+    user: user.State;
+    pageSettings: pageSettings.State;
+    competences: competences.State;
+    schoolTerms: schoolTerms.State;
+    classGroups: classGroups.State;
+    students: students.State;
+    teachers: teachers.State;
 }
 
 export type RootState = root.State & ModulesStates;

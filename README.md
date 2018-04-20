@@ -35,10 +35,3 @@ Feel free to give feedback and improvements to the repo.
  **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
  
-
- ## TODO
- - vendor
- - routes
- - IOC?
- - .vue files 
- - tests inside store

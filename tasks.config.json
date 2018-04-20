@@ -17,9 +17,14 @@
             "styles": {
                 "folder": "..",
                 "files": "**/*.scss"
+            },
+            "vue": {
+                "folder": "..",
+                "files": "**/*.vue"
             }
         },
         "dist": {
+            "folder": ".temp",
             "assets": {
                 "images": {},
                 "fonts": {}

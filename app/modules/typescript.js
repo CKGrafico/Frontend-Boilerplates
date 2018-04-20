@@ -8,7 +8,11 @@ module.exports = function () {
       options: {
         appendTsSuffixTo: [/\.vue$/],
         transpileOnly: true
-      }
+      },
+      exclude: [
+        /dist/,
+        /\.temp/
+      ]
     }
     // Add TypeScript loader
     config.module.rules.push(
