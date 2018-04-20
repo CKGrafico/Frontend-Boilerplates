@@ -1,1 +1,1 @@
-export { default as WizardComponent } from './wizard.component.vue';
+export { default as AvatarComponent } from './avatar.component.vue';
