@@ -1,15 +1,20 @@
 <template>
-  <div class="loading">
+  <div class="loading" :style="{'font-size': `${size}px`}" :class="{'loading--fat': fat}">
     <div class="loading-spinner"></div>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-property-decorator';
+import { Vue, Prop } from 'vue-property-decorator';
 import Component from 'nuxt-class-component';
 
 @Component
-export default class LoadingComponent extends Vue {}
+export default class LoadingComponent extends Vue {
+  public size = 16;
+
+  @Prop({type: Boolean, default: false})
+  fat: boolean;
+}
 </script>
 
 <style lang="scss" scoped>
@@ -17,56 +22,68 @@ export default class LoadingComponent extends Vue {}
 // from: https://codepen.io/WebSonata/pen/bRaONB
 
 .loading {
-  background: $color-brand;
-  height: 100vh;
+  display: flex;
+  height: 100%;
   left: 0;
-  position: absolute;
+  position: relative;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
 
   &-spinner {
-    animation: spin 2s linear infinite;
-    border: 3px solid transparent;
+    $size: 3em;
+    $border: 1px;
+
+    animation: loading-spin 2s linear infinite;
+    border: $border solid transparent;
     border-radius: 50%;
     border-top-color: $color-secondary;
     display: block;
-    height: 150px;
-    left: 50%;
-    margin: -75px 0 0 -75px;
+    height: $size;
     position: relative;
-    top: 50%;
-    width: 150px;
+    width: $size;
 
     &:before {
-      animation: spin 3s linear infinite;
-      border: 3px solid transparent;
+      $distance: .4em;
+
+      animation: loading-spin 3s linear infinite;
+      border: $border solid transparent;
       border-radius: 50%;
       border-top-color: $color-secondary-dark;
-      bottom: 5px;
+      bottom: $distance;
       content: '';
-      left: 5px;
+      left: $distance;
       position: absolute;
-      right: 5px;
-      top: 5px;
+      right: $distance;
+      top: $distance;
     }
 
     &:after {
-      animation: spin 1.5s linear infinite;
-      border: 3px solid transparent;
+      $distance: 1em;
+
+      animation: loading-spin 1.5s linear infinite;
+      border: $border solid transparent;
       border-radius: 50%;
       border-top-color: $color-secondary-darker;
-      bottom: 15px;
+      bottom: $distance;
       content: '';
-      left: 15px;
+      left: $distance;
       position: absolute;
-      right: 15px;
-      top: 15px;
+      right: $distance;
+      top: $distance;
+    }
+  }
+
+  &--fat &-spinner {
+    &,
+    &:before,
+    &:after {
+      border-width: 3px;
     }
   }
 }
 
-@keyframes spin {
+@keyframes loading-spin {
   0% {
     transform: rotate(0deg);
   }

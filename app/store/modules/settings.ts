@@ -28,7 +28,7 @@ export const actions: Actions<State, RootState> = {
         return new Promise(async (resolve) => {
             // Some ajax call if needed
             //const settings = await this.$axios.$get('/api/config');
-            const settings = { apiUrl: 'https://api.adorable.io/avatars/face/' };
+            const settings = { apiUrl: 'https://api.adorable.io/avatars' };
             commit(types.SET_SETTINGS, settings);
             resolve();
         });

@@ -1,5 +1,5 @@
 export default async ({ store, req }) => {
-    if (process.server || store.state.settings.loaded) {
+    if (store.state.settings.loaded) {
         return;
     }
 

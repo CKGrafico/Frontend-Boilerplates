@@ -1,1 +1,3 @@
-export const types = {};
+export const types = {
+    SET_FACE: 'SET_FACE'
+};

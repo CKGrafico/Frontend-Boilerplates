@@ -1,4 +1,8 @@
 import { MutationTree } from 'vuex';
-import { State } from '~/store/modules/avatars';
+import { State, AvatarsFace, types } from '~/store/modules/avatars';
 
-export const mutations: MutationTree<State> = {};
+export const mutations: MutationTree<State> = {
+    [types.SET_FACE](state, face: AvatarsFace) {
+        state.faceParts = face;
+    }
+};
