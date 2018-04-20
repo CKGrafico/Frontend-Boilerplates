@@ -17,7 +17,7 @@ export default class LoadingComponent extends Vue {}
 // from: https://codepen.io/WebSonata/pen/bRaONB
 
 .loading {
-  background: $color-dark-0;
+  background: $color-brand;
   height: 100vh;
   left: 0;
   position: absolute;
@@ -29,7 +29,7 @@ export default class LoadingComponent extends Vue {}
     animation: spin 2s linear infinite;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: $color-brand-brighter-2;
+    border-top-color: $color-secondary;
     display: block;
     height: 150px;
     left: 50%;
@@ -42,7 +42,7 @@ export default class LoadingComponent extends Vue {}
       animation: spin 3s linear infinite;
       border: 3px solid transparent;
       border-radius: 50%;
-      border-top-color: $color-brand;
+      border-top-color: $color-secondary-dark;
       bottom: 5px;
       content: '';
       left: 5px;
@@ -55,7 +55,7 @@ export default class LoadingComponent extends Vue {}
       animation: spin 1.5s linear infinite;
       border: 3px solid transparent;
       border-radius: 50%;
-      border-top-color: $color-brand-darker-1;
+      border-top-color: $color-secondary-darker;
       bottom: 15px;
       content: '';
       left: 15px;

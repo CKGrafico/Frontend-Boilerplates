@@ -2,28 +2,27 @@
 
 .confirm {
   &-modal {
-    color: $color-darkest;
+    color: $color-foreground-darker;
 
     >>> .modal {
       .modal-content {
         border-radius: 0;
-        box-shadow: 0 2px 4px 0 rgba($color-darkest, .3);
+        box-shadow: 0 2px 4px 0 rgba($color-background-darker, .3);
 
         .modal-header {
           display: none;
         }
 
         .modal-footer {
-          background-color: $color-attention;
+          background-color: $color-secondary-bright;
           border-top: none;
           flex-direction: row-reverse;
           justify-content: center;
           text-align: center;
 
-          .btn {
+          .button {
             background-color: transparent;
-            font-family: $font-condensed;
-            font-size: $font-size-xxs;
+            font-size: $font-size-xs;
             font-weight: $font-weight-normal;
             line-height: 2.3rem;
             margin: 0 .5rem;
@@ -32,8 +31,8 @@
             text-transform: uppercase;
 
             &-primary {
-              border: 2px solid $color-brightest;
-              border-radius: $radius-strongest;
+              border: 2px solid $color-foreground-brighter;
+              border-radius: 50%;
             }
 
             &-secondary {
@@ -46,16 +45,11 @@
   }
 
   &-body {
-    color: $color-dark-6;
+    color: $color-background-darker;
     font-size: $font-size-m;
     font-weight: $font-weight-semibold;
     text-align: center;
     text-transform: none;
     white-space: normal;
-
-    .icon-warning {
-      color: darken($color-attention, 10%);
-      font-size: 2.6rem;
-    }
   }
 }
