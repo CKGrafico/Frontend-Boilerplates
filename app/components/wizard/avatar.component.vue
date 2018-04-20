@@ -1,13 +1,21 @@
 <template>
-    <div>{{eyes}} hola!</div>
+    <div class="avatar">
+        <img class="avatar-image" :src="`${apiUrl}/face/${eyes}/${nose}/${mouth}/${color}`" />
+    </div>
 </template>
 
 <script lang="ts">
 import { Vue, Prop, Watch } from 'vue-property-decorator';
-import Component from 'nuxt-class-component';
+import Component, { State, namespace } from 'nuxt-class-component';
+
+import * as settingStore from '~/store/modules/settings';
+
+const SettingsState = namespace(settingStore.name, State);
 
 @Component
 export default class AvatarComponent extends Vue {
+    @SettingsState apiUrl: string;
+
     @Prop({type: String, required: true})
     eyes: string;
 
@@ -23,5 +31,5 @@ export default class AvatarComponent extends Vue {
 </script>
 
 <style compile lang="scss" scoped>
-.wizard {}
+.avatar {}
 </style>

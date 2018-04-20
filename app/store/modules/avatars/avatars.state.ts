@@ -1,7 +1,7 @@
 
 export interface AvatarsFace {
     eyes: string[];
-    nouse: string[];
+    nose: string[];
     mouth: string[];
 }
 

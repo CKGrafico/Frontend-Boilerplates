@@ -20,12 +20,19 @@ const AvatarsState = namespace(avatarsStore.name, State);
 export default class WizardPage extends Vue {
     @AvatarsState faceParts: AvatarsFace;
 
-    public selectedEyes = 'eyes1';
-    public selectedNose = 'nose2';
-    public selectedMouth = 'mouth1';
-    public selectedColor = randomizer.color();
+    public selectedEyes: string = null;
+    public selectedNose: string = null;
+    public selectedMouth: string = null;
+    public selectedColor: string = null;
 
     public async fetch({ store }): Promise<void> {
         await store.dispatch(`avatars/fetch`);
+    }
+
+    public created(): void {
+        this.selectedEyes = this.faceParts.eyes[randomizer.generate(0, this.faceParts.eyes.length - 1)];
+        this.selectedNose = this.faceParts.nose[randomizer.generate(0, this.faceParts.nose.length - 1)];
+        this.selectedMouth = this.faceParts.mouth[randomizer.generate(0, this.faceParts.mouth.length - 1)];
+        this.selectedColor = randomizer.color();
     }
 }
