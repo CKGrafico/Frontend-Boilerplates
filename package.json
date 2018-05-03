@@ -2,7 +2,7 @@
   "name": "basic-spa",
   "description": "Stable version of a basic SPA example with SCSS and ES6.",
   "license": "MIT",
-  "version": "2.1.2",
+  "version": "2.3.0",
   "scripts": {
     "prod": "gulp --env=production",
     "postprod": "webpack --env.NODE_ENV=production",
@@ -46,6 +46,7 @@
     "stylelint-processor-html": "^1.0.0",
     "stylelint-scss": "^2.5.0",
     "stylelint-webpack-plugin": "^0.10.3",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.5.5"
   },
   "repository": "https://github.com/CKGrafico/Frontend-Boilerplates#frontend-boilerplates",
