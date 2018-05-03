@@ -1,21 +1,21 @@
 module.exports = (env, envs) => {
     let options = {
         [envs.production]: {
-            configFile: '.scripts-lint.json',
+            configFile: 'tslint.json',
             emitErrors: true,
             failOnHint: true,
             project: 'tsconfig.json',
             typeCheck: true
         },
         [envs.development]: {
-            configFile: '.scripts-lint.json',
+            configFile: 'tslint.json',
             emitErrors: true,
             failOnHint: true,
             project: 'tsconfig.json',
             typeCheck: true
         },
         [envs.local]: {
-            configFile: '.scripts-lint.json',
+            configFile: 'tslint.json',
             project: 'tsconfig.json',
             formatter: 'stylish',
             typeCheck: true
