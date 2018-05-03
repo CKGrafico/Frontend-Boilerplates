@@ -2,7 +2,7 @@
   "name": "app-typescript",
   "description": "Stable version of a basic TypeScript example with SCSS.",
   "license": "MIT",
-  "version": "2.1.2",
+  "version": "2.3.0",
   "scripts": {
     "prod": "gulp --env=production",
     "postprod": "webpack --env.NODE_ENV=production",
@@ -52,6 +52,7 @@
     "tslint": "^5.9.1",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.7.2",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.5.5"
   },
   "repository": "https://github.com/CKGrafico/Frontend-Boilerplates#frontend-boilerplates",
