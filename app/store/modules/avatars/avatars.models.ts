@@ -1,4 +1,3 @@
-
 export interface AvatarsFace {
     eyes: string[];
     nose: string[];
@@ -8,7 +7,3 @@ export interface AvatarsFace {
 export interface State {
     faceParts: AvatarsFace;
 }
-
-export const state = (): State => ({
-    faceParts: null
-});

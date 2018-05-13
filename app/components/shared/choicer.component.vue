@@ -30,8 +30,8 @@ export default class ChoicerComponent extends Vue {
 
 .choicer {
   display: flex;
-  list-style: none;
   justify-content: space-between;
+  list-style: none;
 
   &-item {
     cursor: pointer;

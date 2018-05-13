@@ -11,10 +11,12 @@ rules((name, rule) => rule(environment, environments));
 
 const vendor = [
     'babel-polyfill',
-    'bootstrap-vue',
+    'reflect-metadata', 
+    'inversify',
     'vue-perfect-scrollbar'];
 
 const plugins = [
+    '~/plugins/inversify',
     '~/plugins/axios',
     '~/plugins/filters',
     { src: '~/plugins/components', ssr: false }
@@ -22,6 +24,7 @@ const plugins = [
 
 const modules = [
     '@nuxtjs/axios',
+    '@nuxtjs/bootstrap-vue',
     '~/modules/typescript',
     '~/modules/separated-files',
     '~/modules/components-name',

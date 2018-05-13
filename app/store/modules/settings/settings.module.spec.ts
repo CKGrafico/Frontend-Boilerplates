@@ -4,19 +4,19 @@ import { expect, spy } from '~/test/libs/chai';
 import { axiosMock } from '~/test/libs/axios';
 import { actionContextMockBuilder, nuxtAxiosMockBuilder } from '~/test/utils';
 import { RootState } from '~/store';
+import { settingsModule } from '~/store/modules';
 
-import * as settings from './settings';
-
-let state: settings.State;
-let actionContext: ActionContext<settings.State, RootState>;
-let actions: settings.Actions<settings.State, RootState>;
+let store: settingsModule.SettingsStore;
+let state: settingsModule.State;
+let actionContext: ActionContext<settingsModule.State, RootState>;
 
 describe('Store Settings', () => {
     beforeEach(() => {
-        state = settings.state();
-        actionContext = actionContextMockBuilder<settings.State>(state);
+        store = new settingsModule.SettingsStore();
+        store = nuxtAxiosMockBuilder(store);
+        state = store.state();
+        actionContext = actionContextMockBuilder<settingsModule.State>(state);
         spy(actionContext, 'commit');
-        actions = nuxtAxiosMockBuilder(settings.actions);
     });
 
     describe('when the store is created', () => {
@@ -30,8 +30,9 @@ describe('Store Settings', () => {
             const status = 200;
             axiosMock.onGet(`/api/config`).reply(status, {});
 
-            await actions.load(actionContext);
-            expect(actionContext.commit).to.have.been.calledWith(settings.types.SET_SETTINGS);
+            // TODO: Improve this
+            await (store.actions as any).load(actionContext);
+            expect(actionContext.commit).to.have.been.calledWith(settingsModule.types.SET_SETTINGS);
         });
     });
 });

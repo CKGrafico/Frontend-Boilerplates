@@ -1,15 +1,14 @@
 import { Vue } from 'vue-property-decorator';
 import Component, { State, namespace } from 'nuxt-class-component';
 
-import { randomizer } from '~/helpers/randomizer';
+import { Container } from '~/core';
+import { IRandomizerHelper, IRandomizerHelperId } from '~/helpers';
 
 import { ChoicerComponent } from '~/components/shared';
 import { AvatarComponent } from '~/components/wizard';
+import { avatarsModule } from '~/store/modules';
 
-import * as avatarsStore from '~/store/modules/avatars';
-import { AvatarsFace } from '~/store/modules/avatars';
-
-const AvatarsState = namespace(avatarsStore.name, State);
+const AvatarsState = namespace(avatarsModule.AvatarsStore.id, State);
 
 @Component({
   components: {
@@ -18,7 +17,9 @@ const AvatarsState = namespace(avatarsStore.name, State);
   }
 })
 export default class WizardPage extends Vue {
-    @AvatarsState faceParts: AvatarsFace;
+    @Container<IRandomizerHelper>(IRandomizerHelperId) randomizerHelper: IRandomizerHelper;
+
+    @AvatarsState faceParts: avatarsModule.AvatarsFace;
 
     public selectedEyes: string = null;
     public selectedNose: string = null;
@@ -30,8 +31,8 @@ export default class WizardPage extends Vue {
     }
 
     public created(): void {
-        this.selectedEyes = this.faceParts.eyes[randomizer.generate(0, this.faceParts.eyes.length - 1)];
-        this.selectedNose = this.faceParts.nose[randomizer.generate(0, this.faceParts.nose.length - 1)];
-        this.selectedMouth = this.faceParts.mouth[randomizer.generate(0, this.faceParts.mouth.length - 1)];
+        this.selectedEyes = this.faceParts.eyes[this.randomizerHelper.generate(0, this.faceParts.eyes.length - 1)];
+        this.selectedNose = this.faceParts.nose[this.randomizerHelper.generate(0, this.faceParts.nose.length - 1)];
+        this.selectedMouth = this.faceParts.mouth[this.randomizerHelper.generate(0, this.faceParts.mouth.length - 1)];
     }
 }

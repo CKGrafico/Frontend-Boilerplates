@@ -14,13 +14,13 @@
 import { Vue, Prop, Watch } from 'vue-property-decorator';
 import Component, { State, namespace } from 'nuxt-class-component';
 
-import { randomizer } from '~/helpers';
+import { IRandomizerHelper, IRandomizerHelperId } from '~/helpers';
+import { Container } from '~/core';
 
 import { LoadingComponent } from '~/components/shared';
+import { settingsModule } from '~/store/modules';
 
-import * as settingStore from '~/store/modules/settings';
-
-const SettingsState = namespace(settingStore.name, State);
+const SettingsState = namespace(settingsModule.SettingsStore.id, State);
 
 @Component({
   components: {
@@ -28,10 +28,12 @@ const SettingsState = namespace(settingStore.name, State);
   }
 })
 export default class AvatarComponent extends Vue {
+    @Container<IRandomizerHelper>(IRandomizerHelperId) randomizerHelper: IRandomizerHelper;
+
     @SettingsState apiUrl: string;
 
     public isLoading = false;
-    public color = randomizer.color();
+    public color = this.randomizerHelper.color();
 
     @Prop({type: String, required: true})
     eyes: string;
@@ -42,7 +44,6 @@ export default class AvatarComponent extends Vue {
     @Prop({type: String, required: true})
     mouth: string;
 
-
     @Watch('eyes')
     public onWatchEyes = () => this.reload()
 
@@ -50,11 +51,11 @@ export default class AvatarComponent extends Vue {
     public onWatchNose = () => this.reload()
 
     @Watch('mouth')
-    public onWatchEyes = () => this.reload()
+    public onWatchEMouth = () => this.reload()
 
     public reload(): void {
         // Fake to show loading component
-        this.color = randomizer.color();
+        this.color = this.randomizerHelper.color();
         this.isLoading = true;
         setTimeout(() => {
             this.isLoading = false;

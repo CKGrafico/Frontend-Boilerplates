@@ -22,9 +22,11 @@
     "@nuxtjs/bootstrap-vue": "^2.0.4",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.0",
+    "inversify": "^4.13.0",
     "normalize-scss": "^7.0.1",
     "nuxt": "1.4.0",
     "perfect-scrollbar": "^0.8.1",
+    "reflect-metadata": "^0.1.12",
     "vue": "^2.5.16",
     "vue-perfect-scrollbar": "^0.1.0"
   },

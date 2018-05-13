@@ -1,2 +1,1 @@
-// Decorators here
-export default {};
+export * from './container.decorator';
