@@ -14,7 +14,7 @@ export * from './avatars.models';
 export class AvatarsStore extends StoreModule<State> {
     public static id = 'avatars';
 
-    constructor(@inject(IAvatarsHelperId) private helpers: IAvatarsHelper) {
+    constructor(@inject(IAvatarsHelperId) helpers: IAvatarsHelper) {
         super();
     }
 

@@ -1,4 +1,3 @@
-
 import 'reflect-metadata';
 import { Container } from 'inversify';
 import { IStoreModule, IStoreModuleId } from '~/core';
