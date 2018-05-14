@@ -33,6 +33,9 @@ module.exports = env => {
             plugins.commons,
             plugins.uglify
         ],
+        resolve: {
+            extensions: ['.ts', 'js']
+        },
         devtool: (() => environment === environments.production ? false : 'inline-source-map')()
     })
 };
