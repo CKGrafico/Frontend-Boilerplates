@@ -11,7 +11,8 @@
     "local": "gulp --env=local",
     "postlocal": "webpack --env.NODE_ENV=local",
     "start": "npm run local",
-    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV=local --watch\" --names \"🥛,📦\" --prefix name"
+    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV=local --watch\" --names \"🥛,📦\" --prefix name",
+    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
   },
   "dependencies": {
     "jquery": "3.3.1",
