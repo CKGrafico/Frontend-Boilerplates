@@ -38,9 +38,11 @@ Feel free to give feedback and improvements to the repo.
 ## 🍩 Boilerplate Features
 On this branch we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **JavaScript:** All the code uses JavaScript.
+- **TypeScript:** All the code uses TypeScript.
 - **Linting:** Linting for TypeScript and SASS.
 - **SASS:** Scss structure with good practises.
+- **Vue:** The progressive JavaScript framework.
+- **Nuxt:** Universal Vue.js Applications.
 
 **[⬆️ back to top](#quickstart)**
 

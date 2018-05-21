@@ -23,16 +23,12 @@ let extract_text_params = {
 module.exports = (gulp, paths, $, _) => {
     const options = {
         failAfterError: false,
-<<<<<<< HEAD
         syntax: 'scss',
-=======
->>>>>>> dev
         reporters: [
             { formatter: 'string', console: true }
         ]
     };
 
-<<<<<<< HEAD
     // We use rename to help stylelint plugin
     var vueSCSS = gulp.src(_.files(paths.app.vue))
         .pipe(extract_text(extract_text_params));
@@ -44,10 +40,4 @@ module.exports = (gulp, paths, $, _) => {
     .pipe($.environment.if.development($.stylelint(options)))
     .pipe($.environment.if.production($.stylelint({ ...options, failAfterError: true })));
     
-=======
-    return gulp.src(_.files(paths.app.styles))
-        .pipe($.environment.if.local($.stylelint(options)))
-        .pipe($.environment.if.development($.stylelint(options)))
-        .pipe($.environment.if.production($.stylelint({ ...options, failAfterError: true })))
->>>>>>> dev
 };
