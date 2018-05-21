@@ -1,8 +1,8 @@
 {
   "name": "app-vue",
-  "description": "Stable version of a basic SPA example with SCSS and TypeScript.",
+  "description": "Stable version of a basic SPA example with SCSS, Vue and TypeScript.",
   "license": "MIT",
-  "version": "2.3.0",
+  "version": "2.3.5",
   "scripts": {
     "test": "mocha-webpack",
     "preprod": "gulp --env=production",
@@ -13,7 +13,8 @@
     "local": "gulp --env=local",
     "postlocal": "webpack --env.NODE_ENV=local",
     "start": "npm run local",
-    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV=local --watch\" --names \"🥛,📦\" --prefix name --kill-others"
+    "poststart": "concurrently \"gulp watcher --env=local\" \"webpack --env.NODE_ENV=local --watch\" --names \"🥛,📦\" --prefix name --kill-others",
+    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
   },
   "dependencies": {
     "inversify": "^4.11.1",

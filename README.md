@@ -36,11 +36,12 @@ Feel free to give feedback and improvements to the repo.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
  
 ## 🍩 Boilerplate Features
-On this branch _(Basic)_ we use:
+On this branch we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **JavaScript:** All the code uses JavaScript.
+- **TypeScript:** All the code uses TypeScript.
 - **Linting:** Linting for TypeScript and SASS.
 - **SASS:** Scss structure with good practises.
+- **Vue:** The progressive JavaScript framework.
 
 **[⬆️ back to top](#quickstart)**
 
@@ -70,6 +71,75 @@ To run the tasks we have these three commands:
 ## ⛩️ Project structure
 On this branch the structure is:`
 ```
+├── .gitignore
+├── .gulpenvrc
+├── .scripts-lint.yml
+├── .stylelintrc
+├── LICENSE
+├── README.md
+├── app
+|  ├── assets
+|  |  ├── fonts
+|  |  |  └── OpenSans
+|  |  |     ├── OpenSans-Bold.ttf
+|  |  |     ├── OpenSans-BoldItalic.ttf
+|  |  |     ├── OpenSans-ExtraBold.ttf
+|  |  |     ├── OpenSans-ExtraBoldItalic.ttf
+|  |  |     ├── OpenSans-Italic.ttf
+|  |  |     ├── OpenSans-Light.ttf
+|  |  |     ├── OpenSans-LightItalic.ttf
+|  |  |     ├── OpenSans-Regular.ttf
+|  |  |     ├── OpenSans-Semibold.ttf
+|  |  |     └── OpenSans-SemiboldItalic.ttf
+|  |  └── images
+|  |     └── example.jpg
+|  ├── index.html
+|  ├── scripts
+|  |  ├── app.js
+|  |  └── vendor.js
+|  └── styles
+|     ├── app.scss
+|     ├── base
+|     |  ├── _fonts.scss
+|     |  ├── _globals.scss
+|     |  ├── _icons.scss
+|     |  ├── _states.scss
+|     |  ├── _utilities.scss
+|     |  ├── _variables.scss
+|     |  └── mixins
+|     |     ├── _fonts.scss
+|     |     ├── _icomoon.scss
+|     |     ├── _medias.scss
+|     |     └── _offsets.scss
+|     ├── components
+|     |  └── _ck-site.scss
+|     └── vendor
+|        └── _normalize.scss
+├── gulpfile.js
+├── package-lock.json
+├── package.json
+├── tasks
+|  ├── assets.js
+|  ├── clean.js
+|  ├── config
+|  |  ├── helpers.js
+|  |  └── options.js
+|  ├── copy.js
+|  ├── plugins
+|  |  ├── commons.js
+|  |  ├── globals.js
+|  |  └── uglify.js
+|  ├── rules
+|  |  ├── scripts-lint.js
+|  |  └── scripts.js
+|  ├── serve.js
+|  ├── styles-lint.js
+|  ├── styles.js
+|  └── watch.js
+├── tasks.config.json
+├── tslint.json
+├── utils
+└── webpack.config.js
 ```
 
 **[⬆️ back to top](#quickstart)**
@@ -170,8 +240,8 @@ _.files(paths.assets.fonts.roboto)
 ## 🎩 Contributors
 
 
-| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) |
-| :---: | :---: | :---: |
+| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez**<br>[👨‍💻](https://github.com/VGamezz19) |
+| :---: | :---: | :---: | :---: |
 
 [View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
 
