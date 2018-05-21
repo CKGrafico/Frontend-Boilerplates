@@ -10,7 +10,8 @@
     "predev": "gulp --env=development",
     "dev": "cross-env NODE_ENV=development nuxt generate --spa",
     "prestart": "gulp --env=development",
-    "start": "concurrently \"gulp watcher --env=development\" \"cross-env NODE_ENV=development BASE_URL=http://localhost:3001 nuxt\" --names \"🥛,📦\" --prefix name --kill-others"
+    "start": "concurrently \"gulp watcher --env=development\" \"cross-env NODE_ENV=development BASE_URL=http://localhost:3001 nuxt\" --names \"🥛,📦\" --prefix name --kill-others",
+    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
   },
   "config": {
     "nuxt": {
