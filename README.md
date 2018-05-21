@@ -72,51 +72,93 @@ To run the tasks we have these three commands:
 ## ⛩️ Project structure
 On this branch the structure is:`
 ```
+├── .babelrc
 ├── .gitignore
 ├── .gulpenvrc
-├── .scripts-lint.yml
 ├── .stylelintrc
 ├── LICENSE
 ├── README.md
 ├── app
 |  ├── assets
 |  |  ├── fonts
-|  |  |  └── OpenSans
-|  |  |     ├── OpenSans-Bold.ttf
-|  |  |     ├── OpenSans-BoldItalic.ttf
-|  |  |     ├── OpenSans-ExtraBold.ttf
-|  |  |     ├── OpenSans-ExtraBoldItalic.ttf
-|  |  |     ├── OpenSans-Italic.ttf
-|  |  |     ├── OpenSans-Light.ttf
-|  |  |     ├── OpenSans-LightItalic.ttf
-|  |  |     ├── OpenSans-Regular.ttf
-|  |  |     ├── OpenSans-Semibold.ttf
-|  |  |     └── OpenSans-SemiboldItalic.ttf
+|  |  |  ├── Icomoon
+|  |  |  |  ├── icomoon.ttf
+|  |  |  |  └── selection.json
+|  |  |  └── Roboto
+|  |  |     ├── Roboto-Bold.ttf
+|  |  |     ├── Roboto-Light.ttf
+|  |  |     └── Roboto-Regular.ttf
 |  |  └── images
-|  |     └── example.jpg
-|  ├── index.html
-|  ├── scripts
-|  |  ├── app.js
-|  |  └── vendor.js
-|  └── styles
-|     ├── app.scss
-|     ├── base
-|     |  ├── _fonts.scss
-|     |  ├── _globals.scss
-|     |  ├── _icons.scss
-|     |  ├── _states.scss
-|     |  ├── _utilities.scss
-|     |  ├── _variables.scss
-|     |  └── mixins
-|     |     ├── _fonts.scss
-|     |     ├── _icomoon.scss
-|     |     ├── _medias.scss
-|     |     └── _offsets.scss
-|     ├── components
-|     |  └── _ck-site.scss
-|     └── vendor
-|        └── _normalize.scss
+|  |     └── logo.png
+|  ├── components
+|  |  ├── shared
+|  |  |  ├── choicer.component.vue
+|  |  |  ├── confirm
+|  |  |  |  ├── confirm.component.html.vue
+|  |  |  |  ├── confirm.component.scss
+|  |  |  |  └── confirm.component.ts
+|  |  |  ├── index.ts
+|  |  |  └── loading.component.vue
+|  |  └── wizard
+|  |     ├── avatar.component.vue
+|  |     └── index.ts
+|  ├── core
+|  |  ├── decorators
+|  |  |  ├── container.decorator.ts
+|  |  |  └── index.ts
+|  |  ├── index.ts
+|  |  └── store-module.ts
+|  ├── helpers
+|  |  ├── index.ts
+|  |  └── randomizer.ts
+|  ├── layouts
+|  |  └── default.vue
+|  ├── locales
+|  |  ├── en.json
+|  |  └── es.json
+|  ├── middleware
+|  |  └── settings.ts
+|  ├── pages
+|  |  ├── index.vue
+|  |  └── wizard
+|  |     ├── wizard.page.html.vue
+|  |     ├── wizard.page.scss
+|  |     └── wizard.page.ts
+|  ├── plugins
+|  |  ├── axios.ts
+|  |  ├── components.ts
+|  |  ├── filters.ts
+|  |  └── inversify.ts
+|  ├── static
+|  |  └── favicon.ico
+|  ├── store
+|  |  ├── index.ts
+|  |  └── store.container.ts
+|  ├── styles
+|  |  ├── app.scss
+|  |  ├── base
+|  |  |  ├── _fonts.scss
+|  |  |  ├── _globals.scss
+|  |  |  ├── _icons.scss
+|  |  |  ├── _states.scss
+|  |  |  ├── _transitions.scss
+|  |  |  ├── _utilities.scss
+|  |  |  ├── _variables.scss
+|  |  |  └── mixins
+|  |  |     ├── _fonts.scss
+|  |  |     ├── _icomoon.scss
+|  |  |     └── _medias.scss
+|  |  ├── components
+|  |  |  └── _button.scss
+|  |  └── vendor
+|  |     └── _normalize.scss
+|  └── typings
+|     ├── store-plugins.ts
+|     ├── vue-shim.d.ts
+|     └── vue.d.ts
 ├── gulpfile.js
+├── mocha.opts
+├── nuxt.config.js
 ├── package-lock.json
 ├── package.json
 ├── tasks
@@ -125,22 +167,28 @@ On this branch the structure is:`
 |  ├── config
 |  |  ├── helpers.js
 |  |  └── options.js
-|  ├── copy.js
 |  ├── plugins
 |  |  ├── commons.js
 |  |  ├── globals.js
 |  |  └── uglify.js
 |  ├── rules
-|  |  ├── scripts-lint.js
-|  |  └── scripts.js
-|  ├── serve.js
+|  |  └── scripts-lint.js
 |  ├── styles-lint.js
 |  ├── styles.js
 |  └── watch.js
 ├── tasks.config.json
-├── tslint.json
-├── utils
-└── webpack.config.js
+├── test
+|  ├── libs
+|  |  ├── axios.ts
+|  |  └── chai.ts
+|  ├── setup.js
+|  └── utils
+|     ├── action-context.mock.ts
+|     ├── index.ts
+|     └── nuxt-axios.mock.ts
+├── tsconfig.json
+├── tsconfig.mocha.js
+└── tslint.json
 ```
 
 **[⬆️ back to top](#quickstart)**
