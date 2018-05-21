@@ -35,37 +35,19 @@ Feel free to give feedback and improvements to the repo.
  **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
  <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
  
-## 🍩 App Features
-On this branch _(Basic)_ we use:
+## 🍩 Boilerplate Features
+On this branch we use:
 - **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
-- **EcmaScript2015:** All the code uses this version of ES, also gulp files.
-- **jQuery:** Only to show how to import an external library.
-- **Linting:** Linting for JavaScript and SASS.
-- **Normalize:** Normalize our css, you can extend it easily.
+- **JavaScript:** All the code uses JavaScript.
+- **Linting:** Linting for TypeScript and SASS.
 - **SASS:** Scss structure with good practises.
 
 **[⬆️ back to top](#quickstart)**
 
 ## ⚙️ Automated Tasks
-On this branch _(Basic)_ we use:
-- **Concurrently:** Execute two tasks in parallel.
-- **Gulp Autoprefixer:** Add browser prefixes for last two versions of the browsers.
-- **Gulp Clean CSS:** To minify CSS.
-- **Gulp Connect:** Preview website on local server.
-- **Gulp Environment:** Call to different tasks depending of the environment.
-- **Gulp Fontmin:** Generate fonts from .ttf.
-- **Gulp Imagemin:** Compress images.
-- **Gulp Load plugins:** Load all the plugins once.
-- **Gulp Newer:** On some tasks we want to do something only with the newer files.
-- **Gulp Noop:** Basic Noop but on stream.
-- **Gulp Sass:** Compile Scss to CSS.
-- **Gulp Sasslint:** Linting for SASS.
-- **Gulp Sourcemaps:** Generate Sourcemaps when is necessary.
-- **Gulp Uglify:** Minify and obfuscate JavaScript.
-- **Opn:** Open browser to see the preview.
-- **Require all:** Load all gulp tasks once.
-- **Webpack and Babel:** To use Babel with Webpack _(ES2015 -> ES5)_ and create a bundle.
-- **Webpack and Linting:** To check TypeScript files
+On this branch we use:
+- **Webpack:** Scripts tasks.
+- **Gulp:** Styles and assets tasks.
 
 **[⬆️ back to top](#quickstart)**
 
@@ -80,81 +62,14 @@ To run the tasks we have these three commands:
 - Running tasks on development mode:
 > npm run dev
 
-- Running tasks on local mode:
-> npm run local
-
 - Running tasks on watch mode and serve the app:
 > npm start
 
 **[⬆️ back to top](#quickstart)**
 
-## 🔮 Environments
-On this project we have two environments:
-- **Local:** Use this on your computer
-- **Development:** Use this on your dev server
-- **Production:** Use this on your production server
-
 ## ⛩️ Project structure
-On this branch _(Basic)_ the structure is:`
+On this branch the structure is:`
 ```
-./
-│
-├── app/
-│   ├── assets/
-│   │   ├── fonts/
-│   │   │   └── OpenSans
-│   │   │       ├── OpenSans-Regular.ttf
-│   │   │       ├── ...
-│   │   │       └── OpenSans-SemiboldItalic.ttf
-│   │   │
-│   │   └── images/
-│   │       └── example.jpg
-│   │
-│   ├── scripts/
-│   │   └── app.js
-│   │   └── vendor.js
-│   │
-│   └── styles/
-│       ├── base/
-│       │   ├──  mixins # Some mixins to use on base folder
-│       │   ├── _fonts.scss # Load the fonts for your project
-│       │   ├── _globals.scss # Global styles
-│       │   ├── _states.scss # States classes, like is-hidden, is-visible...
-│       │   ├── _utilities.scss # Utility classes, like u-mt-10@xs _(margin-top 10px on media screen xs)_
-│       │   └── _variables.scss # Global variables of the project
-│       │
-│       ├── components/
-│       │   └── _ck-site.scss # Example of BEM based component
-│       │
-│       ├── vendor/
-│       │  └── _normalize.scss # Import and extend Normalize
-│       │
-│       └── index.html
-│
-├── dist/ # Distribution folder
-│
-├── tasks/ # Gulp tasks
-│   ├── config/
-│   │   ├── helpers.js # Helpers that useful for tasks
-│   │   └── options.js # Internal operation to use with tasks
-│   ├── rules/
-│   │   ├── scripts.js # Create a bundle for JavaScript files
-│   │   └── scripts-lint.js # Check linting of JavaScript files
-│   ├── assets.js # Minify images and generate fonts
-│   ├── clean.js # Clean distribution folder
-│   ├── copy.js # Copy index.html to dist
-│   ├── serve.js # Open a browser with the preview of the project
-│   ├── styles.js # Compile and compress SASS files when is necessary
-│   ├── styles-lint.js # Linting for SASS
-│   └── watch.js # Watcher for files
-│
-├── .gulpenvrc.yml # Environments configuration
-├── .sass-lint.yml # SASS linting configuration
-├── .scripts-lint.yml # JavaScript linting configuration
-├── gulpfile.js # Main gulp file
-├── package.json # Configure npm tasks and dependencies
-├── tasks.config.json # Configure paths and options for tasks
-└── webpack.config.js # The Webpack configuration for scripts
 ```
 
 **[⬆️ back to top](#quickstart)**
@@ -177,33 +92,6 @@ And these are the only two tasks:
 gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, tasks.copy, tasks.assets));
 gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
 ```
-
-### Gulpfile helpers
-In case that you want to modify some gulp tasks, this helpers can help you.
-
-- Files and folders:
-
-```
-_.folder(paths.app.scripts);
-```
-Returns the path where the scripts are located, example: _'./app/js/'_
-
-```
-_.files(paths.app.scripts)
-```
-Returns the file pattern to get the scripts, example: _'./app/js/**/*.js'_
-
-```
-_.files(paths.app.scripts, _.NOT)
-```
-Exclude scripts, example: _'!./app/js/**/*.js'_
-
-```
-_.abs(_.folder(paths.app.scripts), __dirname)
-```
-Change path to absolute path: _'C:/project/app/js'_
-
-**[⬆️ back to top](#quickstart)**
 
 ### Tasks configuration
 You can configure different things related with the tasks.
