@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Vue, Prop, Watch } from 'vue-property-decorator';
-import Component, { State, namespace } from 'nuxt-class-component';
+import Component, { namespace } from 'nuxt-class-component';
 
 import { IRandomizerHelper, IRandomizerHelperId } from '~/helpers';
 import { Container } from '~/core';
@@ -20,7 +20,7 @@ import { Container } from '~/core';
 import { LoadingComponent } from '~/components/shared';
 import { settingsModule } from '~/store/modules';
 
-const SettingsState = namespace(settingsModule.SettingsStore.id, State);
+const SettingsModule = namespace(settingsModule.SettingsStore.id);
 
 @Component({
   components: {
@@ -30,7 +30,7 @@ const SettingsState = namespace(settingsModule.SettingsStore.id, State);
 export default class AvatarComponent extends Vue {
     @Container<IRandomizerHelper>(IRandomizerHelperId) randomizerHelper: IRandomizerHelper;
 
-    @SettingsState apiUrl: string;
+    @SettingsModule.State apiUrl: string;
 
     public isLoading = false;
     public color = this.randomizerHelper.color();

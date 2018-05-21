@@ -1,5 +1,5 @@
 import { Vue } from 'vue-property-decorator';
-import Component, { State, namespace } from 'nuxt-class-component';
+import Component, { namespace } from 'nuxt-class-component';
 
 import { Container } from '~/core';
 import { IRandomizerHelper, IRandomizerHelperId } from '~/helpers';
@@ -8,7 +8,7 @@ import { ChoicerComponent } from '~/components/shared';
 import { AvatarComponent } from '~/components/wizard';
 import { avatarsModule } from '~/store/modules';
 
-const AvatarsState = namespace(avatarsModule.AvatarsStore.id, State);
+const AvatarsModule = namespace(avatarsModule.AvatarsStore.id);
 
 @Component({
   components: {
@@ -19,7 +19,7 @@ const AvatarsState = namespace(avatarsModule.AvatarsStore.id, State);
 export default class WizardPage extends Vue {
     @Container<IRandomizerHelper>(IRandomizerHelperId) randomizerHelper: IRandomizerHelper;
 
-    @AvatarsState faceParts: avatarsModule.AvatarsFace;
+    @AvatarsModule.State faceParts: avatarsModule.AvatarsFace;
 
     public selectedEyes: string = null;
     public selectedNose: string = null;
