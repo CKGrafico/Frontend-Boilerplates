@@ -1,18 +1,20 @@
 {
   "name": "app-nodejs",
-  "description": "Stable version of a basic SPA example with SCSS and Nodejs.",
+  "description": "Stable version of a basic SPA example with TypeScript, SCSS and Nodejs.",
   "license": "MIT",
-  "version": "2.1.2",
+  "version": "2.3.5",
   "scripts": {
     "dev": "gulp --env=development",
     "prod": "gulp --env=production",
     "prewatch": "npm run dev",
-    "watch": "gulp --env=development watcher"
+    "watch": "gulp --env=development watcher",
+    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.15.2",
-    "normalize-scss": "^7.0.1",
     "jquery": "3.3.1",
+    "normalize-scss": "^7.0.1",
     "typescript": "^2.2.1"
   },
   "devDependencies": {

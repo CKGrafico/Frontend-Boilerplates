@@ -4,7 +4,7 @@ module.exports = (gulp, paths, $, _) => {
         _.files(paths.app.server.ts)
     ])
         .pipe($.tslint({
-            configuration: '.ts-lint.json',
+            configuration: 'tslint.json',
             formatter: 'stylish'
         }))
         .pipe($.tslint.report())
