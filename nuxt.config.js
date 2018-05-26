@@ -28,7 +28,7 @@ const modules = [
     '~/modules/typescript',
     '~/modules/separated-files',
     '~/modules/components-name',
-    '~/modules/languages'
+    '~/modules/i18n-json'
 ];
 
 module.exports = {
