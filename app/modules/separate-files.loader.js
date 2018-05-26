@@ -17,10 +17,10 @@ module.exports = function (content, map) {
 
     // If is a single file component
     if (!fileNameAndExtension.includes('.html.vue')) {
-      const reg = new RegExp(`<style.*?>((.|\\s)*?)<\/style>`);
-      content = content.replace(reg, `<style scoped>@import '${stylesPath.replace('.vue', '')}';</style>`);
+        const reg = new RegExp(`<style.*?>((.|\\s)*?)<\/style>`);
+        content = content.replace(reg, `<style scoped>@import '${stylesPath.replace('.vue', '')}';</style>`);
 
-      return content;
+        return content;
     }
 
     // Otherwise
