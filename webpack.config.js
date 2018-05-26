@@ -10,8 +10,10 @@ module.exports = env => {
     let environment = env.NODE_ENV;
     env.NODE_ENV = JSON.stringify(environment);
 
-    rules((name, rule) => rule(environment, environments));
-    plugins((name, rule) => rule(environment, environments));
+    const config = {};
+
+    rules((name, rule) => rule(environment, environments, config));
+    plugins((name, rule) => rule(environment, environments, config));
 
     return ({
         entry: {
@@ -26,10 +28,11 @@ module.exports = env => {
         module: {
             rules: [
                 rules.scriptsLint,
+                rules.separatedFiles,
+                rules.componentsName,
                 rules.scripts,
                 rules.scriptsVue,
-                rules.css,
-                rules.html
+                rules.css
             ]
         },
         plugins: [
@@ -48,6 +51,7 @@ module.exports = env => {
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },
-        devtool: (() => environment === environments.production ? false : 'inline-source-map')()
+        devtool: (() => environment === environments.production ? false : 'inline-source-map')(),
+        ...config
     })
 };

@@ -3,9 +3,6 @@ import { Container } from '~/core';
 import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '~/weather/shared';
 
-import Template from './weather-list.component.html?style=weather/weather-list/weather-list.component.css';
-
-@Template
 @Component
 export default class WeatherListComponent extends Vue {
     public cities: City[] = [];

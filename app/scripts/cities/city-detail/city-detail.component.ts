@@ -3,9 +3,6 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import { Container } from '~/core';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
-import Template from './city-detail.component.html?style=cities/city-detail/city-detail.component.css';
-
-@Template
 @Component
 export default class CityDetailComponent extends Vue {
     public city: City = null;
