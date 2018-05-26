@@ -1,6 +1,7 @@
 {
   "processors": ["stylelint-processor-html"],
   "extends": "stylelint-config-standard",
+  "ignoreFiles": ["**/*.html", "**/*.ts", "**/*.js"]
   "plugins": [
     "stylelint-order",
     "stylelint-scss"
