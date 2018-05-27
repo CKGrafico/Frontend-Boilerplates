@@ -10,7 +10,7 @@ export default class LoadingComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/base/variables';
+@import '~/variables';
 
 .loading {
   animation: spin 1.3s linear infinite;
