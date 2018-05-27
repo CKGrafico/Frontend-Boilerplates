@@ -31,8 +31,7 @@ module.exports = env => {
                 rules.separatedFiles,
                 rules.componentsName,
                 rules.scripts,
-                rules.scriptsVue,
-                rules.css
+                rules.scriptsVue
             ]
         },
         plugins: [

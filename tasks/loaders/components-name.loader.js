@@ -20,5 +20,5 @@ module.exports = function (content, map) {
     // We use this to be able to name the components as MyThingComponent instead of MyThing
     content = content.replace(reg, '\$1-component');
 
-    return content
+    return content;
 }
