@@ -13,6 +13,7 @@ module.exports = (env, envs, config) => {
 
     return {
         test: /.vue$/,
+        enforce: 'pre',
         loader: 'components-name'
     };
 }

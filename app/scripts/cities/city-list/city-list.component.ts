@@ -12,7 +12,6 @@ import { CityAddComponent } from '~/cities/shared';
 })
 export default class CityListComponent extends Vue {
     public cities: City[] = null;
-    public a = 1;
 
     @Container<ICitiesService>(ICitiesServiceId)
     private citiesService: ICitiesService;

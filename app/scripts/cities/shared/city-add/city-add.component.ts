@@ -3,7 +3,7 @@ import { Container } from '~/core';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 @Component
-export class CityAddComponent extends Vue {
+export default class CityAddComponent extends Vue {
     public city: City = null;
     public name = '';
 
