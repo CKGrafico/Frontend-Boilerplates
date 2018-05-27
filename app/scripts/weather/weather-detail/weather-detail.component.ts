@@ -3,9 +3,6 @@ import { Container } from '~/core';
 import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService, IWeatherServiceId } from '../shared';
 
-import Template from './weather-detail.component.html?style=weather/weather-detail/weather-detail.component.css';
-
-@Template
 @Component
 export default class WeatherDetailComponent extends Vue {
     public city: City = null;

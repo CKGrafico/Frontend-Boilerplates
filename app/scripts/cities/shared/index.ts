@@ -1,1 +1,1 @@
-export * from './city-add';
+export { default as CityAddComponent } from './city-add/city-add.component.html.vue';

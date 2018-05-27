@@ -4,15 +4,13 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { Tag } from '~/core';
 
-@Tag('loading')
 @Component
 export default class LoadingComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/base/variables';
+@import '~/variables';
 
 .loading {
   animation: spin 1.3s linear infinite;
@@ -27,11 +25,12 @@ export default class LoadingComponent extends Vue {}
 }
 
 @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>
