@@ -17,7 +17,7 @@ export class CitiesService implements ICitiesService {
     }
 
     public async getById(id: number): Promise<City> {
-        return this.cities.find(city => city.woeid === id);
+        return this.cities.find(city => city.woeid === +id);
     }
 
     public async search(name: string): Promise<City> {

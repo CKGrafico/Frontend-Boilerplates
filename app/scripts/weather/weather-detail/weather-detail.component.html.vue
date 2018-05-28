@@ -4,7 +4,7 @@
 
     <ul class="weather_detail-cities">
       <li class="weather_detail-city" v-for="(forecast, index) in city.weather.item.forecast" :key="index">
-        <span class="weather_detail-title">{{forecast.date}}</span>
+        <span class="weather_detail-title">{{forecast.date | date}}</span>
 
         <div v-if="city.weather">
           <div v-if="city.weather.astronomy">
