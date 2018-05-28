@@ -1,5 +1,5 @@
 export interface IDateService {
-    formatDate(day: string, month: string, year: string): string;
+    formatDate(date: Date): string;
 }
 
 export const IDateServiceId = Symbol('IDateService');

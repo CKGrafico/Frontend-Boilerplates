@@ -9,7 +9,7 @@
             <span class="weather_list-item">{{'weather.sunset' | t }}: {{city.weather.astronomy.sunset}}</span>
           </div>
           <div v-if="city.weather.item">
-            <span>{{city.weather.item.forecast[0].date}} (Today):</span>
+            <span>{{city.weather.item.forecast[0].date | date}} (Today):</span>
             <span class="weather_list-item">{{city.weather.item.forecast[0].low}}ºC / {{city.weather.item.forecast[0].high}}ºC</span>
             <div>
               <span class="weather_list-item">

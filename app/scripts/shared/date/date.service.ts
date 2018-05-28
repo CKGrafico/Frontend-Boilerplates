@@ -6,15 +6,39 @@ import { IFilter } from '~/core';
 export class DateService implements IDateService, IFilter {
     public filterName = 'date';
 
-    public filterAction(day: string, month: string, year: string) {
-        return this.formatDate(day, month, year);
+    public filterAction(date: Date) {
+        return this.formatDate(date);
     }
 
-    public formatDate(day: string, month: string, year: string): string {
-        if (!day || !month || !year) {
+    public formatDate(date: Date): string {
+        if (!this.isValidDate(date)) {
             return '';
         }
 
-        return `${day}/${month}/${year}`;
+        let day: string | number = date.getDay();
+        if (day < 10) {
+            day = '0' + day.toString();
+        }
+
+        let month: string | number = date.getMonth() + 1;
+        if (month < 10) {
+            month = '0' + month.toString();
+        }
+
+        return `${month}/${day}/${date.getFullYear()}`;
+    }
+
+    private isValidDate(date: Date) {
+        if (Object.prototype.toString.call(date) === '[object Date]') {
+            if (isNaN(date.getTime())) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
     }
 }
