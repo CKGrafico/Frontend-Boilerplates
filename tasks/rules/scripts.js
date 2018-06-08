@@ -1,7 +1,7 @@
 module.exports = (env, envs) => {
     return {
         test: /\.ts$/,
-        exclude: /node_modules|vue\/src/,
+        exclude: /node_modules/,
         use: [
             {
                 loader: 'babel-loader'

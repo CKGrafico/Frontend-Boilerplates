@@ -1,10 +1,13 @@
 module.exports = (env, envs) => {
     return {
         test: /\.vue$/,
-        exclude: /\*.ts$/,
-        loader: 'vue-loader',
-        options: {
-            esModule: true
-        }
+        use: [
+            {
+                loader: 'babel-loader'
+            },
+            {
+                loader: 'vue-loader'
+            }
+        ]
     }
 };
