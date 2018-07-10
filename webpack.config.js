@@ -29,8 +29,6 @@ module.exports = env => {
             rules: [
                 rules.scriptsLint,
                 rules.scripts,
-                rules.separatedFiles,
-                rules.componentsName,
                 rules.scriptsVue
             ]
         },
