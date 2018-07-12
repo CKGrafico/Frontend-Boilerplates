@@ -1,11 +1,11 @@
-const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = (env, envs) => {
     if (!envs) { 
         return;
     }
 
-    const defaultConfig = new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' });
+    const defaultConfig = new VueLoaderPlugin();
 
     const plugin = {
         [envs.production]: defaultConfig,

@@ -35,9 +35,9 @@ module.exports = (env, envs, config) => {
             {
                 loader: 'components-name'
             },
-            {
-                loader: 'separated-files'
-            }
+            // {
+            //     loader: 'separated-files'
+            // }
         ]
     }
 };
