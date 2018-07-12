@@ -1,12 +1,16 @@
-function HelloWorldPlugin(options) {
-// Setup the plugin instance with options...
-}
-
-HelloWorldPlugin.prototype.apply = function(compiler) {
-    compiler.plugin('done', function() {
-        console.log('Hello World!'); 
-    });
-};
+// https://webpack.js.org/contribute/writing-a-plugin/
+class HelloWorldPlugin {
+    constructor(options) {
+      this.options = options;
+    }
+  
+    apply(compiler) {
+      compiler.hooks.done.tap('HelloWorldPlugin', () => {
+        console.log('Hello World!');
+        console.log(this.options);
+      });
+    }
+  }
 
 module.exports = (env, envs) => {
     if (!envs) { 

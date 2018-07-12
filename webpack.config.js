@@ -33,10 +33,10 @@ module.exports = env => {
             ]
         },
         plugins: [
-            plugins.globals,
+            // plugins.globals,
             plugins.hello,
             plugins.vue,
-            plugins.uglify
+            // plugins.uglify
         ],
         resolve: {
             extensions: ['.ts', '.js', '.vue'],
