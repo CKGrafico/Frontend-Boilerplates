@@ -13,11 +13,11 @@ export default class WeatherComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import '~/variables';
+// @import '~/variables';
 
-.weather {
-  &-header {
-    color: $color-brand;
-  }
-}
+// .weather {
+//   &-header {
+//     color: $color-brand;
+//   }
+// }
 </style>

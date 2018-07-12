@@ -16,9 +16,9 @@ module.exports = env => {
     plugins((name, rule) => rule(environment, environments, config));
 
     return ({
+        mode: 'development',
         entry: {
-            app: _.files(paths.app.scripts.app),
-            vendor: _.files(paths.app.scripts.vendor)
+            app: _.files(paths.app.scripts.app)
         },
         output: {
             path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
@@ -27,7 +27,7 @@ module.exports = env => {
         },
         module: {
             rules: [
-                rules.scriptsLint,
+                // rules.scriptsLint,
                 rules.scripts,
                 rules.scriptsVue
             ]

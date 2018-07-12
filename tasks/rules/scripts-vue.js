@@ -27,9 +27,6 @@ module.exports = (env, envs, config) => {
         test: /\.vue$/,
         use: [
             {
-                loader: 'babel-loader'
-            },
-            {
                 loader: 'vue-loader'
             },
             {
