@@ -1,29 +1,36 @@
 // https://webpack.js.org/contribute/writing-a-plugin/
+const RuleSet = require('webpack/lib/RuleSet')
+
 class HelloWorldPlugin {
-    constructor(options) {
-      this.options = options;
+    constructor(loader) {
+        this.loader = loader;
     }
-  
+
     apply(compiler) {
-      compiler.hooks.done.tap('HelloWorldPlugin', () => {
-        console.log('Hello World!');
-        console.log(this.options);
-      });
+
+        compiler.options.module.rules = [
+            this.loader,
+            ...compiler.options.module.rules
+        ]
     }
-  }
+}
 
 module.exports = (env, envs) => {
-    if (!envs) { 
+    if (!envs) {
         return;
     }
 
-    const defaultConfig = new HelloWorldPlugin();
+    const build = loader => {
+        const defaultConfig = new HelloWorldPlugin(loader);
 
-    const plugin = {
-        [envs.production]: defaultConfig,
-        [envs.development]: defaultConfig,
-        [envs.local]: defaultConfig
-    };
+        const plugin = {
+            [envs.production]: defaultConfig,
+            [envs.development]: defaultConfig,
+            [envs.local]: defaultConfig
+        };
 
-    return plugin[env];
+        return plugin[env];
+    }
+
+    return options => build(options);
 };

@@ -34,8 +34,8 @@ module.exports = env => {
         },
         plugins: [
             // plugins.globals,
-            plugins.hello,
             plugins.vue,
+            plugins.hello(rules.separatedVueFiles),
             // plugins.uglify
         ],
         resolve: {

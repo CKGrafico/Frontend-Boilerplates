@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 module.exports = function (content, map) {
+    console.log(9)
     // TODO: Refactor this loader
     const request = this.request.split('!');
     const fileFullPath = request[request.length - 1];
@@ -8,10 +9,13 @@ module.exports = function (content, map) {
     const fileNameAndExtension = fileFullPath.replace(filePath, '');
     const fileName = fileNameAndExtension.replace('.html.vue', '');
 
+    console.log(555555555555555, 'custom', fileName)
+
     // If the file is not from our project
     if (filePath.includes('node_modules')) {
         return content;
     }
+
 
     // Generate the .css file path
     const sp = filePath.includes('\\') ? '\\' : '/';
@@ -19,6 +23,7 @@ module.exports = function (content, map) {
     
     // If is a single file component
     if (!fileNameAndExtension.includes('.html.vue')) {
+        return(55555555555555, 'style')
         const stylesContent = fs.readFileSync(stylesPath.replace('.vue', ''), 'utf8');
         const reg = new RegExp(`<style.*?>((.|\\s)*?)<\/style>`);
         content = content.replace(reg, `<style scoped>${stylesContent}</style>`);
@@ -29,7 +34,7 @@ module.exports = function (content, map) {
     // Otherwise
     const scriptPath = filePath + fileName + '.ts';
     const stylesContent = fs.readFileSync(stylesPath, 'utf8');
-
+    return(55555555555555, 'script', 'style')
     content += `
 <script src="${scriptPath}" lang='ts'></script>
 <style scoped>${stylesContent}</style>
