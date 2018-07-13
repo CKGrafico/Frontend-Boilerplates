@@ -1,10 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
 const { paths, environments } = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
-
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-var VueBuilder = require('vue-builder-webpack-plugin');
 
 let rules = require('require.all')('./tasks/rules');
 let plugins = require('require.all')('./tasks/plugins');
@@ -39,13 +35,9 @@ module.exports = env => {
             ]
         },
         plugins: [
-            // plugins.globals,
-            // plugins.hello(rules.separatedVueFiles),
-            // plugins.uglify
-            new VueBuilder({
-                path: 'app'
-              }),
-              new VueLoaderPlugin()
+            plugins.globals,
+            plugins.uglify,
+            ...plugins.vue(path.resolve(__dirname, _.folder(paths.app.scripts)))
         ],
         resolve: {
             extensions: ['.ts', '.js', '.vue', '.vue.ts'],
