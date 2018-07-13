@@ -10,12 +10,12 @@ export default (): RouteConfig[] => {
                 {
                     path: '',
                     name: 'weather-list',
-                    component: () => import('./weather-list/weather-list.component.html.vue').then(m => m.default || m)
+                    component: () => import('./weather-list/weather-list.component.vue').then(m => m.default || m)
                 },
                 {
                     path: ':id',
                     name: 'weather-detail',
-                    component: () => import('./weather-detail/weather-detail.component.html.vue').then(m => m.default || m),
+                    component: () => import('./weather-detail/weather-detail.component.vue').then(m => m.default || m),
                     props: true
                 }
             ]

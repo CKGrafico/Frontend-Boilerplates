@@ -16,9 +16,9 @@ export default class AppComponent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-// @import '~/variables';
+@import '~styles/variables';
 
-// .app {
-//   color: $color-foreground-brighter;
-// }
+.app {
+  color: $color-foreground-brighter;
+}
 </style>

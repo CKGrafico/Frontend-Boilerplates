@@ -8,10 +8,11 @@ class HelloWorldPlugin {
 
     apply(compiler) {
 
-        compiler.options.module.rules = [
-            this.loader,
-            ...compiler.options.module.rules
-        ]
+        compiler.hooks.compilation.tap('HelloWorldPlugin', (compilation, callback) => {
+            // for (const filename in compilation.assets) {
+                console.log(compilation)
+            // }
+        });
     }
 }
 

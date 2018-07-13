@@ -23,18 +23,22 @@ module.exports = (env, envs, config) => {
     config.resolveLoader.alias = config.resolveLoader.alias || {};
     config.resolveLoader.alias['separated-files'] = res('../loaders/separated-files.loader');
 
-    return {
-        test: /\.vue$/,
-        use: [
-            {
-                loader: 'vue-loader'
-            },
-            {
-                loader: 'components-name'
-            },
-            // {
-            //     loader: 'separated-files'
-            // }
-        ]
-    }
+    return [
+        {
+            test: /\.vue$/,
+            use: [
+                'vue-loader',
+                'components-name'
+            ]
+        },
+        {
+            test: /\.scss$/,
+            exclude: /node_modules/,
+            use: [
+                'vue-style-loader',
+                'css-loader',
+                'sass-loader'
+            ]
+        }
+    ]
 };

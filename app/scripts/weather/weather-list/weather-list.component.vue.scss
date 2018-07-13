@@ -1,30 +1,19 @@
-@import '~/variables';
+@import '~styles/variables';
 
-.weather_detail {
+.weather_list {
   color: $color-foreground-bright;
   font-size: $font-size-l;
 
-  @keyframes city-anim {
-    0% {
-      transform: rotateY(0);
-    }
-
-    100% {
-      transform: rotateY(360deg);
-    }
-  }
-
-  &-header {
-    color: $color-secondary;
-    margin-bottom: 1rem;
-  }
-
-  // In real world reuse this
   &-city {
     background-color: $color-background-bright;
     border-radius: 5px;
+    cursor: pointer;
     padding: 1vw 3vw;
     transition: background-color $animation-speed-default;
+
+    &:hover {
+      background-color: $color-background-brighter;
+    }
   }
 
   &-title {
@@ -39,11 +28,15 @@
   }
 
   &-icon {
-    animation: city-anim $animation-speed-slow infinite;
     font-size: 3rem;
     margin-right: 1rem;
     perspective: 200;
     perspective-origin: 0 0;
     transform-origin: 50% 50%;
+    transition: all $animation-speed-slow;
+  }
+
+  &-city:hover &-icon {
+    transform: rotateY(180deg);
   }
 }

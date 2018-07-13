@@ -17,10 +17,7 @@
                     "files": "vendor.ts"
                 }
             },
-            "styles": {
-                "folder": "..",
-                "files": "**/*.scss"
-            },
+            "styles": {},
             "vue": {
                 "folder": "..",
                 "files": "**/*.vue"
@@ -31,9 +28,7 @@
                 "images": {},
                 "fonts": {}
             },
-            "css": {
-                "scripts": {}
-            },
+            "styles": {},
             "scripts": {}
         }
     }
