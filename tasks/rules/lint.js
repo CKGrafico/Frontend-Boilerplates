@@ -13,12 +13,6 @@ module.exports = (env, envs) => {
             failOnHint: true,
             project: 'tsconfig.json',
             typeCheck: true
-        },
-        [envs.local]: {
-            configFile: 'tslint.json',
-            project: 'tsconfig.json',
-            formatter: 'stylish',
-            typeCheck: true
         }
     };
 

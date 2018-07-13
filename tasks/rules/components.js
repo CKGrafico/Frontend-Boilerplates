@@ -37,7 +37,17 @@ module.exports = (env, envs, config) => {
             use: [
                 'vue-style-loader',
                 'css-loader',
-                'sass-loader'
+                'sass-loader',
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                        ident: 'postcss',
+                        plugins: [
+                            require('stylelint')(),
+                            require('autoprefixer')(),
+                        ]
+                    }
+                }
             ]
         }
     ]
