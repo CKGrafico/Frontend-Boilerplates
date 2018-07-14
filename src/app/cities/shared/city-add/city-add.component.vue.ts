@@ -10,7 +10,7 @@ export default class CityAddComponent extends Vue {
 
     @Inject() citiesService: ICitiesService;
 
-    public async search() {
+    public async search(): Promise<void> {
         if (!this.name) {
             return;
         }

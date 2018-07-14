@@ -11,14 +11,14 @@ export default class WeatherListComponent extends Vue {
     @Inject() citiesService: ICitiesService;
     @Inject() weatherService: IWeatherService;
 
-    public async created() {
+    public async created(): Promise<void> {
         this.cities = await this.citiesService.get();
         this.cities.forEach(async city => {
             city.weather = await this.weatherService.get(city);
         });
     }
 
-    public goToCity(id: string) {
+    public goToCity(id: string): void {
         this.$router.push({
             name: 'weather-detail',
             params: {

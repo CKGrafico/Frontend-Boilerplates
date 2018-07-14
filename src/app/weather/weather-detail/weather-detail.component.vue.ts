@@ -13,7 +13,7 @@ export default class WeatherDetailComponent extends Vue {
 
     @Prop() id: number;
 
-    public async created() {
+    public async created(): Promise<void> {
         this.city = await this.citiesService.getById(this.id);
         this.city.weather = await this.weatherService.get(this.city);
     }

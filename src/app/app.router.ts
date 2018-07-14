@@ -6,9 +6,7 @@ import { weatherModule } from './weather';
 Vue.use(VueRouter);
 
 export function router() {
-    let router: VueRouter;
-
-    router = new VueRouter({
+    return new VueRouter({
         mode: 'history',
         routes: [
             {
@@ -19,6 +17,4 @@ export function router() {
             ...weatherModule.routes()
         ]
     });
-
-    return router;
 }

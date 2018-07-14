@@ -1,5 +1,3 @@
 import { Container } from 'inversify';
 
-export default (container: Container) => {
-    // Bind services
-};
+export default (container: Container) => {};

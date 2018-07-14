@@ -7,7 +7,7 @@ import { IDateService } from '.';
 export class DateService implements IDateService, IFilter {
     public filterName = 'date';
 
-    public filterAction(date: Date) {
+    public filterAction(date: Date): string {
         return this.formatDate(date);
     }
 
@@ -29,7 +29,7 @@ export class DateService implements IDateService, IFilter {
         return `${month}/${day}/${date.getFullYear()}`;
     }
 
-    private isValidDate(date: Date) {
+    private isValidDate(date: Date): boolean {
         if (Object.prototype.toString.call(date) === '[object Date]') {
             if (isNaN(date.getTime())) {
                 return false;

@@ -7,7 +7,7 @@ import { IWeatherService } from '.';
 export class WeatherService implements IWeatherService {
     public weathers: Weather[];
 
-    private toCelsius(faren: number) {
+    private toCelsius(faren: number): number {
         return parseFloat(((faren - 32) * 5 / 9).toFixed(2));
     }
 
