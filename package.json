@@ -15,12 +15,12 @@
     "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/, dist/, .DS_Store'"
   },
   "dependencies": {
+    "bootstrap": "^4.1.2",
     "inversify": "^4.13.0",
     "localforage": "^1.7.2",
     "normalize-scss": "^7.0.1",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
-    "sierra-library": "^2.0.0",
     "vue": "^2.5.16",
     "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.1",

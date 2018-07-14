@@ -17,7 +17,7 @@ export default class WeatherComponent extends Vue {}
 
 .weather {
   &-header {
-    color: $color-brand;
+    color: $color-primary;
   }
 }
 </style>

@@ -8,18 +8,13 @@
 // Vendor
 @import
   'vendor/normalize',
-  'vendor/sierra',
+  'vendor/bootstrap',
   'vendor/weather-icons';
 
 // Base Files
 @import 'base/globals';
 
-// Components
+// If we are not using Scoped styles, we create components
 // Components structure (BEM no strict)
-// .ck- (the module)
-// .ck-component (the block)
-// .ck-component-child (the element)
-// DON'T DO THAT .ck-component-child-child2 - div.ck-component-child > div.ck-component-child-child2
-// BETTER THAT .ck-component-child .ck-component-child2 - div.ck-component-child > div.ck-component-child2
-// .ck-component--modifier (the modifier)
-// Note: Each component imports its own sass file
+// More info: http://bit.ly/ck-bem-no-strict
+// @import 'components/ck-site';
