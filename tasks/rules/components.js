@@ -32,6 +32,12 @@ module.exports = (env, envs, config) => {
             ]
         },
         {
+            test: /\.vue\.?/,
+            use: [
+                'components-name'
+            ]
+        },
+        {
             test: /\.scss$/,
             exclude: /node_modules/,
             use: [
