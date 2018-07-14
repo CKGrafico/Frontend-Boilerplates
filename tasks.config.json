@@ -1,14 +1,14 @@
 {
     "port": 4000,
     "paths": {
-        "app": {
+        "src": {
             "assets": {
                 "images": {},
                 "fonts": {}
             },
-            "scripts": {
+            "app": {
                 "files": "**/*.ts",
-                "app": {
+                "main": {
                     "folder": "..",
                     "files": "app.ts"
                 },
@@ -17,10 +17,7 @@
                     "files": "vendor.ts"
                 }
             },
-            "styles": {
-                "folder": "..",
-                "files": "**/*.scss"
-            },
+            "styles": {},
             "vue": {
                 "folder": "..",
                 "files": "**/*.vue"
@@ -31,9 +28,7 @@
                 "images": {},
                 "fonts": {}
             },
-            "css": {
-                "scripts": {}
-            },
+            "styles": {},
             "scripts": {}
         }
     }

@@ -1,0 +1,1 @@
+export { default as CityAddComponent } from './city-add/city-add.component.vue';

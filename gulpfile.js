@@ -6,7 +6,7 @@ const $ = require('gulp-load-plugins')();
 const options = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
-let tasks = require('require.all')('./tasks');
+let tasks = require('require.all')('./tasks/gulp');
 tasks((name, task) => { func = () => task(gulp, options.paths, $, _, options, tasks); func.displayName = name; return func});
 
 // Configure gulp tasks

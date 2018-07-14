@@ -1,0 +1,51 @@
+// Colors
+$color-primary: #06B2B1;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-darker: darken($color-primary, 20%);
+$color-primary-bright: lighten($color-primary, 10%);
+$color-primary-brighter: lighten($color-primary, 20%);
+
+$color-secondary: #FFDD2E;
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-darker: darken($color-secondary, 20%);
+$color-secondary-bright: lighten($color-secondary, 10%);
+$color-secondary-brighter: lighten($color-secondary, 20%);
+
+$color-background-dark: #333333;
+$color-background-darker: #000000;
+$color-background-bright: #EEEEEE;
+$color-background-brighter: #FFFFFF;
+
+$color-foreground-dark: #333333;
+$color-foreground-darker: #000000;
+$color-foreground-bright: #969DA6;
+$color-foreground-brighter: #FFFFFF;
+
+// Animations
+$animation-speed-fast: .15s;
+$animation-speed-default: .35s;
+$animation-speed-slow: .5s;
+
+// Fonts
+$font-weight-light: 200;
+$font-weight-semilight: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+$font-size-xs: .5rem;    // 8px
+$font-size-s: .85rem;    // 13.6px
+$font-size-m: 1rem;      // [16px]
+$font-size-l: 1.25rem;   // 20px
+$font-size-xl: 1.5rem;   // 24px
+
+// Medias
+$media-screen-xxs: 360px;
+$media-screen-xs: 640px;
+$media-screen-s: 768px;
+$media-screen-m: 1024px;
+$media-screen-l: 1280px;
+$media-screen-xl: 1440px;
+$media-screen-xxl: 1680px;
+$media-screen-xxxl: 920px;
