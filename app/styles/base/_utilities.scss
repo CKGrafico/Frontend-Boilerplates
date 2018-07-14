@@ -1,17 +1,15 @@
 @import 'variables';
 
+// We use boostrap utilities by default
+// https://getbootstrap.com/docs/4.1/utilities/borders/
+// If the utility does not exist, create a new one
+
 .u {
-  &-align {
-    &-center {
-      text-align: center;
-    }
-
-    &-left {
-      text-align: left;
-    }
-
-    &-right {
-      text-align: right;
+  &-text {
+    &-capitalize-first {
+      &:first-letter {
+        text-transform: capitalize;
+      }
     }
   }
 }
