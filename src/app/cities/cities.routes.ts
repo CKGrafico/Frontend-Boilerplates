@@ -1,21 +1,22 @@
 import { RouteConfig } from 'vue-router';
+import { dynamicRoute } from '~/core/helpers';
 
 export default (): RouteConfig[] => {
     return [
         {
             path: '/cities',
             name: 'cities',
-            component: () => import('./cities.component.vue').then(m => m.default || m),
+            component: dynamicRoute('./cities.component.vue'),
             children: [
                 {
                     path: '',
                     name: 'city-list',
-                    component: () => import('./city-list/city-list.component.vue').then(m => m.default || m)
+                    component: dynamicRoute('./city-list/city-list.component.vue')
                 },
                 {
                     path: ':id',
                     name: 'city-detail',
-                    component: () => import('./city-detail/city-detail.component.vue').then(m => m.default || m),
+                    component: dynamicRoute('./city-detail/city-detail.component.vue'),
                     props: true
                 }
             ]
