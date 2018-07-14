@@ -7,4 +7,4 @@ export interface ICitiesService {
     remove(id: number): Promise<City[]>;
 }
 
-export const ICitiesServiceId = Symbol('ICitiesService');
+export const ICitiesServiceId = 'ICitiesService';

@@ -4,4 +4,4 @@ export interface ITranslateService {
     get(text: string, ...keys: Array<string>): VueI18n.TranslateResult;
 }
 
-export const ITranslateServiceId = Symbol('ITranslateService');
+export const ITranslateServiceId = 'ITranslateService';

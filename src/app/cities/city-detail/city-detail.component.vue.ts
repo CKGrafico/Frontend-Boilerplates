@@ -1,14 +1,13 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-import { Container } from '~/core';
-import { City, ICitiesService, ICitiesServiceId } from '~/shared';
+import { Inject } from '~/core';
+import { City, ICitiesService } from '~/shared';
 
 @Component
 export default class CityDetailComponent extends Vue {
     public city: City = null;
 
-    @Container<ICitiesService>(ICitiesServiceId)
-    private citiesService: ICitiesService;
+    @Inject() citiesService: ICitiesService;
 
     @Prop()
     public id: number;

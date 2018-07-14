@@ -1,5 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator';
-import { Container } from '~/core';
+
+import { Inject } from '~/core';
 import { City, ICitiesService, ICitiesServiceId } from '~/shared';
 
 @Component
@@ -7,8 +8,7 @@ export default class CityAddComponent extends Vue {
     public city: City = null;
     public name = '';
 
-    @Container<ICitiesService>(ICitiesServiceId)
-    private citiesService: ICitiesService;
+    @Inject() citiesService: ICitiesService;
 
     public async search() {
         if (!this.name) {

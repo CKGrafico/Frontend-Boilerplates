@@ -1,1 +1,1 @@
-export * from './container.decorator';
+export * from './inject.decorator';

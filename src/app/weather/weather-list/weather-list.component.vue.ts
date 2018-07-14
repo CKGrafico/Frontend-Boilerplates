@@ -1,17 +1,14 @@
 import { Component, Vue } from 'vue-property-decorator';
-import { Container } from '~/core';
-import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
-import { IWeatherService, IWeatherServiceId } from '~/weather/shared';
+import { Inject } from '~/core';
+import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
+import { IWeatherService } from '~/weather/shared';
 
 @Component
 export default class WeatherListComponent extends Vue {
     public cities: City[] = [];
 
-    @Container<ICitiesService>(ICitiesServiceId)
-    private citiesService: ICitiesService;
-
-    @Container<IWeatherService>(IWeatherServiceId)
-    private weatherService: IWeatherService;
+    @Inject() citiesService: ICitiesService;
+    @Inject() weatherService: IWeatherService;
 
     public async created() {
         this.cities = await this.citiesService.get();

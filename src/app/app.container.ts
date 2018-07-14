@@ -3,12 +3,8 @@ import * as s from '~/shared';
 import { citiesModule } from '~/cities';
 import { weatherModule } from '~/weather';
 
-// Injecting a service into a service
-// constructor(@inject(IExampleServiceIdentifier) private exampleService: IExampleService) {}
-
-// Injecting a service into a component as property
-// @Container<ICitiesService>(ICitiesServiceId)
-// private citiesService: ICitiesService;
+// How to inject a dependency
+// @Inject() nameService: INameService;
 
 export let container: Container = null;
 

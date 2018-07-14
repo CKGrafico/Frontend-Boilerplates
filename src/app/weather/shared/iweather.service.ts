@@ -4,4 +4,4 @@ export interface IWeatherService {
     get(city: City): Promise<Weather>;
 }
 
-export const IWeatherServiceId = Symbol('IWeatherService');
+export const IWeatherServiceId = 'IWeatherService';

@@ -5,6 +5,7 @@ import * as s from '~/shared';
 
 export class Filters {
     public static install() {
+        console.log('TODO')
         let filters: any[] = [
             container.get<s.IDateService>(s.IDateServiceId),
             container.get<s.ITranslateService>(s.ITranslateServiceId),

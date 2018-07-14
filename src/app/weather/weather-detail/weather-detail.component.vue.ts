@@ -1,17 +1,15 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { Container } from '~/core';
-import { ICitiesServiceId, ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
-import { IWeatherService, IWeatherServiceId } from '../shared';
+
+import { Inject } from '~/core';
+import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
+import { IWeatherService } from '../shared';
 
 @Component
 export default class WeatherDetailComponent extends Vue {
     public city: City = null;
 
-    @Container<ICitiesService>(ICitiesServiceId)
-    private citiesService: ICitiesService;
-
-    @Container<IWeatherService>(IWeatherServiceId)
-    private weatherService: IWeatherService;
+    @Inject() citiesService: ICitiesService;
+    @Inject() weatherService: IWeatherService;
 
     @Prop()
     public id: number;

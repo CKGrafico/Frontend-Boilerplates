@@ -1,7 +1,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
-import { Container } from '~/core';
-import { City, ICitiesService, ICitiesServiceId, LoadingComponent } from '~/shared';
+import { Inject } from '~/core';
+import { City, ICitiesService, LoadingComponent } from '~/shared';
 import { CityAddComponent } from '~/cities/shared';
 
 @Component({
@@ -13,8 +13,7 @@ import { CityAddComponent } from '~/cities/shared';
 export default class CityListComponent extends Vue {
     public cities: City[] = null;
 
-    @Container<ICitiesService>(ICitiesServiceId)
-    private citiesService: ICitiesService;
+    @Inject() citiesService: ICitiesService;
 
     public async created() {
         // Fake example with loading
