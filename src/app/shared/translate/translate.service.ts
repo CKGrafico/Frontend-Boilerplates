@@ -1,6 +1,7 @@
 import { injectable } from 'inversify';
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
+
 import { IFilter } from '~/core';
 import { ITranslateService } from '.';
 

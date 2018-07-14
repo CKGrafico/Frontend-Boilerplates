@@ -6,5 +6,3 @@ export interface ICitiesService {
     search(name: string): Promise<City>;
     remove(id: number): Promise<City[]>;
 }
-
-export const ICitiesServiceId = 'ICitiesService';

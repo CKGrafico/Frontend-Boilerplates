@@ -13,7 +13,11 @@ const keyToId = (key: string) => {
     return prefix + key.slice(1).replace('_', '');
 };
 
-export const Inject = (id?: string | symbol) => {
+/**
+ * Decorator to inject dependencies in components or classes
+ * @param id optional id, could be auto generated with prop name
+ */
+export function Inject(id?: string | symbol) {
     return (target: any, key: string) => {
         const generatedId = id || keyToId(key);
 
@@ -26,4 +30,12 @@ export const Inject = (id?: string | symbol) => {
             get: getter
         });
     };
-};
+}
+
+/**
+ * Creates an identifier meanwhile we cannot create with interfaces
+ * @param target the class to generate the name
+ */
+export function injectId(target: any): string {
+    return keyToId(target.name);
+}

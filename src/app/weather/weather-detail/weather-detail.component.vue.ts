@@ -11,8 +11,7 @@ export default class WeatherDetailComponent extends Vue {
     @Inject() citiesService: ICitiesService;
     @Inject() weatherService: IWeatherService;
 
-    @Prop()
-    public id: number;
+    @Prop() id: number;
 
     public async created() {
         this.city = await this.citiesService.getById(this.id);

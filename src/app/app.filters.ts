@@ -1,14 +1,17 @@
 import { Vue } from 'vue-property-decorator';
-import { IFilter } from '~/core';
-import { container } from '~/app.container';
+
 import * as s from '~/shared';
+import { IFilter, Inject } from '~/core';
 
 export class Filters {
-    public static install() {
-        console.log('TODO')
+    @Inject() dateService: s.IDateService;
+    @Inject() translateService: s.ITranslateService;
+
+    public install() {
+
         let filters: any[] = [
-            container.get<s.IDateService>(s.IDateServiceId),
-            container.get<s.ITranslateService>(s.ITranslateServiceId),
+            this.dateService,
+            this.translateService,
         ];
         
         filters.forEach((filterService: IFilter) => Vue.filter(filterService.filterName, (...params) => filterService.filterAction(...params)));

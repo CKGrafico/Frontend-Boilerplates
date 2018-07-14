@@ -1,7 +1,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 import { Inject } from '~/core';
-import { City, ICitiesService, ICitiesServiceId } from '~/shared';
+import { City, ICitiesService } from '~/shared';
 
 @Component
 export default class CityAddComponent extends Vue {

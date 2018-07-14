@@ -1,4 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator';
+
 import { Inject } from '~/core';
 import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService } from '~/weather/shared';

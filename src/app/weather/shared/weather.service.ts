@@ -1,4 +1,5 @@
 import { injectable } from 'inversify';
+
 import { City, Weather, WeatherForecast } from '~/shared';
 import { IWeatherService } from '.';
 

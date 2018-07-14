@@ -1,7 +1,8 @@
 import { Container } from 'inversify';
-import { IWeatherService, IWeatherServiceId, WeatherService } from './shared';
+import { injectId } from '~/core';
+import { IWeatherService, WeatherService } from './shared';
 
 export default (container: Container) => {
     // Bind services
-    container.bind<IWeatherService>(IWeatherServiceId).to(WeatherService).inSingletonScope();
+    container.bind<IWeatherService>(injectId(WeatherService)).to(WeatherService).inSingletonScope();
 };

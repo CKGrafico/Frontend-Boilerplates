@@ -1,16 +1,17 @@
 import { Vue } from 'vue-property-decorator';
+
+import { CitiesSeed } from './core/seeds';
 import { router } from './app.router';
 import { containerBuilder } from './app.container';
-import { default as AppComponent } from './app.component.vue';
-import { CitiesSeed } from './core/seeds';
 import { Filters } from './app.filters';
 
+import { default as AppComponent } from './app.component.vue';
 
 export class App {
     constructor() {
         containerBuilder();
 
-        Vue.use(Filters);
+        Vue.use(new Filters());
 
         this.bootstrap();
     }
