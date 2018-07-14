@@ -12,7 +12,7 @@
     "postdev": "webpack --env.NODE_ENV=development",
     "start": "npm run dev",
     "poststart": "concurrently \"gulp watcher --env=development\" \"webpack --env.NODE_ENV=development --watch\" --names \"🥛,📦\" --prefix name --kill-others",
-    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
+    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/, dist/, .DS_Store'"
   },
   "dependencies": {
     "inversify": "^4.13.0",

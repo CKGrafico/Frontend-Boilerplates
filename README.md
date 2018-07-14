@@ -71,53 +71,137 @@ To run the tasks we have these three commands:
 ## ⛩️ Project structure
 On this branch the structure is:`
 ```
+├── .babelrc
 ├── .gitignore
 ├── .gulpenvrc
-├── .scripts-lint.yml
 ├── .stylelintrc
 ├── LICENSE
 ├── README.md
-├── app
+├── gulpfile.js
+├── mocha-webpack.opts
+├── package-lock.json
+├── package.json
+├── src
+|  ├── app
+|  |  ├── app.component.vue
+|  |  ├── app.container.ts
+|  |  ├── app.filters.ts
+|  |  ├── app.router.ts
+|  |  ├── app.ts
+|  |  ├── cities
+|  |  |  ├── cities.component.vue
+|  |  |  ├── cities.component.vue.html
+|  |  |  ├── cities.component.vue.scss
+|  |  |  ├── cities.component.vue.ts
+|  |  |  ├── cities.container.ts
+|  |  |  ├── cities.routes.ts
+|  |  |  ├── city-detail
+|  |  |  |  ├── city-detail.component.vue
+|  |  |  |  ├── city-detail.component.vue.html
+|  |  |  |  ├── city-detail.component.vue.scss
+|  |  |  |  └── city-detail.component.vue.ts
+|  |  |  ├── city-list
+|  |  |  |  ├── city-list.component.vue
+|  |  |  |  ├── city-list.component.vue.html
+|  |  |  |  ├── city-list.component.vue.scss
+|  |  |  |  └── city-list.component.vue.ts
+|  |  |  ├── index.ts
+|  |  |  └── shared
+|  |  |     ├── city-add
+|  |  |     └── index.ts
+|  |  ├── core
+|  |  |  ├── decorators
+|  |  |  |  ├── container.decorator.ts
+|  |  |  |  └── index.ts
+|  |  |  ├── ifilter.ts
+|  |  |  ├── index.ts
+|  |  |  └── seeds
+|  |  |     ├── base.seed.ts
+|  |  |     ├── cities.seed.ts
+|  |  |     └── index.ts
+|  |  ├── shared
+|  |  |  ├── cities
+|  |  |  |  ├── cities.service.ts
+|  |  |  |  ├── city.model.ts
+|  |  |  |  ├── icities.service.ts
+|  |  |  |  └── index.ts
+|  |  |  ├── date
+|  |  |  |  ├── date.service.spec.ts
+|  |  |  |  ├── date.service.ts
+|  |  |  |  ├── idate.service.ts
+|  |  |  |  └── index.ts
+|  |  |  ├── index.ts
+|  |  |  ├── loading.component.vue
+|  |  |  ├── translate
+|  |  |  |  ├── index.ts
+|  |  |  |  ├── itranslate.service.ts
+|  |  |  |  └── translate.service.ts
+|  |  |  └── weather
+|  |  |     ├── index.ts
+|  |  |     ├── weather-codes.enum.ts
+|  |  |     ├── weather-icons.model.ts
+|  |  |     └── weather.model.ts
+|  |  ├── vendor.ts
+|  |  └── weather
+|  |     ├── index.ts
+|  |     ├── shared
+|  |     |  ├── index.ts
+|  |     |  ├── iweather.service.ts
+|  |     |  └── weather.service.ts
+|  |     ├── weather-detail
+|  |     |  ├── weather-detail.component.vue
+|  |     |  ├── weather-detail.component.vue.html
+|  |     |  ├── weather-detail.component.vue.scss
+|  |     |  └── weather-detail.component.vue.ts
+|  |     ├── weather-list
+|  |     |  ├── weather-list.component.vue
+|  |     |  ├── weather-list.component.vue.html
+|  |     |  ├── weather-list.component.vue.scss
+|  |     |  └── weather-list.component.vue.ts
+|  |     ├── weather.component.vue
+|  |     ├── weather.container.ts
+|  |     └── weather.routes.ts
 |  ├── assets
 |  |  ├── fonts
-|  |  |  └── OpenSans
-|  |  |     ├── OpenSans-Bold.ttf
-|  |  |     ├── OpenSans-BoldItalic.ttf
-|  |  |     ├── OpenSans-ExtraBold.ttf
-|  |  |     ├── OpenSans-ExtraBoldItalic.ttf
-|  |  |     ├── OpenSans-Italic.ttf
-|  |  |     ├── OpenSans-Light.ttf
-|  |  |     ├── OpenSans-LightItalic.ttf
-|  |  |     ├── OpenSans-Regular.ttf
-|  |  |     ├── OpenSans-Semibold.ttf
-|  |  |     └── OpenSans-SemiboldItalic.ttf
+|  |  |  ├── OpenSans
+|  |  |  |  ├── OpenSans-Bold.ttf
+|  |  |  |  ├── OpenSans-ExtraBold.ttf
+|  |  |  |  ├── OpenSans-Italic.ttf
+|  |  |  |  ├── OpenSans-Light.ttf
+|  |  |  |  ├── OpenSans-Regular.ttf
+|  |  |  |  └── OpenSans-Semibold.ttf
+|  |  |  └── WeatherIcons
+|  |  |     ├── WeatherIcons-Regular.eot
+|  |  |     ├── WeatherIcons-Regular.otf
+|  |  |     ├── WeatherIcons-Regular.svg
+|  |  |     ├── WeatherIcons-Regular.ttf
+|  |  |     └── WeatherIcons-Regular.woff
 |  |  └── images
 |  |     └── example.jpg
 |  ├── index.html
-|  ├── scripts
-|  |  ├── app.js
-|  |  └── vendor.js
-|  └── styles
-|     ├── app.scss
-|     ├── base
-|     |  ├── _fonts.scss
-|     |  ├── _globals.scss
-|     |  ├── _icons.scss
-|     |  ├── _states.scss
-|     |  ├── _utilities.scss
-|     |  ├── _variables.scss
-|     |  └── mixins
-|     |     ├── _fonts.scss
-|     |     ├── _icomoon.scss
-|     |     ├── _medias.scss
-|     |     └── _offsets.scss
-|     ├── components
-|     |  └── _ck-site.scss
-|     └── vendor
-|        └── _normalize.scss
-├── gulpfile.js
-├── package-lock.json
-├── package.json
+|  ├── locale
+|  |  ├── en.locale.json
+|  |  └── es.locale.json
+|  ├── styles
+|  |  ├── app.scss
+|  |  ├── base
+|  |  |  ├── _fonts.scss
+|  |  |  ├── _globals.scss
+|  |  |  ├── _icons.scss
+|  |  |  ├── _states.scss
+|  |  |  ├── _utilities.scss
+|  |  |  ├── _variables.scss
+|  |  |  └── mixins
+|  |  |     ├── _fonts.scss
+|  |  |     ├── _icomoon.scss
+|  |  |     └── _medias.scss
+|  |  └── vendor
+|  |     ├── _normalize.scss
+|  |     ├── _sierra.scss
+|  |     └── _weather-icons.scss
+|  └── typings
+|     ├── vue-shim.d.ts
+|     └── vue.d.ts
 ├── tasks
 |  ├── assets.js
 |  ├── clean.js
@@ -125,20 +209,24 @@ On this branch the structure is:`
 |  |  ├── helpers.js
 |  |  └── options.js
 |  ├── copy.js
+|  ├── loaders
+|  |  └── components-name.loader.js
 |  ├── plugins
-|  |  ├── commons.js
 |  |  ├── globals.js
-|  |  └── uglify.js
+|  |  ├── uglify.js
+|  |  └── vue.js
 |  ├── rules
-|  |  ├── scripts-lint.js
+|  |  ├── components.js
+|  |  ├── lint.js
 |  |  └── scripts.js
 |  ├── serve.js
 |  ├── styles-lint.js
 |  ├── styles.js
 |  └── watch.js
 ├── tasks.config.json
+├── tsconfig.json
+├── tsconfig.mocha.js
 ├── tslint.json
-├── utils
 └── webpack.config.js
 ```
 
