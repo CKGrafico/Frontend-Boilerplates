@@ -1,6 +1,6 @@
 
 const glob = require('glob-fs')({ gitignore: true });
-const files = glob.readdirSync('./app/**/*.vue', {});
+const files = glob.readdirSync('./src/**/*.vue', {});
 const componentsName = files.map(file => {
     const parts = file.split('.component');
     if (parts[0].includes('\\')) {

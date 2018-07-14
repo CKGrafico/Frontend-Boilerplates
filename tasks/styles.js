@@ -1,8 +1,8 @@
 module.exports = (gulp, paths, $, _) => {
-    return gulp.src(_.files(paths.app.styles))
+    return gulp.src(_.files(paths.src.styles))
         .pipe($.environment.if.development($.sourcemaps.init()))
         .pipe($.styleAliases({
-            '~styles/variables': './app/styles/base/variables'
+            '~styles/variables': './src/styles/base/variables'
         }))
         .pipe($.sass().on('error', $.sass.logError))
         .pipe($.autoprefixer({ browsers: ['last 2 versions'] }))

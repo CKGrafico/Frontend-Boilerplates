@@ -8,7 +8,7 @@ module.exports = (gulp, paths, $, _) => {
         ]
     };
 
-    return gulp.src(_.files(paths.app.styles))
+    return gulp.src(_.files(paths.src.styles))
     .pipe($.environment.if.development($.stylelint(options)))
     .pipe($.environment.if.production($.stylelint({ ...options, failAfterError: true })));
     
