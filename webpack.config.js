@@ -2,8 +2,8 @@ const path = require('path');
 const { paths, environments } = require('./tasks/config/options');
 const _ = require('./tasks/config/helpers');
 
-let rules = require('require.all')('./tasks/rules');
-let plugins = require('require.all')('./tasks/plugins');
+let rules = require('require.all')('./tasks/webpack/rules');
+let plugins = require('require.all')('./tasks/webpack/plugins');
 
 module.exports = env => {
     let environment = env.NODE_ENV;
