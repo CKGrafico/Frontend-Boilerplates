@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.2",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "inversify": "^4.13.0",
     "localforage": "^1.7.2",
     "normalize-scss": "^7.0.1",

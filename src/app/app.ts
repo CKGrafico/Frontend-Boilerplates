@@ -4,6 +4,7 @@ import { CitiesSeed } from './core/seeds';
 import { router } from './app.router';
 import { containerBuilder } from './app.container';
 import { Filters } from './app.filters';
+import BootstrapVue from 'bootstrap-vue';
 
 import { default as AppComponent } from './app.component.vue';
 
@@ -11,6 +12,7 @@ export class App {
     constructor() {
         containerBuilder();
 
+        Vue.use(BootstrapVue);
         Vue.use(new Filters());
 
         this.bootstrap();

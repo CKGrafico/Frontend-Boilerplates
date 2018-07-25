@@ -15,7 +15,7 @@ module.exports = env => {
     plugins((name, rule) => rule(environment, environments, config));
 
     return ({
-        mode: 'development',
+        mode: environment,
         entry: {
             app: _.files(paths.src.app.main),
             vendor: _.files(paths.src.app.vendor),
