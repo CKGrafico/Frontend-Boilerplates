@@ -111,8 +111,11 @@ On this branch the structure is:`
 |  |  |     └── index.ts
 |  |  ├── core
 |  |  |  ├── decorators
-|  |  |  |  ├── container.decorator.ts
-|  |  |  |  └── index.ts
+|  |  |  |  ├── index.ts
+|  |  |  |  └── inject.decorator.ts
+|  |  |  ├── helpers
+|  |  |  |  ├── index.ts
+|  |  |  |  └── next-tick.ts
 |  |  |  ├── ifilter.ts
 |  |  |  ├── index.ts
 |  |  |  └── seeds
@@ -141,7 +144,9 @@ On this branch the structure is:`
 |  |  |     ├── weather-codes.enum.ts
 |  |  |     ├── weather-icons.model.ts
 |  |  |     └── weather.model.ts
-|  |  ├── vendor.ts
+|  |  ├── vendor
+|  |  |  ├── bootstrap.ts
+|  |  |  └── index.ts
 |  |  └── weather
 |  |     ├── index.ts
 |  |     ├── shared
@@ -196,33 +201,35 @@ On this branch the structure is:`
 |  |  |     ├── _icomoon.scss
 |  |  |     └── _medias.scss
 |  |  └── vendor
+|  |     ├── _bootstrap.scss
 |  |     ├── _normalize.scss
-|  |     ├── _sierra.scss
 |  |     └── _weather-icons.scss
 |  └── typings
 |     ├── vue-shim.d.ts
 |     └── vue.d.ts
 ├── tasks
-|  ├── assets.js
-|  ├── clean.js
 |  ├── config
 |  |  ├── helpers.js
 |  |  └── options.js
-|  ├── copy.js
-|  ├── loaders
-|  |  └── components-name.loader.js
-|  ├── plugins
-|  |  ├── globals.js
-|  |  ├── uglify.js
-|  |  └── vue.js
-|  ├── rules
-|  |  ├── components.js
-|  |  ├── lint.js
-|  |  └── scripts.js
-|  ├── serve.js
-|  ├── styles-lint.js
-|  ├── styles.js
-|  └── watch.js
+|  ├── gulp
+|  |  ├── assets.js
+|  |  ├── clean.js
+|  |  ├── copy.js
+|  |  ├── serve.js
+|  |  ├── styles-lint.js
+|  |  ├── styles.js
+|  |  └── watch.js
+|  └── webpack
+|     ├── loaders
+|     |  └── components-name.loader.js
+|     ├── plugins
+|     |  ├── globals.js
+|     |  ├── uglify.js
+|     |  └── vue.js
+|     └── rules
+|        ├── components.js
+|        ├── lint.js
+|        └── scripts.js
 ├── tasks.config.json
 ├── tsconfig.json
 ├── tsconfig.mocha.js
