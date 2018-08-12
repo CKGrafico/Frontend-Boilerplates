@@ -14,7 +14,7 @@
                 },
                 "vendor": {
                     "folder": "..",
-                    "files": "vendor.ts"
+                    "files": "app.vendor.ts"
                 }
             },
             "styles": {},

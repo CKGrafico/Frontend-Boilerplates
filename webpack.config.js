@@ -18,7 +18,7 @@ module.exports = env => {
         mode: environment,
         entry: {
             app: _.files(paths.src.app.main),
-            vendor: _.files(paths.src.app.vendor),
+            ['app.vendor']: _.files(paths.src.app.vendor),
         },
         output: {
             path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
