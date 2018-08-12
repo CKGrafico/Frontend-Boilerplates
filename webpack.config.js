@@ -18,7 +18,6 @@ module.exports = env => {
         mode: environment,
         entry: {
             app: _.files(paths.src.app.main),
-            ['app.vendor']: _.files(paths.src.app.vendor),
         },
         output: {
             path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
@@ -37,6 +36,18 @@ module.exports = env => {
             plugins.uglify,
             ...plugins.vue(path.resolve(__dirname, _.folder(paths.src.app)))
         ],
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    vendor: {
+                        chunks: 'all',
+                        test: path.resolve(__dirname, 'node_modules'),
+                        name: 'vendor',
+                        enforce: true,
+                    },
+                },
+            },
+        },
         resolve: {
             extensions: ['.ts', '.js', '.vue', '.vue.ts'],
             modules: [

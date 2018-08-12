@@ -11,10 +11,6 @@
                 "main": {
                     "folder": "..",
                     "files": "app.ts"
-                },
-                "vendor": {
-                    "folder": "..",
-                    "files": "app.vendor.ts"
                 }
             },
             "styles": {},

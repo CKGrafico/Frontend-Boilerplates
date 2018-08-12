@@ -1,10 +1,10 @@
 import { Vue } from 'vue-property-decorator';
 
+import { vendor } from './vendor';
 import { CitiesSeed } from './core/seeds';
 import { router } from './app.router';
 import { containerBuilder } from './app.container';
 import { Filters } from './app.filters';
-import { vendor } from './vendor';
 
 import { default as AppComponent } from './app.component.vue';
 
