@@ -36,6 +36,13 @@ module.exports = env => {
             plugins.uglify,
             ...plugins.vue(path.resolve(__dirname, _.folder(paths.src.app)))
         ],
+        devServer: {
+            contentBase: path.resolve(__dirname, _.folder(paths.dist)),
+            open: true,
+            port: 4000,
+            https: false,
+            // proxy: { '/api': 'http://localhost:3000' }
+        },
         optimization: {
             splitChunks: {
                 cacheGroups: {
