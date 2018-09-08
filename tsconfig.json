@@ -6,11 +6,10 @@
       "es2015",
       "es2016"
     ],
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "app/*"
-      ]
+      "~/*": ["./src/app/*"],
+      "test/*": ["./test/*"]
     },
     "module": "esnext",
     "moduleResolution": "node",
@@ -21,5 +20,5 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true
   },
-  "compileOnSave": false
+  "compileOnSave": false,
 }

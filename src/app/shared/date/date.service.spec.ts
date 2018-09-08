@@ -1,10 +1,9 @@
-import { expect } from 'chai';
+import { expect, should, assert } from 'chai';
 
 import { DateService } from './date.service';
 
-let dateService;
-
 describe('DateService', () => {
+    let dateService;
 
     beforeEach(() => {
         dateService = new DateService();

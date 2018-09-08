@@ -6,10 +6,9 @@ let rules = require('require.all')('./tasks/webpack/rules');
 let plugins = require('require.all')('./tasks/webpack/plugins');
 
 module.exports = env => {
+    const config = {};
     let environment = env.NODE_ENV;
     env.NODE_ENV = JSON.stringify(environment);
-
-    const config = {};
 
     rules((name, rule) => rule(environment, environments, config));
     plugins((name, rule) => rule(environment, environments, config));
@@ -64,6 +63,7 @@ module.exports = env => {
             alias: {
                 'styles': path.resolve(__dirname, _.folder(paths.src.styles) + '/base'),
                 '~': path.resolve(__dirname, _.folder(paths.src.app)),
+                'test': path.resolve(__dirname, _.folder(paths.test)),
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },
