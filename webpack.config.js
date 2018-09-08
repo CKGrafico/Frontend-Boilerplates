@@ -6,11 +6,9 @@ let rules = require('require.all')('./tasks/webpack/rules');
 let plugins = require('require.all')('./tasks/webpack/plugins');
 
 module.exports = env => {
+    const config = {};
     let environment = env.NODE_ENV;
     env.NODE_ENV = JSON.stringify(environment);
-    console.log(7777777777)
-    console.log(environment)
-    const config = {};
 
     rules((name, rule) => rule(environment, environments, config));
     plugins((name, rule) => rule(environment, environments, config));
@@ -30,7 +28,6 @@ module.exports = env => {
                 // rules.lint,
                 ...rules.components,
                 rules.scripts,
-                rules.scriptss,
             ]
         },
         plugins: [

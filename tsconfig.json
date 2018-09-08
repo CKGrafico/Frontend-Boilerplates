@@ -20,5 +20,5 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true
   },
-  "compileOnSave": false
+  "compileOnSave": false,
 }
