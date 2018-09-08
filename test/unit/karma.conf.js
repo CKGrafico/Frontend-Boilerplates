@@ -2,17 +2,21 @@ webpackConfig = require('../../webpack.config')({ NODE_ENV: 'development' });
 
 webpackConfig.optimization = {};
 
-// const pattern = './specs/**/*.spec.ts'
-const pattern = '../../src/**/*.spec.ts'
+const files = '../../src/**/*.spec.ts'
+const vendor = './karma.vendor.ts'
 
 module.exports = (config) => {
   config.set({
-    browsers: ['PhantomJS'],
-    frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
+    browsers: ['ChromeHeadless'],
+    frameworks: ['mocha', 'sinon-chai'],
 
-    files: [{ pattern, watched: false }],
+    files: [
+      { pattern: vendor, watched: false },
+      { pattern: files, watched: false },
+    ],
     preprocessors: {
-      [pattern]: [ 'webpack' ]
+      [vendor]: [ 'webpack' ],
+      [files]: [ 'webpack' ],
     },
 
     mime: {

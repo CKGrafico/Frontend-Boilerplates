@@ -1,19 +1,19 @@
-// import { mount, createLocalVue } from 'vue-test-utils'
-// import { expect } from '~/test/unit/libs/chai';
+import { mount, createLocalVue } from 'vue-test-utils'
+import { expect } from 'chai';
 
-// import { CityAddComponent } from './city-add.component.vue';
+import { CityAddComponent } from '.';
 
-// describe('DateService', () => {
-//   let localVue
+describe('DateService', () => {
+  let localVue
 
-//     beforeEach(() => {
-//       localVue = createLocalVue();
-//     });
+    beforeEach(() => {
+      localVue = createLocalVue();
+    });
 
-//     describe('when format Date', () => {
-//         it('should return date in correct format', () => {
+    describe('when format Date', () => {
+        it('should return date in correct format', () => {
             
-//             expect(true).to.equal(true);
-//         });
-//     });
-// });
+            expect(true).to.equal(true);
+        });
+    });
+});
