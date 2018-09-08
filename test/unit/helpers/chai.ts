@@ -10,4 +10,3 @@ chai.use(sinonChai);
 chai.use(chaiAsPromised);
 
 export { expect, should, assert } from 'chai';
-export { SinonStub, spy, stub } from 'sinon';
