@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { expect } from '~/test/libs/chai';
 
 import { DateService } from './date.service';
 
