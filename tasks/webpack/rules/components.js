@@ -12,48 +12,34 @@ module.exports = (env, envs, config) => {
     config.resolveLoader.alias = config.resolveLoader.alias || {};
     config.resolveLoader.alias['components-name'] = res('../loaders/components-name.loader');
 
-    /**
-     * Allows developers to use .vue files or
-     * separated files following this structure
-     * NAMEOFTHEFILE.html.vue
-     * NAMEOFTHEFILE.ts
-     * NAMEOFTHEFILE.scss
-     */
-    config.resolveLoader = config.resolveLoader || {};
-    config.resolveLoader.alias = config.resolveLoader.alias || {};
-    config.resolveLoader.alias['separated-files'] = res('../loaders/separated-files.loader');
-
     return [
-        {
+        {   // Vue Files
             test: /\.vue$/,
             use: [
                 'vue-loader',
                 'components-name'
             ]
         },
-        {
+        {   // Vue separated files
             test: /\.vue\.?/,
             use: [
                 'components-name'
             ]
         },
-        {
+        {   // Sass in components
             test: /\.scss$/,
             exclude: /node_modules/,
             use: [
                 'vue-style-loader',
                 'css-loader',
                 'sass-loader',
-                {
-                    loader: 'postcss-loader',
-                    options: {
-                        ident: 'postcss',
-                        plugins: [
-                            require('stylelint')(),
-                            require('autoprefixer')(),
-                        ]
-                    }
-                }
+                
+            ]
+        },
+        {   // CSS in components dependencies
+            test: /\.css$/,
+            use: [
+                'css-loader'
             ]
         }
     ]

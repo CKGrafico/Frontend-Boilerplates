@@ -6,19 +6,17 @@ let rules = require('require.all')('./tasks/webpack/rules');
 let plugins = require('require.all')('./tasks/webpack/plugins');
 
 module.exports = env => {
+    const config = {};
     let environment = env.NODE_ENV;
     env.NODE_ENV = JSON.stringify(environment);
-
-    const config = {};
 
     rules((name, rule) => rule(environment, environments, config));
     plugins((name, rule) => rule(environment, environments, config));
 
     return ({
-        mode: 'development',
+        mode: environment,
         entry: {
             app: _.files(paths.src.app.main),
-            vendor: _.files(paths.src.app.vendor),
         },
         output: {
             path: path.resolve(__dirname, _.folder(paths.dist.scripts)),
@@ -34,9 +32,28 @@ module.exports = env => {
         },
         plugins: [
             plugins.globals,
-            plugins.uglify,
             ...plugins.vue(path.resolve(__dirname, _.folder(paths.src.app)))
         ],
+        devServer: {
+            contentBase: path.resolve(__dirname, _.folder(paths.dist)),
+            open: true,
+            port: 4000,
+            https: false,
+            // proxy: { '/api': 'http://localhost:3000' }
+        },
+       optimization: {
+            minimizer: [plugins.uglify],
+            splitChunks: {
+                cacheGroups: {
+                    vendor: {
+                        chunks: 'all',
+                        test: path.resolve(__dirname, 'node_modules'),
+                        name: 'vendor',
+                        enforce: true,
+                    },
+                },
+            },
+        },
         resolve: {
             extensions: ['.ts', '.js', '.vue', '.vue.ts'],
             modules: [
@@ -46,6 +63,7 @@ module.exports = env => {
             alias: {
                 'styles': path.resolve(__dirname, _.folder(paths.src.styles) + '/base'),
                 '~': path.resolve(__dirname, _.folder(paths.src.app)),
+                'test': path.resolve(__dirname, _.folder(paths.test)),
                 'vue$': 'vue/dist/vue.runtime.common.js'
             }
         },

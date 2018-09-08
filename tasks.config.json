@@ -1,5 +1,4 @@
 {
-    "port": 4000,
     "paths": {
         "src": {
             "assets": {
@@ -11,10 +10,6 @@
                 "main": {
                     "folder": "..",
                     "files": "app.ts"
-                },
-                "vendor": {
-                    "folder": "..",
-                    "files": "vendor.ts"
                 }
             },
             "styles": {},
@@ -30,6 +25,7 @@
             },
             "styles": {},
             "scripts": {}
-        }
+        },
+        "test": {}
     }
 }

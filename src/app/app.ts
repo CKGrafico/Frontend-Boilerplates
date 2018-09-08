@@ -1,5 +1,6 @@
 import { Vue } from 'vue-property-decorator';
 
+import { vendor } from './vendor';
 import { CitiesSeed } from './core/seeds';
 import { router } from './app.router';
 import { containerBuilder } from './app.container';
@@ -12,6 +13,7 @@ export class App {
         containerBuilder();
 
         Vue.use(new Filters());
+        vendor.forEach(library => Vue.use(library));
 
         this.bootstrap();
     }
