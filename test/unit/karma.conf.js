@@ -1,4 +1,4 @@
-webpackConfig = require('../../webpack.config')({ NODE_ENV: 'development' });
+const webpackConfig = require('../../webpack.config')({ NODE_ENV: 'development' });
 
 webpackConfig.optimization = {};
 

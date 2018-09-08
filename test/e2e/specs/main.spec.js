@@ -10,9 +10,8 @@ module.exports = {
 
     browser
       .url(devServer)
-      .waitForElementVisible('.artwork-main-container', 5000)
-      .assert.elementPresent('.nav-bar')
-      .assert.elementPresent('.art-main')
+      .waitForElementVisible('body', 5000)
+      .assert.elementPresent('body')
       .end()
   }
 }
