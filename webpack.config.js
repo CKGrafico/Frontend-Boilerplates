@@ -33,7 +33,6 @@ module.exports = env => {
         },
         plugins: [
             plugins.globals,
-            plugins.uglify,
             ...plugins.vue(path.resolve(__dirname, _.folder(paths.src.app)))
         ],
         devServer: {
@@ -43,7 +42,8 @@ module.exports = env => {
             https: false,
             // proxy: { '/api': 'http://localhost:3000' }
         },
-        optimization: {
+       optimization: {
+            minimizer: [plugins.uglify],
             splitChunks: {
                 cacheGroups: {
                     vendor: {
