@@ -29,6 +29,10 @@ export default class CityAddComponent extends Vue {
         
         this.city = await this.citiesService.search(this.name);
     }
+
+    public testableMethods(num: number) {
+      return num + 1;
+    }
 }
 </script>
 
