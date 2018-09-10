@@ -1,5 +1,7 @@
-import { mount, createLocalVue } from 'vue-test-utils'
+import 'test/unit/karma.vendor';
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import { expect } from 'chai';
+
 import { nextTick } from 'test/unit/helpers/nextTick';
 
 import { CityAddComponent } from '.';
@@ -13,7 +15,7 @@ describe('CityAddComponent', () => {
 
     describe('when call to testablemethod', () => {
         it('should should return the number plus one', async () => {
-            const wrapper = mount(CityAddComponent, {
+            const wrapper = shallowMount<any>(CityAddComponent, {
                 localVue
             });
 
