@@ -2,7 +2,7 @@ import 'test/unit/karma.vendor';
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import { expect } from 'chai';
 
-import { nextTick } from 'test/unit/helpers/nextTick';
+import { nextTick } from 'test/unit/helpers';
 
 import { CityAddComponent } from '.';
 
