@@ -25,9 +25,9 @@ module.exports = env => {
         },
         module: {
             rules: [
-                // rules.lint,
                 ...rules.components,
                 rules.scripts,
+                rules.lint
             ]
         },
         plugins: [
