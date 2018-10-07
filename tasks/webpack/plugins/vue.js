@@ -15,8 +15,7 @@ module.exports = (env, envs) => {
 
         const defaultConfigBuilder = new VueBuilder({ 
             path,
-            allScoped: true,
-            suffix: '.generated'
+            allScoped: true
         });
         const pluginBuilder = {
             [envs.development]: defaultConfigBuilder,
