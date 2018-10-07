@@ -18,6 +18,7 @@ module.exports = (env, envs) => {
 
     return {
         test: /\.ts$/,
+        exclude: /node_modules/,
         loader: 'tslint-loader',
         options: options[env]
     }
