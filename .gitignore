@@ -10,4 +10,7 @@ dist/
 # Packages folders
 node_modules/
 
+# Vue generated
+*.generated*
+
 
