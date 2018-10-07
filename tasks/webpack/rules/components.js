@@ -15,6 +15,7 @@ module.exports = (env, envs, config) => {
     return [
         {   // Vue Files
             test: /\.vue$/,
+            exclude: /node_modules/,
             use: [
                 'vue-loader',
                 'components-name'
@@ -22,13 +23,13 @@ module.exports = (env, envs, config) => {
         },
         {   // Vue separated files
             test: /\.vue\.?/,
+            exclude: /node_modules/,
             use: [
                 'components-name'
             ]
         },
         {   // Sass in components
             test: /\.scss$/,
-            exclude: /node_modules/,
             use: [
                 'vue-style-loader',
                 'css-loader',
