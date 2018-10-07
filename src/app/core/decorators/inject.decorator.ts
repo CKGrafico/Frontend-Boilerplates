@@ -27,7 +27,7 @@ export function Inject(id?: string | symbol) {
 
         Reflect.deleteProperty[key];
         Reflect.defineProperty(target, key, {
-            get: getter
+            get: getter,
         });
     };
 }
@@ -38,4 +38,26 @@ export function Inject(id?: string | symbol) {
  */
 export function injectId(target: any): string {
     return keyToId(target.name);
+}
+
+/**
+ * Decorator to inject dependencies for testing purposes
+ * @param target: the component
+ * @param key: the injected class
+ * @param mock: the object mock
+ * @example
+ * mockInject(wrapper.vm, 'citiesService', {
+ *   remove: x => x + 100000
+ * })
+ */
+export function mockInject(target: any, key: any, mock: any) {
+    const getter = () => {
+        return mock;
+    };
+
+    Reflect.deleteProperty[key];
+    Reflect.defineProperty(target, key, {
+        get: getter,
+        set: x => x
+    });
 }

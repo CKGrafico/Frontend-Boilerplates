@@ -1,3 +1,3 @@
 <script src="./cities.component.vue.ts" lang="ts"></script>
-<style src="./cities.component.vue.scss" lang="scss"></style>
+<style src="./cities.component.vue.scss" lang="scss" scoped></style>
 <template src="./cities.component.vue.html" lang="html"></template>

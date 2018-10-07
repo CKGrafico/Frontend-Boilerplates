@@ -1,4 +1,5 @@
-import { expect, should, assert } from 'chai';
+import 'test/unit/karma.vendor';
+import { expect } from 'chai';
 
 import { DateService } from './date.service';
 

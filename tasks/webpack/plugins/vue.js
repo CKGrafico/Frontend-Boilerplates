@@ -13,7 +13,10 @@ module.exports = (env, envs) => {
             [envs.production]: defaultConfigLoader
         };
 
-        const defaultConfigBuilder = new VueBuilder({ path });
+        const defaultConfigBuilder = new VueBuilder({ 
+            path,
+            allScoped: true
+        });
         const pluginBuilder = {
             [envs.development]: defaultConfigBuilder,
             [envs.production]: defaultConfigBuilder
