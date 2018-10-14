@@ -5,11 +5,11 @@ import { expect } from 'chai';
 
 import { mockInject } from '~/core';
 import { nextTick } from 'test/unit/helpers';
-import { default as CityListComponent } from './city-list.component.vue';
+import CityList from './CityList.vue';
 
 // Simple Stub test
 
-describe('CityListComponent', () => {
+describe('CityList', () => {
   let localVue
 
     beforeEach(() => {
@@ -18,7 +18,7 @@ describe('CityListComponent', () => {
 
     describe('when call to remove', () => {
         it('should call to service method', async () => {
-            const wrapper = shallowMount<any>(CityListComponent, {
+            const wrapper = shallowMount<any>(CityList, {
                 localVue
             });
 

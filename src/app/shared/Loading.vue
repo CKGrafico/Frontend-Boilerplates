@@ -6,7 +6,9 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
-export default class LoadingComponent extends Vue {}
+export default class extends Vue {
+  public name = 'Loading';
+}
 </script>
 
 <style lang="scss" scoped>

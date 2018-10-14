@@ -9,7 +9,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class WeatherComponent extends Vue {}
+export default class extends Vue {
+  public name = 'Weather';
+}
 </script>
 
 <style lang="scss" scoped>
