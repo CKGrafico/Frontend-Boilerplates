@@ -4,7 +4,8 @@ import { Inject } from '~/core';
 import { City, ICitiesService } from '~/shared';
 
 @Component
-export default class CityDetailComponent extends Vue {
+export default class extends Vue {
+    public name = 'CityDetail';
     public city: City = null;
 
     @Inject() citiesService: ICitiesService;

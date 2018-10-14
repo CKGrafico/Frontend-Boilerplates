@@ -5,7 +5,8 @@ import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService } from '~/weather/shared';
 
 @Component
-export default class WeatherListComponent extends Vue {
+export default class extends Vue {
+    public name = 'WeatherList';
     public cities: City[] = [];
 
     @Inject() citiesService: ICitiesService;

@@ -4,9 +4,9 @@ import { expect } from 'chai';
 
 import { nextTick } from 'test/unit/helpers';
 
-import { CityAddComponent } from '.';
+import CityAdd from './CityAdd.vue';
 
-describe('CityAddComponent', () => {
+describe('CityAdd', () => {
   let localVue
 
     beforeEach(() => {
@@ -15,7 +15,7 @@ describe('CityAddComponent', () => {
 
     describe('when call to testablemethod', () => {
         it('should should return the number plus one', async () => {
-            const wrapper = shallowMount<any>(CityAddComponent, {
+            const wrapper = shallowMount<any>(CityAdd, {
                 localVue
             });
 

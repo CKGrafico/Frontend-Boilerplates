@@ -5,17 +5,17 @@ export default (): RouteConfig[] => {
         {
             path: '/cities',
             name: 'cities',
-            component: () => import('./cities.component.vue'),
+            component: () => import('./Cities.vue'),
             children: [
                 {
                     path: '',
                     name: 'city-list',
-                    component: () => import('./city-list/city-list.component.vue')
+                    component: () => import('./CityList/CityList.vue')
                 },
                 {
                     path: ':id',
                     name: 'city-detail',
-                    component: () => import('./city-detail/city-detail.component.vue'),
+                    component: () => import('./CityDetail/CityDetail'),
                     props: true
                 }
             ]
