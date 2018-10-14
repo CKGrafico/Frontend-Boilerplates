@@ -12,7 +12,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class AppComponent extends Vue {}
+export default class extends Vue {
+  public name = 'App';
+}
 </script>
 
 <style lang="scss" scoped>

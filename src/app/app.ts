@@ -5,10 +5,9 @@ import { CitiesSeed } from './core/seeds';
 import { router } from './app.router';
 import { containerBuilder } from './app.container';
 import { Filters } from './app.filters';
+import App from './App.vue';
 
-import { default as AppComponent } from './app.component.vue';
-
-export class App {
+export class AppModule {
     constructor() {
         containerBuilder();
 
@@ -28,11 +27,11 @@ export class App {
         let options = {
             el: '.main',
             router: router(),
-            render: create => create(AppComponent)
+            render: create => create(App)
         };
 
         return new Vue(options);
     }
 }
 
-new App();
+new AppModule();
