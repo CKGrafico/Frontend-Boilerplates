@@ -7,8 +7,10 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
-## 🍩 Basic SPA - Boilerplate Features
-On this boilerplate you can find:
+&nbsp;
+
+## 🍩 Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="Boilerplate">
+ On this boilerplate you can find:
 - **JavaScript:** All the code uses JavaScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
