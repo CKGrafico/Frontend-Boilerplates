@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Test Site Blog</title>
+        <title>DOCUMENTATION UNDER CONSTRUCTION Blog</title>
         <link>https://boilerplates.js.org/blog</link>
-        <description>The best place to stay up-to-date with the latest Test Site news and events.</description>
+        <description>The best place to stay up-to-date with the latest DOCUMENTATION UNDER CONSTRUCTION news and events.</description>
         <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Test Site Blog</title>
+            <title>DOCUMENTATION UNDER CONSTRUCTION Blog</title>
             <url>https://boilerplates.js.org/img/docusaurus.svg</url>
             <link>https://boilerplates.js.org/blog</link>
         </image>
