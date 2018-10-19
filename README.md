@@ -7,7 +7,9 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
-## 🍩 Vue - Boilerplate Features
+&nbsp;
+
+## 🍩 Vue - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Boilerplate">
 On this boilerplate you can find:
 - **Vue:** The progressive JavaScript framework.
 - **TypeScript:** All the code uses TypeScript.
