@@ -5,25 +5,22 @@ module.exports = (env, envs) => {
             emitErrors: true,
             failOnHint: true,
             project: 'tsconfig.json',
-            typeCheck: true
+            typeCheck: false,
+            formatter: 'stylish'
         },
         [envs.development]: {
             configFile: 'tslint.json',
             emitErrors: true,
-            failOnHint: true,
+            failOnHint: false,
             project: 'tsconfig.json',
-            typeCheck: true
-        },
-        [envs.local]: {
-            configFile: 'tslint.json',
-            project: 'tsconfig.json',
-            typeCheck: true
+            typeCheck: false,
+            formatter: 'stylish'
         }
     };
 
     return {
         test: /\.ts$/,
-        enforce: 'pre',
+        exclude: /node_modules/,
         loader: 'tslint-loader',
         options: options[env]
     }

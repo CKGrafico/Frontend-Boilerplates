@@ -5,12 +5,13 @@ module.exports = (env, envs) => {
         return;
     }
 
-    const defaultConfig = new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' });
+    const defaultConfig = new webpack.DefinePlugin({
+        'global': {}
+    });
 
     const plugin = {
         [envs.production]: defaultConfig,
         [envs.development]: defaultConfig,
-        [envs.local]: defaultConfig
     };
 
     return plugin[env];

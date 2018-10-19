@@ -5,15 +5,15 @@
   'base/states',
   'base/utilities';
 
+// Vendor
+@import
+  'vendor/normalize',
+  'vendor/bootstrap';
+
 // Base Files
 @import 'base/globals';
-
-// // Vendor
-@import
-  'vendor/bootstrap',
-  'vendor/normalize';
 
 // If we are not using Scoped styles, we create components
 // Components structure (BEM no strict)
 // More info: http://bit.ly/ck-bem-no-strict
-@import 'components/ck-site';
+// @import 'components/ck-site';

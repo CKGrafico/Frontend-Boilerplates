@@ -1,33 +1,27 @@
 {
-    "port": 4000,
     "paths": {
-        "app": {
+        "src": {
             "assets": {
                 "images": {},
                 "fonts": {}
             },
-            "scripts": {
+            "app": {
                 "files": "**/*.ts",
-                "app": {
+                "main": {
                     "folder": "..",
                     "files": "app.ts"
-                },
-                "vendor": {
-                    "folder": "..",
-                    "files": "vendor.ts"
                 }
             },
-            "styles": {
-                "files": "**/*.scss"
-            }
+            "styles": {}
         },
         "dist": {
             "assets": {
                 "images": {},
                 "fonts": {}
             },
-            "css": {},
+            "styles": {},
             "scripts": {}
-        }
+        },
+        "test": {}
     }
 }

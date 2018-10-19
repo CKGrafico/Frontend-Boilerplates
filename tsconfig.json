@@ -6,7 +6,12 @@
       "es2015",
       "es2016"
     ],
-    "module": "es2015",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/app/*"],
+      "test/*": ["./test/*"]
+    },
+    "module": "esnext",
     "moduleResolution": "node",
     "isolatedModules": false,
     "experimentalDecorators": true,
@@ -15,5 +20,5 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true
   },
-  "compileOnSave": false
+  "compileOnSave": false,
 }

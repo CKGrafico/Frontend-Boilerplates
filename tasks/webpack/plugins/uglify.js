@@ -5,7 +5,12 @@ module.exports = (env, envs) => {
         return;
     }
 
-    const defaultConfig = new UglifyJSPlugin();
+    const defaultConfig = new UglifyJSPlugin({
+      uglifyOptions: {
+        keep_classnames: true,
+        keep_fnames: true,
+      }
+    });
 
     const plugin = {
         [envs.production]: defaultConfig
