@@ -1,13 +1,13 @@
 # Frontend Boilerplates
 Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
 
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue-d.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)
 
-## 🍩 Current Boilerplate Features
+## 🍩 Basic SPA - Boilerplate Features
 On this boilerplate you can find:
 - **BEM (Non strict) + BEMIT:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
 - **JavaScript:** All the code uses JavaScript.
