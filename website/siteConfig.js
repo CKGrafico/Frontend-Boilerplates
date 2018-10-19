@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'DOCUMENTATION UNDER CONSTRUCTION', // Title for your website.
+  tagline: 'DOCUMENTATION UNDER CONSTRUCTION',
   url: 'https://boilerplates.js.org', // Your website URL
   baseUrl: '/',
   cname: 'boilerplates.js.org',
