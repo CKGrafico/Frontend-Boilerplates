@@ -15,7 +15,7 @@ On this boilerplate you can find:
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
 ## ⏰ Starting the project
-- Download the project
+- Get the boilerplate
 > [Download ZIP](https://github.com/CKGrafico/Frontend-Boilerplates/archive/vue.zip)
 
 - Install dependencies:
