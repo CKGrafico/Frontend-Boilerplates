@@ -21,7 +21,7 @@ On this boilerplate you can find:
 - Running tasks on watch mode and serve the app:
 > npm start
 
-## 📚 Documentation (under construction)
+## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/)) (under construction)
 - [⛩️ Project structure](https://boilerplates.js.org/)
 - [⚙️ Configuring automated tasks](https://boilerplates.js.org/)
 - [⚡ Extending Gulp and Webpack](https://boilerplates.js.org/)
