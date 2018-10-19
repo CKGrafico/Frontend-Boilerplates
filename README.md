@@ -1,11 +1,11 @@
 # Frontend Boilerplates
 Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
 
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue-d.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" width="150" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)
 
 ## 🍩 Basic SPA - Boilerplate Features
 On this boilerplate you can find:
@@ -27,23 +27,23 @@ On this boilerplate you can find:
 - [⚡ Extending Gulp and Webpack](https://boilerplates.js.org/)
 
 ## ⛳️ Check all the boilerplates
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="25" title="SPA">
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="25" title="SPA">
 
 **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree)** **Basic SPA** example with SCSS and ES6.
 
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" align="left" width="25" title="TypeScript">
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="left" width="25" title="TypeScript">
 
 **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)** **TypeScript** example with SCSS.
 
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" align="left" width="25" title="Vue">
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="left" width="25" title="Vue">
 
 **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)** **Vuejs** example with SCSS and TypeScript.
 
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt.png" align="left" width="25" title="Nuxt">
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="left" width="25" title="Nuxt">
 
 **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript.
 
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" align="left" width="25" title="Node with TypeScript">
+<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="left" width="25" title="Node with TypeScript">
 
 **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs.
 
