@@ -23,8 +23,8 @@ const users = [
 const siteConfig = {
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
-  url: 'https://ckgrafico.github.io', // Your website URL
-  baseUrl: '/Frontend-Boilerplates/', // Base URL for your project */
+  url: 'https://boilerplates.js.org', // Your website URL
+  baseUrl: '/',
   cname: 'boilerplates.js.org',
 
   // Used for publishing and more
