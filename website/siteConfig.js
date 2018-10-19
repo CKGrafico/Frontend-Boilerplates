@@ -25,9 +25,7 @@ const siteConfig = {
   tagline: 'A website for testing',
   url: 'https://ckgrafico.github.io', // Your website URL
   baseUrl: '/Frontend-Boilerplates/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  cname: 'boilerplates.js.org',
 
   // Used for publishing and more
   projectName: 'Frontend-Boilerplates',
