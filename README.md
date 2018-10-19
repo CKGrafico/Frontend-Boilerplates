@@ -29,7 +29,7 @@ On this boilerplate you can find:
 ## ⛳️ Check all the boilerplates
 <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="25" title="SPA">
 
-&nbsp;**[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** **Basic SPA** example with SCSS and ES6.
+**[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** **Basic SPA** example with SCSS and ES6.
 
 <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" align="left" width="25" title="TypeScript">
 
