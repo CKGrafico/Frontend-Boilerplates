@@ -9,10 +9,10 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 
 ## 🍩 Basic SPA - Boilerplate Features
 On this boilerplate you can find:
-- **BEM (Non strict) + BEMIT:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
 - **JavaScript:** All the code uses JavaScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
+- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
 ## ⏰ Starting the project
 - Install dependencies:
@@ -22,9 +22,9 @@ On this boilerplate you can find:
 > npm start
 
 ## 📚 Documentation (under construction)
-- [⛩️ Project structure](#)
-- [⚙️ Configuring automated tasks](#)
-- [⚡ Extending Gulp and Webpack](#)
+- [⛩️ Project structure](https://boilerplates.js.org/)
+- [⚙️ Configuring automated tasks](https://boilerplates.js.org/)
+- [⚡ Extending Gulp and Webpack](https://boilerplates.js.org/)
 
 ## ⛳️ Check all the boilerplates
 <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="25" title="SPA">
@@ -49,7 +49,7 @@ On this boilerplate you can find:
 
 ## 🎩 Contributors
 
-| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
+| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos<br>**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez<br>**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts<br>**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
 | :---: | :---: | :---: | :---: | :---: |
 
 [View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
