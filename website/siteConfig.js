@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'DOCUMENTATION UNDER CONSTRUCTION', // Title for your website.
-  tagline: 'DOCUMENTATION UNDER CONSTRUCTION',
+  title: 'Frontend Boilerplates', // Title for your website.
+  tagline: 'A collection of boilerplates to use in your projects',
   url: 'https://boilerplates.js.org', // Your website URL
   baseUrl: '/',
   cname: 'boilerplates.js.org',
@@ -34,9 +34,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
@@ -53,22 +51,8 @@ const siteConfig = {
     secondaryColor: '#205C3B',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
-
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} CKGrafico`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -80,6 +64,7 @@ const siteConfig = {
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
+
   // No .html extensions for paths.
   cleanUrl: true,
 
