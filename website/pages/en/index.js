@@ -73,6 +73,7 @@ class HomeSplash extends React.Component {
 
 const Block = props => (
   <Container
+    className="pt-0"
     padding={['bottom', 'top']}
     id={props.id}
     background={props.background}>
@@ -81,20 +82,44 @@ const Block = props => (
 );
 
 const Features = () => (
-  <Block layout="fourColumn">
+  <Block layout="threeColumn">
     {[
       {
-        content: 'Go to https://github.com/CKGrafico/Frontend-Boilerplates meanwhile :)',
-        image: imgUrl('docusaurus.svg'),
+        content: '<a href="#">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png',
         imageAlign: 'top',
-        title: 'We are working in the new docs',
+        title: 'Basic SPA',
       },
       {
-        content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
+        content: '<a href="#">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png',
         imageAlign: 'top',
-        title: 'Feature Two',
+        title: 'TypeScript',
       },
+      {
+        content: '<a href="#">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png',
+        imageAlign: 'top',
+        title: 'Vue',
+      },
+      {
+        content: '<a href="#">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png',
+        imageAlign: 'top',
+        title: 'Nuxt',
+      },
+      {
+        content: '<a href="#">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png',
+        imageAlign: 'top',
+        title: 'NodeJS + TS',
+      },
+    {
+      content: '',
+      image: '',
+      imageAlign: 'top',
+      title: '',
+    },
     ]}
   </Block>
 );
@@ -107,7 +132,7 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash language={language} />
-        <div className="mainContainer p-0">
+        <div className="mainContainer p-0 homePage">
           <Features />
         </div>
       </div>
