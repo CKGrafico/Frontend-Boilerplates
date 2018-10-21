@@ -84,10 +84,10 @@ const Features = () => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
+        content: 'Go to https://github.com/CKGrafico/Frontend-Boilerplates meanwhile :)',
         image: imgUrl('docusaurus.svg'),
         imageAlign: 'top',
-        title: 'Feature One',
+        title: 'We are working in the new docs',
       },
       {
         content: 'The content of my second feature',
