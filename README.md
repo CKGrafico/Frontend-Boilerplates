@@ -18,7 +18,7 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 
 ## 🍩 Starting the project
 - Get the boilerplate
-> [Download ZIP](https://github.com/CKGrafico/Frontend-Boilerplates/archive/vue.zip)
+> [Download ZIP](https://github.com/CKGrafico/Frontend-Boilerplates/archive/basic.zip)
 
 - Install dependencies:
 > npm install
