@@ -39,6 +39,9 @@ module.exports = env => {
             open: true,
             port: 4000,
             https: false,
+            watchOptions: {
+                poll: true
+            }
             // proxy: { '/api': 'http://localhost:3000' }
         },
        optimization: {
