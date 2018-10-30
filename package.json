@@ -45,7 +45,6 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-style-aliases": "^1.1.11",
     "gulp-stylelint": "^7.0.0",
-    "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
     "require.all": "^2.0.4",
     "rimraf": "^2.6.2",
