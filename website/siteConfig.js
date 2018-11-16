@@ -34,7 +34,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { href: "https://github.com/CKGrafico/Frontend-Boilerplates/", label: "GitHub" },
-    {doc: 'doc1', label: 'Docs'}
+    {doc: 'doc1', label: 'Docs'},
+    { search: true },
   ],
 
   // If you have users set above, you add it here:
