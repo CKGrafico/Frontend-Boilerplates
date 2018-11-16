@@ -1,233 +1,60 @@
 # Frontend Boilerplates
-Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies on the branches and we will add more examples in the future. 
+Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
 
-Feel free to give feedback and improvements to the repo.
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" width="150" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" width="150" title="SPA">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-master)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)
+&nbsp;
 
-## Quickstart
-<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/spa.png" align="left" width="50" title="SPA">
+## Node TypeScript - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Boilerplate">
 
- **[master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/master)** Stable version of a **basic SPA** example with SCSS and ES6.
- <br>**[dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/dev)** Dev version of a **basic SPA** example with SCSS and ES6.
- 
- <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/ts.png" align="left" width="50" title="TypeScript">
+[![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=nodets)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/nodets.svg)
+[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/nodets/LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
+![GitHub contributors](https://img.shields.io/github/contributors/CKGrafico/Frontend-Boilerplates.svg)
+[![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
 
- **[ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-master)** Stable version of a **TypeScript** example with SCSS.
- <br>**[ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts-dev)** Dev version of a **TypeScript** example with SCSS.
-
-  <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/vue.png" align="left" width="50" title="Vue">
-
- **[vue-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-master)** Stable version of a **Vuejs** example with SCSS and TypeScript.
- <br>**[vue-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue-dev)** Dev version of a **Vuejs** example with SCSS and TypeScript.
-
-   <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nuxt.png" align="left" width="50" title="Nuxt">
-
- **[nuxt-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-master)** Stable version of a **Nuxt** example with SCSS and TypeScript.
- <br>**[nuxt-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt-dev)** Dev version of a **Nuxt** example with SCSS and TypeScript.
- 
- <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/gh-pages/resources/techs/nodets.png" align="left" width="50" title="Node with TypeScript">
-
- **[node-ts-master:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-master)** Stable version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
- <br>**[node-ts-dev:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts-dev)** Dev version of a **Nodejs with TypeScript** example with SCSS and Nodejs.
- 
-## 🍩 Boilerplate Features
-On this branch we use:
-- **BEM + BEMIT + etc:** A mix of BEM and related-BEM technologies to create conventions for CSS classes.
+On this boilerplate you can find:
+- **Express:**: The Node Framework.
 - **TypeScript:** All the code uses TypeScript.
-- **Linting:** Linting for TypeScript and SASS.
 - **SASS:** Scss structure with good practises.
+- **Linting:** Linting for JavaScript and SASS.
+- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
-**[⬆️ back to top](#quickstart)**
+## 🍩 Starting the project
+- Get the boilerplate
+> [Download ZIP](https://github.com/CKGrafico/Frontend-Boilerplates/archive/nodets.zip)
 
-## ⚙️ Automated Tasks
-On this branch we use:
-- **Webpack:** Scripts tasks.
-- **Gulp:** Styles and assets tasks.
-
-**[⬆️ back to top](#quickstart)**
-
-## ⏰ Running tasks
-To run the tasks we have these three commands:
 - Install dependencies:
 > npm install
-
-- Running tasks on production mode:
-> npm run prod
-
-- Running tasks on development mode:
-> npm run dev
 
 - Running tasks on watch mode and serve the app:
 > npm start
 
-**[⬆️ back to top](#quickstart)**
+## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/)) (under construction)
+- [⛩️ Project structure](https://boilerplates.js.org/)
+- [⚙️ Configuring automated tasks](https://boilerplates.js.org/)
+- [⚡ Extending Gulp and Webpack](https://boilerplates.js.org/)
 
-## ⛩️ Project structure
-On this branch the structure is:`
-```
-├── .gitignore
-├── .stylelintrc
-├── .ts-lint.json
-├── LICENSE
-├── README.md
-├── app
-|  ├── assets
-|  ├── client
-|  |  ├── assets
-|  |  |  ├── fonts
-|  |  |  |  └── OpenSans
-|  |  |  └── images
-|  |  |     └── example.jpg
-|  |  ├── index.html
-|  |  ├── scss
-|  |  |  ├── app.scss
-|  |  |  ├── base
-|  |  |  |  ├── _fonts.scss
-|  |  |  |  ├── _globals.scss
-|  |  |  |  ├── _icons.scss
-|  |  |  |  ├── _states.scss
-|  |  |  |  ├── _utilities.scss
-|  |  |  |  ├── _variables.scss
-|  |  |  |  └── mixins
-|  |  |  ├── components
-|  |  |  |  └── _ck-site.scss
-|  |  |  └── vendor
-|  |  |     └── _normalize.scss
-|  |  └── ts
-|  |     └── app.ts
-|  ├── server
-|  |  └── ts
-|  |     ├── compiler
-|  |     |  ├── compiler.controller.ts
-|  |     |  ├── compiler.service.ts
-|  |     |  └── index.ts
-|  |     └── server.ts
-|  └── styles
-|     └── vendor
-|        └── _normalize.scss
-├── gulpfile.helpers.js
-├── gulpfile.js
-├── gulpfile.paths.js
-├── package-lock.json
-├── package.json
-├── tasks
-|  ├── assets.js
-|  ├── clean.js
-|  ├── copy.js
-|  ├── scss-lint.js
-|  ├── scss.js
-|  ├── serve.js
-|  ├── ts-lint.js
-|  ├── ts-server.js
-|  ├── ts.js
-|  └── watch.js
-└── tsconfig.json
-```
+## ⛳️ Check all the boilerplates
 
-**[⬆️ back to top](#quickstart)**
+- **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree)** **Basic SPA** example with SCSS and ES6. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="SPA">
 
-## ⚡ Gulp and Webpack
+- **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)** **TypeScript** example with SCSS. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
 
-### Gulpfile
-This is how we configured the main file:
-```
-// We load all the tasks and pass some parameters
-let tasks = require('require.all')('./tasks');
-tasks((name, task) => { func = () => task(gulp, paths, $, _, tasks); func.displayName = name; return func});
-// paths is for all the project paths
-// $ is for plugins
-// _ is for helpers
-```
+- **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
 
-And these are the only two tasks:
-```
-gulp.task('default', gulp.series(tasks.clean, tasks.stylesLint, tasks.styles, tasks.copy, tasks.assets));
-gulp.task('watcher', gulp.parallel(tasks.serve, tasks.watch));
-```
+- **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
 
-### Tasks configuration
-You can configure different things related with the tasks.
-```
-{
-    "app": {
-        "assets": {
-            "images": {}
-        }
-    }
-};
-```
-You can acces to files and folders like:
-```
-_.folder(paths.assets.images);
-// ./app/assets/images/
-
-_.files(paths.assets.images)
-// ./app/assets/images/**/*.*
-```
-
-But you can extend this structure:
-
-```
-{
-    "app": {
-        "assets": {
-            "images": {},
-            "fonts": {
-                "files": "**/*.ttf",
-                "folder": "custom"
-            }
-        }
-    }
-};
-```
-You can acces to files and folders like:
-```
-_.folder(paths.assets.fonts);
-// ./app/assets/custom/
-
-_.files(paths.assets.fonts)
-// ./app/assets/custom/**/*.ttf
-```
-
-Also you can use the parent folder
-
-```
-{
-    "app": {
-        "assets": {
-            "images": {},
-            "fonts": {
-                "files": "**/*.ttf",
-                "folder": "custom"
-                "roboto": {
-                    "files": "Roboto.ttf",
-                    "folder": "..",
-                }
-            }
-        }
-    }
-};
-```
-And the result will look like that:
-```
-_.folder(paths.assets.fonts.roboto);
-// ./app/assets/fonts/
-
-_.files(paths.assets.fonts.roboto)
-// ./app/assets/fonts/roboto.ttf
-```
-
-**[⬆️ back to top](#quickstart)**
+- **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
 
 ## 🎩 Contributors
 
-
-| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
+| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos<br>**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez<br>**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts<br>**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
 | :---: | :---: | :---: | :---: | :---: |
 
 [View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
@@ -257,4 +84,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆️ back to top](#quickstart)**
+**[⬆️ back to top](#frontend-boilerplates)**
