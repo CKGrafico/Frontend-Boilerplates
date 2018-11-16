@@ -4,8 +4,4 @@
 <url> <loc>https://boilerplates.js.org/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/en/index" /> </url>
 <url> <loc>https://boilerplates.js.org/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/en/users" /> </url>
 <url> <loc>https://boilerplates.js.org/docs/doc1</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/docs/doc1" /> </url>
-<url> <loc>https://boilerplates.js.org/docs/doc2</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/docs/doc2" /> </url>
-<url> <loc>https://boilerplates.js.org/docs/doc3</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/docs/doc3" /> </url>
-<url> <loc>https://boilerplates.js.org/docs/doc4</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/docs/doc4" /> </url>
-<url> <loc>https://boilerplates.js.org/docs/doc5</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://boilerplates.js.org/docs/doc5" /> </url>
 </urlset>
