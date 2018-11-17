@@ -31,7 +31,6 @@ module.exports = env => {
             ]
         },
         plugins: [
-            plugins.globals,
             ...plugins.vue(path.resolve(__dirname, _.folder(paths.src.app)))
         ],
         devServer: {
@@ -39,6 +38,8 @@ module.exports = env => {
             open: true,
             port: 4000,
             https: false,
+            hot: true,
+            historyApiFallback: true,
             watchOptions: {
                 poll: true
             }

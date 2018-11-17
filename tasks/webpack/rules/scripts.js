@@ -9,7 +9,8 @@ module.exports = (env, envs) => {
             {
                 loader: 'ts-loader',
                 options: {
-                    appendTsSuffixTo: [/\.vue$/]
+                    transpileOnly: true, // For hot reloading,
+                    experimentalWatchApi: true
                 }
             }
         ]
