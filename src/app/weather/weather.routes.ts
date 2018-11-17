@@ -4,7 +4,6 @@ export default (): RouteConfig[] => {
     return [
         {
             path: '/weather',
-            name: 'weather',
             component: () => import('./Weather.vue'),
             children: [
                 {
