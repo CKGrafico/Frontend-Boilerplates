@@ -2,7 +2,7 @@
   "name": "app-typescript",
   "description": "Stable version of a basic TypeScript example with SCSS.",
   "license": "MIT",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "scripts": {
     "preprod": "gulp --env=production",
     "prod": "webpack --env.NODE_ENV=production",
