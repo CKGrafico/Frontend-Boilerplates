@@ -37,6 +37,7 @@
     "gulp-noop": "^1.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-string-replace": "^1.1.2",
     "gulp-stylelint": "^7.0.0",
     "gulp-uglify": "^3.0.0",
     "opn": "^5.2.0",
