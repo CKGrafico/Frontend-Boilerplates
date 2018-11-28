@@ -2,7 +2,7 @@
   "name": "app-nodejs",
   "description": "Stable version of a basic SPA example with TypeScript, SCSS and Nodejs.",
   "license": "MIT",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "scripts": {
     "dev": "gulp --env=development",
     "prod": "gulp --env=production",
