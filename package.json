@@ -43,6 +43,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-string-replace": "^1.1.2",
     "gulp-style-aliases": "^1.1.11",
     "gulp-stylelint": "^7.0.0",
     "postcss-loader": "^3.0.0",
