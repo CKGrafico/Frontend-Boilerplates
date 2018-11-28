@@ -2,7 +2,7 @@
   "name": "basic-spa",
   "description": "Stable version of a basic SPA example with SCSS and ES6.",
   "license": "MIT",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "scripts": {
     "prod": "gulp --env=production",
     "postprod": "webpack --env.NODE_ENV=production",
