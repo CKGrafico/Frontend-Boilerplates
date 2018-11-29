@@ -100,7 +100,7 @@
     "tslint-loader": "^3.6.0",
     "typescript": "^3.1.6",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "vue-builder-webpack-plugin": "git+https://github.com/pksunkara/vue-builder-webpack-plugin.git",
+    "vue-builder-webpack-plugin": "^0.5.0",
     "vue-loader": "^15.4.2",
     "vue-property-decorator": "^7.2.0",
     "vue-template-compiler": "^2.5.17",
