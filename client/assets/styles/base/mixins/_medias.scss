@@ -1,0 +1,16 @@
+@import '../variables';
+
+$medias: xxs, xs, s, m, l, xl, xxl, xxxl;
+$mediavalues: $media-screen-xxs, $media-screen-xs, $media-screen-s, $media-screen-m, $media-screen-l, $media-screen-xl, $media-screen-xxl, $media-screen-xxxl;
+
+@mixin medias {
+  @content;
+
+  @each $media in $medias {
+    &\@#{$media} {
+      @media screen and (max-width: nth($mediavalues, index($medias, $media))) {
+        @content;
+      }
+    }
+  }
+}

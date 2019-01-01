@@ -1,0 +1,13 @@
+@import '../variables';
+
+@mixin responsive-fonts($font) {
+  font-size: $font * .65;
+
+  @media (min-width: $media-screen-s) {
+    font-size: $font * .8;
+  }
+
+  @media (min-width: $media-screen-l) {
+    font-size: $font;
+  }
+}

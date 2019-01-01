@@ -1,7 +1,0 @@
-@import 'variables';
-@import 'mixins/fonts';
-
-// Fonts
-@include font-include(Roboto, Light, $font-weight-light, normal);
-@include font-include(Roboto, Regular, $font-weight-normal, normal);
-@include font-include(Roboto, Bold, $font-weight-black, normal);

@@ -1,9 +1,0 @@
-@import 'mixins/icomoon';
-$icons: (
-  facebook: 'e900',
-  instagram: 'e901',
-  twitter: 'e902',
-  youtube: 'e903'
-);
-
-@include icomoon-generate($icons);

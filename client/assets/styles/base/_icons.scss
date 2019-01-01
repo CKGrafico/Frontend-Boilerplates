@@ -1,0 +1,18 @@
+@import 'mixins/icomoon';
+$icons: (
+  menu: 'e900',
+  close: 'e902',
+  chevron: 'e903'
+);
+
+@include icomoon-generate($icons);
+
+.icon {
+  &--bright {
+    color: $color-foreground-brighter;
+  }
+  
+  &--dark {
+    color: $color-background-darker;
+  }
+}

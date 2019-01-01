@@ -1,78 +1,102 @@
-// Info about configuration https://nuxtjs.org/guide/configuration/
-const webpack = require('webpack');
 const path = require('path');
-const { paths, environments } = require('./tasks/config/options');
-const _ = require('./tasks/config/helpers');
-
-let rules = require('require.all')('./tasks/rules');
-
-const environment = process.env.NODE_ENV;
-rules((name, rule) => rule(environment, environments));
-
-const vendor = [
-    'babel-polyfill',
-    'reflect-metadata', 
-    'inversify',
-    'vue-perfect-scrollbar'];
+const pkg = require('./package');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const plugins = [
-    '~/plugins/inversify',
-    '~/plugins/axios',
-    '~/plugins/filters',
-    { src: '~/plugins/components', ssr: false }
+  '~/plugins/polyfills',
+];
+
+const middleware = [
+  'config',
+  'interceptors'
 ];
 
 const modules = [
-    '@nuxtjs/axios',
-    '@nuxtjs/bootstrap-vue',
-    '~/modules/typescript',
-    '~/modules/separated-files',
-    '~/modules/components-name',
-    '~/modules/i18n-json'
+  ['bootstrap-vue/nuxt', { css: false }],
+  '~/modules/file-loader',
+  '~/modules/typescript',
+  '~/modules/typescript-lint',
+  '~/modules/i18n-json',
+
+  ['nuxt-sass-resources-loader', '~/assets/styles/shared.scss']
 ];
 
-module.exports = {
-    env: environment,
-    head: {
-        title: 'My App',
-        meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        ],
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        ]
-    },
-    loading: { color: '#1ABC9C' },
-    plugins,
-    modules,
-    router: {
-        middleware: ['settings'],
-        linkActiveClass: 'is-active'
-    },
-    languages: {
-        locales: ['es', 'en'],
-        defaultLocale: 'en'
-    },
-    build: {
-        extractCSS: true,
-        vendor,
-        extend(config) {
-            const customRules = [
-                rules.scriptsLint
-            ];
-
-            config.module.rules = [...config.module.rules, ...customRules];
-        },
-        plugins: []
-    },
-    axios: {
-        baseURL: process.env.BASE_URL || '/'
-    },
-    srcDir: './app',
-    buildDir: './.temp/.nuxt',
-    css: ['./.temp/css/styles/app.css'],
-    generate: {
-        dir: 'dist'
+const postcss = {
+  // plugins: {
+  //   stylelint: {
+  //     failAfterError: false,
+  //     syntax: 'scss',
+  //     reporters: [
+  //       { formatter: 'string', console: true }
+  //     ]
+  //   }
+  // },
+  preset: {
+    autoprefixer: {
+      browsers: ['last 2 versions']
     }
+  }
+};
+
+module.exports = {
+  mode: 'universal',
+
+  /*
+  ** Headers of the page
+  */
+  head: {
+    title: pkg.name,
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: pkg.description }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  },
+
+  loading: { color: '#C3EAE0' },
+
+  languages: {
+    locales: ['es', 'en'],
+    defaultLocale: 'en'
+  },
+
+  css: ['~/assets/styles/app.scss'],
+
+  router: {
+    middleware
+  },
+
+  plugins,
+  modules,
+  srcDir: './client',
+  buildDir: './.temp/.nuxt',
+
+  build: {
+    extractCSS: true,
+    postcss,
+    optimization: {
+      minimizer: [
+        new UglifyJSPlugin({
+          uglifyOptions: {
+            keep_classnames: true,
+            keep_fnames: true,
+          }
+        })
+      ],
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: 'all',
+            test: path.resolve(__dirname, 'node_modules'),
+            name: 'vendor',
+            enforce: true,
+          },
+        },
+      },
+    },
+    extend(config, ctx) { }
+  }
 }

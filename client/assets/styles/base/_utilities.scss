@@ -1,0 +1,21 @@
+@import 'variables';
+
+// We use boostrap utilities by default
+// https://getbootstrap.com/docs/4.1/utilities/borders/
+// If the utility does not exist, create a new one
+
+.u {
+  &-text {
+    &-capitalize-first {
+      &:first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &-fonts {
+    &-bureau {
+      font-family: Bureau;
+    }
+  }
+}

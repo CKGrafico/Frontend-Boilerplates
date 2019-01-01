@@ -1,0 +1,40 @@
+/* stylelint-disable */
+@mixin icomoon {
+  @font-face {
+    font-family: 'Icomoon';
+    font-style: normal;
+    font-weight: normal;
+    src: url('~assets/.fonts/icomoon.eot?pjsjp3');
+    src: url('~assets/.fonts/icomoon.eot?pjsjp3#iefix') format('embedded-opentype'), url('~assets/.fonts/icomoon.ttf?pjsjp3') format('truetype'), url('~assets/.fonts/icomoon.woff?pjsjp3') format('woff'), url('~assets/.fonts/icomoon.svg?pjsjp3#Icomoon') format('svg');
+  }
+
+  [class^='icon-'],
+  [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Icomoon' !important;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+    text-transform: none;
+  }
+}
+
+@function unicode($str) {
+  @return unquote('\'') + unquote(str-insert($str, '\\', 1)) + unquote('\'');
+}
+
+@mixin icomoon-generate($icons) {
+  @include icomoon();
+
+  @each $key, $value in $icons {
+    .icon-#{$key}:before {
+      content: unicode($value);
+    }
+  }
+}
+/* stylelint-enable */

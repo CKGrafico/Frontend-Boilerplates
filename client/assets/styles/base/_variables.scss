@@ -1,0 +1,83 @@
+// Colors
+$color-interviews-primary: #015FBD;
+$color-interviews-secondary: #DAE8F6;
+
+$color-tips-primary: #4EC6A6;
+$color-tips-secondary: #CAEEE4;
+$color-tips-tertiary: #25453f;
+
+$color-performers-primary: #5B195E;
+$color-performers-secondary: #DFD1Df;
+
+$color-user-primary: #26453F;
+$color-user-secondary: #FBEEDF;
+
+$color-about-primary: #26453F;
+$color-about-secondary: #D3D2D2;
+
+$color-background-dark: #221F20;
+$color-background-darker: #000000;
+$color-background-bright: #EEEEEE;
+$color-background-brighter: #FFFFFF;
+
+$color-foreground-dark: #221F20;
+$color-foreground-darker: #000000;
+$color-foreground-bright: #EEEEEE;
+$color-foreground-brighter: #FFFFFF;
+
+$color-menu: #C3EAE0;
+
+// Animations
+$animation-speed-fast: .15s;
+$animation-speed-default: .35s;
+$animation-speed-slow: .5s;
+
+// Fonts
+$font-weight-light: 200;
+$font-weight-semilight: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+$font-size-xs: .5rem; // 8px
+$font-size-s: .9rem; // 14.4px
+$font-size-m: 1rem; // [16px]
+$font-size-l: 1.25rem; // 20px
+$font-size-xl: 2rem; // 32px
+$font-size-xxl: 2.5rem; // 40px
+$font-size-xxxl: 4rem; // 64px
+
+// Medias
+$media-screen-xxs: 360px;
+$media-screen-xs: 640px;
+$media-screen-s: 768px;
+$media-screen-m: 1024px;
+$media-screen-l: 1280px;
+$media-screen-xl: 1440px;
+$media-screen-xxl: 1680px;
+$media-screen-xxxl: 920px;
+
+$space-default: 1rem; // Is dependant on $font-base and should be 1rem;
+$space-xxs: $space-default / 8; // 2px
+$space-xs: $space-default / 4; // 4px
+$space-s: $space-default / 2; // 8px
+$space-m: $space-default; // 16px
+$space-l: $space-default * 2; // 32px
+$space-xl: $space-default * 4; // 64px
+$space-xxl: $space-default * 6; // 96px
+$space-xxxl: $space-default * 8; // 128px
+
+// #Z-index
+$z-index-s: 1;
+$z-index-m: 2;
+$z-index-l: 3;
+$z-index-xl: 4;
+
+// Gradients
+
+$background-gradient--interviews: linear-gradient(to top, $color-interviews-secondary 20%, transparent 100%);
+$background-gradient--tips: linear-gradient(to top, $color-tips-secondary 20%, transparent 100%);
+$background-gradient--performer: linear-gradient(to top, $color-performers-secondary 20%, transparent 100%);
+$background-gradient--user: linear-gradient(to top, $color-user-secondary 20%, transparent 100%);
+$background-gradient--about: linear-gradient(to top, $color-about-secondary 20%, transparent 100%);

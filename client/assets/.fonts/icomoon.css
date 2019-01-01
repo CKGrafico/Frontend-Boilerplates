@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("icomoon.eot"); /* IE9 */
+    src: url("icomoon.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("icomoon.woff") format("woff"), /* chrome, firefox */
+    url("icomoon.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("icomoon.svg#icomoon") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

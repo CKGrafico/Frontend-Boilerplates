@@ -22,6 +22,7 @@ On this boilerplate you can find:
 - **Vue:** The progressive JavaScript framework.
 - **Nuxt:** Universal Vue.js Applications.
 - **TypeScript:** All the code uses TypeScript.
+- **Express:** Backend ready project.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
