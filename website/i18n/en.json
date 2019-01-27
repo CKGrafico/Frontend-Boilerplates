@@ -17,10 +17,6 @@
         "title": "Basic SPA Boilerplate Structure",
         "sidebar_label": "Structure"
       },
-      "extending": {
-        "title": "Extending Gulp and Webpack",
-        "sidebar_label": "Extending tasks"
-      },
       "nodets-features": {
         "title": "Node and TypeScript Boilerplate Features",
         "sidebar_label": "Features"
@@ -28,6 +24,10 @@
       "nodets-installation": {
         "title": "Node and TypeScript Boilerplate Installation",
         "sidebar_label": "Installation"
+      },
+      "nodets-structure": {
+        "title": "Node and TypeScript Boilerplate Structure",
+        "sidebar_label": "Structure"
       },
       "nuxt-features": {
         "title": "Nuxt Boilerplate Features",
@@ -45,11 +45,11 @@
         "title": "Introduction to the Boilerplates",
         "sidebar_label": "Introduction"
       },
-      "license": {
+      "started-license": {
         "title": "License of the Boilerplates",
         "sidebar_label": "License"
       },
-      "tasks": {
+      "started-tasks": {
         "title": "Configuring automated tasks",
         "sidebar_label": "Configure tasks"
       },
@@ -72,10 +72,6 @@
       "vue-installation": {
         "title": "Vue Boilerplate Installation",
         "sidebar_label": "Installation"
-      },
-      "nodets-structure": {
-        "title": "Node and TypeScript Boilerplate Structure",
-        "sidebar_label": "Structure"
       },
       "vue-structure": {
         "title": "Vue Boilerplate Structure",

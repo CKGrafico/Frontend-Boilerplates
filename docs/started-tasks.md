@@ -1,5 +1,5 @@
 ---
-id: tasks
+id: started-tasks
 title: Configuring automated tasks
 sidebar_label: Configure tasks
 ---

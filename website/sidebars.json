@@ -2,8 +2,8 @@
   "docs": {
     "Getting Started": [
       "introduction",
-      "license",
-      "tasks"
+      "started-license",
+      "started-tasks"
     ],
     "Vue": [
       "vue-features",
