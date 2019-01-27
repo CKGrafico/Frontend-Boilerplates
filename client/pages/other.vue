@@ -1,5 +1,5 @@
 <template>
-  <section class='container'>
+  <section class='other container'>
     <nuxt-link :to="localePath('index')">{{$t('navigation.home')}}</nuxt-link>
 
     <button @click="onClickLoad">[EX]</button>
@@ -26,4 +26,7 @@ export default class extends Vue {
 </script>
 
 <style lang='scss' scoped>
+.other {
+  color: $color-secondary;
+}
 </style>

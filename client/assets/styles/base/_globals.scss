@@ -2,11 +2,19 @@
 
 html,
 body {
-  background: $color-background-brighter;
-  color: $color-foreground-dark;
-  font-family: BrownStd;
-  font-size: $font-size-m;
+  $font-size: 16px;
+
+  background: $color-background-bright;
+  font-family: OpenSans;
+  font-size: $font-size;
   height: 100%;
-  margin: 0;
   width: 100%;
+
+  @media screen and (max-width: $media-screen-m) {
+    font-size: $font-size * .8;
+  }
+
+  @media screen and (max-width: $media-screen-s) {
+    font-size: $font-size * .65;
+  }
 }

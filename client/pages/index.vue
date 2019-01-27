@@ -1,5 +1,5 @@
 <template>
-  <section class='container'>
+  <section class='home container'>
     <nuxt-link :to="localePath('other')">{{$t('navigation.other')}}</nuxt-link>
 
     <p v-if="exampleData">{{exampleData}}</p>
@@ -31,4 +31,7 @@ export default class extends Vue {
 </script>
 
 <style lang='scss' scoped>
+.home {
+  color: $color-primary;
+}
 </style>
