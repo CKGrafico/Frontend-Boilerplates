@@ -1,4 +1,4 @@
-import { container } from '~/container/container';
+import { container } from '~/services/container';
 
 /**
  * @param key the name of the property,

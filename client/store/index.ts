@@ -1,8 +1,8 @@
 import Vuex, { Store as VuexStore } from 'vuex';
 import { State as ConfigState } from './modules/config';
 
-import { containerSetter } from '~/container/container';
-import { containerBuilder } from '~/container/container.builder';
+import { containerSetter } from '~/services/container';
+import { containerBuilder } from '~/services/container.builder';
 
 import * as config from './modules/config';
 
