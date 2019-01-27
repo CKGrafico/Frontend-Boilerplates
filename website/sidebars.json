@@ -1,10 +1,38 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Getting Started": [
+      "introduction",
+      "license",
+      "tasks"
+    ],
+    "Vue": [
+      "vue-features",
+      "vue-installation",
+      "vue-structure"
+    ],
+    "Basic SPA": [
+      "basic-features",
+      "basic-installation",
+      "basic-structure"
+    ],
+    "Nuxt": [
+      "nuxt-features",
+      "nuxt-installation",
+      "nuxt-structure"
+    ],
+    "TypeScript": [
+      "ts-features",
+      "ts-installation",
+      "ts-structure"
+    ],
+    "Node TypeScript": [
+      "nodets-features",
+      "nodets-installation",
+      "nodets-structure"
+    ],
+    "Next steps": [
+      "contributing",
+      "others"
+    ]
   }
 }

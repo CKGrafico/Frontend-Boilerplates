@@ -27,14 +27,16 @@ const siteConfig = {
   baseUrl: '/',
   cname: 'boilerplates.js.org',
 
+  docsSideNavCollapsible: true,
+
   // Used for publishing and more
   projectName: 'Frontend-Boilerplates',
   organizationName: 'CKGrafico',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    {doc: 'introduction', label: 'Docs'},
     { href: "https://github.com/CKGrafico/Frontend-Boilerplates/", label: "GitHub" },
-    {doc: 'doc1', label: 'Docs'},
     { search: true },
   ],
 

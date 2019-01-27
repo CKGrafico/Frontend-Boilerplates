@@ -1,7 +1,7 @@
 ---
-id: doc1
-title: Under Construction
-sidebar_label: Under Construction
+id: license
+title: License of the Boilerplates
+sidebar_label: License
 ---
 
 ## Not started

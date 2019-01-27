@@ -5,31 +5,95 @@
     "previous": "Previous",
     "tagline": "A collection of boilerplates to use in your projects",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "basic-features": {
+        "title": "Basic SPA Boilerplate Features",
+        "sidebar_label": "Features"
       },
-      "doc2": {
-        "title": "document number 2"
+      "basic-installation": {
+        "title": "Basic SPA Boilerplate Installation",
+        "sidebar_label": "Installation"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "basic-structure": {
+        "title": "Basic SPA Boilerplate Structure",
+        "sidebar_label": "Structure"
       },
-      "doc4": {
-        "title": "Other Document"
+      "extending": {
+        "title": "Extending Gulp and Webpack",
+        "sidebar_label": "Extending tasks"
       },
-      "doc5": {
-        "title": "Fifth Document"
+      "nodets-features": {
+        "title": "Node and TypeScript Boilerplate Features",
+        "sidebar_label": "Features"
+      },
+      "nodets-installation": {
+        "title": "Node and TypeScript Boilerplate Installation",
+        "sidebar_label": "Installation"
+      },
+      "nuxt-features": {
+        "title": "Nuxt Boilerplate Features",
+        "sidebar_label": "Features"
+      },
+      "nuxt-installation": {
+        "title": "Nuxt Boilerplate Installation",
+        "sidebar_label": "Installation"
+      },
+      "nuxt-structure": {
+        "title": "Nuxt Boilerplate Structure",
+        "sidebar_label": "Structure"
+      },
+      "introduction": {
+        "title": "Introduction to the Boilerplates",
+        "sidebar_label": "Introduction"
+      },
+      "license": {
+        "title": "License of the Boilerplates",
+        "sidebar_label": "License"
+      },
+      "tasks": {
+        "title": "Configuring automated tasks",
+        "sidebar_label": "Configure tasks"
+      },
+      "ts-features": {
+        "title": "TypeScript Boilerplate Features",
+        "sidebar_label": "Features"
+      },
+      "ts-installation": {
+        "title": "TypeScript Boilerplate Installation",
+        "sidebar_label": "Installation"
+      },
+      "ts-structure": {
+        "title": "TypeScript Boilerplate Structure",
+        "sidebar_label": "Structure"
+      },
+      "vue-features": {
+        "title": "Vue Boilerplate Features",
+        "sidebar_label": "Features"
+      },
+      "vue-installation": {
+        "title": "Vue Boilerplate Installation",
+        "sidebar_label": "Installation"
+      },
+      "nodets-structure": {
+        "title": "Node and TypeScript Boilerplate Structure",
+        "sidebar_label": "Structure"
+      },
+      "vue-structure": {
+        "title": "Vue Boilerplate Structure",
+        "sidebar_label": "Structure"
       }
     },
     "links": {
       "Docs": "Docs",
-      "Help": "Help"
+      "GitHub": "GitHub"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Getting Started": "Getting Started",
+      "Vue": "Vue",
+      "Basic SPA": "Basic SPA",
+      "Nuxt": "Nuxt",
+      "TypeScript": "TypeScript",
+      "Node TypeScript": "Node TypeScript",
+      "Next steps": "Next steps"
     }
   },
   "pages-strings": {
