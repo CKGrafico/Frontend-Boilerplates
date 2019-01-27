@@ -1,4 +1,6 @@
-const { Nuxt, Builder } = require('nuxt');
+const { Nuxt } = require('@nuxt/core');
+const { Builder } = require('@nuxt/builder');
+const { BundleBuilder } = require('@nuxt/webpack');
 const config = require('../../nuxt.config.js');
 
 const stopProcessIfCalledTimes = (times, callback) => {
@@ -34,7 +36,9 @@ const stopProcessIfCalledTimes = (times, callback) => {
 
 module.exports = () => {
   return new Promise((resolve) => {
-    const nuxt = new Nuxt(config)
+    const nuxt = new Nuxt(config);
+    nuxt.options.dev = true;
+    nuxt.options.build.quiet = true;
 
     let stopProcessWhenDone = stopProcessIfCalledTimes(1, resolve);
 
@@ -48,9 +52,9 @@ module.exports = () => {
       stopProcessWhenDone({ name, compiler });
     });
 
-    if (nuxt.options.dev) {
-      nuxt.options.build.quiet = true;
-      new Builder(nuxt).build();
-    }
+
+    const builder = new Builder(nuxt, BundleBuilder);
+
+    builder.build();
   });
 };

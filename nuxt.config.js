@@ -3,7 +3,7 @@ const pkg = require('./package');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const plugins = [
-  '~/plugins/polyfills',
+  '~/plugins/polyfills'
 ];
 
 const middleware = [
@@ -48,8 +48,7 @@ module.exports = {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -97,6 +96,8 @@ module.exports = {
         },
       },
     },
-    extend(config, ctx) { }
+    extend(config, ctx) {
+      config.resolve.alias['test'] = path.resolve(__dirname, './test');
+    }
   }
 }

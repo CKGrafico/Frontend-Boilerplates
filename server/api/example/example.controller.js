@@ -1,5 +1,5 @@
 const get = (req, res) => {
-    res.json({})
+    res.json([1, 2, 3, 4])
 };
 
 module.exports = {

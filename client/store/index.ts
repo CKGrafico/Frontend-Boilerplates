@@ -1,8 +1,10 @@
 import Vuex, { Store as VuexStore } from 'vuex';
 import { State as ConfigState } from './modules/config';
 
+import { containerSetter } from '~/container/container';
+import { containerBuilder } from '~/container/container.builder';
+
 import * as config from './modules/config';
-import { containerBuilder } from './app.container';
 
 // Structure of a Store:
 // Helpers: Small methods that have logic for this module
@@ -23,7 +25,7 @@ const createStore = () => {
       }
     });
 
-    containerBuilder(store);
+    containerSetter(containerBuilder(store));
     return store;
 };
 

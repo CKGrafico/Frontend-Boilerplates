@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import chai from 'chai';
 
 chai.use(require('sinon-chai'));

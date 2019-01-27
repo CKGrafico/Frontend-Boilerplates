@@ -3,12 +3,14 @@
 
 .is {
   &-hidden {
-    display: none;
-  }
-
-  &-disabled {
     @include medias {
-      opacity: .5;
+      display: none;
+    }
+
+    &-disabled {
+      @include medias {
+        opacity: .5;
+      }
     }
   }
 }

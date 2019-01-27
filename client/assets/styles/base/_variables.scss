@@ -22,7 +22,7 @@ $color-background-brighter: #FFFFFF;
 
 $color-foreground-dark: #221F20;
 $color-foreground-darker: #000000;
-$color-foreground-bright: #EEEEEE;
+$color-foreground-bright: #B5B5B5;
 $color-foreground-brighter: #FFFFFF;
 
 $color-menu: #C3EAE0;
@@ -75,7 +75,6 @@ $z-index-l: 3;
 $z-index-xl: 4;
 
 // Gradients
-
 $background-gradient--interviews: linear-gradient(to top, $color-interviews-secondary 20%, transparent 100%);
 $background-gradient--tips: linear-gradient(to top, $color-tips-secondary 20%, transparent 100%);
 $background-gradient--performer: linear-gradient(to top, $color-performers-secondary 20%, transparent 100%);

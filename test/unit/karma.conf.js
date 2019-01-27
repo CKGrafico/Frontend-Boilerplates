@@ -6,7 +6,7 @@ module.exports = (config, webpack) => {
   webpack.optimization = {};
 
   config.set({
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome'],
     frameworks: ['mocha', 'sinon-chai'],
 
     files: [
@@ -17,6 +17,8 @@ module.exports = (config, webpack) => {
       [vendor]: [ 'webpack' ],
       [files]: [ 'webpack' ],
     },
+
+    reporters: ['spec'],
 
     mime: {
       'text/x-typescript': ['ts']

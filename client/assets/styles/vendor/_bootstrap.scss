@@ -1,13 +1,11 @@
 @import '../base/variables';
 
-
-$increase: 1.05;
 $grid-breakpoints: (
   xs: 0,
-  sm: $media-screen-xs * $increase,
-  md: $media-screen-s * $increase,
-  lg: $media-screen-m * $increase,
-  xl: $media-screen-l * $increase
+  sm: $media-screen-xs + 1,
+  md: $media-screen-s + 1,
+  lg: $media-screen-m + 1,
+  xl: $media-screen-l + 1
 );
 
 $container-max-widths: (

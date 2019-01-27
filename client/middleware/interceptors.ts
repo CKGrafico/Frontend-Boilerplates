@@ -2,7 +2,7 @@
  * Add interceptors to requests
  */
 const KEY = 'middlewareInteceptorsConfigured';
-export default async ({ app, store }) => {
+export default async ({ app, store, redirect, req }) => {
   if (global[KEY]) {
     return;
   }
@@ -10,7 +10,22 @@ export default async ({ app, store }) => {
   global[KEY] = true;
 
   if (process.server) {
-    global['fetch'] = require('node-fetch');
+    const _fetch = require('node-fetch');
+
+    const fetch = function (url, ...args) {
+      let localUrl = url;
+
+      if (process.server && url[0] === '/') {
+        localUrl = `${req.protocol}://${req.get('Host')}${url}`;
+      }
+
+      return _fetch.call(this, ...[localUrl, ...args]);
+    };
+
+    fetch.prototype = Object.create(_fetch.prototype);
+    fetch.prototype.constructor = fetch;
+
+    global['fetch'] = fetch;
   } else {
     require('whatwg-fetch');
   }
@@ -19,8 +34,14 @@ export default async ({ app, store }) => {
 
   fetchIntercept.register({
     request: function (url, defaultConfig) {
+      if (!url.includes || !url.includes(store.state.config.settings.apiUrl)) {
+        return [url, defaultConfig];
+      }
+
       const config = defaultConfig || {};
       config.headers = config.headers || {};
+
+      config.headers['Accept-Language'] = app.i18n.locale || 'en';
 
       return [url, config];
     },

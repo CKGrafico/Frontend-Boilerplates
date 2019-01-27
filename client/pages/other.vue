@@ -1,6 +1,6 @@
 <template>
   <section class='container'>
-    <nuxt-link :to="localePath('other')">{{$t('navigation.other')}}</nuxt-link>
+    <nuxt-link :to="localePath('index')">{{$t('navigation.home')}}</nuxt-link>
   </section>
 </template>
 

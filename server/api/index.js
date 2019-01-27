@@ -1,9 +1,6 @@
 const glob = require('glob');
-const dotenv = require('dotenv');
 
 module.exports = (app) => {
-  dotenv.config();
-
   const modules = glob.sync('./**/*.router.*');
   const keyword = 'api/';
 

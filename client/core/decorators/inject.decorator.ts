@@ -1,4 +1,4 @@
-import { container } from '~/store/app.container';
+import { container } from '~/container/container';
 
 /**
  * @param key the name of the property,
@@ -22,7 +22,7 @@ export function Inject(id?: string | symbol) {
     const generatedId = id || keyToId(key);
 
     const getter = () => {
-      return container.get(generatedId);
+      return container ? container.get(generatedId) : {};
     };
 
     Reflect.deleteProperty[key];
@@ -39,6 +39,7 @@ export function Inject(id?: string | symbol) {
 export function injectId(target: any): string {
   return keyToId(target.name);
 }
+
 
 /**
  * Add the context to all the components

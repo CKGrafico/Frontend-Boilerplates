@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins/medias';
 
 // We use boostrap utilities by default
 // https://getbootstrap.com/docs/4.1/utilities/borders/
@@ -10,12 +11,6 @@
       &:first-letter {
         text-transform: capitalize;
       }
-    }
-  }
-
-  &-fonts {
-    &-bureau {
-      font-family: Bureau;
     }
   }
 }

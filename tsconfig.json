@@ -3,7 +3,7 @@
     "target": "es5",
     "lib": [
       "dom",
-      "es2015"
+      "es7"
     ],
     "module": "es2015",
     "moduleResolution": "node",

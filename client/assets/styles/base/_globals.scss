@@ -2,11 +2,10 @@
 
 html,
 body {
-  $font-size: 16px;
   background: $color-background-brighter;
   color: $color-foreground-dark;
   font-family: BrownStd;
-  font-size: $font-size;
+  font-size: $font-size-m;
   height: 100%;
   margin: 0;
   width: 100%;
