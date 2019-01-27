@@ -26,6 +26,7 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 - [🍩 Starting the project](https://boilerplates.js.org/docs/basic-installation)
 - [⛩️ Project structure](https://boilerplates.js.org/docs/basic-structure)
 - [⚙️ Configuring automated tasks](https://boilerplates.js.org/docs/started-tasks)
+- [📜 License](https://boilerplates.js.org/docs/started-license)
 
 ## 🎩 Contributors
 
@@ -45,30 +46,3 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 - **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
 
 - **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
-
-## 📜 License
-
-(The MIT License)
-
-Copyright (c)
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-**[⬆️ back to top](#frontend-boilerplates)**
