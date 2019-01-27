@@ -3,7 +3,8 @@
     "Getting Started": [
       "introduction",
       "started-license",
-      "started-tasks"
+      "started-tasks",
+      "started-styles"
     ],
     "Vue": [
       "vue-features",
@@ -31,8 +32,8 @@
       "nodets-structure"
     ],
     "Next steps": [
-      "contributing",
-      "others"
+      "next-contributing",
+      "next-others"
     ]
   }
 }
