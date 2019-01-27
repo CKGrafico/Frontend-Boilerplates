@@ -85,31 +85,31 @@ const Features = () => (
   <Block layout="threeColumn">
     {[
       {
-        content: '<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic" target="_blank">Repo</a>',
+        content: '<a href="/docs/basic-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png',
         imageAlign: 'top',
         title: 'Basic SPA',
       },
       {
-        content: '<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts" target="_blank">Repo</a>',
+        content: '<a href="/docs/ts-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png',
         imageAlign: 'top',
         title: 'TypeScript',
       },
       {
-        content: '<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue" target="_blank">Repo</a>',
+        content: '<a href="/docs/vue-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png',
         imageAlign: 'top',
         title: 'Vue',
       },
       {
-        content: '<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt" target="_blank">Repo</a>',
+        content: '<a href="/docs/nuxt-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png',
         imageAlign: 'top',
         title: 'Nuxt',
       },
       {
-        content: '<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nodets#frontend-boilerplates">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts" target="_blank">Repo</a>',
+        content: '<a href="/docs/nodets-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png',
         imageAlign: 'top',
         title: 'NodeJS + TS',
