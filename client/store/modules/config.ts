@@ -16,7 +16,6 @@ export interface State {
 export const state = (): State => ({
   settings: null
 });
-
 export const getters: GetterTree<State, any> = {};
 
 export const actions: ActionTree<State, any> = {
