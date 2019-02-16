@@ -4,17 +4,18 @@ html,
 body {
   $font-size: 16px;
 
-  background: $color-background-bright;
+  background: get-color(secondary, dark);
+  color: get-color(basic, darkest);
   font-family: OpenSans;
   font-size: $font-size;
   height: 100%;
   width: 100%;
 
-  @media screen and (max-width: $media-screen-m) {
+  @media screen and (max-width: get-media(m)) {
     font-size: $font-size * .8;
   }
 
-  @media screen and (max-width: $media-screen-s) {
+  @media screen and (max-width: get-media(s)) {
     font-size: $font-size * .65;
   }
 }
