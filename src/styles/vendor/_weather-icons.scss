@@ -1,6 +1,6 @@
 /* stylelint-disable */
 @import '../base/mixins/fonts';
-@include font-include(WeatherIcons, Regular, $font-weight-normal, normal);
+@include font-include(WeatherIcons, Regular, 400, normal);
 
 .wi {
     display: inline-block;

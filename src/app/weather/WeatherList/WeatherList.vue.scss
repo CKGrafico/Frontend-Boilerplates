@@ -9,7 +9,7 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 1vw 3vw;
-    transition: background-color get-time(default);
+    transition: background-color get-time();
 
     &:hover {
       background-color: get-color(basic, bright);
