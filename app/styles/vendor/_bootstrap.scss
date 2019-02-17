@@ -1,12 +1,11 @@
 @import '../base/variables';
 
-$increase: 1.05;
 $grid-breakpoints: (
   xs: 0,
-  sm: get-media(xs) * $increase,
-  md: get-media(s) * $increase,
-  lg: get-media(m) * $increase,
-  xl: get-media(l) * $increase
+  sm: get-media(xs) + 1,
+  md: get-media(s) + 1,
+  lg: get-media(m) + 1,
+  xl: get-media(l) + 1
 );
 
 $container-max-widths: (
@@ -28,20 +27,20 @@ $link-hover-decoration: none;
 @import '../../../node_modules/bootstrap/scss/mixins';
 @import '../../../node_modules/bootstrap/scss/root';
 // @import '../../../node_modules/bootstrap/scss/reboot';
+@import '../../../node_modules/bootstrap/scss/images';
 // @import '../../../node_modules/bootstrap/scss/type';
-// @import '../../../node_modules/bootstrap/scss/images';
 // @import '../../../node_modules/bootstrap/scss/code';
-// @import '../../../node_modules/bootstrap/scss/grid';
+@import '../../../node_modules/bootstrap/scss/grid';
 // @import '../../../node_modules/bootstrap/scss/tables';
 // @import '../../../node_modules/bootstrap/scss/forms';
 @import '../../../node_modules/bootstrap/scss/buttons';
 // @import '../../../node_modules/bootstrap/scss/transitions';
-// @import '../../../node_modules/bootstrap/scss/dropdown';
+@import '../../../node_modules/bootstrap/scss/dropdown';
 // @import '../../../node_modules/bootstrap/scss/button-group';
 // @import '../../../node_modules/bootstrap/scss/input-group';
 // @import '../../../node_modules/bootstrap/scss/custom-forms';
-// @import '../../../node_modules/bootstrap/scss/nav';
-// @import '../../../node_modules/bootstrap/scss/navbar';
+@import '../../../node_modules/bootstrap/scss/nav';
+@import '../../../node_modules/bootstrap/scss/navbar';
 // @import '../../../node_modules/bootstrap/scss/card';
 // @import '../../../node_modules/bootstrap/scss/breadcrumb';
 // @import '../../../node_modules/bootstrap/scss/pagination';
@@ -58,3 +57,5 @@ $link-hover-decoration: none;
 // @import '../../../node_modules/bootstrap/scss/carousel';
 @import '../../../node_modules/bootstrap/scss/utilities';
 // @import '../../../node_modules/bootstrap/scss/print';
+
+
