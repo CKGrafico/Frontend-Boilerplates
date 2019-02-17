@@ -3,21 +3,21 @@
 $increase: 1.05;
 $grid-breakpoints: (
   xs: 0,
-  sm: $media-screen-xs * $increase,
-  md: $media-screen-s * $increase,
-  lg: $media-screen-m * $increase,
-  xl: $media-screen-l * $increase
+  sm: get-media(xs) * $increase,
+  md: get-media(s) * $increase,
+  lg: get-media(m) * $increase,
+  xl: get-media(l) * $increase
 );
 
 $container-max-widths: (
-  sm: $media-screen-xs,
-  md: $media-screen-s,
-  lg: $media-screen-m,
-  xl: $media-screen-l
+  sm: get-media(xs),
+  md: get-media(s),
+  lg: get-media(m),
+  xl: get-media(l)
 );
 
-$primary: $color-primary;
-$secondary: $color-secondary;
+$primary: get-color(primary);
+$secondary: get-color(secondary);
 
 $link-color: auto;
 $link-hover-color: auto;
