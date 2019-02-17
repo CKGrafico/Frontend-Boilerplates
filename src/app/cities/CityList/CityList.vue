@@ -57,11 +57,11 @@ export default class extends Vue {
   &-close {
     cursor: pointer;
     margin-left: 1rem;
-    transition: color $animation-speed-default;
+    transition: color get-time();
 
     &:hover {
-      color: $color-secondary;
-      transition: color $animation-speed-default;
+      color: get-color(secondary);
+      transition: color get-time();
     }
   }
 }

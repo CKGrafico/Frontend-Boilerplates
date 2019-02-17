@@ -59,8 +59,8 @@ export default class extends Vue {
 @import '~styles/variables';
 
 .weather_detail {
-  color: $color-foreground-bright;
-  font-size: $font-size-l;
+  color: get-color(basic, bright);
+  font-size: get-font-size(l);
 
   @keyframes city-anim {
     0% {
@@ -73,20 +73,20 @@ export default class extends Vue {
   }
 
   &-header {
-    color: $color-secondary;
+    color: get-color(secondary);
     margin-bottom: 1rem;
   }
 
   &-city {
-    background-color: $color-background-bright;
+    background-color: get-color(basic, bright);
     border-radius: 5px;
     padding: 1vw 3vw;
-    transition: background-color $animation-speed-default;
+    transition: background-color get-time();
   }
 
   &-title {
-    font-size: $font-size-xl;
-    font-weight: $font-weight-bold;
+    font-size: get-font-size(xl);
+    font-weight: get-font-weight(bold);
   }
 
   &-item {
@@ -96,7 +96,7 @@ export default class extends Vue {
   }
 
   &-icon {
-    animation: city-anim $animation-speed-slow infinite;
+    animation: city-anim get-time(slow) infinite;
     font-size: 3rem;
     margin-right: 1rem;
     perspective: 200;

@@ -19,7 +19,7 @@ export default class extends Vue {
 
 .cities {
   &-header {
-    color: $color-primary;
+    color: get-color(primary);
   }
 }
 </style>

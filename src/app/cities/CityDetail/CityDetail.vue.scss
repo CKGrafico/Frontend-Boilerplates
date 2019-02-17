@@ -1,11 +1,11 @@
 @import '~styles/variables';
 
 .city_detail {
-  color: $color-foreground-bright;
-  font-size: $font-size-l;
+  color: get-color(basic, bright);
+  font-size: get-font-size(l);
 
   &-header {
-    color: $color-secondary;
+    color: get-color(secondary);
     margin-bottom: 1rem;
   }
 

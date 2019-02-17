@@ -16,7 +16,7 @@ export default class extends Vue {
 
 .loading {
   animation: spin 1.3s linear infinite;
-  border-color: $color-foreground-brighter transparent;
+  border-color: get-color(basic, brighter) transparent;
   border-radius: 50%;
   border-style: solid;
   border-width: .12em;

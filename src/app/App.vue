@@ -21,6 +21,6 @@ export default class extends Vue {
 @import '~styles/variables';
 
 .app {
-  color: $color-foreground-brighter;
+  color: get-color(basic, brighter);
 }
 </style>
