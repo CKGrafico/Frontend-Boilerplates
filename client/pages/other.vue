@@ -27,6 +27,6 @@ export default class extends Vue {
 
 <style lang='scss' scoped>
 .other {
-  color: $color-secondary;
+  color: get-color(secondary);
 }
 </style>

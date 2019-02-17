@@ -38,7 +38,7 @@ export default class extends Vue {}
 .Triangle--one {
   border-left: 105px solid transparent;
   border-right: 105px solid transparent;
-  border-bottom: 180px solid $color-primary;
+  border-bottom: 180px solid get-color(primary);
 }
 
 .Triangle--two {
@@ -65,7 +65,7 @@ export default class extends Vue {}
   animation: godown .5s linear forwards 3s;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
+  border-bottom: 60px solid #FFFFFF;
 }
 
 @keyframes turn {

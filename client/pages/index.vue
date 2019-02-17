@@ -32,6 +32,6 @@ export default class extends Vue {
 
 <style lang='scss' scoped>
 .home {
-  color: $color-primary;
+  color: get-color(primary);
 }
 </style>
