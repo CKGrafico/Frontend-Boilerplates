@@ -9,8 +9,9 @@
 @import 'base/globals';
 
 // Vendor
-@import 'vendor/normalize';
-//@import '../../node_modules/folder...
+@import
+  'vendor/normalize',
+  'vendor/bootstrap';
 
 // Components
 // Components structure (BEM no strict)

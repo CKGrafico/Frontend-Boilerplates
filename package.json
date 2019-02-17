@@ -15,6 +15,7 @@
     "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "3.3.1",
     "normalize-scss": "7.0.1"
   },
