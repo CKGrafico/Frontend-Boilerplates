@@ -15,6 +15,9 @@ $container-max-widths: (
   xl: get-media(l)
 );
 
+$primary: get-color(primary);
+$secondary: get-color(secondary);
+
 $link-color: auto;
 $link-hover-color: auto;
 $link-hover-decoration: none;
