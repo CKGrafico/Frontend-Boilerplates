@@ -3,5 +3,5 @@ module.exports = (gulp, paths, $, _) => {
 
     return gulp.src(_.folder(paths.app.client) + '/index.html')
         .pipe($.stringReplace('{version}', version))
-        .pipe(gulp.dest(_.folder(paths.dist)));
+        .pipe(gulp.dest(_.folder(paths.dist.client)));
 };

@@ -21,7 +21,7 @@ class CompilerService {
         let transpiled = ts.transpileModule(code, {}).outputText;
         let finalCode = transpiled.split(this.precode)[1];
 
-        console.log(finalCode)
+        console.log(finalCode);
         return finalCode;
     }
 
