@@ -1,3 +1,8 @@
+// Vendor
+@import
+  'vendor/normalize',
+  'vendor/bootstrap';
+
 // Base Helpers
 @import
   'base/fonts',
@@ -7,11 +12,6 @@
 
 // Base Files
 @import 'base/globals';
-
-// Vendor
-@import
-  'vendor/normalize',
-  'vendor/bootstrap';
 
 // Components
 // Components structure (BEM no strict)
