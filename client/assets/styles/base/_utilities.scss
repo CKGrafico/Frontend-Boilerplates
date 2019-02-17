@@ -1,16 +1,26 @@
-@import 'variables';
-@import 'mixins/medias';
+//
+// Helpers with typical values that you need,
+// in the app, by default we usually use
+// Bootstrap utilities but, you can define more here.
+//
+// How to use:
+// <div class="u-align-center">
+//
 
-// We use boostrap utilities by default
-// https://getbootstrap.com/docs/4.1/utilities/borders/
-// If the utility does not exist, create a new one
+@import 'variables';
 
 .u {
-  &-text {
-    &-capitalize-first {
-      &:first-letter {
-        text-transform: capitalize;
-      }
+  &-align {
+    &-center {
+      text-align: center;
+    }
+
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
     }
   }
 }

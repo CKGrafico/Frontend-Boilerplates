@@ -1,18 +1,15 @@
+//
+// Create a map for all the icons of the app,
+// will generate automatically all the icon classes.
+//
+// How to use:
+// <div class="icon icon-home">
+//
+
 @import 'mixins/icomoon';
+
 $icons: (
-  menu: 'e900',
-  close: 'e902',
-  chevron: 'e903'
+  ck-play: e900
 );
 
 @include icomoon-generate($icons);
-
-.icon {
-  &--bright {
-    color: $color-foreground-brighter;
-  }
-  
-  &--dark {
-    color: $color-background-darker;
-  }
-}
