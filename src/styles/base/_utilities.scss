@@ -8,6 +8,7 @@
 //
 
 @import 'variables';
+@import './mixins/map-utilities';
 
 .u {
   &-align {
@@ -23,4 +24,6 @@
       text-align: right;
     }
   }
+
+  @include map-utilities(color, get-color, secondary, dark);
 }

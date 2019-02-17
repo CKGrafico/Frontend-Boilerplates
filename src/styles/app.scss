@@ -1,15 +1,15 @@
+// Vendor
+@import
+  'vendor/normalize',
+  'vendor/bootstrap',
+  'vendor/weather-icons';
+
 // Base Helpers
 @import
   'base/fonts',
   'base/icons',
   'base/states',
   'base/utilities';
-
-// Vendor
-@import
-  'vendor/normalize',
-  'vendor/bootstrap',
-  'vendor/weather-icons';
 
 // Base Files
 @import 'base/globals';
