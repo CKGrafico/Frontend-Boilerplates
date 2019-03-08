@@ -1,4 +1,4 @@
-import { injectable } from 'inversify';
+import { injectable } from 'inversify-props';
 
 import { IFilter } from '~/core';
 import { IDateService } from '.';

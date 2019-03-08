@@ -1,4 +1,4 @@
-import { injectable } from 'inversify';
+import { injectable } from 'inversify-props';
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
@@ -12,12 +12,12 @@ export class TranslateService implements ITranslateService, IFilter {
 
     constructor() {
         Vue.use(VueI18n);
-        
+
         let messages = {
             en: require('../../../locale/en.locale.json'),
             es: require('../../../locale/es.locale.json')
         };
-        
+
         this.i18n = new VueI18n({
             locale: 'en',
             messages

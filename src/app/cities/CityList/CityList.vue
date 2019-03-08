@@ -16,8 +16,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { Inject } from 'inversify-props';
 
-import { Inject } from '~/core';
 import { City, ICitiesService, Loading } from '~/shared';
 import CityAdd from '../shared/CityAdd.vue';
 

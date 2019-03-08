@@ -1,6 +1,6 @@
+import { Inject } from 'inversify-props';
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-import { Inject } from '~/core';
 import { City, ICitiesService } from '~/shared';
 
 @Component

@@ -1,4 +1,4 @@
-import { injectable } from 'inversify';
+import { injectable } from 'inversify-props';
 
 import { City, Weather, WeatherForecast } from '~/shared';
 import { IWeatherService } from '.';

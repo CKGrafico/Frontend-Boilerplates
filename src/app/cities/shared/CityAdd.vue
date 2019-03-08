@@ -11,8 +11,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { Inject } from 'inversify-props';
 
-import { Inject } from '~/core';
 import { City, ICitiesService } from '~/shared';
 
 @Component
@@ -27,7 +27,7 @@ export default class extends Vue {
         if (!this.cityName) {
             return;
         }
-        
+
         this.city = await this.citiesService.search(this.cityName);
     }
 

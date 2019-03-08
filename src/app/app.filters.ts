@@ -1,7 +1,8 @@
 import { Vue } from 'vue-property-decorator';
+import { Inject } from 'inversify-props';
 
 import * as s from '~/shared';
-import { IFilter, Inject } from '~/core';
+import { IFilter } from '~/core';
 
 export class Filters {
     @Inject() dateService: s.IDateService;
@@ -12,7 +13,7 @@ export class Filters {
             this.dateService,
             this.translateService,
         ];
-        
+
         filters.forEach((filterService: IFilter) => Vue.filter(filterService.filterName, (...params) => filterService.filterAction(...params)));
     }
 }

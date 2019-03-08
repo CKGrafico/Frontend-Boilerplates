@@ -1,10 +1,8 @@
 {
     "presets": [
-        "es2015"
+      "@babel/preset-env"
     ],
     "plugins": [
-        "babel-polyfill",
-        "syntax-dynamic-import",
-        ["transform-runtime", { "polyfill": false, "regenerator": true }]
+      "@babel/plugin-syntax-dynamic-import"
     ]
 }

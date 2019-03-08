@@ -1,5 +1,5 @@
 import localforage from 'localforage';
-import { injectable } from 'inversify';
+import { injectable } from 'inversify-props';
 
 import { City, ICitiesService } from '.';
 

@@ -1,25 +1,19 @@
-import { Container } from 'inversify';
+import { container } from 'inversify-props';
 import * as s from '~/shared';
 import { citiesModule } from '~/cities';
 import { weatherModule } from '~/weather';
-import { injectId } from '~/core';
 
 // How to inject a dependency
 // @Inject() nameService: INameService;
 
-export let container: Container = null;
-
-export function containerBuilder(): Container {
-    container = new Container();
+export function containerBuilder(): void {
 
     // Bind shared services
-    container.bind<s.IDateService>(injectId(s.DateService)).to(s.DateService).inSingletonScope();
-    container.bind<s.ITranslateService>(injectId(s.TranslateService)).to(s.TranslateService).inSingletonScope();
-    container.bind<s.ICitiesService>(injectId(s.CitiesService)).to(s.CitiesService).inSingletonScope();
+    container.addSingleton<s.IDateService>(s.DateService);
+    container.addSingleton<s.ITranslateService>(s.TranslateService);
+    container.addSingleton<s.ICitiesService>(s.CitiesService);
 
     // Bind services for each module
-    citiesModule.container(container);
-    weatherModule.container(container);
-
-    return container;
+    citiesModule.container();
+    weatherModule.container();
 }

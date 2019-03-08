@@ -1,6 +1,5 @@
 // Import vendor
-import 'babel-polyfill';
-import 'reflect-metadata';
+import '@babel/polyfill';
 
 // Import Vue vendor
 import * as bootstrap from './bootstrap';
