@@ -4,7 +4,7 @@ module.exports = (env) => {
   const styleLoaders = {
     production: MiniCSSExtractPlugin.loader,
     development: 'style-loader'
-  }
+  };
 
   return {
     test: /\.scss$/,
