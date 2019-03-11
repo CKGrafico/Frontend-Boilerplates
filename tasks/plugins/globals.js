@@ -1,19 +1,14 @@
 const webpack = require('webpack');
 
-module.exports = (env, envs) => {
-    if (!envs) { 
-        return;
-    }
+module.exports = (env) => {
+  const defaultConfig = new webpack.DefinePlugin({
+    'global': {}
+  });
 
-    const defaultConfig = new webpack.DefinePlugin({
-        'global': {}
-    });
+  const plugin = {
+    production: defaultConfig,
+    development: defaultConfig
+  };
 
-    const plugin = {
-        [envs.production]: defaultConfig,
-        [envs.development]: defaultConfig,
-        [envs.local]: defaultConfig
-    };
-
-    return plugin[env];
+  return plugin[env];
 };

@@ -1,21 +1,16 @@
-module.exports = (env, envs) => {
+module.exports = (env) => {
     let options = {
-        [envs.production]: {
+        production: {
             configFile: '.scripts-lint.yml',
             emitError: true,
             failOnError: true,
             project: 'tsconfig.json',
             typeCheck: true
         },
-        [envs.development]: {
+        development: {
             configFile: '.scripts-lint.yml',
             emitError: true,
             failOnError: true,
-            project: 'tsconfig.json',
-            typeCheck: true
-        },
-        [envs.local]: {
-            configFile: '.scripts-lint.yml',
             project: 'tsconfig.json',
             typeCheck: true
         }

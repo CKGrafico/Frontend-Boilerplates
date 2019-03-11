@@ -2,11 +2,9 @@
   "processors": ["stylelint-processor-html"],
   "extends": "stylelint-config-standard",
   "plugins": [
-    "stylelint-order",
     "stylelint-scss"
   ],
   "rules": {
-    "order/properties-alphabetical-order": true,
     "at-rule-no-unknown": null,
     "font-family-no-missing-generic-family-keyword": null,
     "no-missing-end-of-source-newline": null,

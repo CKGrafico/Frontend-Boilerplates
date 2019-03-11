@@ -1,4 +1,4 @@
-module.exports = (env, envs) => {
+module.exports = (env) => {
     return {
         test: /\.js$/,
         exclude: /node_modules/,
