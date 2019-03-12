@@ -6,7 +6,10 @@
   "scripts": {
     "prod": "webpack --env.NODE_ENV=production",
     "dev": "webpack --env.NODE_ENV=development",
-    "start": "webpack-dev-server --env.NODE_ENV=development"
+    "start": "webpack-dev-server --env.NODE_ENV=development",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "",
+    "lint:styles": "stylelint \"./app/**/*.scss\""
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -29,7 +32,6 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0",
     "stylelint-scss": "^3.5.4",
-    "stylelint-webpack-plugin": "^0.10.5",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
