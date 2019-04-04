@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "webpack --env.NODE_ENV=production",
     "dev": "webpack --env.NODE_ENV=development",
-    "start": "webpack-dev-server --env.NODE_ENV=development",
+    "start": "webpack-dev-server --env.NODE_ENV=development --hot --open",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint \"./app/**/*.js\"",
     "lint:styles": "stylelint \"./app/**/*.scss\""

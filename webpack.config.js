@@ -33,6 +33,17 @@ module.exports = env => {
       plugins.globals,
       plugins.extractStyles,
     ],
+    devServer: {
+      open: true,
+      port: 4000,
+      https: false,
+      hot: true,
+      historyApiFallback: true,
+      watchOptions: {
+          poll: true
+      }
+      // proxy: { '/api': 'http://localhost:3000' }
+    },
     optimization: {
       minimizer: [plugins.uglify],
       splitChunks: {
