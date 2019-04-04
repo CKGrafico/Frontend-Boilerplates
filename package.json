@@ -2,7 +2,7 @@
   "name": "basic-spa",
   "description": "Stable version of a basic SPA example with SCSS and ES6.",
   "license": "MIT",
-  "version": "2.3.6",
+  "version": "2.4.0",
   "scripts": {
     "prod": "webpack --env.NODE_ENV=production",
     "dev": "webpack --env.NODE_ENV=development",
