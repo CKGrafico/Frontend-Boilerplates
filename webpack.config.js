@@ -31,9 +31,21 @@ module.exports = env => {
     plugins: [
       plugins.html,
       plugins.globals,
-      plugins.uglify,
       plugins.extractStyles,
     ],
+    optimization: {
+      minimizer: [plugins.uglify],
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: 'all',
+            test: path.resolve(__dirname, 'node_modules'),
+            name: 'vendor',
+            enforce: true,
+          },
+        },
+      },
+    },
     resolve: {
       alias: {
         'styles': path.resolve(__dirname, 'app/styles'),
