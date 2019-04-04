@@ -30,9 +30,32 @@ module.exports = env => {
     plugins: [
       plugins.html,
       plugins.globals,
-      plugins.uglify,
       plugins.extractStyles,
     ],
+    devServer: {
+      open: true,
+      port: 4000,
+      https: false,
+      hot: true,
+      historyApiFallback: true,
+      watchOptions: {
+          poll: true
+      }
+      // proxy: { '/api': 'http://localhost:3000' }
+    },
+    optimization: {
+      minimizer: [plugins.uglify],
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: 'all',
+            test: path.resolve(__dirname, 'node_modules'),
+            name: 'vendor',
+            enforce: true,
+          },
+        },
+      },
+    },
     resolve: {
       extensions: ['.ts', '.js'],
       alias: {
