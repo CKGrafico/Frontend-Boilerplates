@@ -1,10 +1,14 @@
 {
     "presets": [
-        "es2015"
+      ["@babel/preset-env", {
+        "useBuiltIns": "usage",
+        "debug": true,
+        "targets": {
+          "browsers": ["last 2 versions"],
+        }
+      }]
     ],
     "plugins": [
-        "babel-polyfill",
-        "syntax-dynamic-import",
-        ["transform-runtime", { "polyfill": false, "regenerator": true }]
+      "@babel/plugin-syntax-dynamic-import"
     ]
 }

@@ -3,11 +3,9 @@
   "extends": "stylelint-config-standard",
   "ignoreFiles": ["**/*.html", "**/*.ts", "**/*.js"],
   "plugins": [
-    "stylelint-order",
     "stylelint-scss"
   ],
   "rules": {
-    "order/properties-alphabetical-order": true,
     "at-rule-no-unknown": null,
     "font-family-no-missing-generic-family-keyword": null,
     "no-missing-end-of-source-newline": null,
