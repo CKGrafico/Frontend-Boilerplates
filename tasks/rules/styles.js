@@ -11,9 +11,19 @@ module.exports = (env) => {
     exclude: /node_modules/,
     use: [{
       loader: styleLoaders[env] // Creates style nodes from JS strings
-    }, {
+    },
+    {
       loader: 'css-loader' // Translates CSS into CommonJS
-    }, {
+    },
+    {
+      loader: 'postcss-loader', // More CSS Plugins
+      options: {
+        plugins: () => [require('autoprefixer')({
+            'browsers': ['last 2 versions']
+        })],
+      }
+    },
+    {
       loader: 'sass-loader', // Compiles Sass to CSS, using Node Sass by default
       options: {
         //includePaths: ['absolute/path/a']

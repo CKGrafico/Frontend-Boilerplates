@@ -22,7 +22,6 @@ module.exports = env => {
     },
     module: {
       rules: [
-        // rules.scriptsLint,
         ...rules.files,
         rules.scripts,
         rules.styles,
