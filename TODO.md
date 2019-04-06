@@ -1,2 +1,2 @@
-- Test with JEST
-- Test with Cypress
+- Autoprefixer
+- inversify
