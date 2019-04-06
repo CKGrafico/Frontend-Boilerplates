@@ -1,4 +1,3 @@
 - Config testing
 - Config store
-- optimization
 - Change code example
