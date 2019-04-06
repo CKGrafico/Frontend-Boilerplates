@@ -2,12 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
@@ -16,7 +17,10 @@
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "src/app/*"
+      ],
+      "~/*": [
+        "src/app/*"
       ]
     },
     "lib": [
