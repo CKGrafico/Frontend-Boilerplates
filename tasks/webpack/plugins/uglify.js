@@ -1,20 +1,16 @@
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-module.exports = (env, envs) => {
-    if (!envs) { 
-        return;
+module.exports = (env) => {
+  const defaultConfig = new UglifyJSPlugin({
+    uglifyOptions: {
+      keep_classnames: true,
+      keep_fnames: true,
     }
+  });
 
-    const defaultConfig = new UglifyJSPlugin({
-      uglifyOptions: {
-        keep_classnames: true,
-        keep_fnames: true,
-      }
-    });
+  const plugin = {
+    production: defaultConfig
+  };
 
-    const plugin = {
-        [envs.production]: defaultConfig
-    };
-
-    return plugin[env];
+  return plugin[env];
 };
