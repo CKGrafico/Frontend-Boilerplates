@@ -5,9 +5,14 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" width="150" title="React">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
-## Vue - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Boilerplate">
+------
+# THE REACT BOILERPLATE IS UNDER CONSTRUCTION
+------
+
+## React - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="Boilerplate">
 
 [![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=vue)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/vue.svg)
