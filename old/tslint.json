@@ -1,8 +1,5 @@
 {
     "defaultSeverity": "warning",
-    "extends": [
-        "tslint-react"
-    ],
     "rules": {
         "class-name": true,
         "comment-format": [
@@ -24,8 +21,7 @@
         "quotemark": [
             true,
             "single",
-            "avoid-escape",
-            "jsx-double"
+            "avoid-escape"
         ],
         "semicolon": [
             true,
