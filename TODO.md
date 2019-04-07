@@ -1,3 +1,2 @@
-- Config testing
 - Config store
-- Change code example
+- Change code example hooks
