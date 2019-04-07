@@ -9,28 +9,28 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="140" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
 ------
-# THE REACT BOILERPLATE IS UNDER CONSTRUCTION
+# THE REACT BOILERPLATE IS in ALPHA VERSION
 ------
 
 ## React - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="Boilerplate">
 
-[![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=vue)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/vue.svg)
-[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/vue/LICENSE)
+[![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=react)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/react.svg)
+[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/react/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
 ![GitHub contributors](https://img.shields.io/github/contributors/CKGrafico/Frontend-Boilerplates.svg)
 [![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
 
 On this boilerplate you can find:
-- **Vue:** The progressive JavaScript framework.
+- **React:** A JavaScript library for building user interfaces.
 - **TypeScript:** All the code uses TypeScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
 ## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/))
-- [🍩 Starting the project](https://boilerplates.js.org/docs/vue-installation)
-- [⛩️ Project structure](https://boilerplates.js.org/docs/vue-structure)
+- [🍩 Starting the project](https://boilerplates.js.org/docs/react-installation)
+- [⛩️ Project structure](https://boilerplates.js.org/docs/react-structure)
 - [⚙️ Configuring automated tasks](https://boilerplates.js.org/docs/started-tasks)
 - [📜 License](https://boilerplates.js.org/docs/started-license)
 
@@ -51,5 +51,7 @@ On this boilerplate you can find:
 - **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
 
 - **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
+
+- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react)** **React** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
 
 - **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">

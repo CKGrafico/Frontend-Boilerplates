@@ -1,2 +1,5 @@
+- Add i18n
+- Add react-bootstrap
+- Add routing
 - Config store
 - Change code example hooks
