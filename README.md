@@ -1,11 +1,12 @@
 # Frontend Boilerplates
 Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
 
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" width="150" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="150" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" width="150" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="150" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="150" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" width="140" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="140" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" width="140" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="140" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" width="140" title="React">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates)
+[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="140" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
 ## Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="Boilerplate">
 
@@ -44,5 +45,8 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 - **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
 
 - **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
+
+- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react)** **React** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
+
 
 - **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
