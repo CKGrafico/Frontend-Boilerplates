@@ -1,5 +1,9 @@
 {
+  "plugins": [
+    "cypress"
+  ],
   "env": {
+    "cypress/globals": true,
     "browser": true,
     "es6": true,
     "node": false
