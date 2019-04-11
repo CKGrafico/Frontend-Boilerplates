@@ -1,5 +1,5 @@
 // Import vendor
-import '@babel/polyfill';
+// If you use usage in babelrc dont import polyfilll import '@babel/polyfill';
 
 // Import Vue vendor
 import * as bootstrap from './bootstrap';
