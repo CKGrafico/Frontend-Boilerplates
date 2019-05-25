@@ -1,4 +1,5 @@
 import { Vue } from 'vue-property-decorator';
+import { Inject } from 'inversify-props';
 
 import { vendor } from './app/vendor';
 import { CitiesSeed } from './app/core/seeds';
@@ -11,6 +12,8 @@ import App from './app/App.vue';
 import './styles/app.scss';
 
 export class AppModule {
+    @Inject() translateService: ITranslateService;
+  
     constructor() {
         containerBuilder();
 
@@ -31,6 +34,7 @@ export class AppModule {
             el: '#app',
             router: router(),
             store,
+            i18n: this.translateService.i18n,
             render: create => create(App)
         };
 
