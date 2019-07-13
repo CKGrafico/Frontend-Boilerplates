@@ -29,7 +29,6 @@ module.exports = env => {
     },
     plugins: [
       plugins.html,
-      plugins.globals,
       plugins.extractStyles,
     ],
     devServer: {
@@ -62,7 +61,6 @@ module.exports = env => {
         'assets': path.resolve(__dirname, 'app/assets'),
         '~': path.resolve(__dirname, 'app/scripts')
       }
-    },
-    devtool: (() => environment === 'production' ? false : 'inline-source-map')()
+    }
   })
 };
