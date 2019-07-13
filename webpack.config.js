@@ -29,7 +29,6 @@ module.exports = env => {
     },
     plugins: [
       plugins.html,
-      plugins.globals,
       plugins.extractStyles,
     ],
     devServer: {
