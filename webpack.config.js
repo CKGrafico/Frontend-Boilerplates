@@ -63,7 +63,6 @@ module.exports = env => {
         'assets': path.resolve(__dirname, 'src/assets'),
         '~': path.resolve(__dirname, 'src/app')
       }
-    },
-    devtool: (() => environment === 'production' ? false : 'inline-source-map')()
+    }
   })
 };
