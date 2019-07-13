@@ -1,7 +1,9 @@
+import 'reflect-metadata';
 import { Vue } from 'vue-property-decorator';
 import { Inject } from 'inversify-props';
 
-import { vendor } from './app/vendor';
+import { ITranslateService } from '~/shared';
+import { installVendorPlugins } from './app/vendor';
 import { CitiesSeed } from './app/core/seeds';
 import { router } from './app/app.router';
 import { containerBuilder } from './app/app.container';
@@ -13,12 +15,12 @@ import './styles/app.scss';
 
 export class AppModule {
     @Inject() translateService: ITranslateService;
-  
+
     constructor() {
         containerBuilder();
 
         Vue.use(new Filters());
-        vendor.forEach(library => Vue.use(library));
+        installVendorPlugins();
 
         this.bootstrap();
     }

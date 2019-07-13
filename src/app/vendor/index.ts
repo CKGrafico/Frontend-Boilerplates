@@ -1,9 +1,14 @@
-// Import vendor
-// If you use usage in babelrc dont import polyfilll import '@babel/polyfill';
+import { Vue } from 'vue-property-decorator';
 
 // Import Vue vendor
 import * as bootstrap from './bootstrap';
 
-export const vendor = [
+const vendor = [
     ...(<any>Object).values(bootstrap)
 ];
+
+export function installVendorPlugins() {
+  vendor.forEach(library => {
+    Vue.use(library);
+  });
+}
