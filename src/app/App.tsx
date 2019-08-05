@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 // import logo from './logo.svg';
 import './App.scss';
-import { ExampleStoreType, useExampleStore } from '../store';
+import { useExample } from './shared/example.hook';
 
 export default function () {
   const [t] = useTranslation();
-  const [state, dispatch] = useExampleStore();
+  const [state, incrementProperty1] = useExample();
 
   useEffect(() => {
     console.log('hooks');
@@ -14,10 +14,7 @@ export default function () {
 
 
   function onClickText() {
-    dispatch({
-      type: ExampleStoreType.ADD_TO_FIRST,
-      payload: 10
-    });
+    incrementProperty1();
   }
 
   return (

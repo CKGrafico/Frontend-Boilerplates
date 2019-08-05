@@ -1,12 +1,11 @@
-import { ExampleStore } from '../../store';
-import { useStore } from 'react-hookstore';
+import { useExampleStore, ExampleStoreType, ExampleStoreState } from '../../store';
 
-export function useExample() {
-  const [state, dispatch] = useStore(ExampleStore.name);
+export function useExample(): [ExampleStoreState, () => void] {
+  const [state, dispatch] = useExampleStore();
 
   function incrementProperty1() {
     dispatch({
-      type: ExampleStore.Type.ADD_TO_FIRST,
+      type: ExampleStoreType.ADD_TO_FIRST,
       payload: 10
     });
   }
