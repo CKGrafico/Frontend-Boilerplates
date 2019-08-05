@@ -31,6 +31,7 @@
     "normalize-scss": "^7.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-hookstore": "^1.2.3",
     "react-i18next": "^10.11.5",
     "react-scripts": "3.0.1",
     "typescript": "3.5.3"

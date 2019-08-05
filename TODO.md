@@ -1,3 +1,4 @@
 - Add react-bootstrap
 - Add routing
 - Config store
+- alias
