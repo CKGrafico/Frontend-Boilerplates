@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 // import logo from './logo.svg';
 import './App.scss';
 
 export default function () {
+  const [t, i18n] = useTranslation();
+
   useEffect(() => {
     console.log('hooks');
   }, []);
@@ -20,8 +23,8 @@ export default function () {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-          </a>
+          {t('test')}
+        </a>
       </header>
     </div>
   );
