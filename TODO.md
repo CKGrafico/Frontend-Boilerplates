@@ -1,3 +1,2 @@
 - Add react-bootstrap
 - Add routing
-- alias

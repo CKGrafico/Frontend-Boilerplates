@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 // import logo from './logo.svg';
 import './App.scss';
-import { useExample } from './shared/example.hook';
+import { useExample } from '~/app/shared/example.hook';
 
 export default function () {
   const [t] = useTranslation();
