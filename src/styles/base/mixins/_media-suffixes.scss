@@ -25,7 +25,7 @@
 // be 0 for screens bigger than 's' media query.
 //
 
-@import '../variables';
+@import '~styles/base/variables';
 
 $medias: xxs, xs, s, m, l, xl;
 

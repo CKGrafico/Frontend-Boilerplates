@@ -22,7 +22,7 @@
 // <div class="u-color-secondary-dark">
 //
 
-@import '../variables';
+@import '~styles/base/variables';
 
 // map-utilities(get-color, secondary, dark);
 @mixin map-utilities($prop, $map, $key, $key2: null) {
