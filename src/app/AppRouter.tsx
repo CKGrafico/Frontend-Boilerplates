@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { ExampleRouter } from '~/app/example';
+import { ExampleRouter } from './example';
 
 export default function () {
   return (
