@@ -54,6 +54,7 @@
         "no-trailing-whitespace": false,
         "no-inferrable-types": true,
         "no-null-keyword": false,
-        "prefer-const": false
+        "prefer-const": false,
+        "jsx-no-lambda": false
     }
 }

@@ -1,1 +1,1 @@
-export { default as Example } from './Example';
+export { default as ExampleRouter } from './ExampleRouter';

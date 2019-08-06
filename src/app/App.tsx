@@ -1,13 +1,14 @@
 import React from 'react';
+import AppRouter from './AppRouter';
+import { Header } from './layout';
 import './App.scss';
-import { Header, Main } from './layout';
 
 
 export default function () {
   return (
     <div>
       <Header />
-      <Main />
+      <AppRouter />
     </div>
   );
 }
