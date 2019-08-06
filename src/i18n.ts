@@ -55,7 +55,7 @@ export function existsLanguageByCode(code: string): boolean {
   const languages: LanguageReturnType[] = getLanguagesList();
   let exists = false;
 
-  languages.map((lang) => {
+  languages.forEach((lang) => {
     if (lang[0].toLowerCase() === code.toLowerCase()) {
       exists = true;
       return;
@@ -68,7 +68,7 @@ export function existsLanguageByCode(code: string): boolean {
 export function getLanguageByCode(code: string): Language {
   let language: Language = Language.Spanish;
   const languages = Object.keys(Language);
-  languages.map((lang) => {
+  languages.forEach((lang) => {
     if (Language[lang as keyof typeof Language] === code.toLowerCase()) {
       language = Language.Spanish;
       return;
