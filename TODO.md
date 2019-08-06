@@ -1,2 +1,3 @@
 - Add react-bootstrap
-- scoped styles
+- improve css modules hypens
+- improve alias (helpers, etc)

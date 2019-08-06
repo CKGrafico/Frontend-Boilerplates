@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useExample } from '~/app/shared/example.hook';
-import './example.scss';
+import { useExample } from '~/app/shared/example';
+import css from './example.module.scss';
+import { createStyles } from '~/app/helpers';
+const styles = createStyles(css);
 
 export default function () {
   const [t] = useTranslation();
@@ -17,13 +19,13 @@ export default function () {
   }
 
   return (
-    <div className="example">
-      <header className="example-header">
+    <div className={styles.example}>
+      <header className={styles.example$header}>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
           </p>
         <a
-          className="example-link"
+          className={styles.example$link}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
