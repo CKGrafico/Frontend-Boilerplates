@@ -4,7 +4,7 @@
   text-align: center;
 
   &-header {
-    background-color: #282C34;
+    background-color: get-color(basic, darkest);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

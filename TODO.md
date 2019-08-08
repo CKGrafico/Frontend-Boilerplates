@@ -1,3 +1,2 @@
 - Add react-bootstrap
-- improve css modules hypens
 - improve alias (helpers, etc)
