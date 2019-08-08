@@ -1,7 +1,16 @@
 const path = require('path');
+const sassResourcesLoader = require('craco-sass-resources-loader');
 const CSS_MODULE_LOCAL_IDENT_NAME = '[local]___[hash:base64:5]';
 
 module.exports = {
+  plugins: [
+    {
+      plugin: sassResourcesLoader,
+      options: {
+        resources: './src/styles/base/_variables.scss',
+      },
+    },
+  ],
   webpack: {
     alias: {
       '~': `${path.resolve(__dirname)}/src`

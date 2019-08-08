@@ -3,7 +3,6 @@
 // will be useful to add different files for each font.
 //
 
-@import 'variables';
 @import 'mixins/fonts';
 
 @include font-include(OpenSans, Light, get-font-weight(light), normal);
