@@ -1,10 +1,10 @@
 import { createStore, ReducerType, useStore } from 'react-hookstore';
 
-const name = 'myexample';
+const name = 'EXAMPLE/CHILD';
 
 enum Type {
-  ADD_TO_FIRST = 'ADD_TO_FIRST',
-  ADD_TO_SECOND = 'ADD_TO_SECOND'
+  ADD_TO_FIRST = 'EXAMPLE/CHILD/ADD_TO_FIRST',
+  ADD_TO_SECOND = 'EXAMPLE/CHILD/ADD_TO_SECOND'
 }
 
 type Payload = {
