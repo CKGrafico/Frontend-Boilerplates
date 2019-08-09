@@ -12,7 +12,8 @@
     "test:e2e": "start-server-and-test start http-get://localhost:3000 test:e2e:cypress",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "tslint \"./src/**/*.{ts,tsx}\" --format stylish",
-    "lint:styles": "stylelint \"./src/**/*.scss\""
+    "lint:styles": "stylelint \"./src/**/*.scss\"",
+    "update": "create-react-app-updater"
   },
   "husky": {
     "hooks": {
@@ -29,9 +30,7 @@
     "react-dom": "^16.8.6",
     "react-hookstore": "^1.2.3",
     "react-i18next": "^10.11.5",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "typescript": "3.5.3"
+    "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
     "@craco/craco": "^5.2.4",
@@ -43,17 +42,20 @@
     "@types/react-router-dom": "^4.3.4",
     "babel-plugin-react-css-modules": "^5.2.6",
     "craco-sass-resources-loader": "^1.1.0",
+    "create-react-app-updater": "^0.7.13",
     "cypress": "^3.4.1",
     "husky": "^3.0.2",
     "postcss-nested": "^4.1.2",
     "postcss-scss": "^2.0.0",
+    "react-scripts": "3.0.1",
     "start-server-and-test": "^1.9.1",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-processor-html": "^1.0.0",
     "stylelint-scss": "^3.9.3",
     "tslint": "^5.18.0",
-    "tslint-react": "^4.0.0"
+    "tslint-react": "^4.0.0",
+    "typescript": "3.5.3"
   },
   "repository": "https://github.com/CKGrafico/Frontend-Boilerplates#frontend-boilerplates",
   "author": "https://github.com/CKGrafico/Frontend-Boilerplates#-contributors"

@@ -1,6 +1,6 @@
-import { useExampleStore, ExampleStoreType, ExampleStoreState } from '~/store';
+import { useExampleStore, ExampleStoreType } from '~/store';
 
-export function useExample(): [ExampleStoreState, () => void] {
+export function useExample() {
   // You can use stores directly form components, this is only an example of hook
   const [state, dispatch] = useExampleStore();
 
@@ -11,5 +11,5 @@ export function useExample(): [ExampleStoreState, () => void] {
     });
   }
 
-  return [state, incrementProperty1];
+  return [state, incrementProperty1] as const;
 }
