@@ -6,18 +6,18 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "npm run test:unit && npm run test:e2e",
+    "test": "yarn test:unit && yarn test:e2e",
     "test:unit": "craco test",
     "test:e2e:cypress": "cypress run",
     "test:e2e": "start-server-and-test start http-get://localhost:3000 test:e2e:cypress",
-    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint": "yarn lint:scripts && yarn lint:styles",
     "lint:scripts": "tslint \"./src/**/*.{ts,tsx}\" --format stylish",
     "lint:styles": "stylelint \"./src/**/*.scss\"",
     "update": "create-react-app-updater"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-push": "yarn lint"
     }
   },
   "dependencies": {
