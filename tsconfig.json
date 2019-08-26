@@ -18,7 +18,8 @@
     "emitDecoratorMetadata": true,
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "types": ["cypress"]
   },
   "compileOnSave": false,
 }
