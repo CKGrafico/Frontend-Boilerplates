@@ -1,5 +1,5 @@
 describe('App', () => {
-   test('When ____ should ___', () => {
-       expect(true).toBe(true);
-   });
+  test('When ____ should ___', () => {
+    expect(true).toBe(true);
+  });
 });
