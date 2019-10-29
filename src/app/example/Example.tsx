@@ -3,14 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
 import './example.module.scss';
 
-export default function () {
+export default function Example() {
   const [t] = useTranslation();
   const [state, incrementProperty1] = useExample();
 
   useEffect(() => {
     console.log('hooks');
   }, []);
-
 
   function onClickText() {
     incrementProperty1();
@@ -21,7 +20,7 @@ export default function () {
       <header styleName="example-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
-          </p>
+        </p>
         <a
           styleName="example-link"
           href="https://reactjs.org"

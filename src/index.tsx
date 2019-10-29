@@ -5,8 +5,9 @@ import './styles/app.scss';
 import './i18n';
 import App from './app/App';
 
-ReactDOM.render((
+ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-), document.getElementById('root'));
+  </BrowserRouter>,
+  document.getElementById('root'),
+);

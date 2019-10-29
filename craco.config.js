@@ -13,21 +13,21 @@ module.exports = {
   ],
   webpack: {
     alias: {
-      '~': `${path.resolve(__dirname)}/src`
-    }
+      '~': `${path.resolve(__dirname)}/src`,
+    },
   },
   jest: {
     configure: {
       moduleNameMapper: {
-        '^~(.*)$': '<rootDir>/src$1'
-      }
-    }
+        '^~(.*)$': '<rootDir>/src$1',
+      },
+    },
   },
   style: {
     modules: {
       camelCase: true,
-      localIdentName: CSS_MODULE_LOCAL_IDENT_NAME
-    }
+      localIdentName: CSS_MODULE_LOCAL_IDENT_NAME,
+    },
   },
   babel: {
     loaderOptions: {
@@ -38,18 +38,18 @@ module.exports = {
         'babel-plugin-react-css-modules',
         {
           attributeNames: {
-            activeStyleName: 'activeClassName'
+            activeStyleName: 'activeClassName',
           },
           filetypes: {
             '.scss': {
               syntax: 'postcss-scss',
-              plugins: ['postcss-nested']
-            }
+              plugins: ['postcss-nested'],
+            },
           },
           generateScopedName: CSS_MODULE_LOCAL_IDENT_NAME,
-          handleMissingStyleName: 'warn'
-        }
-      ]
-    ]
-  }
-}
+          handleMissingStyleName: 'warn',
+        },
+      ],
+    ],
+  },
+};
