@@ -1,4 +1,5 @@
 import { createStore, ReducerType, useStore } from 'react-hookstore';
+import { GenericPayload } from '../core';
 
 const name = 'EXAMPLE/CHILD';
 
@@ -7,10 +8,7 @@ enum Type {
   ADD_TO_SECOND = 'EXAMPLE/CHILD/ADD_TO_SECOND',
 }
 
-interface Payload {
-  type: Type;
-  payload: any;
-}
+type Payload = GenericPayload<Type>;
 
 interface State {
   property1: number;
@@ -36,8 +34,8 @@ const reducers: ReducerType<State, Payload> = function(
   }
 };
 
-createStore<State, Payload>(name, state, reducers);
+createStore<State>(name, state, reducers);
 
 export const ExampleStoreType = Type;
 export type ExampleStoreState = State;
-export const useExampleStore = () => useStore<State, Payload>(name);
+export const useExampleStore = () => useStore<State>(name);
