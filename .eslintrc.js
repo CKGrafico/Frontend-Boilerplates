@@ -34,7 +34,13 @@ module.exports = {
     'react/prop': DISABLED,
     'no-unused-expressions': DISABLED,
     '@typescript-eslint/explicit-function-return-type': DISABLED,
-    '@typescript-eslint/explicit-member-accessibility': [ERROR, { accessibility: 'explicit', overrides: {constructors: 'no-public'} }]
+    '@typescript-eslint/explicit-member-accessibility': [ERROR, { accessibility: 'explicit', overrides: {constructors: 'no-public'} }],
+    "no-restricted-imports": ["error", {
+      "paths": [{
+        "name": "react-bootstrap",
+        "message": "You should import individual components like: react-bootstrap/Button"
+      }]
+    }]
   },
   settings: {
     react: {

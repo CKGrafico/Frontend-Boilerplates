@@ -1,10 +1,10 @@
 import { cid, useInject } from 'inversify-hooks';
 import React, { useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
 import './example.module.scss';
 import { IExampleAlertService } from './shared';
-
 export default function Example() {
   const [t] = useTranslation();
   const [state, incrementProperty1] = useExample();
@@ -27,7 +27,7 @@ export default function Example() {
         <a styleName="example-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           {t('test')}
         </a>
-        <div onClick={onClickText}>{state.property1}</div>
+        <Button onClick={onClickText}>{state.property1}</Button>
       </header>
     </div>
   );
