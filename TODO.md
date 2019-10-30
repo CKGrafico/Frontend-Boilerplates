@@ -1,5 +1,3 @@
-- ofuscation + inviersify? ooops
-
 - Docs:
 mandatory yarn.
 explain create react app
