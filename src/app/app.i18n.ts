@@ -10,16 +10,16 @@ import es from '../assets/locales/es.json';
 
 export enum Language {
   English = 'en',
-  Spanish = 'es',
+  Spanish = 'es'
 }
 
 const resources = {
   [Language.English]: {
-    translation: en,
+    translation: en
   },
   [Language.Spanish]: {
-    translation: es,
-  },
+    translation: es
+  }
 };
 
 i18n
@@ -28,8 +28,8 @@ i18n
     resources,
     lng: Language.English, // Change current language on the end of this file
     interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+      escapeValue: false // react already safes from xss
+    }
   });
 
 export default i18n;

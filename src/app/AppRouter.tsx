@@ -6,11 +6,7 @@ export default function AppRouter() {
   return (
     <main>
       <Switch>
-        <Route
-          exact={true}
-          path="/"
-          render={() => <Redirect to="/example" />}
-        />
+        <Route exact={true} path="/" render={() => <Redirect to="/example" />} />
         {exampleModule.routes}
       </Switch>
     </main>

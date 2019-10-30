@@ -4,7 +4,7 @@ import { IExampleAlertService } from './iexample-alert.service';
 
 @injectable()
 export class ExampleAlertService implements IExampleAlertService {
-  @inject() logService: ILogService;
+  @inject() private logService: ILogService;
 
   public get(): void {
     this.logService.get();

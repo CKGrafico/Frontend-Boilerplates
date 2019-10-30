@@ -7,7 +7,7 @@ export function useExample() {
   function incrementProperty1() {
     dispatch({
       type: ExampleStoreType.ADD_TO_FIRST,
-      payload: 10,
+      payload: 10
     });
   }
 

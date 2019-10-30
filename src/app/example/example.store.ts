@@ -5,7 +5,7 @@ const name = 'EXAMPLE/CHILD';
 
 enum Type {
   ADD_TO_FIRST = 'EXAMPLE/CHILD/ADD_TO_FIRST',
-  ADD_TO_SECOND = 'EXAMPLE/CHILD/ADD_TO_SECOND',
+  ADD_TO_SECOND = 'EXAMPLE/CHILD/ADD_TO_SECOND'
 }
 
 type Payload = GenericPayload<Type>;
@@ -17,13 +17,10 @@ interface State {
 
 const state: State = {
   property1: 0,
-  property2: 1,
+  property2: 1
 };
 
-const reducers: ReducerType<State, Payload> = function(
-  state: State,
-  { type, payload },
-) {
+const reducers: ReducerType<State, Payload> = function(state: State, { type, payload }) {
   switch (type) {
     case Type.ADD_TO_FIRST:
       return { ...state, property1: state.property1 + payload };
