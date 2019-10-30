@@ -34,7 +34,7 @@ const reducers: ReducerType<State, Payload> = function(
   }
 };
 
-createStore<State>(name, state, reducers);
+const store = createStore<State>(name, state, reducers);
 
 export const ExampleStoreType = Type;
-export const useExampleStore = () => useStore<State>(name);
+export const useExampleStore = () => useStore<State>(store);
