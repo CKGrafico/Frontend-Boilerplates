@@ -20,7 +20,7 @@
     "noEmit": true,
     "jsx": "react",
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false,
+    "strictPropertyInitialization": false
   },
   "include": [
     "src"
