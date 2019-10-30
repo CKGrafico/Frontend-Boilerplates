@@ -56,6 +56,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9",
+    "jest-transform-stub": "^2.0.0",
     "postcss-nested": "^4.1.2",
     "postcss-scss": "^2.0.0",
     "prettier": "^1.18.2",
@@ -66,6 +67,7 @@
     "stylelint-config-standard": "^19.0.0",
     "stylelint-processor-html": "^1.0.0",
     "stylelint-scss": "^3.12.0",
+    "ts-jest": "^24.1.0",
     "typescript": "3.6.4"
   },
   "eslintConfig": {
