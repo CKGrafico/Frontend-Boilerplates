@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { exampleRoutes } from './example';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import { exampleModule } from './example';
 
 export default function AppRouter() {
   return (
@@ -11,7 +11,7 @@ export default function AppRouter() {
           path="/"
           render={() => <Redirect to="/example" />}
         />
-        {exampleRoutes}
+        {exampleModule.routes}
       </Switch>
     </main>
   );

@@ -1,15 +1,18 @@
+import { cid, useInject } from 'inversify-hooks';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
 import './example.module.scss';
+import { IExampleAlertService } from './shared';
 
 export default function Example() {
   const [t] = useTranslation();
   const [state, incrementProperty1] = useExample();
+  const [exampleAlertService] = useInject<IExampleAlertService>(cid.IExampleAlertService);
 
   useEffect(() => {
-    console.log('hooks');
-  }, []);
+    exampleAlertService.get();
+  }, [exampleAlertService]);
 
   function onClickText() {
     incrementProperty1();

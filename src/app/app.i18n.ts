@@ -2,11 +2,11 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 // English
-import en from './assets/locales/en.json';
+import en from '../assets/locales/en.json';
 
 // Spanish
 import 'moment/locale/es';
-import es from './assets/locales/es.json';
+import es from '../assets/locales/es.json';
 
 export enum Language {
   English = 'en',

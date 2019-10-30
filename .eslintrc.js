@@ -33,7 +33,8 @@ module.exports = {
     'react/prop-types': DISABLED,
     'react/prop': DISABLED,
     'no-unused-expressions': DISABLED,
-    '@typescript-eslint/explicit-function-return-type': DISABLED
+    '@typescript-eslint/explicit-function-return-type': DISABLED,
+    '@typescript-eslint/explicit-member-accessibility': [ERROR, { accessibility: 'explicit', overrides: {constructors: 'no-public'} }]
   },
   settings: {
     react: {
