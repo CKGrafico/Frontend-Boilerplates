@@ -1,10 +1,10 @@
 import { container } from 'inversify-props';
-import * as s from '~/shared';
 import { citiesModule } from '~/cities';
+import * as s from '~/shared';
 import { weatherModule } from '~/weather';
 
 // How to inject a dependency
-// @Inject() nameService: INameService;
+// @inject() nameService: INameService;
 
 export function containerBuilder(): void {
 

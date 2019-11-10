@@ -27,7 +27,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-import { Inject } from 'inversify-props';
+import { inject } from 'inversify-props';
 import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService } from '~/weather/shared';
 
@@ -36,8 +36,8 @@ export default class extends Vue {
     public name = 'WeatherList';
     public cities: City[] = [];
 
-    @Inject() citiesService: ICitiesService;
-    @Inject() weatherService: IWeatherService;
+    @inject() citiesService: ICitiesService;
+    @inject() weatherService: IWeatherService;
 
     public async created(): Promise<void> {
         this.cities = await this.citiesService.get();

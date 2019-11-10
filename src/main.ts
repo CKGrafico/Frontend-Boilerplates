@@ -1,20 +1,18 @@
+import { inject } from 'inversify-props';
 import 'reflect-metadata';
 import { Vue } from 'vue-property-decorator';
-import { Inject } from 'inversify-props';
-
 import { ITranslateService } from '~/shared';
-import { installVendorPlugins } from './app/vendor';
-import { CitiesSeed } from './app/core/seeds';
-import { router } from './app/app.router';
 import { containerBuilder } from './app/app.container';
 import { Filters } from './app/app.filters';
+import { router } from './app/app.router';
 import store from './app/app.store';
 import App from './app/App.vue';
-
+import { CitiesSeed } from './app/core/seeds';
+import { installVendorPlugins } from './app/vendor';
 import './styles/app.scss';
 
 export class AppModule {
-    @Inject() translateService: ITranslateService;
+    @inject() translateService: ITranslateService;
 
     constructor() {
         containerBuilder();

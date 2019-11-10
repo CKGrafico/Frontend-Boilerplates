@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { Inject } from 'inversify-props';
+import { inject } from 'inversify-props';
 
 import { City, ICitiesService, Loading } from '~/shared';
 import CityAdd from '../shared/CityAdd.vue';
@@ -31,7 +31,7 @@ export default class extends Vue {
     public name = 'CityList';
     public cities: City[] = null;
 
-    @Inject() citiesService: ICitiesService;
+    @inject() citiesService: ICitiesService;
 
     public async created(): Promise<void> {
         // Fake example with loading

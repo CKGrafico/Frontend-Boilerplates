@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { Inject } from 'inversify-props';
+import { inject } from 'inversify-props';
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 import { City, ICitiesService } from '~/shared';
@@ -16,7 +16,7 @@ export default class extends Vue {
     public name = 'CityDetail';
     public city: City = null;
 
-    @Inject() citiesService: ICitiesService;
+    @inject() citiesService: ICitiesService;
 
     @Prop() id: number;
 

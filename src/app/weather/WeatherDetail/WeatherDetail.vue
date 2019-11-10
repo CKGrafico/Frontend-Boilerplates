@@ -29,7 +29,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-import { Inject } from 'inversify-props';
+import { inject } from 'inversify-props';
 import { ICitiesService, City, WeatherCodes, WeatherIcons } from '~/shared';
 import { IWeatherService } from '../shared';
 
@@ -38,8 +38,8 @@ export default class extends Vue {
     public name = 'WeatherDetail';
     public city: City = null;
 
-    @Inject() citiesService: ICitiesService;
-    @Inject() weatherService: IWeatherService;
+    @inject() citiesService: ICitiesService;
+    @inject() weatherService: IWeatherService;
 
     @Prop() id: number;
 
