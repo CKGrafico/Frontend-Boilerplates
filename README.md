@@ -8,10 +8,6 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" width="140" title="React">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" width="140" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
 
-------
-# THE REACT BOILERPLATE IS in ALPHA VERSION
-------
-
 ## React - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="Boilerplate">
 
 [![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=react)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
@@ -27,6 +23,7 @@ On this boilerplate you can find:
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
+- **Yarn:** In React Project we have change NPM for Yarn.
 
 ## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/))
 - [🍩 Starting the project](https://boilerplates.js.org/docs/react-installation)
