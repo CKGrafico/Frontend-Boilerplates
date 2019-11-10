@@ -49,6 +49,10 @@
         "title": "License of the Boilerplates",
         "sidebar_label": "License"
       },
+      "started-styles": {
+        "title": "About styles in the Boilerplates",
+        "sidebar_label": "Styles"
+      },
       "started-tasks": {
         "title": "Configuring automated tasks",
         "sidebar_label": "Configure tasks"

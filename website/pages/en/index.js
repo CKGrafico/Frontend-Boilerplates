@@ -109,6 +109,12 @@ const Features = () => (
         title: 'Nuxt',
       },
       {
+        content: '<a href="/docs/react-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react" target="_blank">Repo</a>',
+        image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png',
+        imageAlign: 'top',
+        title: 'React',
+      },
+      {
         content: '<a href="/docs/nodets-features">Docs</a> - <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts" target="_blank">Repo</a>',
         image: 'https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png',
         imageAlign: 'top',
