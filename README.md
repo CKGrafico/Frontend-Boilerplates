@@ -12,7 +12,7 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 
 [![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/basic.svg)
-[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/vue/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
 ![GitHub contributors](https://img.shields.io/github/contributors/CKGrafico/Frontend-Boilerplates.svg)
 [![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
