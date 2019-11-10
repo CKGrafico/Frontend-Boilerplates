@@ -41,6 +41,18 @@
         "title": "Nuxt Boilerplate Structure",
         "sidebar_label": "Structure"
       },
+      "react-features": {
+        "title": "React Boilerplate Features",
+        "sidebar_label": "Features"
+      },
+      "react-installation": {
+        "title": "React Boilerplate Installation",
+        "sidebar_label": "Installation"
+      },
+      "react-structure": {
+        "title": "React Boilerplate Structure",
+        "sidebar_label": "Structure"
+      },
       "introduction": {
         "title": "Introduction to the Boilerplates",
         "sidebar_label": "Introduction"
@@ -52,10 +64,6 @@
       "started-styles": {
         "title": "About styles in the Boilerplates",
         "sidebar_label": "Styles"
-      },
-      "started-tasks": {
-        "title": "Configuring automated tasks",
-        "sidebar_label": "Configure tasks"
       },
       "ts-features": {
         "title": "TypeScript Boilerplate Features",
@@ -88,10 +96,11 @@
     },
     "categories": {
       "Getting Started": "Getting Started",
-      "Vue": "Vue",
       "Basic SPA": "Basic SPA",
-      "Nuxt": "Nuxt",
       "TypeScript": "TypeScript",
+      "Vue": "Vue",
+      "Nuxt": "Nuxt",
+      "React": "React",
       "Node TypeScript": "Node TypeScript",
       "Next steps": "Next steps"
     }

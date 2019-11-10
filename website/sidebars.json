@@ -3,28 +3,32 @@
     "Getting Started": [
       "introduction",
       "started-license",
-      "started-tasks",
       "started-styles"
-    ],
-    "Vue": [
-      "vue-features",
-      "vue-installation",
-      "vue-structure"
     ],
     "Basic SPA": [
       "basic-features",
       "basic-installation",
       "basic-structure"
     ],
+    "TypeScript": [
+      "ts-features",
+      "ts-installation",
+      "ts-structure"
+    ],
+    "Vue": [
+      "vue-features",
+      "vue-installation",
+      "vue-structure"
+    ],
     "Nuxt": [
       "nuxt-features",
       "nuxt-installation",
       "nuxt-structure"
     ],
-    "TypeScript": [
-      "ts-features",
-      "ts-installation",
-      "ts-structure"
+    "React": [
+      "react-features",
+      "react-installation",
+      "react-structure"
     ],
     "Node TypeScript": [
       "nodets-features",
