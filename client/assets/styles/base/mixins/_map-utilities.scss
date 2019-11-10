@@ -26,11 +26,11 @@
 
 // map-utilities(get-color, secondary, dark);
 @mixin map-utilities($prop, $map, $key, $key2: null) {
-  $result: call($map, $key);
+  $result: call(get-function($map), $key);
   $extra: '';
 
   @if ($key2) {
-    $result: call($map, $key, $key2);
+    $result: call(get-function($map), $key, $key2);
     $extra: '-#{$key2}';
   }
 

@@ -30,12 +30,7 @@ const postcss = {
   //       { formatter: 'string', console: true }
   //     ]
   //   }
-  // },
-  preset: {
-    autoprefixer: {
-      browsers: ['last 2 versions']
-    }
-  }
+  // }
 };
 
 module.exports = {
