@@ -3,7 +3,7 @@ const rules = require('require.all')('./tasks/rules');
 const plugins = require('require.all')('./tasks/plugins');
 
 module.exports = env => {
-  let environment = env.NODE_ENV;
+  const environment = env.NODE_ENV;
   env.NODE_ENV = JSON.stringify(environment);
 
   rules((name, rule) => rule(environment));

@@ -1,5 +1,8 @@
 import './vendor';
 import $ from 'jquery';
 
-const a: number = 1;
-console.log($);
+const a = 1;
+console.log($, '');
+
+if (true) {
+}
