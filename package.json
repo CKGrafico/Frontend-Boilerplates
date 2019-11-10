@@ -1,28 +1,23 @@
 {
   "name": "app-vue",
-  "description": "Stable version of a basic SPA example with SCSS, Vue and TypeScript.",
-  "license": "MIT",
   "version": "3.0.0",
+  "description": "Stable version of a basic SPA example with SCSS, Vue and TypeScript.",
+  "author": "https://github.com/CKGrafico/Frontend-Boilerplates#-contributors",
   "scripts": {
-    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "npm run test:unit && npm run test:e2e",
-    "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "vue-cli-service lint",
-    "lint:styles": "stylelint \"./src/**/*.(scss|vue)\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint"
-    }
+    "lint:styles": "stylelint \"./src/**/*.(scss|vue)\"",
+    "start": "npm run serve",
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
-    "core-js": "^2.6.9",
+    "core-js": "^3.3.2",
     "inversify-props": "^1.4.5",
     "localforage": "^1.7.3",
     "normalize-scss": "^7.0.1",
@@ -35,11 +30,11 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.22",
-    "@vue/cli-plugin-babel": "^3.9.2",
-    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
-    "@vue/cli-plugin-typescript": "^3.9.0",
-    "@vue/cli-plugin-unit-jest": "^3.9.0",
-    "@vue/cli-service": "^3.9.2",
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-plugin-e2e-cypress": "^4.0.5",
+    "@vue/cli-plugin-typescript": "^4.0.5",
+    "@vue/cli-plugin-unit-jest": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "husky": "^3.0.9",
@@ -55,6 +50,11 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-template-compiler": "^2.6.10"
   },
-  "repository": "https://github.com/CKGrafico/Frontend-Boilerplates#frontend-boilerplates",
-  "author": "https://github.com/CKGrafico/Frontend-Boilerplates#-contributors"
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/CKGrafico/Frontend-Boilerplates#frontend-boilerplates"
 }
