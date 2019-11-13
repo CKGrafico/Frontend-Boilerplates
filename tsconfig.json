@@ -21,7 +21,7 @@
     "jsx": "react",
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-    "types": ["cypress"]
+    "types": ["jest", "cypress"]
   },
   "include": [
     "src"
