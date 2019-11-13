@@ -9,8 +9,8 @@
     "start": "webpack-dev-server --env.NODE_ENV=development --hot --open",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
-    "test:e2e:cypress": "cypress run",
-    "test:e2e": "start-server-and-test start http-get://localhost:4000 test:e2e:cypress",
+    "test:e2e": "start-server-and-test start http-get://localhost:4000 \"cypress run\"",
+    "test:e2e:dev": "start-server-and-test start http-get://localhost:4000 \"cypress open\"",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint \"./app/**/*.js\"",
     "lint:styles": "stylelint \"./app/**/*.scss\""
