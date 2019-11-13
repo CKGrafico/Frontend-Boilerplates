@@ -20,7 +20,8 @@
     "noEmit": true,
     "jsx": "react",
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "types": ["cypress"]
   },
   "include": [
     "src"
