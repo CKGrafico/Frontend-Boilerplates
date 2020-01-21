@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
 import './example.module.scss';
 import { IExampleAlertService } from './shared';
+
 export default function Example() {
   const [t] = useTranslation();
   const [state, incrementProperty1] = useExample();
