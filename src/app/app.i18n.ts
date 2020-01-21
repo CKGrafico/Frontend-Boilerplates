@@ -41,7 +41,10 @@ export function getCurrentLanguage(): string {
 export type LanguageReturnType = string[];
 
 export function getLanguagesList(): LanguageReturnType[] {
-  return [['English', Language.English], ['Español', Language.Spanish]];
+  return [
+    ['English', Language.English],
+    ['Español', Language.Spanish]
+  ];
 }
 
 export function changeCurrentLanguage(language: Language): void {

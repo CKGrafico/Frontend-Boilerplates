@@ -20,10 +20,17 @@
     "noEmit": true,
     "jsx": "react",
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
+    "strictNullChecks": false,
     "types": [
       "jest",
-      "cypress"
+      "cypress",
+      "react-css-modules"
+    ],
+    "typeRoots": [
+      "types",
+      "node_modules/@types"
     ]
   },
   "include": [
