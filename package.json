@@ -2,7 +2,7 @@
   "name": "app-react",
   "description": "Stable version of a basic SPA example with SCSS, React (Hooks) and TypeScript.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
