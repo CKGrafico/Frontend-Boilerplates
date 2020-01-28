@@ -1,15 +1,16 @@
-<h1 align="center">
+<span align="center">
   <br>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="140"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="140"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Nodejs and TypeScript Boilerplate" width="140"></a>
-  <br>
-  Frontend Boilerplates
-  <br>
-</h1>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="160"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="160"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="160"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="160"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="160"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Nodejs and TypeScript Boilerplate" width="160"></a>
+</span>
+
+<br>
+<h1 align="center">Frontend Boilerplates</h1>
+<br>
 
 ### Overview
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates). **Click on the logos** to navigate through them.
