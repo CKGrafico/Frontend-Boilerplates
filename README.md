@@ -33,6 +33,10 @@ $ npm install
 ```shell
 $ npm start
 ```
+**Build** the project for a production environment.
+```shell
+$ npm run build
+```
 If you want to **test**, there are some options.
 ```shell
 $ npm test # (Will run unit and e2e tests)
