@@ -58,6 +58,9 @@ List example
     <td align="center"><a href="https://www.linkedin.com/in/victor-gamez/"><img src="https://avatars0.githubusercontent.com/u/14943217?v=4" width="100px;" alt=""/><br /><sub><b>Víctor Gámez</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=VGamezz19" title="Code">💻</a></td>
     <td align="center"><a href="http://kryzh.com"><img src="https://avatars1.githubusercontent.com/u/2675648?v=4" width="100px;" alt=""/><br /><sub><b>Alex Kryzhanovskyy</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=AlexKryzh" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/jcarloslr10"><img src="https://avatars0.githubusercontent.com/u/15978818?v=4" width="100px;" alt=""/><br /><sub><b>Juan Carlos</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=jcarloslr10" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
@@ -66,7 +69,7 @@ List example
 
 Badges example
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
