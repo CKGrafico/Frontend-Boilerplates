@@ -10,7 +10,6 @@
 
 <br>
 <h1 align="center">Frontend Boilerplates</h1>
-<br>
 
 ### Overview
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates). **Click on the logos** to navigate through them.
