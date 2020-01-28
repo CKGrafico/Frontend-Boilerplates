@@ -18,7 +18,7 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 [![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
 
 On this boilerplate you can find:
-- **Express:**: The Node Framework.
+- **Express:** The Node Framework.
 - **TypeScript:** All the code uses TypeScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
