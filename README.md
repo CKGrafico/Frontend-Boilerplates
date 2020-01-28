@@ -19,7 +19,7 @@ This repository is a group of **boilerplates** including some **good practises**
 
  On this boilerplate you can find:
 - **JavaScript:** All the code uses JavaScript.
-- **SASS:** Scss structure with good practises.
+- **SASS:** SCSS structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
