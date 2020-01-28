@@ -1,5 +1,5 @@
 # Frontend Boilerplates
-Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
+Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors. **Click on the logos** to view the other boilerplates.
 
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" width="140" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates)
 [<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="140" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
@@ -24,18 +24,28 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
-## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/))
-- [🍩 Starting the project](https://boilerplates.js.org/docs/basic-installation)
-- [⛩️ Project structure](https://boilerplates.js.org/docs/basic-structure)
-- [⚙️ Configuring automated tasks](https://boilerplates.js.org/docs/started-tasks)
-- [📜 License](https://boilerplates.js.org/docs/started-license)
-
-## 🎩 Contributors
-
-| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos<br>**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez<br>**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts<br>**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
-| :---: | :---: | :---: | :---: | :---: |
-
-[View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
+## 📚 Setup
+> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/basic.zip) or clone the boilerplate.
+**Install** all the dependencies.
+```shell
+$ npm install
+```
+**Run** the project for local development.
+```shell
+$ npm start
+```
+If you want to **test**, there are some options.
+```shell
+$ npm test # (Will run unit and e2e tests)
+$ npm run test:unit # (Only unit tests)
+$ npm run test:e2e # (Only e2e tests)
+```
+The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
+```shell
+$ npm run lint # (Will run scripts and styles linting)
+$ npm run lint:scripts # (Only scripts lint)
+$ npm run lint:styles # (Only styles lint)
+```
 
 ## ⛳️ Check all the boilerplates
 
