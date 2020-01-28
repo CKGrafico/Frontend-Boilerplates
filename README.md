@@ -1,10 +1,10 @@
 <h4 align="center">
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="170"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="170"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="170"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="170"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="170"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="170"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="140"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="140"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="140"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="140"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="140"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="140"></a>
 </h4>
 <h1 align="center">Frontend Boilerplates</h1>
 
@@ -12,7 +12,6 @@
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates). **Click on the logos** to navigate through them.
 
 ### Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate">
-<br>
 
 [![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
 [![Update Status](https://img.shields.io/badge/Update%20status-Occasionally-yellowgreen)](https://github.com/CKGrafico/Frontend-Boilerplates/releases)
