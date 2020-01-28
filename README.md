@@ -54,6 +54,7 @@ List example
 <table>
   <tr>
     <td align="center"><a href="http://CKgrafico.com"><img src="https://avatars1.githubusercontent.com/u/2048511?v=4" width="100px;" alt=""/><br /><sub><b>Quique Fdez Guerra</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=ckgrafico" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/spertusatti"><img src="https://avatars0.githubusercontent.com/u/25738279?v=4" width="100px;" alt=""/><br /><sub><b>Sabrina Pertusatti</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=spertusatti" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -63,7 +64,7 @@ List example
 
 Badges example
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
