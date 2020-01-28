@@ -49,10 +49,21 @@ $ npm run lint:styles # (Only styles lint)
 ### Contributors
 List example
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://CKgrafico.com"><img src="https://avatars1.githubusercontent.com/u/2048511?v=4" width="100px;" alt=""/><br /><sub><b>Quique Fdez Guerra</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=ckgrafico" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Badges example
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
