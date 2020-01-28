@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ckgrafico",
+      "name": "Quique Fdez Guerra",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2048511?v=4",
+      "profile": "http://CKgrafico.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Frontend-Boilerplates",
+  "projectOwner": "CKGrafico",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
