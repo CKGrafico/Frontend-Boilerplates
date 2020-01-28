@@ -46,8 +46,8 @@ $ npm run lint # (Will run scripts and styles linting)
 $ npm run lint:scripts # (Only scripts lint)
 $ npm run lint:styles # (Only styles lint)
 ```
-### Contributors
-List example
+### 🎩 Contributors
+This project is possible thanks to the contributors.
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -66,12 +66,6 @@ List example
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-Badges example
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg)](#contributors)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 
 ### ⛳️ Check all the boilerplates
 
