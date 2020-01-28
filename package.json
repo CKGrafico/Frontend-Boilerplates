@@ -4,8 +4,7 @@
   "license": "MIT",
   "version": "2.4.2",
   "scripts": {
-    "prod": "webpack --env.NODE_ENV=production",
-    "dev": "webpack --env.NODE_ENV=development",
+    "build": "webpack --env.NODE_ENV=production",
     "start": "webpack-dev-server --env.NODE_ENV=development --hot --open",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest",
