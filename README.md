@@ -15,7 +15,6 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/basic.svg)
 [![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
-![GitHub contributors](https://img.shields.io/github/contributors/CKGrafico/Frontend-Boilerplates.svg)
 [![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
 
  On this boilerplate you can find:
