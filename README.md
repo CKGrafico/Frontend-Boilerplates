@@ -11,6 +11,7 @@ Some examples of **good practises**, **tips**, and **boilerplates** that I like 
 ## Node TypeScript - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Boilerplate">
 
 [![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=node-ts)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
+[![Update Status](https://img.shields.io/badge/Update%20status-Rarely-orange)](https://github.com/CKGrafico/Frontend-Boilerplates/releases)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/node-ts.svg)
 [![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
