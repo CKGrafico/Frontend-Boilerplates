@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="140"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="TypeScript Boilerplate" width="140"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="140"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="140"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
 <h1 align="center">Frontend Boilerplates</h1>
 
