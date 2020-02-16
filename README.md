@@ -14,7 +14,7 @@
 
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
-<h2 align="center">Phaser - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="left" width="35" title="Boilerplate"></h2>
+<h2 align="center">Phaser - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser.png" align="left" width="35" title="Boilerplate"></h2>
 
 <p align="center">
   <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status"></a>
