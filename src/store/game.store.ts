@@ -17,7 +17,7 @@ export class GameStoreService {
   private store = store;
 
   public updatePosition(x: number, y: number) {
-    this.store.update(state => ({ position: { x, y } }));
+    this.store.update(state => ({ position: { x: Math.round(x), y: Math.round(y) } }));
   }
 }
 

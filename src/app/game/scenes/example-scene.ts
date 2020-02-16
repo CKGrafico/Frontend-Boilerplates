@@ -19,17 +19,18 @@ export class ExampleScene extends Scene {
     super(sceneConfig);
   }
 
-  public create() {
+  public create(): void {
     this.bindEvents();
     this.square = this.add.rectangle(400, 400, 100, 100, 0xffffff) as any;
     this.physics.add.existing(this.square);
+    this.square.body.collideWorldBounds = true;
   }
 
-  private bindEvents() {
+  private bindEvents(): void {
     this.gameStoreQuery.position$.subscribe(position => (this.position = position));
   }
 
-  public update() {
+  public update(): void {
     const cursorKeys = this.input.keyboard.createCursorKeys();
 
     if (cursorKeys.up.isDown) {
