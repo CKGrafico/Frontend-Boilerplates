@@ -4,16 +4,18 @@ import { GameStoreQuery } from '~/store';
 import './hud.module.scss';
 
 export function Hud() {
-  const [times, setTimes] = useState(0);
+  const [position, setPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [gameStoreQuery] = useInject<GameStoreQuery>(cid.GameStoreQuery);
 
   useEffect(() => {
-    gameStoreQuery.times$.subscribe(setTimes);
+    gameStoreQuery.position$.subscribe(setPosition);
   }, [gameStoreQuery]);
 
   return (
     <div styleName="huf" id="game">
-      <div styleName="hud-adv">{times}</div>
+      <div styleName="hud-adv">
+        {position.x} - {position.y}
+      </div>
     </div>
   );
 }

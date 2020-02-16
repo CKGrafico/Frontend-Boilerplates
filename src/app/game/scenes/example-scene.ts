@@ -4,7 +4,7 @@ import { GameStoreQuery, GameStoreService } from '~/store';
 
 export class ExampleScene extends Scene {
   private square: Phaser.GameObjects.Rectangle & { body: Phaser.Physics.Arcade.Body };
-  private times: number;
+  private position: { x: number; y: number };
 
   @inject() private gameStoreQuery: GameStoreQuery;
   @inject() private gameStoreService: GameStoreService;
@@ -26,7 +26,7 @@ export class ExampleScene extends Scene {
   }
 
   private bindEvents() {
-    this.gameStoreQuery.times$.subscribe(times => (this.times = times));
+    this.gameStoreQuery.position$.subscribe(position => (this.position = position));
   }
 
   public update() {
@@ -48,6 +48,6 @@ export class ExampleScene extends Scene {
       this.square.body.setVelocityX(0);
     }
 
-    this.gameStoreService.updateTimes(this.square.body.velocity.x);
+    this.gameStoreService.updatePosition(this.square.body.position.x, this.square.body.position.y);
   }
 }

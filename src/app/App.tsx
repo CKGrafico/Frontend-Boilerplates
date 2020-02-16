@@ -2,13 +2,13 @@ import { IonPhaser } from '@ion-phaser/react';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import './app.i18n';
 import './app.module.scss';
-import { AliceGame } from './game';
+import { ExampleGame } from './game';
 import { Hud } from './layout';
 import { resizeGame } from './shared';
 
 export default function App() {
   const $container = useRef<HTMLDivElement>(null);
-  const game = useMemo(() => new AliceGame(), []);
+  const game = useMemo(() => new ExampleGame(), []);
   const onResizeWindow = useCallback(() => resizeGame(game, $container.current), [game, $container]);
 
   useEffect(() => {
