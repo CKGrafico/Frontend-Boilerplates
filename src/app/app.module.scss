@@ -1,0 +1,10 @@
+.app {
+  background-color: get-color(basic, darkest);
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+
+  & canvas {
+    border: 1px solid rgba(get-color(basic, brightest), 0.25);
+  }
+}

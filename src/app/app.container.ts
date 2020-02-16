@@ -1,6 +1,6 @@
-import { container } from 'inversify-props';
-import { exampleModule } from './example';
-import * as s from './shared';
+import { container } from 'inversify-hooks';
+import { GameStoreQuery, GameStoreService } from '~/store';
+import { ExampleScene } from './game';
 
 // How to inject a dependency
 
@@ -8,9 +8,7 @@ import * as s from './shared';
 // In a Hook or component: const [nameService] = useInject<INameService>(cid.INameService)
 
 export function containerBuilder(): void {
-  // Bind shared services
-  container.addSingleton<s.ILogService>(s.LogService);
-
-  // Bind services for each module
-  exampleModule.container();
+  container.addSingleton(GameStoreQuery);
+  container.addSingleton(GameStoreService);
+  container.addSingleton(ExampleScene);
 }

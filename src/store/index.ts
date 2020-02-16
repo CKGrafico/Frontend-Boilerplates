@@ -1,1 +1,1 @@
-export * from './example.store';
+export * from './game.store';

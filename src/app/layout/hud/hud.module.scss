@@ -1,0 +1,10 @@
+.hud {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+
+  &-adv {
+    position: absolute;
+    background: red;
+  }
+}

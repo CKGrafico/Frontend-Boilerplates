@@ -2,9 +2,9 @@
   <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" alt="JavaScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" alt="React Boilerplate" width="150"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser.png" alt="Phaser Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
@@ -14,7 +14,7 @@
 
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
-<h2 align="center">React - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="left" width="35" title="Boilerplate"></h2>
+<h2 align="center">Phaser - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="left" width="35" title="Boilerplate"></h2>
 
 <p align="center">
   <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status"></a>
@@ -27,7 +27,9 @@ This repository is a group of **boilerplates** including some **good practises**
 
 Most relevant technologies used in the Boilerplate:
 
+- **Phaser:** Game engine for JavaScript.
 - **React:** A JavaScript library for building user interfaces.
+- **Akita:** Global State Management system based in RxJS.
 - **TypeScript:** All the code uses TypeScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
@@ -36,7 +38,7 @@ Most relevant technologies used in the Boilerplate:
 
 ### 📚 Setup and scripts
 
-> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/basic.zip) or clone the boilerplate.
+> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/phaser.zip) or clone the boilerplate.
 > **Install** all the dependencies.
 
 ```shell
