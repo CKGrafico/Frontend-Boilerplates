@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 id="logos"></h1>
+  <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
