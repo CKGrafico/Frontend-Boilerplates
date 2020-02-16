@@ -4,11 +4,10 @@
   "license": "MIT",
   "version": "2.3.6",
   "scripts": {
-    "dev": "gulp --env=development",
-    "prod": "gulp --env=production",
+    "start": "gulp --env=development",
+    "build": "gulp --env=production",
     "prewatch": "npm run dev",
-    "watch": "gulp --env=development watcher",
-    "tree": "tree -l 5 -a  --ignore 'node_modules,/, .git/,  .temp/, dist/, .DS_Store'"
+    "watch": "gulp --env=development watcher"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

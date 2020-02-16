@@ -1,55 +1,93 @@
-# Frontend Boilerplates
-Some examples of **good practises**, **tips**, and **boilerplates** that I like to follow. You will find the different technologies separated by branches and I will add more examples in the future, helped by the contributors.
+<p align="center">
+  <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" alt="JavaScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
+   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" alt="Node and TS Boilerplate" width="150"></a>
+</p>
+<h1 align="center">Frontend Boilerplates</h1>
 
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" width="140" title="Basic">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" width="140" title="TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" width="140" title="Vuejs">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" width="140" title="Nuxt">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" width="140" title="React">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#frontend-boilerplates)
-[<img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" width="140" title="Nodejs with TypeScript">](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#frontend-boilerplates)
+### Overview
 
-## Node TypeScript - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Boilerplate">
+This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
-[![Build Status](https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=node-ts)](https://travis-ci.org/CKGrafico/Frontend-Boilerplates)
-[![Update Status](https://img.shields.io/badge/Update%20status-Rarely-orange)](https://github.com/CKGrafico/Frontend-Boilerplates/releases)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/node-ts.svg)
-[![GitHub license](https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE)
-[![GitHub forks](https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/network)
-![GitHub contributors](https://img.shields.io/github/contributors/CKGrafico/Frontend-Boilerplates.svg)
-[![GitHub issues](https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg)](https://github.com/CKGrafico/Frontend-Boilerplates/issues)
+<h2 align="center">Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="left" width="35" title="Boilerplate"></h2>
 
-On this boilerplate you can find:
+<p align="center">
+  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Rarely-orange" alt="Update Status"></a>
+  <img src="https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/node-ts.svg" alt="GitHub last commit (branch)">
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE"><img src="https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub license"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks"></a>
+  <a href=https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues"></a>
+</p>
+
+Most relevant technologies used in the Boilerplate:
+
 - **Express:** The Node Framework.
 - **TypeScript:** All the code uses TypeScript.
 - **SASS:** Scss structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
 - **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
+### 📚 Setup and scripts
 
-## 📚 Documentation ([boilerplates.js.org](https://boilerplates.js.org/))
-- [🍩 Starting the project](https://boilerplates.js.org/docs/nodets-installation)
-- [⛩️ Project structure](https://boilerplates.js.org/docs/nodets-structure)
-- [⚙️ Configuring automated tasks](https://boilerplates.js.org/docs/started-tasks)
-- [📜 License](https://boilerplates.js.org/docs/started-license)
+> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/basic.zip) or clone the boilerplate.
+> **Install** all the dependencies.
 
-## 🎩 Contributors
+```shell
+$ npm install
+```
 
-| <img src="https://i.imgur.com/CcJ7vXL.jpg" width="150"><br>**Quique Fdez Guerra**<br>[👨‍💻](https://github.com/CKGrafico)[🌍](http://ckgrafico.com)[🐦](https://twitter.com/CKGrafico) | <img src="https://i.imgur.com/W8Ks7Ss.jpg" width="150"><br>**Juan Carlos<br>**<br>[👨‍💻](https://github.com/jcarloslr10)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/jcarloslr10) | <img src="https://i.imgur.com/kLqGDso.jpg" width="150"><br>**Alex Kryzhanovskyy**<br>[👨‍💻](https://github.com/AlexKryzh)[🌍](http://kryzh.com)[🐦](https://twitter.com/AlexKryzh) | <img src="https://i.imgur.com/ScMiaNz.png" width="150"><br>**Victor Gamez<br>**<br>[👨‍💻](https://github.com/VGamezz19) | <img src="https://i.imgur.com/idu3Mnw.png" width="150"><br>**PlainConcepts<br>**<br>[👨‍💻](https://github.com/PlainConcepts)[🌍](http://plainconcepts.com)[🐦](https://twitter.com/PlainConcepts)|
-| :---: | :---: | :---: | :---: | :---: |
+**Run** the project for local development.
 
-[View Contributors](https://github.com/CKGrafico/Frontend-Boilerplates/graphs/contributors)
+```shell
+$ npm start
+```
 
+**Build** the project for a production environment.
 
-## ⛳️ Check all the boilerplates
+```shell
+$ npm run build
+```
 
-- **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree)** **Basic SPA** example with SCSS and ES6. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="SPA">
+### 🎩 Contributors
 
-- **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts)** **TypeScript** example with SCSS. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
+This project is possible thanks to the contributors.
 
-- **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://CKgrafico.com"><img src="https://avatars1.githubusercontent.com/u/2048511?v=4" width="150px;" alt=""/><br /><sub><b>Quique Fdez Guerra</b></sub></a><br /><a href="#platform-ckgrafico" title="Packaging/porting to new platform">📦</a> <a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=ckgrafico" title="Code">💻</a> <a href="#tool-ckgrafico" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/spertusatti"><img src="https://avatars0.githubusercontent.com/u/25738279?v=4" width="150px;" alt=""/><br /><sub><b>Sabrina Pertusatti</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=spertusatti" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/victor-gamez/"><img src="https://avatars0.githubusercontent.com/u/14943217?v=4" width="150px;" alt=""/><br /><sub><b>Víctor Gámez</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=VGamezz19" title="Code">💻</a></td>
+    <td align="center"><a href="http://kryzh.com"><img src="https://avatars1.githubusercontent.com/u/2675648?v=4" width="150px;" alt=""/><br /><sub><b>Alex Kryzhanovskyy</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=AlexKryzh" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jcarloslr10"><img src="https://avatars0.githubusercontent.com/u/15978818?v=4" width="150px;" alt=""/><br /><sub><b>Juan Carlos</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=jcarloslr10" title="Code">💻</a></td>
+  </tr>
+</table>
 
-- **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
-- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react)** **React** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-- **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
+### ⛳️ Check all the boilerplates
+
+- **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos)** **Basic SPA** example with SCSS and ES6. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="SPA">
+
+- **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
+
+- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos)** **React** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
+
+- **[phaser:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos)** **Phaser** example using TypeScript and React. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser.png" align="right" width="35" title="Phaser">
+
+- **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos)** **TypeScript** example with SCSS. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
+
+- **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
+
+- **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
