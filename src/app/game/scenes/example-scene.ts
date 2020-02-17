@@ -3,52 +3,70 @@ import { Scene } from 'phaser';
 import { GameStoreQuery, GameStoreService } from '~/store';
 
 export class ExampleScene extends Scene {
-  private square: Phaser.GameObjects.Rectangle & { body: Phaser.Physics.Arcade.Body };
-  private position: { x: number; y: number };
+  private player: Phaser.Physics.Arcade.Sprite;
+  private cursors: Phaser.Types.Input.Keyboard.CursorKeys;
 
   @inject() private gameStoreQuery: GameStoreQuery;
   @inject() private gameStoreService: GameStoreService;
 
   constructor() {
     const sceneConfig = {
+      key: 'Example',
       active: false,
-      visible: false,
-      key: 'Game'
+      visible: false
     };
 
     super(sceneConfig);
   }
 
-  public create(): void {
-    this.bindEvents();
-    this.square = this.add.rectangle(400, 400, 100, 100, 0xffffff) as any;
-    this.physics.add.existing(this.square);
-    this.square.body.collideWorldBounds = true;
+  public preload(): void {
+    this.load.spritesheet('dude', '/images/dude.png', { frameWidth: 32, frameHeight: 48 });
   }
 
-  private bindEvents(): void {
-    this.gameStoreQuery.position$.subscribe(position => (this.position = position));
+  public create(): void {
+    this.player = this.physics.add.sprite(100, 450, 'dude');
+    this.player.setBounce(0.2);
+    this.player.setCollideWorldBounds(true);
+
+    this.anims.create({
+      key: 'left',
+      frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
+      frameRate: 10,
+      repeat: -1
+    });
+
+    this.anims.create({
+      key: 'turn',
+      frames: [{ key: 'dude', frame: 4 }],
+      frameRate: 20
+    });
+
+    this.anims.create({
+      key: 'right',
+      frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+      frameRate: 10,
+      repeat: -1
+    });
+
+    this.cursors = this.input.keyboard.createCursorKeys();
   }
 
   public update(): void {
-    const cursorKeys = this.input.keyboard.createCursorKeys();
-
-    if (cursorKeys.up.isDown) {
-      this.square.body.setVelocityY(-500);
-    } else if (cursorKeys.down.isDown) {
-      this.square.body.setVelocityY(500);
+    if (this.cursors.left.isDown) {
+      this.player.setVelocityX(-160);
+      this.player.anims.play('left', true);
+    } else if (this.cursors.right.isDown) {
+      this.player.setVelocityX(160);
+      this.player.anims.play('right', true);
     } else {
-      this.square.body.setVelocityY(0);
+      this.player.setVelocityX(0);
+      this.player.anims.play('turn');
     }
 
-    if (cursorKeys.right.isDown) {
-      this.square.body.setVelocityX(500);
-    } else if (cursorKeys.left.isDown) {
-      this.square.body.setVelocityX(-500);
-    } else {
-      this.square.body.setVelocityX(0);
+    if (this.cursors.up.isDown && this.player.body.touching.down) {
+      this.player.setVelocityY(-330);
     }
 
-    this.gameStoreService.updatePosition(this.square.body.position.x, this.square.body.position.y);
+    this.gameStoreService.updatePosition(this.player.x, this.player.y);
   }
 }

@@ -12,10 +12,9 @@ export default function App() {
   const onResizeWindow = useCallback(() => resizeGame(game, $container.current), [game, $container]);
 
   useEffect(() => {
-    resizeGame(game, $container.current);
-    window.addEventListener('resize', onResizeWindow);
-
-    return () => window.removeEventListener('resize', onResizeWindow);
+    // resizeGame(game, $container.current);
+    // window.addEventListener('resize', onResizeWindow);
+    // return () => window.removeEventListener('resize', onResizeWindow);
   }, [game, onResizeWindow]);
 
   return (
