@@ -35,6 +35,7 @@ export class ExampleScene extends Scene {
 
   public create(): void {
     this.player = this.physics.add.sprite(100, 450, Sprite.Dude);
+    this.player.setScale(2, 2);
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
 
