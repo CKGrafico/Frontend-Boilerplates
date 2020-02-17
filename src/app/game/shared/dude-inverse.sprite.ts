@@ -20,7 +20,7 @@ export class DudeInverseSprite implements ISprite {
   }
 
   public create(): void {
-    this.object = this.scene.physics.add.sprite(100, 450, this.name);
+    this.object = this.scene.physics.add.sprite(400, 250, this.name);
     this.object.setScale(1.8, 1.8);
     this.object.setBounce(0.3);
     this.object.setAlpha(0.5);

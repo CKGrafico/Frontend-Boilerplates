@@ -25,6 +25,8 @@ This repository is a group of **boilerplates** including some **good practises**
   <a href=https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues"></a>
 </p>
 
+# Note: THIS IS AN ALPHA VERSION DON'T USE IN PRODUCTION :)
+
 Most relevant technologies used in the Boilerplate:
 
 - **Phaser:** Game engine for JavaScript.

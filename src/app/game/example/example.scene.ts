@@ -1,8 +1,7 @@
 import { inject } from 'inversify-hooks';
 import { Scene } from 'phaser';
 import { GameStoreService } from '~/store';
-import { DudeInverseSprite } from '.';
-import { DudeSprite } from './dude.sprite';
+import { DudeInverseSprite, DudeSprite } from '../shared';
 
 export class ExampleScene extends Scene {
   private cursors: Phaser.Types.Input.Keyboard.CursorKeys;

@@ -1,7 +1,7 @@
 import { cid, container } from 'inversify-hooks';
-import { Game } from 'phaser';
+import { Game as PhaserGame } from 'phaser';
 
-export class MyGame extends Game {
+export class Game extends PhaserGame {
   constructor() {
     const scene = [container.get(cid.ExampleScene)];
 
