@@ -1,9 +1,9 @@
 import { cid, useInject } from 'inversify-hooks';
 import React, { useEffect, useState } from 'react';
 import { GameStoreQuery } from '~/store';
-import './hud.module.scss';
+import './position.module.scss';
 
-export function Hud() {
+export function Position() {
   const [position, setPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [gameStoreQuery] = useInject<GameStoreQuery>(cid.GameStoreQuery);
 
@@ -12,10 +12,8 @@ export function Hud() {
   }, [gameStoreQuery]);
 
   return (
-    <div styleName="huf" id="game">
-      <div styleName="hud-adv">
-        {position.x} - {position.y}
-      </div>
+    <div styleName="position">
+      {position.x} - {position.y}
     </div>
   );
 }

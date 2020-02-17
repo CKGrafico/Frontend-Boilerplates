@@ -18,7 +18,7 @@ export class DudeSprite implements ISprite {
   }
 
   public create(): void {
-    this.object = this.scene.physics.add.sprite(100, 450, this.name);
+    this.object = this.scene.physics.add.sprite(120, 450, this.name);
     this.object.setScale(2, 2);
     this.object.setBounce(0.2);
     this.object.setCollideWorldBounds(true);
