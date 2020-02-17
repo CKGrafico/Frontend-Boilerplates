@@ -24,6 +24,7 @@ export function Alert() {
   useEffect(() => {
     gameStoreQuery.position$.subscribe(position => {
       setPosition(position);
+
       if (position.x && position.x % 100 === 0) {
         setVisible(true);
         setTimeout(() => setVisible(false), animationTime);
@@ -34,7 +35,7 @@ export function Alert() {
   return (
     <>
       {position && (
-        <Transition in={visible} timeout={animationTime} classNames="my-node">
+        <Transition in={visible} timeout={animationTime}>
           {state => (
             <div
               styleName="alert"
