@@ -1,2 +1,2 @@
-export * from './phaser.injectables';
+export * from './phaser';
 export * from './stores';

@@ -1,6 +1,7 @@
 import { container } from 'inversify-hooks';
 import { GameStoreQuery, GameStoreService } from '~/store';
-import { ExampleScene } from './game';
+import { ISprite } from './core';
+import { DudeInverseSprite, DudeSprite, ExampleScene } from './game';
 
 // How to inject a dependency
 
@@ -10,5 +11,7 @@ import { ExampleScene } from './game';
 export function containerBuilder(): void {
   container.addSingleton(GameStoreQuery);
   container.addSingleton(GameStoreService);
+  container.addSingleton<ISprite>(DudeSprite);
+  container.addSingleton<ISprite>(DudeInverseSprite);
   container.addSingleton(ExampleScene);
 }
