@@ -2,6 +2,16 @@ import { inject } from 'inversify-hooks';
 import { Scene } from 'phaser';
 import { GameStoreQuery, GameStoreService } from '~/store';
 
+enum Sprite {
+  Dude = 'dude'
+}
+
+enum Animation {
+  Left = 'left',
+  Right = 'right',
+  Turn = 'turn'
+}
+
 export class ExampleScene extends Scene {
   private player: Phaser.Physics.Arcade.Sprite;
   private cursors: Phaser.Types.Input.Keyboard.CursorKeys;
@@ -20,30 +30,30 @@ export class ExampleScene extends Scene {
   }
 
   public preload(): void {
-    this.load.spritesheet('dude', '/images/dude.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.spritesheet(Sprite.Dude, '/images/dude.png', { frameWidth: 32, frameHeight: 48 });
   }
 
   public create(): void {
-    this.player = this.physics.add.sprite(100, 450, 'dude');
+    this.player = this.physics.add.sprite(100, 450, Sprite.Dude);
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
 
     this.anims.create({
-      key: 'left',
-      frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
+      key: Animation.Left,
+      frames: this.anims.generateFrameNumbers(Sprite.Dude, { start: 0, end: 3 }),
       frameRate: 10,
       repeat: -1
     });
 
     this.anims.create({
-      key: 'turn',
-      frames: [{ key: 'dude', frame: 4 }],
+      key: Animation.Turn,
+      frames: [{ key: Sprite.Dude, frame: 4 }],
       frameRate: 20
     });
 
     this.anims.create({
-      key: 'right',
-      frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+      key: Animation.Right,
+      frames: this.anims.generateFrameNumbers(Sprite.Dude, { start: 5, end: 8 }),
       frameRate: 10,
       repeat: -1
     });
@@ -54,16 +64,16 @@ export class ExampleScene extends Scene {
   public update(): void {
     if (this.cursors.left.isDown) {
       this.player.setVelocityX(-160);
-      this.player.anims.play('left', true);
+      this.player.anims.play(Animation.Left, true);
     } else if (this.cursors.right.isDown) {
       this.player.setVelocityX(160);
-      this.player.anims.play('right', true);
+      this.player.anims.play(Animation.Right, true);
     } else {
       this.player.setVelocityX(0);
-      this.player.anims.play('turn');
+      this.player.anims.play(Animation.Turn);
     }
 
-    if (this.cursors.up.isDown && this.player.body.touching.down) {
+    if (this.cursors.up.isDown) {
       this.player.setVelocityY(-330);
     }
 
