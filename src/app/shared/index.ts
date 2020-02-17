@@ -1,1 +1,1 @@
-export * from './resize';
+// Export shared things
