@@ -21,7 +21,7 @@ body {
     font-size: $font-size * .8;
   }
 
-  @media screen and (max-width: get-media(m)) {
+  @media screen and (min-width: get-media(m)) {
     font-size: $font-size;
   }
 }
