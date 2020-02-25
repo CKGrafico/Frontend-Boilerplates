@@ -1,11 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-
 // English
 import en from '../assets/locales/en.json';
-
 // Spanish
-import 'moment/locale/es';
 import es from '../assets/locales/es.json';
 
 export enum Language {
@@ -41,10 +38,7 @@ export function getCurrentLanguage(): string {
 export type LanguageReturnType = string[];
 
 export function getLanguagesList(): LanguageReturnType[] {
-  return [
-    ['English', Language.English],
-    ['Español', Language.Spanish]
-  ];
+  return [['English', Language.English], ['Español', Language.Spanish]];
 }
 
 export function changeCurrentLanguage(language: Language): void {
@@ -63,17 +57,4 @@ export function existsLanguageByCode(code: string): boolean {
   });
 
   return exists;
-}
-
-export function getLanguageByCode(code: string): Language {
-  let language: Language = Language.Spanish;
-  const languages = Object.keys(Language);
-  languages.forEach(lang => {
-    if (Language[lang as keyof typeof Language] === code.toLowerCase()) {
-      language = Language.Spanish;
-      return;
-    }
-  });
-
-  return language;
 }

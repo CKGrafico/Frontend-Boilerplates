@@ -3,7 +3,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { exampleModule } from './example';
 
 export default function AppRouter() {
-  const LoadingMessage = () => <div>Loading..</div>;
+  const LoadingMessage = () => <div>Loading..,</div>;
 
   return (
     <BrowserRouter>
