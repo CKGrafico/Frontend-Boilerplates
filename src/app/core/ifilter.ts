@@ -1,4 +1,4 @@
 export interface IFilter {
-    filterName: string;
-    filterAction(...params): any;
+  filterName: string;
+  filterAction(...params): any;
 }

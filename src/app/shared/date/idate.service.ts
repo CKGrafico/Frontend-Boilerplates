@@ -1,3 +1,3 @@
 export interface IDateService {
-    formatDate(date: Date): string;
+  formatDate(date: Date): string;
 }

@@ -12,34 +12,34 @@ import { installVendorPlugins } from './app/vendor';
 import './styles/app.scss';
 
 export class AppModule {
-    @inject() translateService: ITranslateService;
+  @inject() translateService: ITranslateService;
 
-    constructor() {
-        containerBuilder();
+  constructor() {
+    containerBuilder();
 
-        Vue.use(new Filters());
-        installVendorPlugins();
+    Vue.use(new Filters());
+    installVendorPlugins();
 
-        this.bootstrap();
-    }
+    this.bootstrap();
+  }
 
-    private async seed(): Promise<void> {
-        await new CitiesSeed().initialize();
-    }
+  private async seed(): Promise<void> {
+    await new CitiesSeed().initialize();
+  }
 
-    private async bootstrap(): Promise<Vue> {
-        await this.seed();
+  private async bootstrap(): Promise<Vue> {
+    await this.seed();
 
-        let options = {
-            el: '#app',
-            router: router(),
-            store,
-            i18n: this.translateService.i18n,
-            render: create => create(App)
-        };
+    const options = {
+      el: '#app',
+      router: router(),
+      store,
+      i18n: this.translateService.i18n,
+      render: create => create(App)
+    };
 
-        return new Vue(options);
-    }
+    return new Vue(options);
+  }
 }
 
 new AppModule();

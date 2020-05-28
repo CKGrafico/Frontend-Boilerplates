@@ -1,21 +1,21 @@
 export interface WeatherAstronomy {
-    sunrise: string;
-    sunset: string;
+  sunrise: string;
+  sunset: string;
 }
 
 export interface WeatherForecast {
-    date: Date;
-    high: number;
-    low: number;
-    code: number;
-    text: string;
+  date: Date;
+  high: number;
+  low: number;
+  code: number;
+  text: string;
 }
 
 interface WeatherItem {
-    forecast: WeatherForecast[];
+  forecast: WeatherForecast[];
 }
 
 export interface Weather {
-    astronomy?: WeatherAstronomy;
-    item?: WeatherItem;
+  astronomy?: WeatherAstronomy;
+  item?: WeatherItem;
 }
