@@ -21,7 +21,7 @@ $color-primary: (
 
 $color-secondary: (
   normal: #FFDD2E,
-  dark: #D1B425,
+  dark: #D1B425
 );
 
 $color-basic: (
@@ -38,7 +38,7 @@ $color-basic: (
 $color: (
   primary: $color-primary,
   secondary: $color-secondary,
-  basic: $color-basic,
+  basic: $color-basic
 );
 
 // Times
@@ -59,11 +59,11 @@ $font-weight: (
 );
 
 $font-size: (
-  xs: .5rem,   // 8px
-  s: .85rem,   // 13.6px
-  m: 1rem,     // [16px]
-  l: 1.25rem,  // 20px
-  xl: 1.5rem   // 24px
+  xs: .5rem,
+  s: .85rem,
+  m: 1rem,
+  l: 1.25rem,
+  xl: 1.5rem
 );
 
 // Medias (Only as example, use the values you really need)
