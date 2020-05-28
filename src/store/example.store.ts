@@ -20,7 +20,7 @@ const state: State = {
   property2: 1
 };
 
-const reducers: ReducerType<State, Payload> = function(state: State, { type, payload }) {
+const reducers: ReducerType<State, Payload> = function (state: State, { type, payload }) {
   switch (type) {
     case Type.ADD_TO_FIRST:
       return { ...state, property1: state.property1 + payload };

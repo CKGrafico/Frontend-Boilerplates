@@ -10,7 +10,8 @@
 @import './mixins/map-utilities';
 
 .u {
-p, span > .d > #s,
+  p,
+  span > .d > #s,
   &-align {
     &-center {
       text-align: center;
