@@ -1,14 +1,8 @@
 // Vendor
-@import
-  'vendor/normalize',
-  'vendor/bootstrap';
+@import 'vendor/normalize', 'vendor/bootstrap';
 
 // Base Helpers
-@import
-  'base/fonts',
-  'base/icons',
-  'base/states',
-  'base/utilities';
+@import 'base/fonts', 'base/icons', 'base/states', 'base/utilities';
 
 // Base Files
 @import 'base/globals';

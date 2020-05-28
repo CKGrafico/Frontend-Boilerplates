@@ -1,22 +1,19 @@
 {
-  "plugins": [
-    "cypress"
+  "extends": [
+    "plugin:prettier/recommended" // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   "env": {
-    "cypress/globals": true,
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
   "rules": {
-    "comma-dangle": [
-      2,
-      "never"
-    ],
+    "comma-dangle": [2, "never"],
     "no-cond-assign": 2,
     "no-console": 0,
     "no-constant-condition": 2,
@@ -32,10 +29,7 @@
     "no-extra-parens": 0,
     "no-extra-semi": 2,
     "no-func-assign": 2,
-    "no-inner-declarations": [
-      2,
-      "functions"
-    ],
+    "no-inner-declarations": [2, "functions"],
     "no-invalid-regexp": 2,
     "no-irregular-whitespace": 2,
     "no-negated-in-lhs": 2,
@@ -48,15 +42,9 @@
     "valid-jsdoc": 0,
     "valid-typeof": 2,
     "block-scoped-var": 0,
-    "complexity": [
-      0,
-      11
-    ],
+    "complexity": [0, 11],
     "consistent-return": 2,
-    "curly": [
-      2,
-      "all"
-    ],
+    "curly": [2, "all"],
     "default-case": 0,
     "dot-notation": [
       2,
@@ -103,10 +91,7 @@
     "no-warning-comments": [
       0,
       {
-        "terms": [
-          "todo",
-          "fixme"
-        ],
+        "terms": ["todo", "fixme"],
         "location": "start"
       }
     ],
@@ -114,10 +99,7 @@
     "radix": 0,
     "vars-on-top": 0,
     "wrap-iife": 0,
-    "yoda": [
-      2,
-      "never"
-    ],
+    "yoda": [2, "never"],
     "strict": 2,
     "no-catch-shadow": 2,
     "no-delete-var": 2,
@@ -136,32 +118,20 @@
     ],
     "no-use-before-define": 2,
     "handle-callback-err": 0,
-    "no-mixed-requires": [
-      0,
-      false
-    ],
+    "no-mixed-requires": [0, false],
     "no-new-require": 0,
     "no-path-concat": 0,
     "no-process-exit": 2,
     "no-restricted-modules": 0,
     "no-sync": 0,
-    "brace-style": [
-      2,
-      "1tbs"
-    ],
+    "brace-style": [2, "1tbs"],
     "camelcase": 2,
     "comma-spacing": 2,
     "comma-style": 0,
-    "consistent-this": [
-      0,
-      "that"
-    ],
+    "consistent-this": [0, "that"],
     "eol-last": 0,
     "func-names": 0,
-    "func-style": [
-      0,
-      "declaration"
-    ],
+    "func-style": [0, "declaration"],
     "indent": 0,
     "key-spacing": [
       2,
@@ -171,14 +141,8 @@
       }
     ],
     "keyword-spacing": 2,
-    "linebreak-style": [
-      0,
-      "unix"
-    ],
-    "max-nested-callbacks": [
-      0,
-      2
-    ],
+    "linebreak-style": [0, "unix"],
+    "max-nested-callbacks": [0, 2],
     "new-cap": 2,
     "new-parens": 2,
     "newline-after-var": 0,
@@ -186,10 +150,7 @@
     "no-continue": 0,
     "no-inline-comments": 0,
     "no-lonely-if": 0,
-    "no-mixed-spaces-and-tabs": [
-      2,
-      false
-    ],
+    "no-mixed-spaces-and-tabs": [2, false],
     "no-multiple-empty-lines": [
       0,
       {
@@ -204,17 +165,11 @@
     "no-underscore-dangle": 2,
     "no-unneeded-ternary": 0,
     "one-var": 0,
-    "operator-assignment": [
-      0,
-      "always"
-    ],
+    "operator-assignment": [0, "always"],
     "operator-linebreak": 0,
     "padded-blocks": 0,
     "quote-props": 0,
-    "quotes": [
-      2,
-      "single"
-    ],
+    "quotes": [2, "single"],
     "semi-spacing": [
       2,
       {
@@ -224,26 +179,11 @@
     ],
     "semi": 2,
     "sort-vars": 0,
-    "space-after-keywords": [
-      0,
-      "always"
-    ],
-    "space-before-blocks": [
-      0,
-      "always"
-    ],
-    "space-before-function-paren": [
-      0,
-      "always"
-    ],
-    "space-in-brackets": [
-      0,
-      "never"
-    ],
-    "space-in-parens": [
-      0,
-      "never"
-    ],
+    "space-after-keywords": [0, "always"],
+    "space-before-blocks": [0, "always"],
+    "space-before-function-paren": [0, "always"],
+    "space-in-brackets": [0, "never"],
+    "space-in-parens": [0, "never"],
     "space-infix-ops": 2,
     "space-unary-ops": [
       2,
@@ -252,31 +192,15 @@
         "nonwords": false
       }
     ],
-    "spaced-line-comment": [
-      0,
-      "always"
-    ],
+    "spaced-line-comment": [0, "always"],
     "wrap-regex": 0,
     "generator-star-spacing": 0,
     "no-var": 0,
     "object-shorthand": 0,
-    "max-depth": [
-      0,
-      4
-    ],
-    "max-len": [
-      0,
-      80,
-      4
-    ],
-    "max-params": [
-      0,
-      3
-    ],
-    "max-statements": [
-      0,
-      10
-    ],
+    "max-depth": [0, 4],
+    "max-len": [0, 80, 4],
+    "max-params": [0, 3],
+    "max-statements": [0, 10],
     "no-bitwise": 0,
     "no-plusplus": 0
   }
