@@ -8,7 +8,7 @@ const getFetchPolyfill = async () => {
 };
 
 Cypress.Commands.overwrite('visit', async (originalFn, url, options) => {
-  let polyfill = !window.fetchPoly && (await getFetchPolyfill());
+  const polyfill = !window.fetchPoly && (await getFetchPolyfill());
 
   const opts = Object.assign({}, options, {
     onBeforeLoad: (window, ...args) => {
