@@ -9,7 +9,7 @@ describe('Home page', () => {
 
   it('should be able to search for clients', () => {
     cy.visit('/');
-    cy.get('[data-cy=name] input').focus().type('Example');
+    cy.get('[data-cy=name]').focus().type('Example');
     cy.get('[data-cy=error]').should('not.be.visible');
   });
 });

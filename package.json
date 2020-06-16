@@ -7,7 +7,7 @@
     "start": "npm start --prefix ./_example-project/ClientApp",
     "test": "start-server-and-test start http-get://localhost:3000 \"cypress run\"",
     "open": "start-server-and-test start http-get://localhost:3000 \"cypress open\"",
-    "lint": "eslint --fix . --ext .ts"
+    "lint": "eslint --fix ./specs --ext .ts"
   },
   "husky": {
     "hooks": {

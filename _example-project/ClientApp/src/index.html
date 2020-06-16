@@ -7,8 +7,18 @@
   </head>
   <body>
     <div class="ck-site">
-      <h1>Hello World!</h1>
+      <input type="text" data-cy="name" />
       <button class="btn btn-primary">Button</button>
     </div>
+
+    <script>
+      (function () {
+        window.addEventListener('load', async function () {
+          const results = await fetch('/api/clients');
+
+          console.log(await results.json());
+        });
+      })();
+    </script>
   </body>
 </html>
