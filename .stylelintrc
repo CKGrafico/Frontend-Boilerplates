@@ -1,11 +1,12 @@
 {
-  "processors": ["stylelint-processor-html"],
-  "extends": "stylelint-config-standard",
-  "ignoreFiles": ["**/*.html", "**/*.ts", "**/*.js"],
+  "extends": "stylelint-prettier/recommended",
+  "ignoreFiles": ["**/*.html", "**/*.js", "**/*.ts"],
   "plugins": [
+    "stylelint-prettier",
     "stylelint-scss"
   ],
   "rules": {
+    "prettier/prettier": true,
     "at-rule-no-unknown": null,
     "font-family-no-missing-generic-family-keyword": null,
     "no-missing-end-of-source-newline": null,
