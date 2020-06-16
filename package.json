@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --env.NODE_ENV=development",
     "test": "jest",
     "lint": "npm run lint:scripts && npm run lint:styles",
-    "lint:scripts": "eslint --fix . --ext .ts src",
+    "lint:scripts": "eslint --fix ./src --ext .ts src",
     "lint:styles": "stylelint \"./src/**/*.scss\" --fix"
   },
   "husky": {
