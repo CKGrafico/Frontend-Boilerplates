@@ -3,8 +3,9 @@
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" alt="JavaScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" alt="TypeScript Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="Phaser Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress.png" alt="Cypress Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
@@ -14,12 +15,12 @@
 
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
-<h2 align="center">TypeScript - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="left" width="35" title="Boilerplate"></h2>
+<h2 align="center">Cypress - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="left" width="35" title="Boilerplate"></h2>
 
 <p align="center">
-  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status"></a>
+  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=cypress" alt="Build Status"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Frequently-brightgreen" alt="Update Status"></a>
-  <img src="https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/basic.svg" alt="GitHub last commit (branch)">
+  <img src="https://img.shields.io/github/last-commit/CKGrafico/Frontend-Boilerplates/cypress.svg" alt="GitHub last commit (branch)">
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE"><img src="https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub license"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks"></a>
   <a href=https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues"></a>
@@ -27,10 +28,9 @@ This repository is a group of **boilerplates** including some **good practises**
 
 Most relevant technologies used in the Boilerplate:
 
+- **Cypress:** Fast, easy and reliable testing for anything that runs in a browser.
 - **TypeScript:** All the code uses TypeScript.
-- **SASS:** Scss structure with good practises.
-- **Linting:** Linting for JavaScript and SASS.
-- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
+- **Linting:** Linting for TypeScript.
 
 ### 📚 Setup and scripts
 
@@ -41,25 +41,19 @@ Most relevant technologies used in the Boilerplate:
 $ npm install
 ```
 
-**Run** the project for local development.
+**Run CI** tests in CLI mode it also runs a project.
 
 ```shell
-$ npm start
+$ npm test
 ```
 
-**Build** the project for a production environment.
+**Run** tests in open mode it also runs a project.
 
 ```shell
-$ npm run build
+$ npm run open
 ```
 
-If you want to **test**, there are some options.
-
-```shell
-$ npm test # (Will run unit and e2e tests)
-$ npm run test:unit # (Only unit tests)
-$ npm run test:e2e # (Only e2e tests)
-```
+> Note: You have to modify the `start` script and add the path of your project.
 
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
 
@@ -102,6 +96,8 @@ This project is possible thanks to the contributors.
 - **[phaser:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos)** **Phaser** example using TypeScript and React. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser.png" align="right" width="35" title="Phaser">
 
 - **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos)** **TypeScript** example with SCSS. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
+
+- **[cypress:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos)** **Cypress** example Cypress and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress.png" align="right" width="35" title="Cypress">
 
 - **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
 

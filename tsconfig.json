@@ -1,25 +1,28 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2016"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/app/*"],
-      "test/*": ["./test/*"]
-    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "types": ["jest", "cypress"]
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "types": ["cypress"],
+    "typeRoots": ["types", "node_modules/@types"],
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["/specs/*"]
+    }
   },
-  "compileOnSave": false,
+  "include": ["specs", "mocks"]
 }
