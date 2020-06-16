@@ -1,8 +1,8 @@
-import './vendor';
 import $ from 'jquery';
+import './vendor';
 
 const a = 1;
-console.log($, '');
+console.log($, a);
 
 if (true) {
 }
