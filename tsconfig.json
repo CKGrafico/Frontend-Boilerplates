@@ -19,7 +19,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "types": ["jest", "cypress"]
+    "types": ["jest"]
   },
   "compileOnSave": false,
 }
