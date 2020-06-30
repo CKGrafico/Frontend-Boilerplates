@@ -3,7 +3,6 @@ module.exports = {
   tagline: "Collection of Boilerplates with ES6, Vue, React, Nuxt, TypeScript, SCSS, Nodejs. Using good practices and file structures to inspire your real projects.",
   url: "https://boilerplates.js.org",
   baseUrl: "/",
-  cname: "boilerplates.js.org",
   favicon: "img/favicon.ico",
   organizationName: "ckgrafico", // Usually your GitHub org/user name.
   projectName: "frontend-boilerplates", // Usually your repo name.
