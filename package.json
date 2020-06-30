@@ -2,7 +2,7 @@
   "name": "app-typescript",
   "description": "Stable version of a basic TypeScript example with SCSS.",
   "license": "MIT",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "scripts": {
     "prod": "webpack --env.NODE_ENV=production",
     "dev": "webpack --env.NODE_ENV=development",
