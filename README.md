@@ -18,7 +18,7 @@ This repository is a group of **boilerplates** including some **good practises**
 <h2 align="center">React - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="left" width="35" title="Boilerplate"></h2>
 
 <p align="center">
-  <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/basic"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox"></a>
+  <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/react"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox"></a>
   <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Frequently-brightgreen" alt="Update Status"></a>
 <<<<<<< HEAD
