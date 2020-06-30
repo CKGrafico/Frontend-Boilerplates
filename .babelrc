@@ -1,15 +1,12 @@
-
 {
-    "presets": [
-      ["@babel/preset-env", {
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
         "useBuiltIns": "usage",
-        "debug": true,
-        "targets": {
-          "browsers": ["last 2 versions"],
-        }
-      }]
-    ],
-    "plugins": [
-      "@babel/plugin-syntax-dynamic-import"
+        "debug": true
+      }
     ]
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
 }
