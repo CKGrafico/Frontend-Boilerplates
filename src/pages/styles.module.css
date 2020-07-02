@@ -19,5 +19,18 @@
 }
 
 .logos {
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+.logo img {
+  transition: transform 0.25s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
 }
