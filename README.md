@@ -1,9 +1,9 @@
-<h1 align="center">
+<h1 align="center" style="border: 0;">
   <p align="center">Frontend Boilerplates</p>
   <a href="https://boilerplates.js.org"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/logo/logo.png"  width="150" alt="Boilerplates"></a>
 </h1>
 
-### Overview
+### 🔍 Overview
 
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
@@ -19,7 +19,7 @@ This repository is a group of **boilerplates** including some **good practises**
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
 
-<h2 align="center">Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /></h2>
+### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
 <p align="center">
   <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/basic"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox" /></a>
