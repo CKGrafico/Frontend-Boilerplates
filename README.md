@@ -1,4 +1,4 @@
-<h1 align="center" style="border: 0;">
+<h1 align="center">
   <p align="center">Frontend Boilerplates</p>
   <a href="https://boilerplates.js.org"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/logo/logo.png"  width="150" alt="Boilerplates"></a>
 </h1>
@@ -19,6 +19,8 @@ This repository is a group of **boilerplates** including some **good practises**
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
 
+<hr />
+
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
 <p align="center">
@@ -30,7 +32,7 @@ This repository is a group of **boilerplates** including some **good practises**
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
 </p>
 
-Most relevant technologies used in the Boilerplate:
+### ⚙️ Technology in this Boilerplate
 
 - **JavaScript:** All the code uses JavaScript.
 - **SASS:** SCSS structure with good practises.
