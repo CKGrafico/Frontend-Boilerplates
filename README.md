@@ -21,6 +21,11 @@ This repository is a group of **boilerplates** including some **good practises**
 
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
+- **JavaScript:** All the code uses JavaScript.
+- **SASS:** SCSS structure with good practises.
+- **Linting:** Linting for JavaScript and SASS.
+- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
+
 <p align="center">
   <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/basic"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox" /></a>
   <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status" /></a>
@@ -29,11 +34,6 @@ This repository is a group of **boilerplates** including some **good practises**
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks" /></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
 </p>
-
-- **JavaScript:** All the code uses JavaScript.
-- **SASS:** SCSS structure with good practises.
-- **Linting:** Linting for JavaScript and SASS.
-- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
 
 ### 📚 Setup and scripts
 
