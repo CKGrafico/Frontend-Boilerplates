@@ -1,3 +1,12 @@
+<h1 align="center">
+  <p align="center">Frontend Boilerplates</p>
+  <a href="https://boilerplates.js.org"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/logo/logo.png"  width="150" alt="Boilerplates"></a>
+</h1>
+
+### Overview
+
+This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
+
 <p align="center">
   <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
@@ -9,11 +18,6 @@
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
    <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 </p>
-<h1 align="center">Frontend Boilerplates</h1>
-
-### Overview
-
-This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
 <h2 align="center">Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /></h2>
 
