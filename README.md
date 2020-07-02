@@ -8,8 +8,10 @@
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
 <p align="center">
-
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
+</p>
+
+<p align="center">
 
 <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
 <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
