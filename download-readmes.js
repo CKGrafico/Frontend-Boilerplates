@@ -28,8 +28,8 @@ const asyncForEach = async (array, callback) => {
 };
 
 function cleanContent(content) {
-  let text = content.replace(/(.*<h2 )/gs, "<h2 ");
-  text = text.replace(/(\#\#\# 🎩 Contributors).*/gs, "");
+  let text = content.replace(/(.*\#\#\# <img)/gs, "### <img");
+  text = text.replace(/(<!-- ALL-CONTRIBUTORS-LIST:END -->).*/gs, "");
 
   return text;
 }

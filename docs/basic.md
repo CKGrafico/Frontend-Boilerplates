@@ -2,18 +2,7 @@
 id: basic
 title: JavaScript + SASS
 ---
-<h2 align="center">Basic SPA - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /></h2>
-
-<p align="center">
-  <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/basic"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox" /></a>
-  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Frequently-brightgreen" alt="Update Status" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE"><img src="https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub license" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
-</p>
-
-Most relevant technologies used in the Boilerplate:
+### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
 - **JavaScript:** All the code uses JavaScript.
 - **SASS:** SCSS structure with good practises.
@@ -56,4 +45,24 @@ $ npm run lint # (Will run scripts and styles linting)
 $ npm run lint:scripts # (Only scripts lint)
 $ npm run lint:styles # (Only styles lint)
 ```
+
+### 🎩 Contributors
+
+This project is possible thanks to the contributors.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://CKgrafico.com"><img src="https://avatars1.githubusercontent.com/u/2048511?v=4" width="150px;" alt=""/><br /><sub><b>Quique Fdez Guerra</b></sub></a><br /><a href="#platform-ckgrafico" title="Packaging/porting to new platform">📦</a> <a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=ckgrafico" title="Code">💻</a> <a href="#tool-ckgrafico" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/spertusatti"><img src="https://avatars0.githubusercontent.com/u/25738279?v=4" width="150px;" alt=""/><br /><sub><b>Sabrina Pertusatti</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=spertusatti" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/victor-gamez/"><img src="https://avatars0.githubusercontent.com/u/14943217?v=4" width="150px;" alt=""/><br /><sub><b>Víctor Gámez</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=VGamezz19" title="Code">💻</a></td>
+    <td align="center"><a href="http://kryzh.com"><img src="https://avatars1.githubusercontent.com/u/2675648?v=4" width="150px;" alt=""/><br /><sub><b>Alex Kryzhanovskyy</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=AlexKryzh" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jcarloslr10"><img src="https://avatars0.githubusercontent.com/u/15978818?v=4" width="150px;" alt=""/><br /><sub><b>Juan Carlos</b></sub></a><br /><a href="https://github.com/CKGrafico/Frontend-Boilerplates/commits?author=jcarloslr10" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
