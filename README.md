@@ -30,8 +30,6 @@ This repository is a group of **boilerplates** including some **good practises**
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
 </p>
 
-### ⚙️ Technology in this Boilerplate
-
 - **JavaScript:** All the code uses JavaScript.
 - **SASS:** SCSS structure with good practises.
 - **Linting:** Linting for JavaScript and SASS.
