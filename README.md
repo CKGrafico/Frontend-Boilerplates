@@ -8,20 +8,20 @@
 This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
 
 <p align="center">
-  <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="Phaser Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress-d.png" alt="Cypress Boilerplate" width="150"></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
-</p>
-
-<hr />
 
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
+
+<a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" alt="JavaScript Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts-d.png" alt="TypeScript Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="Phaser Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress-d.png" alt="Cypress Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
+<a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
+
+</p>
 
 <p align="center">
   <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/basic"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox" /></a>
@@ -31,6 +31,8 @@ This repository is a group of **boilerplates** including some **good practises**
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks" /></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
 </p>
+
+<hr />
 
 ### ⚙️ Technology in this Boilerplate
 
