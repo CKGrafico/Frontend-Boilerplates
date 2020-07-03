@@ -23,3 +23,25 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.table-of-contents__link img {
+  max-width: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.markdown h3 img {
+  margin-right: 0.5rem;
+}
+
+.navbar {
+  background: var(--ifm-color-primary);
+}
+
+.navbar__link {
+  color: black;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+  color: white;
+}
