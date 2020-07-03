@@ -36,7 +36,7 @@ This repository is a group of **boilerplates** including some **good practises**
 
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
-These are the most relevant technologies that you will find in the boilerplate, all of them are configured to inspire your project and are showing examples of what you can do with them.
+These are the most relevant technologies that this boilerplate includes, all of them are configured to inspire your project and are showing examples of what you can do with them.
 
 - **JavaScript:** Written in vanilla JavaScript.
 - **SASS:** Some good Sass practices to create the Styles.
@@ -50,6 +50,15 @@ These are the most relevant technologies that you will find in the boilerplate, 
 - **Prettier:** Formatter for Scripts and Styles.
 - **EditorConfig:** Formatter for files in general.
 - **Husky:** Used for attaching to git hooks and run scripts.
+
+### 🥑 Demo (In progress)
+
+Once you download the project you will find a complete demo of how it works, including (each boilerplate could include different examples):
+
+- **Page:** Example of how to create a page.
+- **File structure:** Project structure [following "feature" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
+- **Styles structure:** Structure, mixins and variables using [non-strict BEM](https://medium.com/@CKGrafico/choosing-how-to-structure-our-css-components-7af3c7ea4f27).
+- **File names:** File names structure [using "type name" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
 
 ### 📚 Setup and scripts
 
