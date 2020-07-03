@@ -81,12 +81,10 @@ $ npm start
 $ npm run build
 ```
 
-If you want to **test**, there are some options.
+**Test** your code.
 
 ```shell
-$ npm test # (Will run unit and e2e tests)
-$ npm run test:unit # (Only unit tests)
-$ npm run test:e2e # (Only e2e tests)
+$ npm test
 ```
 
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
