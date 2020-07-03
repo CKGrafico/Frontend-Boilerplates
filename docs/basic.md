@@ -4,10 +4,29 @@ title: JavaScript + SASS
 ---
 ### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> Basic SPA - Boilerplate Features
 
-- **JavaScript:** All the code uses JavaScript.
-- **SASS:** SCSS structure with good practises.
-- **Linting:** Linting for JavaScript and SASS.
-- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
+These are the most relevant technologies that this boilerplate includes, all of them are configured to inspire your project and are showing examples of what you can do with them.
+
+- **JavaScript:** Written in vanilla JavaScript.
+- **SASS:** Some good Sass practices to create the Styles.
+- **Autoprefixer:** Automatically add vendor prefixes to these Styles.
+- **Webpack:** Automation of tasks and compilation of the project.
+- **Babel:** Transpiler to different versions of EcmaScript.
+- **Browserlist:** To configure which browsers will support.
+- **Jest:** Framework for testing.
+- **ESLint:** Linting for Scripts.
+- **StyleLint:** Linting for Styles.
+- **Prettier:** Formatter for Scripts and Styles.
+- **EditorConfig:** Formatter for files in general.
+- **Husky:** Used for attaching to git hooks and run scripts.
+
+### 🥑 Demo (In progress)
+
+Once you download the project you will find a complete demo of how it works, including (each boilerplate could include different examples):
+
+- **Page:** Example of how to create a page.
+- **File structure:** Project structure [following "feature" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
+- **Styles structure:** Structure, mixins and variables using [non-strict BEM](https://medium.com/@CKGrafico/choosing-how-to-structure-our-css-components-7af3c7ea4f27).
+- **File names:** File names structure [using "type name" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
 
 ### 📚 Setup and scripts
 
@@ -30,12 +49,10 @@ $ npm start
 $ npm run build
 ```
 
-If you want to **test**, there are some options.
+**Test** your code.
 
 ```shell
-$ npm test # (Will run unit and e2e tests)
-$ npm run test:unit # (Only unit tests)
-$ npm run test:e2e # (Only e2e tests)
+$ npm test
 ```
 
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
