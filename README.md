@@ -70,33 +70,33 @@ Once you download the project you will find a complete demo of how it works, inc
 > **Install** all the dependencies.
 
 ```shell
-$ npm install
+$ yarn
 ```
 
 **Run** the project for local development.
 
 ```shell
-$ npm start
+$ yarn start
 ```
 
 **Build** the project for a production environment.
 
 ```shell
-$ npm run build
+$ yarn build
 ```
 
 **Test** your code.
 
 ```shell
-$ npm test
+$ yarn test
 ```
 
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
 
 ```shell
-$ npm run lint # (Will run scripts and styles linting)
-$ npm run lint:scripts # (Only scripts lint)
-$ npm run lint:styles # (Only styles lint)
+$ yarn lint # (Will run scripts and styles linting)
+$ yarn lint:scripts # (Only scripts lint)
+$ yarn lint:styles # (Only styles lint)
 ```
 
 ### 🎩 Contributors
