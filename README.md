@@ -34,7 +34,7 @@ This repository is a group of **boilerplates** including some **good practises**
 
 </p>
 
-### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> TypeScript - Boilerplate Features
+### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="left" width="35" title="Boilerplate" /> TypeScript - Boilerplate Features
 
 These are the most relevant technologies that this boilerplate includes, all of them are configured to inspire your project and are showing examples of what you can do with them.
 
