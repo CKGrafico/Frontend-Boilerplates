@@ -25,3 +25,10 @@ body {
     font-size: $font-size;
   }
 }
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
