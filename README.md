@@ -51,6 +51,7 @@ These are the most relevant technologies that this boilerplate includes, all of 
 - **Prettier:** Formatter for Scripts and Styles.
 - **EditorConfig:** Formatter for files in general.
 - **Husky:** Used for attaching to git hooks and run scripts.
+- **Inversify:** You can optionally configure Dependency Injection.
 
 ### 🥑 Demo (In progress)
 
