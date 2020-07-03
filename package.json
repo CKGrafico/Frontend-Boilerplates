@@ -4,8 +4,7 @@
   "license": "MIT",
   "version": "2.4.3",
   "scripts": {
-    "prod": "webpack --env.NODE_ENV=production",
-    "dev": "webpack --env.NODE_ENV=development",
+    "build": "webpack --env.NODE_ENV=production",
     "start": "webpack-dev-server --env.NODE_ENV=development",
     "test": "jest",
     "lint": "npm run lint:scripts && npm run lint:styles",

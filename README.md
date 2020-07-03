@@ -1,37 +1,64 @@
-<p align="center">
-  <a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
+<a id="logos" class="anchor" aria-hidden="true" href="#logos"></a><br/>
+
+<h1 align="center">
+  <p align="center">Frontend Boilerplates</p>
+  <a href="https://boilerplates.js.org"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/logo/logo.png"  width="150" alt="Boilerplates"></a>
+</h1>
+
+### 🔍 Overview
+
+This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
+
+<h1 align="center">
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa-d.png" alt="JavaScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue-d.png" alt="Vue Boilerplate" width="150"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react-d.png" alt="React Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" alt="TypeScript Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser-d.png" alt="Phaser Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress-d.png" alt="Cypress Boilerplate" width="150"></a>
   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt-d.png" alt="Nuxt Boilerplate" width="150"></a>
-   <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
-</p>
-<h1 align="center">Frontend Boilerplates</h1>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos"><img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets-d.png" alt="Node and TS Boilerplate" width="150"></a>
 
-### Overview
-
-This repository is a group of **boilerplates** including some **good practises** and **tips** that you can follow in your projects. There are different technologies separated by branches but with similar structures to write **scalable** applications. Some of them include [JavaScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos), [TypeScript](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos), [Vue](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos) or [React](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos). **Click on the logos** to navigate through them.
-
-<h2 align="center">TypeScript - Boilerplate Features <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="left" width="35" title="Boilerplate" /></h2>
+</h1>
 
 <p align="center">
-  <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/ts"><img src="https://img.shields.io/badge/CodeSandbox-template-blue?logo=codesandbox" alt="Open in CodeSandbox" /></a>
-  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?branch=basic" alt="Build Status" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Frequently-brightgreen" alt="Update Status" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE"><img src="https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub license" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub forks" /></a>
-  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg" alt="GitHub issues" /></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/blob/basic/LICENSE"><img src="https://img.shields.io/github/license/CKGrafico/Frontend-Boilerplates.svg?logo=creative%20commons&color=8FBFA9&logoColor=FFFFFF" alt="GitHub license" /></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/stars/CKGrafico/Frontend-Boilerplates.svg?logo=verizon&color=4D8C6F" alt="GitHub stars" /></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/network"><img src="https://img.shields.io/github/forks/CKGrafico/Frontend-Boilerplates.svg?logo=github&color=38A3A5" alt="GitHub forks" /></a>
+  <a href="https://codesandbox.io/s/github/CKGrafico/Frontend-Boilerplates/tree/ts"><img src="https://img.shields.io/badge/CodeSandbox-template?logo=codesandbox&color=0971f1" alt="Open in CodeSandbox" /></a>
+  <a href="https://twitter.com/CKGrafico"><img src="https://img.shields.io/badge/Tweet-project?logo=twitter&color=00acee&logoColor=FFFFFF" alt="Sponsor" /></a>
+  <a href="https://github.com/sponsors/CKGrafico"><img src="https://img.shields.io/badge/Support-project?logo=ko-fi&color=ea4aaa&logoColor=FFFFFF" alt="Sponsor" /></a>
+  <a href="https://travis-ci.org/CKGrafico/Frontend-Boilerplates"><img src="https://travis-ci.org/CKGrafico/Frontend-Boilerplates.svg?logo=travis&branch=ts" alt="Build Status" /></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/issues"><img src="https://img.shields.io/github/issues/CKGrafico/Frontend-Boilerplates.svg?logo=codeigniter&logoColor=FFFFFF" alt="GitHub issues" /></a>
+  <a href="https://github.com/CKGrafico/Frontend-Boilerplates/releases"><img src="https://img.shields.io/badge/Update%20status-Frequently-009C7C?logo=git&logoColor=FFFFFF" alt="Update Status" /></a>
+
 </p>
 
-Most relevant technologies used in the Boilerplate:
+### <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="left" width="35" title="Boilerplate" /> TypeScript - Boilerplate Features
 
-- **TypeScript:** All the code uses TypeScript.
-- **SASS:** Scss structure with good practises.
-- **Linting:** Linting for JavaScript and SASS.
-- **BEM (Non strict) + BEMIT:** Some conventions for CSS classes.
+These are the most relevant technologies that this boilerplate includes, all of them are configured to inspire your project and are showing examples of what you can do with them.
+
+- **TypeScript:** Written in TypeScript language.
+- **SASS:** Some good Sass practices to create the Styles.
+- **Autoprefixer:** Automatically add vendor prefixes to these Styles.
+- **Webpack:** Automation of tasks and compilation of the project.
+- **Babel:** Transpiler to different versions of EcmaScript.
+- **Browserlist:** To configure which browsers will support.
+- **Jest:** Framework for testing.
+- **ESLint:** Linting for Scripts.
+- **StyleLint:** Linting for Styles.
+- **Prettier:** Formatter for Scripts and Styles.
+- **EditorConfig:** Formatter for files in general.
+- **Husky:** Used for attaching to git hooks and run scripts.
+
+### 🥑 Demo (In progress)
+
+Once you download the project you will find a complete demo of how it works, including (each boilerplate could include different examples):
+
+- **Page:** Example of how to create a page.
+- **File structure:** Project structure [following "feature" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
+- **Styles structure:** Structure, mixins and variables using [non-strict BEM](https://medium.com/@CKGrafico/choosing-how-to-structure-our-css-components-7af3c7ea4f27).
+- **File names:** File names structure [using "type name" convention](https://medium.com/@CKGrafico/taking-decisions-to-structure-big-projects-with-hooks-stores-services-and-more-a703c7874480).
 
 ### 📚 Setup and scripts
 
@@ -54,12 +81,10 @@ $ npm start
 $ npm run build
 ```
 
-If you want to **test**, there are some options.
+**Test** your code.
 
 ```shell
-$ npm test # (Will run unit and e2e tests)
-$ npm run test:unit # (Only unit tests)
-$ npm run test:e2e # (Only e2e tests)
+$ npm test
 ```
 
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
