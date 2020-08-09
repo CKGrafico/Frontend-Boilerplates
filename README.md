@@ -87,7 +87,7 @@ $ npm run build
 $ npm test
 ```
 
-The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
+The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before commit, but you can run it.
 
 ```shell
 $ npm run lint # (Will run scripts and styles linting with autofix)
