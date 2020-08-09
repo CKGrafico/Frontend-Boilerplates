@@ -90,9 +90,10 @@ $ npm test
 The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
 
 ```shell
-$ npm run lint # (Will run scripts and styles linting)
-$ npm run lint:scripts # (Only scripts lint)
-$ npm run lint:styles # (Only styles lint)
+$ npm run lint # (Will run scripts and styles linting with autofix)
+$ npm run lint:scripts # (Will run ESLint)
+$ npm run lint:styles # (Will run Stylelint)
+$ npm run lint:editor # (Will run ECLint)
 ```
 
 ### 🎩 Contributors

@@ -7,18 +7,20 @@
     "build": "webpack --env.NODE_ENV=production",
     "start": "webpack-dev-server --env.NODE_ENV=development --hot --open",
     "test": "jest",
-    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint": "npm run lint:scripts && npm run lint:styles && npm run lint:editor",
     "lint:scripts": "eslint --fix \"./app/**/*.js\"",
-    "lint:styles": "stylelint \"./app/**/*.(scss)\" --fix"
+    "lint:styles": "stylelint \"./app/**/*.(scss)\" --fix",
+    "lint:editor": "eclint fix"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-commit": "npm run lint"
     }
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
     "bootstrap": "^4.5.0",
+    "eclint": "^2.8.1",
     "jquery": "3.5.1"
   },
   "devDependencies": {

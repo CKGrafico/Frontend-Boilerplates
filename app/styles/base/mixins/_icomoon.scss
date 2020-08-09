@@ -30,7 +30,7 @@
 
 @mixin icomoon-generate($icons) {
     @include icomoon();
-    
+
     @each $key, $value in $icons {
         .icon-#{$key}:before {
             content: unicode($value);
