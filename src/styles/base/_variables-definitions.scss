@@ -43,9 +43,9 @@ $color: (
 
 // Times
 $time: (
-  slow: 0.5s,
-  normal: 0.35s,
-  fast: 0.15s
+  slow: .5s,
+  normal: .35s,
+  fast: .15s
 );
 
 // Fonts
@@ -59,8 +59,8 @@ $font-weight: (
 );
 
 $font-size: (
-  xs: 0.5rem,
-  s: 0.85rem,
+  xs: .5rem,
+  s: .85rem,
   m: 1rem,
   l: 1.25rem,
   xl: 1.5rem
