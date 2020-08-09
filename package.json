@@ -7,14 +7,15 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "lint": "yarn lint:scripts && yarn lint:styles",
+    "lint": "yarn lint:scripts && yarn lint:styles && yarn lint:editor",
     "lint:scripts": "eslint --fix . --ext .ts,.tsx src",
     "lint:styles": "stylelint \"./src/**/*.(scss)\" --fix",
+    "lint:editor": "eclint fix",
     "update": "create-react-app-updater"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint"
+      "pre-commit": "yarn lint"
     }
   },
   "dependencies": {
@@ -47,6 +48,7 @@
     "babel-plugin-react-css-modules": "^5.2.6",
     "craco-sass-resources-loader": "^1.1.0",
     "create-react-app-updater": "^0.10.3",
+    "eclint": "^2.8.1",
     "eslint": "6.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "5.2.1",

@@ -92,12 +92,13 @@ $ yarn build
 $ yarn test
 ```
 
-The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before push, but you can run it.
+The **linting** is configured with [**husky**](https://github.com/typicode/husky) and will run before commit, but you can run it.
 
 ```shell
-$ yarn lint # (Will run scripts and styles linting)
-$ yarn lint:scripts # (Only scripts lint)
-$ yarn lint:styles # (Only styles lint)
+$ yarn lint # (Will run scripts and styles linting with autofix)
+$ yarn lint:scripts # (Will run ESLint)
+$ yarn lint:styles # (Will run Stylelint)
+$ yarn lint:editor # (Will run ECLint)
 ```
 
 ### 🎩 Contributors
