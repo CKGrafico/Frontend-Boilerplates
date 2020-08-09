@@ -12,24 +12,24 @@
 $color-primary: (
   brightest: null,
   brighter: null,
-  bright: #48DDDD,
-  normal: #06B2B1,
-  dark: #0E2E2E,
+  bright: #48dddd,
+  normal: #06b2b1,
+  dark: #0e2e2e,
   darker: null,
-  darkest: #06131F
+  darkest: #06131f
 );
 
 $color-secondary: (
-  normal: #FFDD2E,
-  dark: #D1B425
+  normal: #ffdd2e,
+  dark: #d1b425
 );
 
 $color-basic: (
-  brightest: #FFFFFF,
-  brighter: #E7E7E7,
-  bright: #DADADA,
+  brightest: #ffffff,
+  brighter: #e7e7e7,
+  bright: #dadada,
   normal: null,
-  dark: #9C9C9C,
+  dark: #9c9c9c,
   darker: #585858,
   darkest: #131313
 );
@@ -43,9 +43,9 @@ $color: (
 
 // Times
 $time: (
-  slow: .5s,
-  normal: .35s,
-  fast: .15s
+  slow: 0.5s,
+  normal: 0.35s,
+  fast: 0.15s
 );
 
 // Fonts
@@ -59,8 +59,8 @@ $font-weight: (
 );
 
 $font-size: (
-  xs: .5rem,
-  s: .85rem,
+  xs: 0.5rem,
+  s: 0.85rem,
   m: 1rem,
   l: 1.25rem,
   xl: 1.5rem
