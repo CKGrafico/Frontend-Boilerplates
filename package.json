@@ -7,18 +7,21 @@
     "start": "npm start --prefix ./_example-project/ClientApp",
     "test": "start-server-and-test start http-get://localhost:3000 \"cypress run\"",
     "open": "start-server-and-test start http-get://localhost:3000 \"cypress open\"",
-    "lint": "eslint --fix ./specs --ext .ts"
+    "lint": "npm run lint:scripts && npm run lint:editor",
+    "lint:scripts": "eslint --fix ./specs --ext .ts",
+    "lint:editor": "eclint fix"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-commit": "npm run lint"
     }
   },
   "devDependencies": {
     "@types/mocha": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
-    "cypress": "^4.5.0",
+    "cypress": "^4.12.1",
+    "eclint": "^2.8.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "5.2.1",
