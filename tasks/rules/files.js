@@ -6,10 +6,12 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            outputPath: 'images',
-          },
-        },
-      ],
+            name: '[name].[ext]?[hash]',
+            publicPath: './dist',
+            outputPath: 'images'
+          }
+        }
+      ]
     },
     {
       test: /\.(woff(2)?|ttf|eot|svg)$/,
@@ -17,10 +19,10 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            outputPath: 'fonts',
-          },
-        },
-      ],
+            outputPath: 'fonts'
+          }
+        }
+      ]
     }
-  ]
+  ];
 };
