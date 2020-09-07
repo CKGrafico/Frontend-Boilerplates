@@ -30,6 +30,7 @@
     "autoprefixer": "^9.8.4",
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.0",
     "css-loader": "^3.6.0",
     "eclint": "^2.8.1",
     "eslint": "^7.3.1",
