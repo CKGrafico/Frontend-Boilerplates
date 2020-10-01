@@ -33,7 +33,7 @@ Most relevant technologies used in the Boilerplate:
 
 ### 📚 Setup and scripts
 
-> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/ts.zip) or clone the boilerplate.
+> Before start [download](https://github.com/CKGrafico/Frontend-Boilerplates/archive/cypress.zip) or clone the boilerplate.
 > **Install** all the dependencies.
 
 ```shell
