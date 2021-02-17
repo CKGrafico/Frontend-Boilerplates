@@ -27,6 +27,7 @@ module.exports = (env) => {
               require('postcss-functions')({ functions: styleFunctions }),
               require('postcss-advanced-variables'),
               require('postcss-simple-vars'),
+              require('postcss-calc'),
               require('postcss-nested'),
               require('autoprefixer'),
               require('postcss-discard-comments')

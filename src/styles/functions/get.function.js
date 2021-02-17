@@ -14,6 +14,6 @@ function cssMapToDictionary(cssMap = '(brightest: #ffffff,brighter: #f3f3f3)') {
   return dictionary;
 }
 
-module.exports = function get(cssMap, key) {
+module.exports = function (cssMap, key) {
   return cssMapToDictionary(cssMap)[key];
 };

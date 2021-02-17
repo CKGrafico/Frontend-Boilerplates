@@ -1,5 +1,7 @@
-@import '../variables.css';
+@import '../variables';
 
 .logo {
-  border: rem(4px) solid get($color-basic, bright);
+  &__image {
+    border: rem(4px) solid get($color-basic, bright);
+  }
 }
