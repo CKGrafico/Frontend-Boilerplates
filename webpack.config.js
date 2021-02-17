@@ -11,8 +11,7 @@ module.exports = (options) => {
   return {
     mode: environment,
     entry: {
-      app: path.resolve(__dirname, 'app/scripts/app.js'),
-      styles: path.resolve(__dirname, 'app/styles/app.scss')
+      app: path.resolve(__dirname, 'app/scripts/app.js')
     },
     output: {
       filename: '[name].js'
