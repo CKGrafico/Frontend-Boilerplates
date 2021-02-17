@@ -18,19 +18,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
     "strictNullChecks": false,
     "types": [
-      "jest",
-      "react-css-modules"
+      "jest"
     ],
     "typeRoots": [
       "types",
       "node_modules/@types"
-    ]
+    ],
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src"

@@ -16,7 +16,7 @@ module.exports = {
     alias: {
       '~': `${path.resolve(__dirname)}/src`
     },
-    configure: webpackConfig => {
+    configure: (webpackConfig) => {
       webpackConfig.optimization.minimizer = [
         new TerserPlugin({
           terserOptions: {
@@ -60,23 +60,6 @@ module.exports = {
     loaderOptions: {
       cacheDirectory: false
     },
-    plugins: [
-      [
-        'babel-plugin-react-css-modules',
-        {
-          attributeNames: {
-            activeStyleName: 'activeClassName'
-          },
-          filetypes: {
-            '.scss': {
-              syntax: 'postcss-scss',
-              plugins: ['postcss-nested']
-            }
-          },
-          generateScopedName: CSS_MODULE_LOCAL_IDENT_NAME,
-          handleMissingStyleName: 'warn'
-        }
-      ]
-    ]
+    plugins: []
   }
 };

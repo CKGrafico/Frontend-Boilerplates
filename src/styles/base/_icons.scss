@@ -6,10 +6,10 @@
 // <div class="icon icon-home">
 //
 
-@import 'mixins/icomoon';
+// @import 'mixins/icomoon';
 
 $icons: (
   ck-play: e900
 );
 
-@include icomoon-generate($icons);
+// @include icomoon-generate($icons);

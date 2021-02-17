@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
-import './example.module.scss';
+import './example.scss';
 import { IExampleAlertService } from './shared';
 
 export default function Example() {
@@ -20,12 +20,12 @@ export default function Example() {
   }
 
   return (
-    <div styleName="example">
-      <header styleName="example-header">
+    <div className="example">
+      <header className="example-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a styleName="example-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+        <a className="example-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           {t('test')}
         </a>
         <Button onClick={onClickText}>{state.property1}</Button>
