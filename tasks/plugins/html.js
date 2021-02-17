@@ -4,7 +4,7 @@ module.exports = (env) => {
   const defaultConfig = new HtmlWebpackPlugin({
     hash: true,
     filename: 'index.html',
-    template: './app/index.html'
+    template: './src/index.html'
   });
 
   const plugin = {

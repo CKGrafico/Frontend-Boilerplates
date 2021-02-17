@@ -1,5 +1,7 @@
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
+const styleFunctions = require('../../src/styles/functions/index.js');
+
 module.exports = (env) => {
   const styleLoaders = {
     production: MiniCSSExtractPlugin.loader,
@@ -20,7 +22,15 @@ module.exports = (env) => {
         loader: 'postcss-loader', // More CSS Plugins
         options: {
           postcssOptions: {
-            plugins: [require('postcss-import'), require('autoprefixer')]
+            plugins: [
+              require('postcss-import'),
+              require('postcss-functions')({ functions: styleFunctions }),
+              require('postcss-advanced-variables'),
+              require('postcss-simple-vars'),
+              require('postcss-nested'),
+              require('autoprefixer'),
+              require('postcss-discard-comments')
+            ]
           }
         }
       }

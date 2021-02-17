@@ -11,7 +11,7 @@ module.exports = (options) => {
   return {
     mode: environment,
     entry: {
-      app: path.resolve(__dirname, 'app/scripts/app.js')
+      app: path.resolve(__dirname, 'src/app/app.js')
     },
     output: {
       filename: '[name].js'
@@ -46,9 +46,9 @@ module.exports = (options) => {
     },
     resolve: {
       alias: {
-        styles: path.resolve(__dirname, 'app/styles'),
-        assets: path.resolve(__dirname, 'app/assets'),
-        '~': path.resolve(__dirname, 'app/scripts')
+        styles: path.resolve(__dirname, 'src/styles'),
+        assets: path.resolve(__dirname, 'src/assets'),
+        '~': path.resolve(__dirname, 'src/app')
       }
     }
   };
