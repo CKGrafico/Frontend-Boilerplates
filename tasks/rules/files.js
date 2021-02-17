@@ -1,4 +1,4 @@
-module.exports = (env) => {
+module.exports = () => {
   return [
     {
       test: /\.(png|jpg|gif)$/,
@@ -8,7 +8,7 @@ module.exports = (env) => {
           options: {
             name: '[name].[ext]?[hash]',
             publicPath: './dist',
-            outputPath: 'images'
+            outputPath: './images'
           }
         }
       ]
@@ -19,7 +19,8 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            outputPath: 'fonts'
+            publicPath: './dist',
+            outputPath: './fonts'
           }
         }
       ]

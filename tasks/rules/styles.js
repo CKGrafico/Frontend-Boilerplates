@@ -23,7 +23,6 @@ module.exports = (env) => {
         options: {
           postcssOptions: {
             plugins: [
-              require('postcss-import'),
               require('postcss-functions')({ functions: styleFunctions }),
               require('postcss-advanced-variables'),
               require('postcss-simple-vars'),

@@ -15,11 +15,11 @@ body {
   height: 100%;
   width: 100%;
 
-  @media screen and (min-width: get-media(s)) {
+  @media screen and (min-width: get($media, s)) {
     font-size: calc($font-size * 0.8);
   }
 
-  @media screen and (min-width: get-media(m)) {
+  @media screen and (min-width: get($media, m)) {
     font-size: $font-size;
   }
 }
