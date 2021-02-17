@@ -1,0 +1,9 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+body {
+  color: red;
+}
+
+.test {
+  color: blue;
+}

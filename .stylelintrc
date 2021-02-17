@@ -3,7 +3,6 @@
   "ignoreFiles": ["**/*.html", "**/*.js"],
   "plugins": [
     "stylelint-prettier",
-    "stylelint-scss"
   ],
   "rules": {
     "prettier/prettier": true,

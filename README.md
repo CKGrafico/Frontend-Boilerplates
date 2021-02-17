@@ -39,7 +39,8 @@ This repository is a group of **boilerplates** including some **good practises**
 These are the most relevant technologies that this boilerplate includes, all of them are configured to inspire your project and are showing examples of what you can do with them.
 
 - **JavaScript:** Written in vanilla JavaScript.
-- **SASS:** Some good Sass practices to create the Styles.
+- **PostCSS:** Be ready for the next CSS features.
+- **Bootstrap:** Build fast and responsive sites easily.
 - **Autoprefixer:** Automatically add vendor prefixes to these Styles.
 - **Webpack:** Automation of tasks and compilation of the project.
 - **Babel:** Transpiler to different versions of EcmaScript.
@@ -120,18 +121,18 @@ This project is possible thanks to the contributors.
 
 ### ⛳️ Check all the boilerplates
 
-- **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos)** **Basic SPA** example with SCSS and ES6. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="SPA">
+- **[basic:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/basic#logos)** **Basic SPA** example using JavaScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/spa.png" align="right" width="35" title="SPA">
 
-- **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos)** **Vuejs** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
+- **[vue:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/vue#logos)** **Vuejs** example using TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/vue.png" align="right" width="35" title="Vue">
 
-- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos)** **React** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
+- **[react:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/react#logos)** **React** example using React and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/react.png" align="right" width="35" title="React">
 
 - **[phaser:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/phaser#logos)** **Phaser** example using TypeScript and React. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/phaser.png" align="right" width="35" title="Phaser">
 
-- **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos)** **TypeScript** example with SCSS. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
+- **[ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/ts#logos)** **TypeScript** example using TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/ts.png" align="right" width="35" title="TypeScript">
 
-- **[cypress:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos)** **Cypress** example with Cypress and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress.png" align="right" width="35" title="Cypress">
+- **[cypress:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/cypress#logos)** **Cypress** example using Cypress and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/cypress.png" align="right" width="35" title="Cypress">
 
-- **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos)** **Nuxt** example with SCSS and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
+- **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos)** **Nuxt** example using Nuxt and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
 
 - **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">

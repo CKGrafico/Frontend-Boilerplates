@@ -7,7 +7,7 @@ module.exports = (env) => {
   };
 
   return {
-    test: /\.scss$/,
+    test: /\.css$/,
     exclude: /node_modules/,
     use: [
       {
@@ -20,14 +20,8 @@ module.exports = (env) => {
         loader: 'postcss-loader', // More CSS Plugins
         options: {
           postcssOptions: {
-            plugins: [require('autoprefixer')]
+            plugins: [require('postcss-import'), require('autoprefixer')]
           }
-        }
-      },
-      {
-        loader: 'sass-loader', // Compiles Sass to CSS, using Node Sass by default
-        options: {
-          //includePaths: ['absolute/path/a']
         }
       }
     ]
