@@ -10,7 +10,7 @@ body {
   $font-size: 16px;
 
   color: get($color-basic, darkest);
-  font-family: OpenSans;
+  font-family: 'OpenSans';
   font-size: calc($font-size * 0.65);
   height: 100%;
   width: 100%;

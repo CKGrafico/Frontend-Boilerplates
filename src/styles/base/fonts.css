@@ -4,15 +4,24 @@
  */
 
 @import '../variables';
-/* @import './mixins/fonts'; */
 
 @font-face {
   font-family: 'OpenSans';
+  font-path: '~assets/fonts/OpenSans/OpenSans-Light';
+  font-weight: get($font-weight, light);
   font-style: normal;
-  font-weight: normal;
-  src: url('~assets/fonts/OpenSans/OpenSans-Regular.ttf') format('ttf');
 }
 
-/* @include font-include(OpenSans, Light, get($font-weight, normal), normal);
-@include font-include(OpenSans, Regular, get($font-weight, normal), normal);
-@include font-include(OpenSans, Bold, get($font-weight, bold), normal); */
+@font-face {
+  font-family: 'OpenSans';
+  font-path: '~assets/fonts/OpenSans/OpenSans-Regular';
+  font-weight: get($font-weight, normal);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-path: '~assets/fonts/OpenSans/OpenSans-Bold';
+  font-weight: get($font-weight, bold);
+  font-style: normal;
+}
