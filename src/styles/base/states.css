@@ -7,8 +7,7 @@
  * <div class="is-disabled">
  */
 
-@import '../variables';
-/* @import 'mixins/media-suffixes'; */
+@import './mixins/media-suffixes';
 
 .is {
   &-hidden {
@@ -16,8 +15,8 @@
   }
 
   &-disabled {
-    /* @include media-suffixes {
+    @mixin media-suffixes {
       opacity: 0.5;
-    } */
+    }
   }
 }

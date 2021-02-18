@@ -1,5 +1,5 @@
 .logo {
   &__image {
-    border: rem(4px) solid get($color-basic, bright);
+    border: rem(4px) solid value($color-basic, bright);
   }
 }

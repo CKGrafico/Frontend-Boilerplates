@@ -5,20 +5,18 @@
 
 html,
 body {
-  $font-size: 16px;
-
-  color: get($color-basic, darkest);
+  color: value(var(--color-basic), darkest);
   font-family: 'OpenSans';
-  font-size: calc($font-size * 0.65);
+  font-size: calc(16px * 0.65);
   height: 100%;
   width: 100%;
 
-  @media screen and (min-width: get($media, s)) {
-    font-size: calc($font-size * 0.8);
+  @media screen and (min-width: value($media, s)) {
+    font-size: calc(16px * 0.8);
   }
 
-  @media screen and (min-width: get($media, m)) {
-    font-size: $font-size;
+  @media screen and (min-width: value($media, m)) {
+    font-size: 16px;
   }
 }
 
