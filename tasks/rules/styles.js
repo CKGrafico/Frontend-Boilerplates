@@ -23,9 +23,14 @@ module.exports = (env) => {
         options: {
           postcssOptions: {
             plugins: [
+              require('postcss-import'),
+              require('postcss-at-rules-variables'),
+              require('postcss-css-variables')({
+                preserve: true
+              }),
+              require('postcss-mixins'),
               require('postcss-functions')({ functions: styleFunctions }),
-              require('postcss-advanced-variables'),
-              require('postcss-simple-vars'),
+              require('postcss-each'),
               require('postcss-calc'),
               require('postcss-nested'),
               require('postcss-fontpath'),

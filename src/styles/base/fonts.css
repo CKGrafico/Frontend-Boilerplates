@@ -3,8 +3,6 @@
  * will be useful to add different files for each font.
  */
 
-@import '../variables';
-
 @font-face {
   font-family: 'OpenSans';
   font-path: '~assets/fonts/OpenSans/OpenSans-Light';

@@ -3,8 +3,6 @@
  * usually html and body content.
  */
 
-@import '../variables';
-
 html,
 body {
   $font-size: 16px;

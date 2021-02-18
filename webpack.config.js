@@ -19,7 +19,7 @@ module.exports = (options) => {
     module: {
       rules: [...rules.files, rules.scripts, rules.styles]
     },
-    plugins: [plugins.html, plugins.images, plugins.extractStyles, plugins.purgeStyles],
+    plugins: [plugins.html, plugins.images, plugins.extractStyles /*, plugins.purgeStyles*/],
     devServer: {
       open: true,
       port: 4000,
