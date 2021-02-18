@@ -24,7 +24,7 @@ module.exports = (env) => {
           postcssOptions: {
             plugins: [
               require('postcss-import'),
-              require('postcss-at-rules-variables')({ atRules: ['for', 'if', 'else', 'each', 'mixin', 'media'] }),
+              require('postcss-at-rules-variables')({ atRules: ['each', 'mixin', 'media'] }),
               require('postcss-simple-vars'),
               require('postcss-replace')({ pattern: /##/g, data: { replaceAll: '$' } }),
               require('postcss-mixins'),
