@@ -27,13 +27,9 @@
 @define-mixin media-suffixes {
   @mixin-content;
 
-  :root {
-    --entries: entries(var(--media));
-  }
-
-  @each $key, $value in var(--entries) {
-    &\@$(key) {
-      @media screen and (max-width: $value) {
+  @each ##key, ##value in entries($media) {
+    &\@##(key) {
+      @media screen and (max-width: ##value) {
         @mixin-content;
       }
     }

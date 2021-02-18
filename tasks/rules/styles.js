@@ -24,14 +24,15 @@ module.exports = (env) => {
           postcssOptions: {
             plugins: [
               require('postcss-import'),
-              require('postcss-nested'),
               require('postcss-at-rules-variables')({ atRules: ['for', 'if', 'else', 'each', 'mixin', 'media'] }),
-              require('postcss-css-variables'),
+              require('postcss-simple-vars'),
+              require('postcss-replace')({ pattern: /##/g, data: { replaceAll: '$' } }),
               require('postcss-mixins'),
               require('postcss-functions')({ functions: styleFunctions }),
               require('postcss-each'),
               require('postcss-calc'),
               require('postcss-fontpath'),
+              require('postcss-nested'),
               require('autoprefixer'),
               require('postcss-discard-comments')
             ]

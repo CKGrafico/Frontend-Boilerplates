@@ -3,7 +3,7 @@
  *
  * Example:
  * .u {
- *   @mixin map-utilities color, basic, var(--color-basic);
+ *   @mixin map-utilities color, basic, $color-basic);
  * }
  *
  * Generates the following css
@@ -18,14 +18,10 @@
  * <div class="u-color-basic-dark">
  */
 
-@define-mixin map-utilities $prop, $name, $map {
-  :root {
-    --entries: entries($map);
-  }
-
-  @each $key, $value in var(--entries) {
-    &-$(prop)-$(name)-$(key) {
-      $(prop): $value;
+@define-mixin map-utilities ##prop, ##name, ##map {
+  @each ##key, ##value in entries(##map) {
+    &-##(prop)-##(name)-##(key) {
+      ##(prop): ##value;
     }
   }
 }
