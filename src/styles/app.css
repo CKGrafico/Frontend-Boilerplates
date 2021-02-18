@@ -5,7 +5,7 @@
 
 /* Import Base */
 @import 'base/global';
-/* @import 'base/fonts'; */
+@import 'base/fonts';
 @import 'base/states';
 @import 'base/utilities';
 

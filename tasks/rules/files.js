@@ -19,6 +19,7 @@ module.exports = () => {
         {
           loader: 'file-loader',
           options: {
+            publicPath: './fonts',
             outputPath: './fonts'
           }
         }
