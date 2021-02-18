@@ -1,4 +1,6 @@
 :root {
+  --default-font-size: 16px;
+
   --color-basic: (
     brightest: #ffffff,
     brighter: #f3f3f3,
