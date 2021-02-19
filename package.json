@@ -2,7 +2,7 @@
   "name": "basic-spa",
   "description": "Stable version of a basic SPA using JavaScript.",
   "license": "MIT",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --hot --open --mode development",
@@ -49,6 +49,7 @@
     "postcss-each": "^0.10.0",
     "postcss-fontpath": "^1.0.0",
     "postcss-functions": "^3.0.0",
+    "postcss-hexrgba": "^2.0.1",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^5.0.0",
     "postcss-mixins": "^6.2.3",
