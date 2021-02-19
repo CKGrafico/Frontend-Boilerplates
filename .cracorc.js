@@ -1,8 +1,9 @@
 const path = require('path');
+const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const CSS_MODULE_LOCAL_IDENT_NAME = '[local]___[hash:base64:5]';
-const styleFunctions = require('./src/styles/functions/index.ts');
+const styleFunctions = require('./src/styles/functions/index.js');
 
 module.exports = {
   webpack: {
@@ -10,14 +11,14 @@ module.exports = {
       '~': `${path.resolve(__dirname)}/src`
     },
     configure: (webpackConfig) => {
-      webpackConfig.optimization.minimizer = [
-        new TerserPlugin({
-          terserOptions: {
-            keep_classnames: true,
-            keep_fnames: true
-          }
-        })
-      ];
+      // webpackConfig.optimization.minimizer = [
+      //   new TerserPlugin({
+      //     terserOptions: {
+      //       keep_classnames: true,
+      //       keep_fnames: true
+      //     }
+      //   })
+      // ];
 
       return webpackConfig;
     },
