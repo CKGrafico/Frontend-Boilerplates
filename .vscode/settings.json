@@ -1,6 +1,5 @@
 {
   "css.validate": false,
-  "scss.validate": false,
   "extensions.ignoreRecommendations": false,
   "files.autoSave": "off",
   "editor.wordWrap": "on",

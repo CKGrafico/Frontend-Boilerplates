@@ -1,17 +1,10 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
-const sassResourcesLoader = require('craco-sass-resources-loader');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 const CSS_MODULE_LOCAL_IDENT_NAME = '[local]___[hash:base64:5]';
+const styleFunctions = require('./src/styles/functions/index.ts');
 
 module.exports = {
-  plugins: [
-    {
-      plugin: sassResourcesLoader,
-      options: {
-        resources: './src/styles/base/_variables.scss'
-      }
-    }
-  ],
   webpack: {
     alias: {
       '~': `${path.resolve(__dirname)}/src`
@@ -27,7 +20,12 @@ module.exports = {
       ];
 
       return webpackConfig;
-    }
+    },
+    plugins: [
+      new PurgecssPlugin({
+        paths: () => glob.sync('./src/**/*.tsx', { nodir: true })
+      })
+    ]
   },
   jest: {
     configure: {
@@ -36,7 +34,7 @@ module.exports = {
       },
       moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
       transform: {
-        '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
+        '.+\\.(css|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
         '^.+\\.tsx?$': 'ts-jest'
       },
       transformIgnorePatterns: ['/node_modules/'],
@@ -54,6 +52,22 @@ module.exports = {
     modules: {
       camelCase: true,
       localIdentName: CSS_MODULE_LOCAL_IDENT_NAME
+    },
+    postcss: {
+      plugins: [
+        require('postcss-import'),
+        require('postcss-at-rules-variables')({ atRules: ['each', 'mixin', 'media'] }),
+        require('postcss-simple-vars'),
+        require('postcss-replace')({ pattern: /##/g, data: { replaceAll: '$' } }),
+        require('postcss-mixins'),
+        require('postcss-functions')({ functions: styleFunctions }),
+        require('postcss-each'),
+        require('postcss-calc'),
+        require('postcss-fontpath'),
+        require('postcss-nested'),
+        require('autoprefixer'),
+        require('postcss-discard-comments')
+      ]
     }
   },
   babel: {

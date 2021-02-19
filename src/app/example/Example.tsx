@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 import { useExample } from '~/app/shared/example';
-import './example.scss';
+import './example.css';
 import { IExampleAlertService } from './shared';
 
 export default function Example() {
