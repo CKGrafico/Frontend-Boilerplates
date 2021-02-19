@@ -25,7 +25,12 @@ export default function Example() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a className="example-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+        <a
+          className="example-link u-color-basic-bright"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {t('test')}
         </a>
         <Button onClick={onClickText}>{state.property1}</Button>

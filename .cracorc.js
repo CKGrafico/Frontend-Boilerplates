@@ -11,14 +11,14 @@ module.exports = {
       '~': `${path.resolve(__dirname)}/src`
     },
     configure: (webpackConfig) => {
-      // webpackConfig.optimization.minimizer = [
-      //   new TerserPlugin({
-      //     terserOptions: {
-      //       keep_classnames: true,
-      //       keep_fnames: true
-      //     }
-      //   })
-      // ];
+      webpackConfig.optimization.minimizer = [
+        new TerserPlugin({
+          terserOptions: {
+            keep_classnames: true,
+            keep_fnames: true
+          }
+        })
+      ];
 
       return webpackConfig;
     },
