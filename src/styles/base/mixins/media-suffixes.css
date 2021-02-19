@@ -1,0 +1,37 @@
+/**
+ * Mixin to generate media suffixes for any class.
+ *
+ * Example:
+ * .a {
+ *   @include media-suffixes {
+ *     opacity: 1;
+ *   }
+ * }
+ *
+ * Generates the following css
+ * .a {
+ *   opacity: 0; }
+ *  @media screen and (max-width: 640px) {
+ *     .a\@xs {
+ *       opacity: 0; } }
+ *   @media screen and (max-width: 768px) {
+ *     .a\@s {
+ *       opacity: 0; } }
+ * ...
+ * And can be used like
+ * <div class="a@s">
+ * That means that the opacity of the div will
+ * be 0 for screens smaller or equal than 's' media query.
+ */
+
+@define-mixin media-suffixes {
+  @mixin-content;
+
+  @each ##key, ##value in entries($media) {
+    &\@##(key) {
+      @media screen and (max-width: ##value) {
+        @mixin-content;
+      }
+    }
+  }
+}

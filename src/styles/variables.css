@@ -1,0 +1,56 @@
+$default-font-size: 16px;
+
+$color-basic: (
+  brightest: #ffffff,
+  brighter: #f3f3f3,
+  bright: #dadada,
+  normal: null,
+  dark: #9c9c9c,
+  darker: #585858,
+  darkest: #131313
+);
+
+$color-primary: (
+  normal: #00ff00
+);
+
+$time: (
+  slow: 0.5s,
+  normal: 0.35s,
+  fast: 0.15s
+);
+
+$font-weight: (
+  light: 200,
+  semilight: 300,
+  normal: 500,
+  semibold: 600,
+  bold: 700,
+  black: 800
+);
+
+$font-size: (
+  xs: 0.5rem,
+  s: 0.85rem,
+  m: 1rem,
+  l: 1.25rem,
+  xl: 1.5rem
+);
+
+$media: (
+  xxs: 360px,
+  xs: 640px,
+  s: 768px,
+  m: 1024px,
+  l: 1280px,
+  xl: 1440px
+);
+
+$z: (
+  xs: 1,
+  s: 10,
+  m: 20,
+  l: 30,
+  xl: 50,
+  xxl: 100
+);

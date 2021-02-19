@@ -1,0 +1,27 @@
+/**
+ * Mixin to generate utility classes for any map variable
+ *
+ * Example:
+ * .u {
+ *   @mixin map-utilities color, basic, $color-basic);
+ * }
+ *
+ * Generates the following css
+ * .u-color-basic-dark {
+ *   color: #D1B425; }
+ *
+ * .u-color-basic {
+ *   color: #FFDD2E; }
+ *
+ *
+ * And can be used like
+ * <div class="u-color-basic-dark">
+ */
+
+@define-mixin map-utilities ##prop, ##name, ##map {
+  @each ##key, ##value in entries(##map) {
+    &-##(prop)-##(name)-##(key) {
+      ##(prop): ##value;
+    }
+  }
+}
