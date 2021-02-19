@@ -12442,10 +12442,9 @@ postcss-replace-overflow-wrap@^3.0.0:
   dependencies:
     postcss "^7.0.2"
 
-postcss-replace@^1.1.2:
+postcss-replace@CKGrafico/postcss-replace#patch-1:
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/postcss-replace/-/postcss-replace-1.1.2.tgz#ffe92be6f63a9e550d367cc5aac4a959e4b65f01"
-  integrity sha512-DUcotQSSZuei6WNEGwT9xMJK5nXLeEWNhNnmhco5BveMg5I1KN/eoRT/5jJP/xudDT9eFMt2qamszHwuhH+Zrg==
+  resolved "https://codeload.github.com/CKGrafico/postcss-replace/tar.gz/49bf0b56e9dce58533354459c49416abd8328bdb"
   dependencies:
     deep-get-set "^1.1.0"
     kind-of "^6.0.2"
