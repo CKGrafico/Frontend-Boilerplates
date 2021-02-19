@@ -3,7 +3,8 @@ const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const CSS_MODULE_LOCAL_IDENT_NAME = '[local]___[hash:base64:5]';
-const styleFunctions = require('./src/styles/functions/index.js');
+const stylePostFunctions = require('./src/styles/functions/post-functions.js');
+const stylePreFunctions = require('./src/styles/functions/pre-functions.js');
 
 module.exports = {
   webpack: {
@@ -57,13 +58,15 @@ module.exports = {
     postcss: {
       plugins: [
         require('postcss-import'),
+        require('postcss-functions')({ functions: stylePreFunctions }),
         require('postcss-at-rules-variables')({ atRules: ['each', 'mixin', 'media'] }),
         require('postcss-simple-vars'),
         require('postcss-replace')({ pattern: /##/g, data: { replaceAll: '$' } }),
         require('postcss-mixins'),
-        require('postcss-functions')({ functions: styleFunctions }),
+        require('postcss-functions')({ functions: stylePostFunctions }),
         require('postcss-each'),
         require('postcss-calc'),
+        require('postcss-hexrgba'),
         require('postcss-fontpath'),
         require('postcss-nested'),
         require('autoprefixer'),
