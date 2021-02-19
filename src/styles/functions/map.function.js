@@ -1,10 +1,10 @@
-const REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH = /[^\w:#,]/g;
+const REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH_DOT = /[^\w:#,.]/g;
 
 function cssMapToDictionary(cssMap = '(brightest: #ffffff,brighter: #f3f3f3)') {
   const dictionary = {};
 
   cssMap
-    .replace(REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH, '')
+    .replace(REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH_DOT, '')
     .split(',')
     .forEach((element) => {
       const tuple = element.split(':');

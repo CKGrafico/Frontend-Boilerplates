@@ -1,6 +1,7 @@
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
-const styleFunctions = require('../../src/styles/functions/index.js');
+const stylePostFunctions = require('./src/styles/functions/post-functions.js');
+const stylePreFunctions = require('./src/styles/functions/pre-functions.js');
 
 module.exports = (env) => {
   const styleLoaders = {
@@ -24,13 +25,15 @@ module.exports = (env) => {
           postcssOptions: {
             plugins: [
               require('postcss-import'),
+              require('postcss-functions')({ functions: stylePreFunctions }),
               require('postcss-at-rules-variables')({ atRules: ['each', 'mixin', 'media'] }),
               require('postcss-simple-vars'),
               require('postcss-replace')({ pattern: /##/g, data: { replaceAll: '$' } }),
               require('postcss-mixins'),
-              require('postcss-functions')({ functions: styleFunctions }),
+              require('postcss-functions')({ functions: stylePostFunctions }),
               require('postcss-each'),
               require('postcss-calc'),
+              require('postcss-hexrgba'),
               require('postcss-fontpath'),
               require('postcss-nested'),
               require('autoprefixer'),
