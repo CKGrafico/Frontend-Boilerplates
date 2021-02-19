@@ -2,9 +2,8 @@ const path = require('path');
 const rules = require('require.all')('./tasks/rules');
 const plugins = require('require.all')('./tasks/plugins');
 
-module.exports = (env) => {
-  const environment = env.NODE_ENV;
-  env.NODE_ENV = JSON.stringify(environment);
+module.exports = (options) => {
+  const environment = options.WEBPACK_BUNDLE ? 'production' : 'development';
 
   rules((name, rule) => rule(environment));
   plugins((name, rule) => rule(environment));
@@ -12,7 +11,7 @@ module.exports = (env) => {
   return {
     mode: environment,
     entry: {
-      app: [path.resolve(__dirname, 'src/app/app.ts'), path.resolve(__dirname, 'src/styles/app.scss')]
+      app: path.resolve(__dirname, 'src/app/app.ts')
     },
     output: {
       filename: '[name].js'
@@ -20,7 +19,7 @@ module.exports = (env) => {
     module: {
       rules: [...rules.files, ...rules.scripts, rules.styles]
     },
-    plugins: [plugins.html, plugins.images, plugins.extractStyles],
+    plugins: [plugins.html, plugins.images, plugins.extractStyles, plugins.purgeStyles],
     devServer: {
       open: true,
       port: 4000,

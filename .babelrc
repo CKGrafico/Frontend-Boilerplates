@@ -4,9 +4,12 @@
       "@babel/preset-env",
       {
         "useBuiltIns": "usage",
-        "debug": true
+        "corejs": "3",
+        "debug": false
       }
     ]
   ],
-  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import"
+  ]
 }

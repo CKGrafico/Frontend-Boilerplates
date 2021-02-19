@@ -4,7 +4,8 @@ module.exports = (env) => {
   const defaultConfig = new MiniCSSExtractPlugin();
 
   const plugin = {
-    production: defaultConfig
+    production: defaultConfig,
+    development: defaultConfig
   };
 
   return plugin[env];

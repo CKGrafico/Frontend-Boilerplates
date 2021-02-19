@@ -1,8 +1,10 @@
 module.exports = (env) => {
-  return [{
+  return [
+    {
       test: /\.ts$/,
       exclude: /node_modules/,
-      use: [{
+      use: [
+        {
           loader: 'babel-loader'
         },
         {
@@ -14,5 +16,5 @@ module.exports = (env) => {
         }
       ]
     }
-  ]
+  ];
 };
