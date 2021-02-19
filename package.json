@@ -2,7 +2,7 @@
   "name": "app-react",
   "description": "Stable version of a basic SPA example React and TypeScript.",
   "license": "MIT",
-  "version": "1.2.0",
+  "version": "3.0.1",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
@@ -62,6 +62,7 @@
     "postcss-each": "^0.10.0",
     "postcss-fontpath": "^1.0.0",
     "postcss-functions": "^3.0.0",
+    "postcss-hexrgba": "^2.0.1",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^5.0.0",
     "postcss-mixins": "^6.2.3",
