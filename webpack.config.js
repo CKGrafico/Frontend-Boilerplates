@@ -2,8 +2,13 @@ const path = require('path');
 const rules = require('require.all')('./tasks/rules');
 const plugins = require('require.all')('./tasks/plugins');
 
-module.exports = (options) => {
-  const environment = options.WEBPACK_BUNDLE ? 'production' : 'development';
+module.exports = (env, options) => {
+  const modes = {
+    development: 'development',
+    production: 'production'
+  };
+
+  const environment = modes[options.mode] || modes.development;
 
   rules((name, rule) => rule(environment));
   plugins((name, rule) => rule(environment));
