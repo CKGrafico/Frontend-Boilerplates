@@ -11,8 +11,6 @@ function cssMapToDictionary(cssMap = '(brightest: #ffffff,brighter: #f3f3f3)') {
       dictionary[tuple[0].trim()] = tuple[1].trim();
     });
 
-  console.log(cssMap, dictionary);
-
   return dictionary;
 }
 
