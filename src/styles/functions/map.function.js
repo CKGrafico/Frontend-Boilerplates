@@ -1,31 +1,45 @@
-const REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH_DOT = /[^\w:#,.]/g;
+const mapsCache = {};
 
 function cssMapToDictionary(cssMap = '(brightest: #ffffff,brighter: #f3f3f3)') {
   const dictionary = {};
 
   cssMap
-    .replace(REGEX_ANY_SYMBOL_EXCEPT_COLON_COMMA_HASH_DOT, '')
-    .split(',')
+    .replace(/[()\n\r\t]/g, '')
+    .split(/, */g)
     .forEach((element) => {
       const tuple = element.split(':');
-      dictionary[tuple[0]] = tuple[1];
+      dictionary[tuple[0].trim()] = tuple[1].trim();
     });
+
+  console.log(cssMap, dictionary);
 
   return dictionary;
 }
 
+function cachedCssMapToDictionary(cssMap = '') {
+  const cachedDictionary = mapsCache[cssMap];
+  if (cachedDictionary) {
+    return cachedDictionary;
+  }
+
+  const newValue = cssMapToDictionary(cssMap);
+  mapsCache[cssMap] = newValue;
+
+  return newValue;
+}
+
 module.exports = {
   values(cssMap) {
-    return Object.values(cssMapToDictionary(cssMap)).join(',');
+    return Object.values(cachedCssMapToDictionary(cssMap)).join(',');
   },
   keys(cssMap) {
-    return Object.keys(cssMapToDictionary(cssMap));
+    return Object.keys(cachedCssMapToDictionary(cssMap));
   },
   entries(cssMap) {
     const keys = [];
     const values = [];
 
-    Object.entries(cssMapToDictionary(cssMap)).forEach(([key, value]) => {
+    Object.entries(cachedCssMapToDictionary(cssMap)).forEach(([key, value]) => {
       keys.push(key);
       values.push(value);
     });
@@ -33,9 +47,9 @@ module.exports = {
     return `(${keys}), (${values})`;
   },
   key(cssMap, i) {
-    return Object.keys(cssMapToDictionary(cssMap))[i];
+    return Object.keys(cachedCssMapToDictionary(cssMap))[i];
   },
   value(cssMap, key) {
-    return cssMapToDictionary(cssMap)[key];
+    return cachedCssMapToDictionary(cssMap)[key];
   }
 };
