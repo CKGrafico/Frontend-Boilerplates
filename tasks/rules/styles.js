@@ -1,7 +1,7 @@
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
-const stylePostFunctions = require('./src/styles/functions/post-functions.js');
-const stylePreFunctions = require('./src/styles/functions/pre-functions.js');
+const stylePostFunctions = require("../../src/styles/functions/post-functions.js");
+const stylePreFunctions = require("../../src/styles/functions/pre-functions.js");
 
 module.exports = (env) => {
   const styleLoaders = {
