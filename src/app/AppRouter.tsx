@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { exampleModule } from './example';
 
 export default function AppRouter() {
@@ -8,10 +8,10 @@ export default function AppRouter() {
   return (
     <BrowserRouter>
       <Suspense fallback={<LoadingMessage />}>
-        <Switch>
-          <Route exact={true} path="/" render={() => <Redirect to="/example" />} />
+        <Routes>
           {exampleModule.routes}
-        </Switch>
+          <Route path="/" element={<Navigate replace to="/example" />} />
+        </Routes>
       </Suspense>
     </BrowserRouter>
   );
