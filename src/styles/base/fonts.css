@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  font-path: '../../src/assets/fonts/OpenSans/OpenSans-Regular';
+  font-path: '../../src/assets/fonts/OpenSans/OpenSans-Light';
   font-weight: value($font-weight, light);
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  font-path: '../../src/assets/fonts/OpenSans/OpenSans-Regular';
+  font-path: '../../src/assets/fonts/OpenSans/OpenSans-Bold';
   font-weight: value($font-weight, bold);
   font-style: normal;
 }
