@@ -1,7 +1,8 @@
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
-const stylePostFunctions = require('./src/styles/functions/post-functions.js');
-const stylePreFunctions = require('./src/styles/functions/pre-functions.js');
+const stylePostFunctions = require(path.join(__dirname, '../../src/styles/functions/post-functions.js'));
+const stylePreFunctions = require(path.join(__dirname, '../../src/styles/functions/pre-functions.js'));
 
 module.exports = (env) => {
   const styleLoaders = {
