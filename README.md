@@ -136,3 +136,9 @@ This project is possible thanks to the contributors.
 - **[nuxt:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/nuxt#logos)** **Nuxt** example using Nuxt and TypeScript. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nuxt.png" align="right" width="35" title="Nuxt">
 
 - **[node-ts:](https://github.com/CKGrafico/Frontend-Boilerplates/tree/node-ts#logos)** **Backend and TypeScript** example with SCSS and Nodejs. <img src="https://raw.githubusercontent.com/CKGrafico/Frontend-Boilerplates/docs/resources/techs/nodets.png" align="right" width="35" title="Node with TypeScript">
+- 
+### Thanks to everyone who contributed:
+[![Contributors](https://contrib.rocks/image?repo=ckgrafico/frontend-boilerplates)](https://github.com/CKGrafico/frontend-boilerplates/graphs/contributors)
+
+---
+Made with 🍕 by [Quique Fdez Guerra](https://twitter.com/ckgrafico)
